@@ -1,26 +1,27 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { TaskKey, IterationSummary, Tool } from "@/types";
+import type { TaskKey, IterationSummary, Tool, IndexPayload } from "@/types";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ConvergenceGlyph } from "@/components/ConvergenceBadge";
 import { fmtBand, cn } from "@/lib/utils";
+import { FileText } from "lucide-react";
 
 type FilterTool = "all" | Tool;
 type FilterStatus = "all" | "converged";
 
 export function Sidebar({
+  index,
   iterations,
   task,
   selectedId,
   onSelect,
   onTaskChange,
-  tasks,
 }: {
+  index: IndexPayload;
   iterations: IterationSummary[];
   task: TaskKey;
   selectedId: string;
   onSelect: (id: string) => void;
   onTaskChange: (t: TaskKey) => void;
-  tasks: TaskKey[];
 }) {
   const [filterTool, setFilterTool] = useState<FilterTool>("all");
   const [filterStatus, setFilterStatus] = useState<FilterStatus>("all");
@@ -28,40 +29,86 @@ export function Sidebar({
 
   const filtered = useMemo(() => {
     return [...iterations]
-      .sort((a, b) => b.iteration - a.iteration) // descending — latest at top
+      .sort((a, b) => b.iteration - a.iteration)
       .filter((it) => filterTool === "all" || it.tool === filterTool)
       .filter((it) => filterStatus === "all" || it.convergence === "CONVERGED");
   }, [iterations, filterTool, filterStatus]);
 
-  // Auto-scroll the selected row into view whenever it changes OR when the
-  // filtered list changes (e.g. user clears a filter that was hiding the row).
   useEffect(() => {
     ref.current?.scrollIntoView({ block: "nearest" });
   }, [selectedId, filtered]);
 
+  // Build a per-essay summary for the chat-style list at the top
+  const essayList = useMemo(() => {
+    return Object.entries(index.tasks).map(([key, bundle]) => {
+      const its = bundle.iterations;
+      const ordered = [...its].sort((a, b) => b.iteration - a.iteration);
+      const latest = ordered[0];
+      const title =
+        bundle.title ||
+        bundle.label ||
+        (key === "task1" ? "Task 1" : key === "task2" ? "Task 2" : key.toUpperCase());
+      return {
+        key,
+        title,
+        sublabel: bundle.label && bundle.label !== title ? bundle.label : "",
+        wordCount: bundle.essay.word_count,
+        iterCount: its.length,
+        latestBand: latest?.overall,
+      };
+    });
+  }, [index]);
+
   return (
-    <aside className="flex flex-col h-full w-60 shrink-0 border-r bg-card">
-      <div className="p-3 border-b space-y-2">
-        <div className="text-xs uppercase tracking-wider text-muted-foreground">essay</div>
-        <div className="flex gap-1">
-          {tasks.map((t) => (
-            <button
-              key={t}
-              onClick={() => onTaskChange(t)}
-              className={cn(
-                "flex-1 rounded-md border px-2 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none",
-                t === task
-                  ? "bg-secondary text-secondary-foreground border-foreground/20"
-                  : "hover:bg-accent",
-              )}
-              aria-pressed={t === task}
-            >
-              {t === "task1" ? "Task 1" : "Task 2"}
-            </button>
-          ))}
+    <aside
+      id="viewer-sidebar-content"
+      className="relative flex h-full w-full flex-col border-r bg-card"
+    >
+      {/* Chat-style essay list */}
+      <div className="px-2 py-2 border-b">
+        <div className="flex items-center justify-between gap-2 px-2 pb-1.5">
+          <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            essays
+          </div>
         </div>
+        <ul className="space-y-0.5">
+          {essayList.map((e) => {
+            const active = e.key === task;
+            return (
+              <li key={e.key}>
+                <button
+                  onClick={() => onTaskChange(e.key)}
+                  aria-pressed={active}
+                  className={cn(
+                    "w-full text-left rounded-md px-2 py-1.5 transition-colors focus-visible:outline-none",
+                    active
+                      ? "bg-secondary text-secondary-foreground"
+                      : "hover:bg-accent",
+                  )}
+                  title={e.title}
+                >
+                  <div className="flex items-center gap-1.5">
+                    <FileText className="h-3 w-3 shrink-0 text-muted-foreground" />
+                    <span className="truncate text-sm font-medium">{e.title}</span>
+                  </div>
+                  <div className="mt-0.5 flex items-center gap-2 pl-[1.05rem] text-[10px] text-muted-foreground">
+                    {e.sublabel && <span>{e.sublabel}</span>}
+                    <span>{e.wordCount}w</span>
+                    <span>{e.iterCount} iter{e.iterCount === 1 ? "" : "s"}</span>
+                    {e.latestBand !== undefined && (
+                      <span className="ml-auto tabular-nums font-medium text-foreground">
+                        {fmtBand(e.latestBand)}
+                      </span>
+                    )}
+                  </div>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
       </div>
 
+      {/* Iteration filter chips */}
       <div className="px-3 py-2 border-b space-y-1.5 text-[11px]">
         <div className="text-muted-foreground uppercase tracking-wider">filter</div>
         <div className="flex flex-wrap gap-1">

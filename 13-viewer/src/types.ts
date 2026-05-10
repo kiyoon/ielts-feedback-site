@@ -6,7 +6,9 @@
 // markdown to extract scores or rewrites — it only renders raw markdown as a
 // human-readable fallback view.
 
-export type TaskKey = "task1" | "task2";
+// Task keys are now arbitrary strings so users can drop in real essays
+// (e.g. "w1", "w2", "march-mock") next to the synthetic demos.
+export type TaskKey = string;
 export type Tool = "codex" | "claude" | "baseline";
 export type Convergence = "CONVERGED" | "REFINING" | "UNKNOWN";
 
@@ -75,6 +77,38 @@ export interface Rewrite {
   offset?: { start: number; end: number };
 }
 
+// True when the rewrite is an *addition* suggestion ("add a thesis",
+// "missing conclusion") or meta-structural commentary ("Body 1 develops
+// only X with no example") rather than a verbatim quote of essay text.
+// These should NOT be flagged as "not in essay" warnings.
+export function isAdditionRewrite(r: Rewrite): boolean {
+  const o = r.original.trim().toLowerCase();
+  if (!o) return false;
+
+  // Bracketed meta — covers "(missing X)", "(no Y)", "(Add a Z)",
+  // "(essay ends at …)", "(essay opens with …)" etc.
+  if (
+    /^[\(\[][^)\]]*?(missing|no\s|absent|none|add\s+a|add\s+an|essay\s+(ends|opens|starts|begins))/i.test(
+      o,
+    )
+  ) {
+    return true;
+  }
+  // Direct add-imperatives
+  if (o.startsWith("add a ") || o.startsWith("add an ") || o.startsWith("add the ")) return true;
+  // Empty / placeholder values
+  if (o === "(none)" || o === "n/a" || o === "—" || o === "") return true;
+  // Meta-commentary about a body paragraph rather than a quoted phrase
+  if (/^(body\s*\d|introduction|conclusion|thesis)\b.*(missing|lacks|develops only|has no|is too|under-?developed|under-?explained)/i.test(o)) {
+    return true;
+  }
+  // Has trailing meta-commentary words like "sequencers fronting", "as opener"
+  if (/\b(sequencers?\s+fronting|fronting\s+(both|all)|as\s+(an?\s+)?(opener|conclusion|thesis|placeholder))\b/i.test(o)) {
+    return true;
+  }
+  return false;
+}
+
 export interface FocusArea {
   area: string;            // short name e.g. "Article omission (the/a)"
   rationale: string;       // one-sentence why-it-matters
@@ -123,13 +157,18 @@ export interface IterationSummary {
   generated_at: string;
 }
 
+export interface TaskBundle {
+  // Optional short tag-style label (e.g. "W1 (real)", "T1 demo")
+  label?: string;
+  // Optional readable title — used in the chat-list sidebar (e.g.
+  // "Mathematical influence on computer science"). Falls back to label,
+  // then to the task key, when missing.
+  title?: string;
+  essay: EssayDoc;
+  iterations: IterationSummary[];
+}
+
 export interface IndexPayload {
   generated_at: string;
-  tasks: Record<
-    TaskKey,
-    {
-      essay: EssayDoc;
-      iterations: IterationSummary[];
-    }
-  >;
+  tasks: Record<TaskKey, TaskBundle>;
 }

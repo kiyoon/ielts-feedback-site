@@ -51,15 +51,15 @@ The viewer never parses raw markdown for structured fields; it only renders raw 
 
 ```bash
 cd 13-viewer
-npm install
+bun install
 # Make corpus accessible to the dev server (used by CitationSheet):
 ln -s ../.. public/corpus
 
 # After the benchmark has produced at least some iterations:
-npm run extract           # md → json for every feedback in 12-benchmark/results/
-npm run rebuild-index     # generate public/data/index.json from the json payloads
+bun run extract           # md → json for every feedback in 12-benchmark/results/
+bun run rebuild-index     # generate public/data/index.json from the json payloads
 
-npm run dev               # http://127.0.0.1:5173
+bun run dev               # http://127.0.0.1:5173
 ```
 
 If `public/data/index.json` is missing the viewer renders a clear error explaining the extract step.

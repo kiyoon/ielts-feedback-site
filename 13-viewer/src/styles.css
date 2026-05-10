@@ -68,10 +68,17 @@
   }
 
   * { @apply border-border; }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
   body {
     @apply font-sans;
     font-family: Inter, system-ui, -apple-system, sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow: hidden;
   }
 
   /* Make focus rings visible everywhere — accessibility blocker fix */
@@ -97,6 +104,9 @@
   text-align: inherit;
   transition: background-color 120ms, outline-color 120ms;
 }
+/* Default marks: solid tinted background + bottom border. Parent-of-nested
+   spans are rendered as `.parent-shell` instead of `.essay-mark`, so every
+   `.essay-mark` here is a leaf highlight. */
 .essay-mark[data-cat="task_response"] {
   background-color: hsl(var(--cat-tr) / 0.18);
   border-bottom: 1.5px solid hsl(var(--cat-tr) / 0.7);
@@ -118,11 +128,166 @@
   border-bottom: 1.5px solid hsl(var(--cat-sp) / 0.7);
 }
 
+/* Overlap-ghost mark: a visible fragment of a rewrite whose full range
+   partially crosses another located highlight. Distinct dashed warning
+   underline + light tint so the user can see WHERE the overlap reaches,
+   without disturbing any neighboring blocker's primary highlight. */
+.essay-mark[data-kind="overlap-ghost"] {
+  background-color: hsl(var(--warning) / 0.10) !important;
+  border-bottom: 1.5px dashed hsl(var(--warning) / 0.7) !important;
+}
+.essay-mark[data-kind="overlap-ghost"]:hover,
+.essay-mark[data-kind="overlap-ghost"][data-active="true"] {
+  background-color: hsl(var(--warning) / 0.20) !important;
+}
+
+/* parent-shell: a NON-INTERACTIVE container for the parent rewrite's text
+   when it has nested children. We don't apply any hover/active visuals to
+   the shell itself — the user activates the parent rewrite via the right-
+   margin gutter bracket only, NOT by clicking the text. This guarantees no
+   state can leak from the inner nested-child buttons up to the parent.
+
+   When activeRewriteId points at the parent (clicked from bracket or right
+   pane), we apply a light dashed underline so the user can still see which
+   region is "currently selected". No hover style is applied at all. */
+.parent-shell { display: inline; }
+.parent-shell[data-active="true"] {
+  border-bottom: 1.5px dashed currentColor;
+  background-color: hsl(var(--ring) / 0.05);
+  padding: 0 0.05em;
+  border-radius: 0.125rem;
+}
+.parent-shell[data-active="true"][data-cat="task_response"] { border-bottom-color: hsl(var(--cat-tr) / 0.7); }
+.parent-shell[data-active="true"][data-cat="coherence"]     { border-bottom-color: hsl(var(--cat-cc) / 0.7); }
+.parent-shell[data-active="true"][data-cat="lexical"]       { border-bottom-color: hsl(var(--cat-lr) / 0.7); }
+.parent-shell[data-active="true"][data-cat="grammar"]       { border-bottom-color: hsl(var(--cat-gra) / 0.7); }
+.parent-shell[data-active="true"][data-cat="spelling"]      { border-bottom-color: hsl(var(--cat-sp) / 0.7); }
+
+/* Right-margin gutter for parent-of-nested brackets. Aligned with the
+   article via JS layout measurement. */
+.essay-gutter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.25rem;
+  height: 100%;
+  pointer-events: none;
+}
+.gutter-bracket {
+  position: absolute;
+  right: 0.4rem;
+  cursor: pointer;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-right: 0.25rem;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  color: inherit;
+}
+.gutter-bracket .gutter-shape {
+  position: relative;
+  width: 0.55rem;
+  height: 100%;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  border-radius: 0 6px 6px 0;
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition: opacity 120ms;
+}
+.gutter-bracket:hover .gutter-shape,
+.gutter-bracket:focus-visible .gutter-shape,
+.gutter-bracket[data-active="true"] .gutter-shape {
+  opacity: 1;
+}
+.gutter-bracket .gutter-count {
+  position: absolute;
+  right: 0.45rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: hsl(var(--card));
+  color: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 0.4em;
+  padding: 0 0.3em;
+  font-size: 0.7em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.gutter-bracket[data-cat="task_response"] { color: hsl(var(--cat-tr)); }
+.gutter-bracket[data-cat="coherence"]     { color: hsl(var(--cat-cc)); }
+.gutter-bracket[data-cat="lexical"]       { color: hsl(var(--cat-lr)); }
+.gutter-bracket[data-cat="grammar"]       { color: hsl(var(--cat-gra)); }
+.gutter-bracket[data-cat="spelling"]      { color: hsl(var(--cat-sp)); }
+.gutter-bracket:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .essay-mark:hover,
 .essay-mark[data-active="true"] {
   filter: brightness(1.18);
   outline: 2px solid hsl(var(--ring));
   outline-offset: 1px;
+}
+
+/* Inline marker for a nested child *inside* a parent mark — renders the
+   child's exact substring with its own subtle highlight at its exact
+   position. The parent mark is a span[role="button"] (not a <button>) so
+   this can be a real <button> too. Click activates the child rewrite. */
+.nested-child {
+  display: inline;
+  cursor: pointer;
+  border-radius: 0.125rem;
+  padding: 0 0.1em;
+  border: 0;
+  border-bottom: 1.5px solid;
+  font: inherit;
+  font-style: italic;
+  color: inherit;
+  text-align: inherit;
+}
+/* Hover and focus on the nested-child use NO outline — outlines on inline
+   elements that wrap across lines draw a single big bounding rectangle that
+   the user reads as "the larger region got highlighted". Use stronger
+   background + thicker bottom border instead; both render per-line for
+   inline elements, which is what we want. */
+.nested-child:hover,
+.nested-child:focus,
+.nested-child:focus-visible {
+  filter: brightness(1.2);
+  outline: none !important;
+  border-bottom-width: 2.5px;
+}
+.nested-child:hover[data-cat="task_response"],
+.nested-child:focus[data-cat="task_response"]      { background-color: hsl(var(--cat-tr) / 0.36); }
+.nested-child:hover[data-cat="coherence"],
+.nested-child:focus[data-cat="coherence"]          { background-color: hsl(var(--cat-cc) / 0.36); }
+.nested-child:hover[data-cat="lexical"],
+.nested-child:focus[data-cat="lexical"]            { background-color: hsl(var(--cat-lr) / 0.38); }
+.nested-child:hover[data-cat="grammar"],
+.nested-child:focus[data-cat="grammar"]            { background-color: hsl(var(--cat-gra) / 0.36); }
+.nested-child:hover[data-cat="spelling"],
+.nested-child:focus[data-cat="spelling"]           { background-color: hsl(var(--cat-sp) / 0.36); }
+.nested-child[data-cat="task_response"] { background-color: hsl(var(--cat-tr) / 0.18); border-bottom-color: hsl(var(--cat-tr) / 0.7); }
+.nested-child[data-cat="coherence"]     { background-color: hsl(var(--cat-cc) / 0.18); border-bottom-color: hsl(var(--cat-cc) / 0.7); }
+.nested-child[data-cat="lexical"]       { background-color: hsl(var(--cat-lr) / 0.20); border-bottom-color: hsl(var(--cat-lr) / 0.7); }
+.nested-child[data-cat="grammar"]       { background-color: hsl(var(--cat-gra) / 0.18); border-bottom-color: hsl(var(--cat-gra) / 0.7); }
+.nested-child[data-cat="spelling"]      { background-color: hsl(var(--cat-sp) / 0.18); border-bottom-color: hsl(var(--cat-sp) / 0.7); }
+.nested-child[data-overlap="true"] {
+  border-bottom-style: dashed;
+  box-shadow: inset 0 -0.5em 0 hsl(var(--warning) / 0.14);
+}
+.nested-child[data-overlap="true"]:hover,
+.nested-child[data-overlap="true"]:focus {
+  box-shadow: inset 0 -0.65em 0 hsl(var(--warning) / 0.22);
 }
 
 /* Markdown body — applied to react-markdown output */

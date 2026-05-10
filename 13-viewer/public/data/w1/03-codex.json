@@ -1,0 +1,171 @@
+{
+  "id": "w1/03-codex",
+  "task": "w1",
+  "iteration": 3,
+  "tool": "codex",
+  "generated_at": "2026-05-10T13:16:52Z",
+  "scores": {
+    "task_response": {
+      "band": 5.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 5",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 5.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 5",
+      "justification": "Organisation is visible, but progression is not fully logical. Body 1 moves from “ancient Mesopotamia and Egypt” to “Samuel Morse” to “a computer,” but the links between these stages are loose. References such as “that,” “by doing that,” and “it” are sometimes unclear. Band 7 requires flexible reference and clear paragraph progression, as shown in `05-band-6-to-7/cohesion-upgrades.md`."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "Vocabulary is generally adequate, with useful topic terms like “electronic signals,” “binary digits,” “hardware,” and “base-60.” However, word choice is often imprecise: “new logics,” “mathematics is inevitable,” “first ever information,” and “a single hardware.” This is Band 6 lexical behaviour: meaning is mostly clear, but precision and collocation are not controlled. See `01-band-descriptors/task2-band-descriptors.md` §Band 6 and `08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`."
+    },
+    "grammar": {
+      "band": 5.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 5",
+      "justification": "There is a mix of simple and attempted complex sentences, but complex structures frequently break down. Examples include “Computers consist of a full of small switches,” “so that no physical objects such as people or dove needed,” and “which can do several things in a single hardware.” Some simple sentences are clear, but error-free complex sentences are not frequent. This aligns with Band 5 more than Band 6/7 in `01-band-descriptors/task2-band-descriptors.md`."
+    }
+  },
+  "overall": 5.5,
+  "overall_rationale": "The four criteria average 5.25, which rounds to 5.5 under `01-band-descriptors/scoring-rules.md`. The essay has Band 6-level topic vocabulary, but incomplete development, weak cohesion and frequent grammar errors hold the overall score below 6.0.",
+  "what_changed": "The prior chain supplied here does not contain a completed feedback draft, so this is still an early refinement. I did check the existing W1 feedback in the corpus and keep its main calibration: 5/5/6/5, overall 5.5. The sharper point here is that the visible essay is about 232 words and unfinished; underlength is not an automatic penalty, but it prevents enough development for Band 6+ Task Response. I also tightened the rewrite list around the highest-impact issue: turning the binary paragraph into a completed PEEL argument plus conclusion.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "In this essay, I will discuss how mathematics influenced computer science.",
+      "improved": "This essay argues that mathematics shaped computer science through formal logic, binary representation and algorithmic problem-solving.",
+      "reason": "Gives a clear thesis and roadmap.",
+      "citations": [
+        "09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "The graphic on the screen is just a number as well.",
+      "improved": "For this reason, mathematics should be seen as the language that allows computers to store, process and display information.",
+      "reason": "Turns the abrupt ending into synthesis.",
+      "citations": [
+        "05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "Humans have always wanted to preserve their thoughts somewhere to communicate.",
+      "improved": "One early influence of mathematics was the attempt to encode information in systematic forms.",
+      "reason": "Makes Body 1 relevant to the prompt immediately.",
+      "citations": [
+        "05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "People have built up mathematical rules by defining new logics to solve problems.",
+      "improved": "Over time, mathematicians developed systems of logic that allowed problems to be defined precisely and solved step by step.",
+      "reason": "Fixes collocation and clarifies the mechanism.",
+      "citations": [
+        "05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "mathematics is inevitable",
+      "improved": "mathematical reasoning is essential",
+      "reason": "More natural academic collocation.",
+      "citations": [
+        "09-instructor-tips/02-paraphrase-banks-task2.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 6,
+      "original": "the first ever information which only used electronic signals",
+      "improved": "one of the earliest systems for transmitting information through electronic signals",
+      "reason": "Corrects word choice and relative-clause control.",
+      "citations": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "so that no physical objects such as people or dove needed",
+      "improved": "so messages no longer had to be carried by messengers or carrier pigeons",
+      "reason": "Fixes passive grammar and countability.",
+      "citations": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "a machine which can do several things in a single hardware",
+      "improved": "a general-purpose machine capable of performing several tasks on one physical device",
+      "reason": "Replaces inaccurate “hardware” use with precise technology wording.",
+      "citations": [
+        "10-task2-topic-banks/topic-03-technology.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 9,
+      "original": "By doing that, it can calculate in binary digits.",
+      "improved": "By combining these on/off states, a computer can perform calculations in binary.",
+      "reason": "Makes the reference clear and improves technical precision.",
+      "citations": [
+        "05-band-6-to-7/cohesion-upgrades.md"
+      ],
+      "category": "coherence"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "The supplied prior chain is empty or effectively non-substantive, so the convergence rules require `REFINING`. A future iteration could still sharpen the feedback if the original prompt or the missing conclusion is recovered.",
+  "raw_markdown": "# Iteration 03 — codex\n\n_Generated 2026-05-10T10:09:36Z. Prior chain depth: up to 3. Manifest: 462 files._\n\n---## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---:|---|\n| Task Response / Achievement | 5.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 5 |\n| Coherence and Cohesion       | 5.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 5 |\n| Lexical Resource             | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Grammatical Range & Accuracy | 5.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 5 |\n| **Overall**                  | 5.5 | rounded per `01-band-descriptors/scoring-rules.md` |\n\n## What changed from prior feedback\nThe prior chain supplied here does not contain a completed feedback draft, so this is still an early refinement. I did check the existing W1 feedback in the corpus and keep its main calibration: 5/5/6/5, overall 5.5. The sharper point here is that the visible essay is about 232 words and unfinished; underlength is not an automatic penalty, but it prevents enough development for Band 6+ Task Response. I also tightened the rewrite list around the highest-impact issue: turning the binary paragraph into a completed PEEL argument plus conclusion.\n\n## Structural feedback\nThe essay addresses the general topic, but it does not fully answer the likely prompt because it never explains whether mathematics was the main driver of the computer revolution. The introduction says, “I will discuss how mathematics influenced computer science,” but it does not give a developed position or clear plan. Body 1 drifts from Mesopotamia to Morse code to computers without making the mathematical link explicit. Body 2 is much more relevant because it explains binary representation, but it stops before giving a developed example or conclusion. The single highest-impact fix here is adding one complete PEEL paragraph on binary/algorithms and a two-sentence synthesis conclusion, not upgrading individual words.\n\n## Focus areas\n- **Complete Task 2 structure** — Band 7 needs a thesis, developed body paragraphs and a real conclusion. Drill: `05-band-6-to-7/task-response-upgrades.md`, `05-band-6-to-7/paragraph-structure-band7.md`.\n- **PEEL development** — Your claims need mechanism + example + link, not just explanation. Drill: `05-band-6-to-7/task-response-upgrades.md`, `08-vocabulary-grammar/04-task-response-error-correction-bank.md`.\n- **Reference and lexical chains** — Repeated “people wanted” and vague “that/it” weaken progression. Drill: `05-band-6-to-7/cohesion-upgrades.md`, `09-instructor-tips/08-cohesion-upgrades-instructor.md`.\n- **Precise technology collocations** — Replace “new logics,” “single hardware,” and “first ever information” with natural computing language. Drill: `10-task2-topic-banks/topic-03-technology.md`, `05-band-6-to-7/vocabulary-upgrades.md`.\n- **Articles, countability and relative clauses** — Errors like “a single hardware” and “which only used” block Band 7 grammar. Drill: `08-vocabulary-grammar/01-grammar-error-correction-bank.md`, `09-instructor-tips/10-common-korean-chinese-speaker-errors.md`.\n\n## What's working\nYou have relevant concrete content: “base-60 for timekeeping,” “Morse code in 1844,” “binary digits,” and “every letter is actually a number.” These are much stronger than generic claims such as “math is important.” Keep these examples, but explain how each one proves that mathematics shaped computing.\n\n## Per-criterion justification\n**Task Response:** This fits Band 5 because the main ideas are present but limited and not sufficiently developed. The clearest relevant idea is “every letter is actually a number,” but it ends before explaining why this proves mathematics shaped computer science. The missing conclusion also means the essay never draws a justified final position. See `01-band-descriptors/task2-band-descriptors.md` §Band 5 and `05-band-6-to-7/task-response-upgrades.md`.\n\n**Coherence and Cohesion:** Organisation is visible, but progression is not fully logical. Body 1 moves from “ancient Mesopotamia and Egypt” to “Samuel Morse” to “a computer,” but the links between these stages are loose. References such as “that,” “by doing that,” and “it” are sometimes unclear. Band 7 requires flexible reference and clear paragraph progression, as shown in `05-band-6-to-7/cohesion-upgrades.md`.\n\n**Lexical Resource:** Vocabulary is generally adequate, with useful topic terms like “electronic signals,” “binary digits,” “hardware,” and “base-60.” However, word choice is often imprecise: “new logics,” “mathematics is inevitable,” “first ever information,” and “a single hardware.” This is Band 6 lexical behaviour: meaning is mostly clear, but precision and collocation are not controlled. See `01-band-descriptors/task2-band-descriptors.md` §Band 6 and `08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`.\n\n**Grammatical Range & Accuracy:** There is a mix of simple and attempted complex sentences, but complex structures frequently break down. Examples include “Computers consist of a full of small switches,” “so that no physical objects such as people or dove needed,” and “which can do several things in a single hardware.” Some simple sentences are clear, but error-free complex sentences are not frequent. This aligns with Band 5 more than Band 6/7 in `01-band-descriptors/task2-band-descriptors.md`.\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---:|---|---|---|---|\n| 1 | “In this essay, I will discuss how mathematics influenced computer science.” | “This essay argues that mathematics shaped computer science through formal logic, binary representation and algorithmic problem-solving.” | Gives a clear thesis and roadmap. | `09-instructor-tips/06-task2-sentence-frames.md` |\n| 2 | “The graphic on the screen is just a number as well.” | “For this reason, mathematics should be seen as the language that allows computers to store, process and display information.” | Turns the abrupt ending into synthesis. | `05-band-6-to-7/paragraph-structure-band7.md` |\n| 3 | “Humans have always wanted to preserve their thoughts somewhere to communicate.” | “One early influence of mathematics was the attempt to encode information in systematic forms.” | Makes Body 1 relevant to the prompt immediately. | `05-band-6-to-7/paragraph-structure-band7.md` |\n| 4 | “People have built up mathematical rules by defining new logics to solve problems.” | “Over time, mathematicians developed systems of logic that allowed problems to be defined precisely and solved step by step.” | Fixes collocation and clarifies the mechanism. | `05-band-6-to-7/vocabulary-upgrades.md` |\n| 5 | “mathematics is inevitable” | “mathematical reasoning is essential” | More natural academic collocation. | `09-instructor-tips/02-paraphrase-banks-task2.md` |\n| 6 | “the first ever information which only used electronic signals” | “one of the earliest systems for transmitting information through electronic signals” | Corrects word choice and relative-clause control. | `08-vocabulary-grammar/01-grammar-error-correction-bank.md` |\n| 7 | “so that no physical objects such as people or dove needed” | “so messages no longer had to be carried by messengers or carrier pigeons” | Fixes passive grammar and countability. | `08-vocabulary-grammar/01-grammar-error-correction-bank.md` |\n| 8 | “a machine which can do several things in a single hardware” | “a general-purpose machine capable of performing several tasks on one physical device” | Replaces inaccurate “hardware” use with precise technology wording. | `10-task2-topic-banks/topic-03-technology.md` |\n| 9 | “By doing that, it can calculate in binary digits.” | “By combining these on/off states, a computer can perform calculations in binary.” | Makes the reference clear and improves technical precision. | `05-band-6-to-7/cohesion-upgrades.md` |\n\n## Overall band rationale\nThe four criteria average 5.25, which rounds to 5.5 under `01-band-descriptors/scoring-rules.md`. The essay has Band 6-level topic vocabulary, but incomplete development, weak cohesion and frequent grammar errors hold the overall score below 6.0.\n\n## CONVERGENCE: REFINING\nThe supplied prior chain is empty or effectively non-substantive, so the convergence rules require `REFINING`. A future iteration could still sharpen the feedback if the original prompt or the missing conclusion is recovered.",
+  "structural_feedback": "The essay addresses the general topic, but it does not fully answer the likely prompt because it never explains whether mathematics was the main driver of the computer revolution. The introduction says, “I will discuss how mathematics influenced computer science,” but it does not give a developed position or clear plan. Body 1 drifts from Mesopotamia to Morse code to computers without making the mathematical link explicit. Body 2 is much more relevant because it explains binary representation, but it stops before giving a developed example or conclusion. The single highest-impact fix here is adding one complete PEEL paragraph on binary/algorithms and a two-sentence synthesis conclusion, not upgrading individual words.",
+  "focus_areas": [
+    {
+      "area": "Complete Task 2 structure",
+      "rationale": "Band 7 needs a thesis, developed body paragraphs and a real conclusion",
+      "corpus_drill": [
+        "05-band-6-to-7/task-response-upgrades.md",
+        "05-band-6-to-7/paragraph-structure-band7.md"
+      ]
+    },
+    {
+      "area": "PEEL development",
+      "rationale": "Your claims need mechanism + example + link, not just explanation",
+      "corpus_drill": [
+        "05-band-6-to-7/task-response-upgrades.md",
+        "08-vocabulary-grammar/04-task-response-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Reference and lexical chains",
+      "rationale": "Repeated “people wanted” and vague “that/it” weaken progression",
+      "corpus_drill": [
+        "05-band-6-to-7/cohesion-upgrades.md",
+        "09-instructor-tips/08-cohesion-upgrades-instructor.md"
+      ]
+    },
+    {
+      "area": "Precise technology collocations",
+      "rationale": "Replace “new logics,” “single hardware,” and “first ever information” with natural computing language",
+      "corpus_drill": [
+        "10-task2-topic-banks/topic-03-technology.md",
+        "05-band-6-to-7/vocabulary-upgrades.md"
+      ]
+    },
+    {
+      "area": "Articles, countability and relative clauses",
+      "rationale": "Errors like “a single hardware” and “which only used” block Band 7 grammar",
+      "corpus_drill": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    }
+  ],
+  "whats_working": "You have relevant concrete content: “base-60 for timekeeping,” “Morse code in 1844,” “binary digits,” and “every letter is actually a number.” These are much stronger than generic claims such as “math is important.” Keep these examples, but explain how each one proves that mathematics shaped computing."
+}

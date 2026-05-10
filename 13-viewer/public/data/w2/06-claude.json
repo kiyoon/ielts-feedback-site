@@ -1,0 +1,175 @@
+{
+  "id": "w2/06-claude",
+  "task": "w2",
+  "iteration": 6,
+  "tool": "claude",
+  "generated_at": "2026-05-10T13:16:52Z",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"main parts addressed (though some may be more fully covered than others)\", \"conclusions… may be unclear, unjustified or repetitive\"",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"cohesive devices used to some good effect but… mechanical\"; `05-band-6-to-7/cohesion-upgrades.md` §2",
+      "justification": "Overall progression is logical (intro → offerings → limitations → conclusion) but cohesion is mechanical: \"**For instance**\", \"**In addition**\", \"**However**\", \"**First and foremost**\", \"**Secondly**\", \"**To sum up**\" are all paragraph- or sentence-front discourse markers, which is the textbook Band-6 pattern (`05-band-6-to-7/cohesion-upgrades.md` §2). Reference is also weak: \"**they**\" in \"Although **they** can provide\" / \"since **they** do have limitations\" is ambiguous (resources? science? scientists?). Band 7 wants flexible reference + substitution (`05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 1)."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"rather restricted range or a lack of precision in word choice\"",
+      "justification": "Some genuine science vocabulary (\"scientific breakthroughs\", \"reproducibility\", \"cost-effective\") sits alongside imprecise or wrong collocation: \"**contribute to the issue**\" reads as *worsen the issue* (`05-band-6-to-7/vocabulary-upgrades.md`); \"**natural energy**\" is not an established term — the topic word is **renewable energy** (`10-task2-topic-banks/topic-02-environment.md` §C1); \"**use energy without concern**\" is vague. Korean L1 transfer also shows in \"**every research**\" (research is uncountable) and the redundant \"**reasonably high enough**\" — `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2/§K."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"complex structures not marked by the same level of accuracy\"",
+      "justification": "You attempt complex structures — concession (\"Although they can provide…\"), defining relative (\"which can lead people to use energy\"), and noun complement (\"the chance of finding alternative ways\") — but accuracy on these complex sentences is shaky: \"whenever they need\" lacks an object (`whenever they need them`); \"**human errors could happen in every research**\" mishandles uncountability and \"every\"; the comma splices in \"**nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever**\" and the closing sentence violate `05-band-6-to-7/grammar-upgrades.md` §12. Per the descriptor, \"complex structures are not marked by the same level of accuracy\" — squarely Band 6."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "All four criteria best-fit Band 6 — the essay is on-topic, organised, and largely intelligible, but coverage is uneven, cohesion is mechanical, complex sentences misfire, and lexical precision is patchy. With 4×6 = 6.00, the rounded overall is 6.0 per `01-band-descriptors/scoring-rules.md` §3.",
+  "what_changed": "The prior was already directionally correct — same band scores, same diagnosis — so most changes are sharpening rather than recalibration. I have (a) tightened the structural diagnosis to name exactly what is missing in Body 1 (a *second* science-driven mechanism) and the conclusion (it has no synthesis at all), (b) flagged two L1-Korean errors the prior missed — \"every research\" (uncountable noun + \"every\") and \"reasonably high enough\" (redundant degree marker) — citing `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2, (c) replaced the prior's over-long Rewrite #2 thesis with a tighter, deployable band-7 thesis from the instructor frames, and (d) added one concession pattern (`09-instructor-tips/06-task2-sentence-frames.md` §6 \"Convenient as…\") which is a single high-leverage GRA showcase the candidate currently has zero of.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "To sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.",
+      "improved": "On balance, although natural science is indispensable for slowing resource depletion — through cleaner energy and material innovation — it must be paired with policy reform and behavioural change, since technical solutions alone cannot remove the human and ecological limits within which they operate.",
+      "reason": "Replaces a 1-sentence repeat-conclusion with a Band-7 synthesis that *weighs* the two sides of the prompt and removes the comma splice.",
+      "citations": [
+        "05-band-6-to-7/task-response-upgrades.md",
+        "09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "developing a sustainable energy system can contribute to the issue",
+      "improved": "developing renewable-energy systems can directly mitigate resource depletion by reducing reliance on finite fossil fuels",
+      "reason": "Fixes \"contribute to\" (which means *worsen*); adds the standard topic verb *mitigate* and the accurate term *renewable*.",
+      "citations": [
+        "10-task2-topic-banks/topic-02-environment.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "First and foremost, human errors could happen in every research, and natural science is not an exception.",
+      "improved": "Granted, no scientific endeavour is immune to human error: even tightly controlled studies depend on researchers' interpretation of ambiguous data, as recent reproducibility crises in psychology and biomedicine have shown.",
+      "reason": "Fixes uncountable \"research\" + \"every\"; replaces mechanical \"First and foremost\" with a concession opener; adds a concrete example.",
+      "citations": [
+        "09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "09-instructor-tips/06-task2-sentence-frames.md",
+        "10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "Although they can provide several benefits, it is clear that the amount of resources is limited.",
+      "improved": "Although these resources have underwritten economic growth for centuries, their supply is finite and increasingly stressed by global demand.",
+      "reason": "Resolves ambiguous \"they\"; sharpens the collocation (*underwrite economic growth*, *finite supply*); upgrades \"the amount of resources is limited\" to a Band-7 noun phrase.",
+      "citations": [
+        "05-band-6-to-7/grammar-upgrades.md",
+        "08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 5,
+      "original": "it is of note that the chance of finding alternative ways of generating energy is reasonably high enough",
+      "improved": "the prospect of discovering viable alternative energy sources remains realistic, given the pace of recent breakthroughs in fusion and storage technology",
+      "reason": "Removes the awkward \"it is of note that\" calque and the redundant \"reasonably high enough\"; introduces precise topic vocabulary.",
+      "citations": [
+        "09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 6,
+      "original": "People did not fully understand when it comes to natural energy, because of the complexity of how nature works.",
+      "improved": "Scientists still do not fully understand how to harness renewable energy at scale, largely because the underlying natural systems are extraordinarily complex.",
+      "reason": "Fixes broken structure (\"understand when it comes to\"); corrects tense; replaces \"natural energy\" with the accepted term.",
+      "citations": [
+        "10-task2-topic-banks/topic-17-science-and-research.md",
+        "05-band-6-to-7/grammar-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 7,
+      "original": "However, it is naïve to believe that natural science could solve everything since they do have limitations.",
+      "improved": "However, **beneficial as scientific progress may be**, it would be naïve to suppose that it can resolve every dimension of resource depletion, given its inherent practical limits.",
+      "reason": "Fixes singular/plural agreement (*natural science… they*); deploys the high-leverage *Adj + as + S + V* concession showcase the candidate currently lacks.",
+      "citations": [
+        "09-instructor-tips/06-task2-sentence-frames.md",
+        "05-band-6-to-7/grammar-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever",
+      "improved": "nature is simply too vast for any one discipline to map fully; in other words, our scientific understanding of natural systems will always remain partial",
+      "reason": "Eliminates the comma splice; fixes the awkward \"fully comprehend nature ever\" word order.",
+      "citations": [
+        "05-band-6-to-7/grammar-upgrades.md",
+        "09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "people have been using natural resources whenever they need",
+      "improved": "modern societies have drawn on natural resources whenever demand has arisen",
+      "reason": "Supplies the missing object (*them*); replaces vague \"people\" with academic register; introduces *draw on* collocation.",
+      "citations": [
+        "05-band-6-to-7/vocabulary-upgrades.md",
+        "09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 10,
+      "original": "In this essay, I will discuss what natural science can offer to tackle the resource depletion issue and the limitations in solving the problem.",
+      "improved": "This essay will argue that, while natural science offers powerful technical levers — most notably in clean energy and resource efficiency — its capacity to resolve depletion is bounded by human error, ecological complexity, and the cost of large-scale deployment.",
+      "reason": "Replaces the band-6 \"I will discuss\" outline with a band-7 thesis that *commits* and *previews two arguments*.",
+      "citations": [
+        "09-instructor-tips/06-task2-sentence-frames.md",
+        "05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "The prior chain delivered to me was empty, so the early-iteration rule mandates REFINING regardless of confidence. The bands and headline diagnosis already feel stable, but specific upgrades remain available: future iterations can prune any lower-leverage rewrite (e.g. #9), add at least one inversion/cleft showcase if the candidate is ready, and decide whether to call out the position-drift more bluntly as a TR-cap rather than a CC issue.",
+  "raw_markdown": "# Iteration 06 — claude\n\n_Generated 2026-05-10T10:18:01Z. Prior chain depth: up to 3. Manifest: 462 files._\n\n---I have enough corpus context to refine the prior feedback. The prior is solid but I can sharpen the structural diagnosis (Body 1 has only one mechanism; conclusion is barely a synthesis), add Korean L1-specific error flags (\"every research\", \"high enough\"), and offer rewrites that swap one weak rewrite (the over-long thesis) for tighter band-7 moves drawn from the instructor frames and the science topic bank.\n\n---\n\n## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response                  | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"main parts addressed (though some may be more fully covered than others)\", \"conclusions… may be unclear, unjustified or repetitive\" |\n| Coherence and Cohesion         | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"cohesive devices used to some good effect but… mechanical\"; `05-band-6-to-7/cohesion-upgrades.md` §2 |\n| Lexical Resource               | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"rather restricted range or a lack of precision in word choice\" |\n| Grammatical Range & Accuracy   | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"complex structures not marked by the same level of accuracy\" |\n| **Overall**                    | 6.0 | rounded per `01-band-descriptors/scoring-rules.md` §3 (4×6 = 6.00) |\n\n## What changed from prior feedback\nThe prior was already directionally correct — same band scores, same diagnosis — so most changes are sharpening rather than recalibration. I have (a) tightened the structural diagnosis to name exactly what is missing in Body 1 (a *second* science-driven mechanism) and the conclusion (it has no synthesis at all), (b) flagged two L1-Korean errors the prior missed — \"every research\" (uncountable noun + \"every\") and \"reasonably high enough\" (redundant degree marker) — citing `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2, (c) replaced the prior's over-long Rewrite #2 thesis with a tighter, deployable band-7 thesis from the instructor frames, and (d) added one concession pattern (`09-instructor-tips/06-task2-sentence-frames.md` §6 \"Convenient as…\") which is a single high-leverage GRA showcase the candidate currently has zero of.\n\n## Structural feedback\nThe essay addresses both parts of the prompt (what science offers + limitations) but coverage is **uneven**: the \"offers\" paragraph contains essentially **one** mechanism (sustainable energy) restated three ways, while the \"limitations\" paragraph has two distinct points (human error + nature's vastness). For Band 7, Body 1 must contribute a second, genuinely different scientific lever — e.g. material-recycling/circular-economy biotech, or efficiency gains via better measurement (`10-task2-topic-banks/topic-02-environment.md` §FOR #9; `10-task2-topic-banks/topic-17-science-and-research.md` §FOR #2). The position is also visible but **drifts** — the intro promises a discussion, Body 2 reads as quietly anti-science (\"naïve to believe… could solve everything\"), and the one-sentence conclusion just restates the intro without weighing the two sides. Per `05-band-6-to-7/task-response-upgrades.md` §9, a Band-7 conclusion **synthesises** (\"science is necessary but not sufficient — it must be paired with X\"); yours is currently only ~25 words and contains a comma splice. The single highest-impact fix is **rewriting the conclusion as a 3–4 sentence synthesis and adding one concrete scientific example** (e.g. mRNA vaccine platforms from `10-task2-topic-banks/topic-17-science-and-research.md` §Sample para 1) to Body 1 — this alone will move TR closer to 7 more than any of the lexical swaps below.\n\n## Focus areas\n- **PEEL paragraph development with concrete examples** — both bodies state claims but never name a real-world case (a country, an institution, a technology). Drill: `05-band-6-to-7/paragraph-structure-band7.md`, `05-band-6-to-7/task-response-upgrades.md` §6.\n- **Pronoun reference (singular *natural science* + *they*)** — \"they do have limitations / they value reproducibility\" treats a singular concept as plural; this happens 4× in the essay. Drill: `05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 1, `08-vocabulary-grammar/03-cohesion-error-correction-bank.md`.\n- **Comma splices around *in other words* / final sentence** — two clear splices (\"nature is simply too vast to research, in other words, it is impossible…\" and \"has the potential to solve global challenges, it is not possible…\"). Drill: `05-band-6-to-7/grammar-upgrades.md` §12, `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §I1.\n- **Uncountable-noun handling (*research*, *energy*)** — \"every research\", \"natural energy\" are L1-Korean L1 transfer patterns. Drill: `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2 + §K.\n- **Concession-and-pivot frames for discussion essays** — currently you signal the limitations with the blunt \"However\" only; band-7 writing layers in *Granted… nonetheless / Reasonable as this view sounds…*. Drill: `09-instructor-tips/06-task2-sentence-frames.md` §6, `10-task2-topic-banks/topic-17-science-and-research.md` §Concession patterns.\n- **Cohesion beyond \"First and foremost / Secondly\"** — both linkers in Body 2 are mechanical paragraph-fronts. Drill: `05-band-6-to-7/cohesion-upgrades.md` §8, `09-instructor-tips/08-cohesion-upgrades-instructor.md`.\n\n## What's working\nThe four-paragraph shape is appropriate for a discussion task and the position direction (\"science can play a crucial role… but is naïve to believe it could solve everything\") is balanced and on-topic. \"**Scientific breakthroughs**\", \"**reproducibility**\", and \"**cost-effective**\" are genuinely Band-7-range topic words — keep deploying domain vocabulary like this rather than retreating to \"good/important\". The hedging modal \"**could**\" in \"scientific breakthroughs could happen\" is the right register for academic argument and should be preserved.\n\n## Per-criterion justification\n**Task Response (6.0):** Both prompt parts are addressed but with markedly uneven depth — Body 1 essentially offers one lever (\"**developing a sustainable energy system**\") restated, while Body 2 develops two limitations. The conclusion (\"**although natural science has the potential… it is not possible to solve every problem**\") just paraphrases the intro and contains no synthesis. This matches Band 6's \"conclusions… may be unclear, unjustified or repetitive\" exactly (`01-band-descriptors/task2-band-descriptors.md` §Band 6). To reach Band 7, Body 1 needs a second mechanism with a concrete example, and the conclusion needs to weigh the offer against the limitation.\n\n**Coherence and Cohesion (6.0):** Overall progression is logical (intro → offerings → limitations → conclusion) but cohesion is mechanical: \"**For instance**\", \"**In addition**\", \"**However**\", \"**First and foremost**\", \"**Secondly**\", \"**To sum up**\" are all paragraph- or sentence-front discourse markers, which is the textbook Band-6 pattern (`05-band-6-to-7/cohesion-upgrades.md` §2). Reference is also weak: \"**they**\" in \"Although **they** can provide\" / \"since **they** do have limitations\" is ambiguous (resources? science? scientists?). Band 7 wants flexible reference + substitution (`05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 1).\n\n**Lexical Resource (6.0):** Some genuine science vocabulary (\"scientific breakthroughs\", \"reproducibility\", \"cost-effective\") sits alongside imprecise or wrong collocation: \"**contribute to the issue**\" reads as *worsen the issue* (`05-band-6-to-7/vocabulary-upgrades.md`); \"**natural energy**\" is not an established term — the topic word is **renewable energy** (`10-task2-topic-banks/topic-02-environment.md` §C1); \"**use energy without concern**\" is vague. Korean L1 transfer also shows in \"**every research**\" (research is uncountable) and the redundant \"**reasonably high enough**\" — `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2/§K.\n\n**Grammatical Range & Accuracy (6.0):** You attempt complex structures — concession (\"Although they can provide…\"), defining relative (\"which can lead people to use energy\"), and noun complement (\"the chance of finding alternative ways\") — but accuracy on these complex sentences is shaky: \"whenever they need\" lacks an object (`whenever they need them`); \"**human errors could happen in every research**\" mishandles uncountability and \"every\"; the comma splices in \"**nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever**\" and the closing sentence violate `05-band-6-to-7/grammar-upgrades.md` §12. Per the descriptor, \"complex structures are not marked by the same level of accuracy\" — squarely Band 6.\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | \"To sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.\" | \"On balance, although natural science is indispensable for slowing resource depletion — through cleaner energy and material innovation — it must be paired with policy reform and behavioural change, since technical solutions alone cannot remove the human and ecological limits within which they operate.\" | Replaces a 1-sentence repeat-conclusion with a Band-7 synthesis that *weighs* the two sides of the prompt and removes the comma splice. | `05-band-6-to-7/task-response-upgrades.md` §9; `09-instructor-tips/06-task2-sentence-frames.md` §8 |\n| 2 | \"developing a sustainable energy system can contribute to the issue\" | \"developing renewable-energy systems can directly mitigate resource depletion by reducing reliance on finite fossil fuels\" | Fixes \"contribute to\" (which means *worsen*); adds the standard topic verb *mitigate* and the accurate term *renewable*. | `10-task2-topic-banks/topic-02-environment.md` §C1 (mitigate, renewable energy, fossil fuels) |\n| 3 | \"First and foremost, human errors could happen in every research, and natural science is not an exception.\" | \"Granted, no scientific endeavour is immune to human error: even tightly controlled studies depend on researchers' interpretation of ambiguous data, as recent reproducibility crises in psychology and biomedicine have shown.\" | Fixes uncountable \"research\" + \"every\"; replaces mechanical \"First and foremost\" with a concession opener; adds a concrete example. | `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2; `09-instructor-tips/06-task2-sentence-frames.md` §6; `10-task2-topic-banks/topic-17-science-and-research.md` §AGAINST #5 |\n| 4 | \"Although they can provide several benefits, it is clear that the amount of resources is limited.\" | \"Although these resources have underwritten economic growth for centuries, their supply is finite and increasingly stressed by global demand.\" | Resolves ambiguous \"they\"; sharpens the collocation (*underwrite economic growth*, *finite supply*); upgrades \"the amount of resources is limited\" to a Band-7 noun phrase. | `05-band-6-to-7/grammar-upgrades.md` §5; `08-vocabulary-grammar/03-cohesion-error-correction-bank.md` |\n| 5 | \"it is of note that the chance of finding alternative ways of generating energy is reasonably high enough\" | \"the prospect of discovering viable alternative energy sources remains realistic, given the pace of recent breakthroughs in fusion and storage technology\" | Removes the awkward \"it is of note that\" calque and the redundant \"reasonably high enough\"; introduces precise topic vocabulary. | `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §K (Korean discourse-marker calques); `10-task2-topic-banks/topic-17-science-and-research.md` §C1 |\n| 6 | \"People did not fully understand when it comes to natural energy, because of the complexity of how nature works.\" | \"Scientists still do not fully understand how to harness renewable energy at scale, largely because the underlying natural systems are extraordinarily complex.\" | Fixes broken structure (\"understand when it comes to\"); corrects tense; replaces \"natural energy\" with the accepted term. | `10-task2-topic-banks/topic-17-science-and-research.md` §C1; `05-band-6-to-7/grammar-upgrades.md` §1 |\n| 7 | \"However, it is naïve to believe that natural science could solve everything since they do have limitations.\" | \"However, **beneficial as scientific progress may be**, it would be naïve to suppose that it can resolve every dimension of resource depletion, given its inherent practical limits.\" | Fixes singular/plural agreement (*natural science… they*); deploys the high-leverage *Adj + as + S + V* concession showcase the candidate currently lacks. | `09-instructor-tips/06-task2-sentence-frames.md` §6 (\"Convenient as X is\" pattern); `05-band-6-to-7/grammar-upgrades.md` §9 |\n| 8 | \"nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever\" | \"nature is simply too vast for any one discipline to map fully; in other words, our scientific understanding of natural systems will always remain partial\" | Eliminates the comma splice; fixes the awkward \"fully comprehend nature ever\" word order. | `05-band-6-to-7/grammar-upgrades.md` §12 (semicolon for related independent clauses); `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §I1 |\n| 9 | \"people have been using natural resources whenever they need\" | \"modern societies have drawn on natural resources whenever demand has arisen\" | Supplies the missing object (*them*); replaces vague \"people\" with academic register; introduces *draw on* collocation. | `05-band-6-to-7/vocabulary-upgrades.md`; `09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §M (people → individuals/societies) |\n| 10 | \"In this essay, I will discuss what natural science can offer to tackle the resource depletion issue and the limitations in solving the problem.\" | \"This essay will argue that, while natural science offers powerful technical levers — most notably in clean energy and resource efficiency — its capacity to resolve depletion is bounded by human error, ecological complexity, and the cost of large-scale deployment.\" | Replaces the band-6 \"I will discuss\" outline with a band-7 thesis that *commits* and *previews two arguments*. | `09-instructor-tips/06-task2-sentence-frames.md` §2; `05-band-6-to-7/task-response-upgrades.md` §7 |\n\n## Overall band rationale\nAll four criteria best-fit Band 6 — the essay is on-topic, organised, and largely intelligible, but coverage is uneven, cohesion is mechanical, complex sentences misfire, and lexical precision is patchy. With 4×6 = 6.00, the rounded overall is 6.0 per `01-band-descriptors/scoring-rules.md` §3.\n\n## CONVERGENCE: REFINING\nThe prior chain delivered to me was empty, so the early-iteration rule mandates REFINING regardless of confidence. The bands and headline diagnosis already feel stable, but specific upgrades remain available: future iterations can prune any lower-leverage rewrite (e.g. #9), add at least one inversion/cleft showcase if the candidate is ready, and decide whether to call out the position-drift more bluntly as a TR-cap rather than a CC issue.\n",
+  "structural_feedback": "The essay addresses both parts of the prompt (what science offers + limitations) but coverage is **uneven**: the \"offers\" paragraph contains essentially **one** mechanism (sustainable energy) restated three ways, while the \"limitations\" paragraph has two distinct points (human error + nature's vastness). For Band 7, Body 1 must contribute a second, genuinely different scientific lever — e.g. material-recycling/circular-economy biotech, or efficiency gains via better measurement (`10-task2-topic-banks/topic-02-environment.md` §FOR #9; `10-task2-topic-banks/topic-17-science-and-research.md` §FOR #2). The position is also visible but **drifts** — the intro promises a discussion, Body 2 reads as quietly anti-science (\"naïve to believe… could solve everything\"), and the one-sentence conclusion just restates the intro without weighing the two sides. Per `05-band-6-to-7/task-response-upgrades.md` §9, a Band-7 conclusion **synthesises** (\"science is necessary but not sufficient — it must be paired with X\"); yours is currently only ~25 words and contains a comma splice. The single highest-impact fix is **rewriting the conclusion as a 3–4 sentence synthesis and adding one concrete scientific example** (e.g. mRNA vaccine platforms from `10-task2-topic-banks/topic-17-science-and-research.md` §Sample para 1) to Body 1 — this alone will move TR closer to 7 more than any of the lexical swaps below.",
+  "focus_areas": [
+    {
+      "area": "PEEL paragraph development with concrete examples",
+      "rationale": "both bodies state claims but never name a real-world case (a country, an institution, a technology)",
+      "corpus_drill": [
+        "05-band-6-to-7/paragraph-structure-band7.md",
+        "05-band-6-to-7/task-response-upgrades.md"
+      ]
+    },
+    {
+      "area": "Concession-and-pivot frames for discussion essays",
+      "rationale": "currently you signal the limitations with the blunt \"However\" only; band-7 writing layers in *Granted… nonetheless / Reasonable as this view sounds…*",
+      "corpus_drill": [
+        "09-instructor-tips/06-task2-sentence-frames.md",
+        "10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Cohesion beyond \"First and foremost / Secondly\"",
+      "rationale": "both linkers in Body 2 are mechanical paragraph-fronts",
+      "corpus_drill": [
+        "05-band-6-to-7/cohesion-upgrades.md",
+        "09-instructor-tips/08-cohesion-upgrades-instructor.md"
+      ]
+    }
+  ],
+  "whats_working": "The four-paragraph shape is appropriate for a discussion task and the position direction (\"science can play a crucial role… but is naïve to believe it could solve everything\") is balanced and on-topic. \"**Scientific breakthroughs**\", \"**reproducibility**\", and \"**cost-effective**\" are genuinely Band-7-range topic words — keep deploying domain vocabulary like this rather than retreating to \"good/important\". The hedging modal \"**could**\" in \"scientific breakthroughs could happen\" is the right register for academic argument and should be preserved."
+}

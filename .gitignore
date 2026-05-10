@@ -5,6 +5,7 @@
 # Logs
 logs
 *.log
+*.nohup.out
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -163,6 +164,26 @@ dist
 .claude/
 .claude-debug.log
 
+### Browser automation artefacts ###
+.playwright-mcp/
+playwright-report/
+test-results/
+blob-report/
+
+### Screenshot inspection artefacts ###
+# Keep committed visual assets in source directories possible, but ignore
+# one-off screenshots dropped at the repo root during UI inspection.
+screenshots/
+screenshot/
+*screenshot*.png
+*screenshot*.jpg
+*screenshot*.jpeg
+*screenshot*.webp
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+
 ### 12-benchmark — runtime artefacts ###
 # The actual results (results/*.md), analysis (analysis/*.md), essays,
 # prompts, and scripts ARE the experiment record and SHOULD be tracked.
@@ -174,6 +195,7 @@ dist
 ### 13-viewer — viewer build & runtime artefacts ###
 13-viewer/dist/
 13-viewer/node_modules/
+13-viewer/package-lock.json
 13-viewer/extract/extract.log
 
 # Reviewer-process ephemera. Keep the actual review outputs
@@ -182,10 +204,15 @@ dist
 13-viewer/reviews/round-*.log
 13-viewer/reviews/round-*.nohup.out
 13-viewer/reviews/round-*.pid
+13-viewer/reviews/*.nohup.out
 
 # Vite serves the parent repo through a /corpus middleware in dev.
 # A leftover symlink at public/corpus would point outside the repo.
 13-viewer/public/corpus
+
+### 14-real-essays — source corpus ###
+# Raw .docx files and parsed .md/.json outputs are project data and
+# should stay visible to git.
 
 ### Stray test files we might create in /tmp but accidentally commit ###
 codex-test-out.txt
@@ -193,3 +220,6 @@ viewer-*.log
 viewer-*.html
 viewer-*.json
 
+
+*storybook.log
+storybook-static/

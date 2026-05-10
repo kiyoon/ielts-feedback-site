@@ -1,0 +1,36 @@
+{
+  "id": "w2/10-claude",
+  "task": "w2",
+  "iteration": 10,
+  "tool": "claude",
+  "generated_at": "2026-05-10T10:37:36Z",
+  "scores": {
+    "task_response": {
+      "band": 0.0,
+      "descriptor_evidence": "",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 0.0,
+      "descriptor_evidence": "",
+      "justification": ""
+    },
+    "lexical": {
+      "band": 0.0,
+      "descriptor_evidence": "",
+      "justification": ""
+    },
+    "grammar": {
+      "band": 0.0,
+      "descriptor_evidence": "",
+      "justification": ""
+    }
+  },
+  "overall": 0.0,
+  "overall_rationale": "",
+  "what_changed": "",
+  "rewrites": [],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Iteration 10 — claude\n\n_Generated 2026-05-10T10:29:30Z. Prior chain depth: up to 3. Manifest: 462 files._\n\n---## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response / Achievement | 6.0 | 01-band-descriptors/task2-band-descriptors.md §Band 6 — \"addresses the task only partially…format may be inappropriate in places\" |\n| Coherence and Cohesion       | 6.0 | 01-band-descriptors/task2-band-descriptors.md §Band 6 — \"arranges information…coherently…use of cohesive devices…may be faulty\" |\n| Lexical Resource             | 6.0 | 01-band-descriptors/task2-band-descriptors.md §Band 6 — \"adequate range…some inaccuracy…makes some errors in spelling and/or word formation\" |\n| Grammatical Range & Accuracy | 6.0 | 01-band-descriptors/task2-band-descriptors.md §Band 6 — \"mix of simple and complex…some errors…rarely reduce communication\" |\n| **Overall**                  | 6.0 | rounded per `01-band-descriptors/scoring-rules.md` (4×6.0 → 6.0) |\n"
+}

@@ -13,6 +13,7 @@ export function RewriteCard({
   active,
   unmatched,
   nestedIn,
+  overlapsWith,
   onActivate,
   onCiteClick,
 }: {
@@ -20,11 +21,14 @@ export function RewriteCard({
   active?: boolean;
   unmatched?: boolean;
   nestedIn?: number;       // id of the larger rewrite whose span covers this one
+  overlapsWith?: number[]; // ids of located rewrites this range partially crosses
   onActivate: () => void;
   onCiteClick?: (path: string) => void;
 }) {
   const tok = CATEGORY_TOKEN[rewrite.category];
   const ref = useRef<HTMLDivElement>(null);
+  const hasOverlap = overlapsWith !== undefined && overlapsWith.length > 0;
+  const overlapLabel = overlapsWith?.join(", #") ?? "";
 
   useEffect(() => {
     if (active && ref.current) {
@@ -51,7 +55,7 @@ export function RewriteCard({
         "group block w-full text-left rounded-lg border bg-card p-3 shadow-sm transition-shadow hover:shadow-md focus-visible:outline-none cursor-pointer",
         active && "ring-2 ring-ring shadow-md animate-pulse-once",
         unmatched && "opacity-70 border-dashed",
-        nestedIn !== undefined && "border-dashed",
+        (nestedIn !== undefined || hasOverlap) && "border-dashed",
       )}
     >
       <div className="flex items-start justify-between gap-2">
@@ -76,6 +80,12 @@ export function RewriteCard({
             <span className="inline-flex items-center gap-0.5 text-muted-foreground">
               <Layers className="h-3 w-3" />
               covered by #{nestedIn}
+            </span>
+          )}
+          {!unmatched && hasOverlap && (
+            <span className="inline-flex items-center gap-0.5 text-[hsl(var(--warning))]">
+              <Layers className="h-3 w-3" />
+              overlaps #{overlapLabel}
             </span>
           )}
           <span>#{rewrite.id}</span>

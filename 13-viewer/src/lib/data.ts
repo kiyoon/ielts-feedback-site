@@ -25,7 +25,7 @@ function isFeedback(p: unknown): p is FeedbackPayload {
 
 export async function loadIndex(): Promise<IndexPayload> {
   const r = await fetch("/data/index.json");
-  if (!r.ok) throw new Error(`index.json missing — run \`npm run extract\``);
+  if (!r.ok) throw new Error(`index.json missing — run \`bun run extract\``);
   const json: unknown = await r.json();
   if (!isIndex(json)) throw new Error("index.json shape is invalid");
   return json;

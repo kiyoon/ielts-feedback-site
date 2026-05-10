@@ -1,12 +1,20 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { EssayDoc, FeedbackPayload, Rewrite } from "@/types";
-import { CATEGORY_SHORT, CATEGORY_TOKEN } from "@/types";
+import { CATEGORY_SHORT, CATEGORY_TOKEN, isAdditionRewrite } from "@/types";
 import { buildSpans, segmentize } from "@/lib/highlight";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { ArrowRight, Search } from "lucide-react";
+import { ArrowRight, Layers, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+
+interface ChildMarker {
+  id: number;
+  start: number; // absolute essay position
+  end: number;
+  rewrite: Rewrite;
+  overlapIds: number[];
+}
 
 export function EssayPane({
   essay,
@@ -17,33 +25,80 @@ export function EssayPane({
   onLocationReport,
   promptOpen,
   setPromptOpen,
+  onSetLocationFilter,
 }: {
   essay: EssayDoc;
   feedback: FeedbackPayload;
   activeRewriteId: number | null;
   onMarkClick: (rw: Rewrite) => void;
   scrollKey: number;
-  // Reports both truly-unmatched rewrites (`original` not in essay at all)
-  // and nested rewrites (`original` is in the essay but lives inside another
-  // rewrite's claim). Used by FeedbackPane to badge cards appropriately.
-  onLocationReport: (info: { unmatched: number[]; nested: Record<number, number> }) => void;
+  onLocationReport: (info: {
+    unmatched: number[];
+    nested: Record<number, number>;
+    overlaps: Record<number, number[]>;
+  }) => void;
   promptOpen: boolean;
   setPromptOpen: (b: boolean) => void;
+  onSetLocationFilter: (f: "unmatched" | "nested" | "overlap" | null) => void;
 }) {
-  const { spans, unmatched, nested } = useMemo(
-    () => buildSpans(essay.text, feedback.rewrites),
-    [essay.text, feedback.rewrites],
+  // Rewrites with `original` like "(missing thesis)" or "(missing conclusion)"
+  // aren't substring corrections — they're "add this" suggestions. Exclude
+  // them from the substring search so they don't pollute the unmatched count.
+  // FeedbackPane renders them as a dedicated "Suggested additions" card.
+  const correctionRewrites = useMemo(
+    () => feedback.rewrites.filter((r) => !isAdditionRewrite(r)),
+    [feedback.rewrites],
+  );
+  const { spans, unmatched, nested, overlaps } = useMemo(
+    () => buildSpans(essay.text, correctionRewrites),
+    [essay.text, correctionRewrites],
   );
   const segments = useMemo(() => segmentize(essay.text, spans), [essay.text, spans]);
   const rwById = useMemo(
     () => new Map(feedback.rewrites.map((r) => [r.id, r])),
     [feedback.rewrites],
   );
+  // For each parent rewrite, the list of nested children (with their absolute
+  // positions in the essay). The mark renderer uses these to (a) show a "+N"
+  // badge on the parent, and (b) render an inline marker inside the parent's
+  // text at the child's exact position so the nesting is visible.
+  const childrenByParent = useMemo(() => {
+    const m: Record<number, ChildMarker[]> = {};
+    for (const [childStr, info] of Object.entries(nested)) {
+      const childId = Number(childStr);
+      const childRw = feedback.rewrites.find((r) => r.id === childId);
+      if (!childRw) continue;
+      if (!m[info.parentId]) m[info.parentId] = [];
+      m[info.parentId].push({
+        id: childId,
+        start: info.start,
+        end: info.end,
+        rewrite: childRw,
+        overlapIds: overlaps[childId]?.withIds ?? [],
+      });
+    }
+    for (const k of Object.keys(m)) m[Number(k)].sort((a, b) => a.start - b.start);
+    return m;
+  }, [nested, overlaps, feedback.rewrites]);
   const containerRef = useRef<HTMLDivElement>(null);
+  const articleRef = useRef<HTMLElement>(null);
+
+  // App expects nested as Record<childId, parentId>; flatten our richer
+  // NestedInfo down to just parent ids for the cross-pane callback.
+  const nestedParentMap = useMemo(() => {
+    const out: Record<number, number> = {};
+    for (const [k, v] of Object.entries(nested)) out[Number(k)] = v.parentId;
+    return out;
+  }, [nested]);
+  const overlapMap = useMemo(() => {
+    const out: Record<number, number[]> = {};
+    for (const [k, v] of Object.entries(overlaps)) out[Number(k)] = v.withIds;
+    return out;
+  }, [overlaps]);
 
   useEffect(() => {
-    onLocationReport({ unmatched, nested });
-  }, [unmatched, nested, onLocationReport]);
+    onLocationReport({ unmatched, nested: nestedParentMap, overlaps: overlapMap });
+  }, [unmatched, nestedParentMap, overlapMap, onLocationReport]);
 
   // Scroll the active mark into view, but DO NOT call .focus(). If the active
   // rewrite is *nested* inside another, fall back to scrolling the containing
@@ -53,16 +108,95 @@ export function EssayPane({
     let target = `[data-rewrite-id="${activeRewriteId}"]`;
     let node = containerRef.current?.querySelector(target) as HTMLElement | null;
     if (!node && nested[activeRewriteId] !== undefined) {
-      const parent = nested[activeRewriteId];
+      const parent = nested[activeRewriteId].parentId;
+      target = `[data-rewrite-id="${parent}"]`;
+      node = containerRef.current?.querySelector(target) as HTMLElement | null;
+    }
+    if (!node && overlaps[activeRewriteId] !== undefined) {
+      const parent = overlaps[activeRewriteId].withIds[0];
       target = `[data-rewrite-id="${parent}"]`;
       node = containerRef.current?.querySelector(target) as HTMLElement | null;
     }
     node?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }, [activeRewriteId, scrollKey, nested]);
+  }, [activeRewriteId, scrollKey, nested, overlaps]);
 
   const nestedCount = Object.keys(nested).length;
-  const located = spans.length;
-  const total = feedback.rewrites.length;
+  const overlapCount = Object.keys(overlaps).length;
+  // "highlighted" counts only PRIMARY spans (full-range located rewrites).
+  // Overlap-ghost spans are partial visible fragments of overlap rewrites,
+  // already accounted for in overlapCount — skip them so the header isn't
+  // double-counting.
+  const located = spans.filter((s) => s.kind !== "overlap-ghost").length;
+  // Header shows N of (corrections only). Additions are reported separately.
+  const total = correctionRewrites.length;
+
+  // For deep nesting (A⊃B⊃C), the gutter bracket on A should reflect that
+  // 2 things sit inside its region (B + C), not just the 1 direct child.
+  // Walk the hierarchy to count all descendants under each parent id.
+  const descendantsByParent = useMemo(() => {
+    const out: Record<number, number> = {};
+    const walk = (id: number): number => {
+      if (out[id] !== undefined) return out[id];
+      const direct = childrenByParent[id] ?? [];
+      let total = direct.length;
+      for (const c of direct) total += walk(c.id);
+      out[id] = total;
+      return total;
+    };
+    for (const k of Object.keys(childrenByParent)) walk(Number(k));
+    return out;
+  }, [childrenByParent]);
+
+  // After every render, measure each "parent-of-nested" mark to position a
+  // right-margin "]" bracket aligned with its vertical range. Re-runs on
+  // window resize and content change.
+  type GutterMarker = {
+    rewriteId: number;
+    top: number;
+    height: number;
+    childCount: number;
+    category: Rewrite["category"];
+  };
+  const [gutterMarkers, setGutterMarkers] = useState<GutterMarker[]>([]);
+
+  useLayoutEffect(() => {
+    const measure = () => {
+      const article = articleRef.current;
+      if (!article) return;
+      const articleRect = article.getBoundingClientRect();
+      // Each parent-shell is the non-interactive container around a region
+      // that has nested children inside. Align the gutter bracket to the
+      // first and last rendered line boxes for that inline range.
+      const parents = article.querySelectorAll<HTMLElement>(".parent-shell");
+      const out: GutterMarker[] = [];
+      parents.forEach((el) => {
+        const id = Number(el.dataset.rewriteId);
+        const cat = el.dataset.cat as Rewrite["category"];
+        const rects = Array.from(el.getClientRects()).filter(
+          (rect) => rect.width > 0 && rect.height > 0,
+        );
+        const firstRect = rects[0];
+        const lastRect = rects[rects.length - 1];
+        if (!firstRect || !lastRect) return;
+        out.push({
+          rewriteId: id,
+          top: firstRect.top - articleRect.top,
+          height: lastRect.bottom - firstRect.top,
+          childCount: descendantsByParent[id] ?? childrenByParent[id]?.length ?? 0,
+          category: cat,
+        });
+      });
+      setGutterMarkers(out);
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (articleRef.current) ro.observe(articleRef.current);
+    window.addEventListener("resize", measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [segments, childrenByParent, descendantsByParent, feedback.rewrites]);
 
   return (
     <Card className="flex flex-col h-full overflow-hidden">
@@ -77,6 +211,11 @@ export function EssayPane({
             {nestedCount > 0 && (
               <Badge variant="outline" className="text-[10px]">
                 +{nestedCount} nested
+              </Badge>
+            )}
+            {overlapCount > 0 && (
+              <Badge variant="warning" className="text-[10px]">
+                {overlapCount} overlap{overlapCount === 1 ? "" : "s"}
               </Badge>
             )}
             {unmatched.length > 0 && (
@@ -102,44 +241,96 @@ export function EssayPane({
                 {essay.prompt}
               </p>
             </details>
-            <article ref={containerRef} className="text-base leading-7 whitespace-pre-wrap">
-              {segments.map((seg) =>
-                seg.span ? (
-                  <MarkSpan
-                    key={`m-${seg.span.rewriteId}-${seg.span.start}`}
-                    text={seg.text}
-                    rewrite={rwById.get(seg.span.rewriteId)!}
-                    active={seg.span.rewriteId === activeRewriteId}
-                    onClick={onMarkClick}
-                  />
-                ) : (
-                  <span key={`p-${seg.text.length}-${seg.text.slice(0, 8)}`}>{seg.text}</span>
-                ),
+            <div className="relative pr-9" ref={containerRef}>
+              <article
+                ref={articleRef}
+                className="text-base leading-7 whitespace-pre-wrap"
+              >
+                {segments.map((seg) =>
+                  seg.span ? (
+                    <MarkSpan
+                      key={`m-${seg.span.rewriteId}-${seg.span.start}`}
+                      text={seg.text}
+                      spanStart={seg.span.start}
+                      rewrite={rwById.get(seg.span.rewriteId)!}
+                      active={seg.span.rewriteId === activeRewriteId}
+                      kind={seg.span.kind ?? "primary"}
+                      nestedChildren={
+                        seg.span.kind === "overlap-ghost"
+                          ? []
+                          : childrenByParent[seg.span.rewriteId] ?? []
+                      }
+                      childrenByParent={childrenByParent}
+                      onClick={onMarkClick}
+                    />
+                  ) : (
+                    <span key={`p-${seg.text.length}-${seg.text.slice(0, 8)}`}>{seg.text}</span>
+                  ),
+                )}
+              </article>
+              {gutterMarkers.length > 0 && (
+                <div className="essay-gutter" aria-hidden="false">
+                  {gutterMarkers.map((g) => {
+                    const rw = rwById.get(g.rewriteId);
+                    return (
+                      <button
+                        key={g.rewriteId}
+                        type="button"
+                        className="gutter-bracket"
+                        data-cat={g.category}
+                        data-active={g.rewriteId === activeRewriteId || undefined}
+                        style={{ top: `${g.top}px`, height: `${g.height}px` }}
+                        onClick={() => rw && onMarkClick(rw)}
+                        aria-label={`Region containing ${g.childCount} nested suggestion${g.childCount === 1 ? "" : "s"}: ${rw?.original ?? ""}. Click to open feedback.`}
+                      >
+                        <span className="gutter-shape" />
+                        <span className="gutter-count">+{g.childCount}</span>
+                      </button>
+                    );
+                  })}
+                </div>
               )}
-            </article>
-            {nestedCount > 0 && (
-              <div className="rounded-md border border-dashed border-foreground/15 bg-muted/40 p-2 text-xs">
-                <div className="font-semibold">
-                  {nestedCount} suggestion{nestedCount === 1 ? " is" : "s are"} nested inside larger highlights
+            </div>
+            {/* The nested-notice card is intentionally NOT rendered here.
+                Nesting now renders fully in-band: the parent's region shows a
+                ] bracket on the right gutter, and the nested child's phrase
+                gets its own inline button at its exact position. The header
+                still shows a compact "+N nested" badge for at-a-glance count.
+                If a future case ever fails to render (e.g. a parent whose
+                bracket can't be measured), we'd surface a notice here. */}
+            {overlapCount > 0 && (
+              <button
+                type="button"
+                onClick={() => onSetLocationFilter("overlap")}
+                className="w-full text-left rounded-md border border-dashed border-[hsl(var(--warning)/0.5)] bg-[hsl(var(--warning)/0.06)] hover:bg-[hsl(var(--warning)/0.12)] p-2 text-xs transition-colors focus-visible:outline-none"
+                aria-label={`Show only the ${overlapCount} overlapping suggestion${overlapCount === 1 ? "" : "s"} in the right pane`}
+              >
+                <div className="flex items-center gap-1 font-semibold">
+                  <Layers className="h-3 w-3" /> {overlapCount} suggestion
+                  {overlapCount === 1 ? "" : "s"} overlap other highlight ranges →
                 </div>
                 <div className="mt-1 text-muted-foreground">
-                  Their phrases really are in your essay, but a longer rewrite has already claimed
-                  the same region. Click them in the right pane to scroll the parent highlight.
+                  Their phrases are present, but their ranges partially cross another suggestion.{" "}
+                  <span className="underline decoration-dotted">Click to filter the right pane to just these</span>.
                 </div>
-              </div>
+              </button>
             )}
             {unmatched.length > 0 && (
-              <div className="rounded-md border border-dashed border-[hsl(var(--warning)/0.5)] bg-[hsl(var(--warning)/0.06)] p-2 text-xs">
+              <button
+                type="button"
+                onClick={() => onSetLocationFilter("unmatched")}
+                className="w-full text-left rounded-md border border-dashed border-[hsl(var(--warning)/0.5)] bg-[hsl(var(--warning)/0.06)] hover:bg-[hsl(var(--warning)/0.12)] p-2 text-xs transition-colors focus-visible:outline-none"
+                aria-label={`Show only the ${unmatched.length} unmatched suggestion${unmatched.length === 1 ? "" : "s"} in the right pane`}
+              >
                 <div className="flex items-center gap-1 font-semibold">
                   <Search className="h-3 w-3" /> {unmatched.length} suggestion
-                  {unmatched.length === 1 ? "" : "s"} could not be located in the essay
+                  {unmatched.length === 1 ? "" : "s"} could not be located in the essay →
                 </div>
                 <div className="mt-1 text-muted-foreground">
-                  The candidate's exact phrase wasn't found. Either the LLM paraphrased before
-                  proposing the rewrite, or the extractor parsed the row incorrectly. Open the
-                  Raw markdown tab to see the original suggestion text.
+                  The candidate's exact phrase wasn't found.{" "}
+                  <span className="underline decoration-dotted">Click to filter the right pane to just these</span>.
                 </div>
-              </div>
+              </button>
             )}
           </div>
         </ScrollArea>
@@ -150,22 +341,128 @@ export function EssayPane({
 
 function MarkSpan({
   text,
+  spanStart,
   rewrite,
   active,
+  kind,
+  nestedChildren,
+  childrenByParent,
   onClick,
 }: {
   text: string;
+  spanStart: number;
   rewrite: Rewrite;
   active: boolean;
+  kind: "primary" | "overlap-ghost";
+  nestedChildren: ChildMarker[];
+  childrenByParent: Record<number, ChildMarker[]>;
   onClick: (rw: Rewrite) => void;
 }) {
+  const isGhost = kind === "overlap-ghost";
+  const overlapping = !isGhost && nestedChildren.length > 0;
+
+  // Overlapping case (this span is the parent of nested children):
+  //   The user said "+1 bracket and the highlight could just be completely
+  //   independent." So we render the parent's text as a NON-INTERACTIVE
+  //   shell — no click, no hover state, no tooltip. Just a positioning
+  //   container so the gutter bracket on the right can measure its rect.
+  //   The bracket on the right gutter is the only way to access the parent
+  //   rewrite. Inside the shell, the nested child buttons are completely
+  //   standalone. No state can leak from child up to parent because the
+  //   parent has no interactive state to leak into.
+  //
+  //   Sub-nesting: when a child has its own descendants (A⊃B⊃C — see
+  //   highlight.ts: tightest renderable container), recurse via
+  //   `childrenByParent[c.id]`. The grandchild renders as a span[role="button"]
+  //   inside its parent span[role="button"] — both are spans, not real
+  //   <button>s, so this is legal HTML.
+  if (overlapping) {
+    const renderRange = (
+      rangeStart: number,
+      rangeEnd: number,
+      kids: ChildMarker[],
+      keyBase: string,
+    ): React.ReactNode[] => {
+      const pieces: React.ReactNode[] = [];
+      let cursor = rangeStart;
+      kids.forEach((c, i) => {
+        const childStart = Math.max(c.start, rangeStart);
+        const childEnd = Math.min(c.end, rangeEnd);
+        if (childEnd <= childStart) return;
+        if (childStart > cursor) {
+          pieces.push(
+            <span key={`${keyBase}-pre-${i}`}>{text.slice(cursor - spanStart, childStart - spanStart)}</span>,
+          );
+        }
+        const visibleStart = Math.max(childStart, cursor);
+        if (visibleStart >= childEnd) return;
+        const overlapLabel =
+          c.overlapIds.length > 0 ? ` Overlaps #${c.overlapIds.join(", #")}.` : "";
+        const grand = childrenByParent[c.id] ?? [];
+        const innerText = text.slice(visibleStart - spanStart, childEnd - spanStart);
+        const innerContent = grand.length > 0
+          ? renderRange(visibleStart, childEnd, grand, `${keyBase}-${c.id}`)
+          : innerText;
+        pieces.push(
+          <span
+            role="button"
+            tabIndex={0}
+            key={`${keyBase}-child-${c.id}`}
+            className="nested-child"
+            data-cat={c.rewrite.category}
+            data-overlap={c.overlapIds.length > 0 || undefined}
+            data-depth={grand.length > 0 ? "outer" : "leaf"}
+            data-rewrite-id={c.id}
+            aria-label={`Nested suggestion #${c.id}: ${c.rewrite.original} → ${c.rewrite.improved}.${overlapLabel}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              onClick(c.rewrite);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                e.stopPropagation();
+                onClick(c.rewrite);
+              }
+            }}
+          >
+            {innerContent}
+          </span>,
+        );
+        cursor = childEnd;
+      });
+      if (cursor < rangeEnd) {
+        pieces.push(<span key={`${keyBase}-post`}>{text.slice(cursor - spanStart, rangeEnd - spanStart)}</span>);
+      }
+      return pieces;
+    };
+
+    return (
+      <span
+        className="parent-shell"
+        data-rewrite-id={rewrite.id}
+        data-cat={rewrite.category}
+        data-active={active || undefined}
+      >
+        {renderRange(spanStart, spanStart + text.length, nestedChildren, "root")}
+      </span>
+    );
+  }
+
+  // Non-overlapping case: the standard interactive mark. Tooltip, click,
+  // keyboard, hover — everything works because there are no nested children
+  // to interfere with state. The "overlap-ghost" variant uses the same
+  // interactive shell but a distinct dashed warning style and tooltip note
+  // so the user can see the visible portion of a partial-overlap rewrite.
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <button
-          type="button"
+        <span
+          role="button"
+          tabIndex={0}
           className="essay-mark"
           data-cat={rewrite.category}
+          data-kind={isGhost ? "overlap-ghost" : undefined}
           data-active={active || undefined}
           data-rewrite-id={rewrite.id}
           onClick={() => onClick(rewrite)}
@@ -175,15 +472,24 @@ function MarkSpan({
               onClick(rewrite);
             }
           }}
-          aria-label={`Mark: "${rewrite.original}". Suggested rewrite: "${rewrite.improved}". Click to open feedback.`}
+          aria-label={
+            isGhost
+              ? `Partial overlap: "${rewrite.original}" — visible fragment. Click to open feedback.`
+              : `Mark: "${rewrite.original}". Suggested rewrite: "${rewrite.improved}". Click to open feedback.`
+          }
         >
           {text}
-        </button>
+        </span>
       </TooltipTrigger>
       <TooltipContent>
         <div className="space-y-1">
           <div className="text-[10px] uppercase tracking-wide text-muted-foreground">
             {CATEGORY_SHORT[rewrite.category]} · #{rewrite.id}
+            {isGhost && (
+              <span className="ml-2 rounded bg-[hsl(var(--warning)/0.15)] text-[hsl(var(--warning))] px-1 py-0.5 text-[9px]">
+                partial overlap
+              </span>
+            )}
           </div>
           <div className="line-through text-muted-foreground">{rewrite.original}</div>
           <div className="flex items-center gap-1">
@@ -196,6 +502,12 @@ function MarkSpan({
             </span>
           </div>
           <div className="text-[11px] text-muted-foreground">{rewrite.reason}</div>
+          {isGhost && (
+            <div className="text-[11px] text-[hsl(var(--warning))] italic border-t pt-1 mt-1">
+              This rewrite's range crosses another highlight. Only the visible
+              fragment is marked here; see the right pane for the full quote.
+            </div>
+          )}
         </div>
       </TooltipContent>
     </Tooltip>

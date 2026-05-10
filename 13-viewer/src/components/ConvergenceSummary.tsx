@@ -32,7 +32,7 @@ export function ConvergenceSummary({
   if (s.total === 0) {
     return (
       <p className="text-xs text-muted-foreground">
-        no iterations yet — run the benchmark and `npm run extract`.
+        no iterations yet — run the benchmark and `bun run extract`.
       </p>
     );
   }

@@ -1,0 +1,160 @@
+{
+  "id": "w2/single-codex",
+  "task": "w2",
+  "iteration": 1,
+  "tool": "codex",
+  "generated_at": "2026-05-10T04:26:55Z",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "You cover both sides of the prompt with \"developing a sustainable energy system\" and limitations such as \"human errors\" and incomplete understanding of nature. This fits Band 6 because the ideas are relevant but insufficiently developed. To reach Band 7, the claim about sustainable energy needs a mechanism (e.g. reducing dependence on fossil fuels) and the limitation paragraph needs a concrete example."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "The essay has a logical overall sequence: introduction, benefits, limitations, conclusion. However, cohesion is often mechanical: \"For instance,\" \"In addition,\" \"First and foremost,\" and \"Secondly.\" Reference is also unclear in \"Although they can provide\" and \"since they do have limitations.\" Band 7 needs clearer referencing and more flexible cohesion."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "Some relevant vocabulary: \"resource depletion,\" \"sustainable energy system,\" \"scientific breakthroughs,\" \"reproducibility.\" The Band 6 problem is precision: \"contribute to the issue\" sounds like worsen the problem, while \"natural energy\" should be \"renewable energy.\" \"Every research\" is also inaccurate because \"research\" is normally uncountable."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "Complex structures attempted: \"Although…\" clauses and relative clauses like \"which can lead people to use energy without concern.\" However, errors recur: \"whenever they need\" misses an object, \"natural science… they\" has pronoun agreement problems, and \"nature is simply too vast to research, in other words…\" is a comma splice. Band 7 requires frequent error-free sentences."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "All four criteria best fit Band 6: the essay is relevant and organised, but development, precision, reference control, and grammatical accuracy are not yet consistent enough for Band 7.",
+  "what_changed": "",
+  "structural_feedback": "The essay addresses both required parts: what natural science can offer and why it has limitations. The position is understandable: science is useful but cannot solve everything. However, the body paragraphs are not yet developed enough for Band 7 because Body 1 gives only one broad solution (\"developing a sustainable energy system\") without explaining the mechanism clearly, and Body 2 moves from human error to \"nature is simply too vast\" without a concrete example. Each body paragraph needs a clearer PEEL shape: claim, explanation, example, link back to resource depletion. The conclusion is also too short; it repeats the introduction instead of synthesising the offer-vs-limit balance. The single highest-impact fix here is rewriting both body paragraphs with developed claim + example, not the lexical upgrades in the table below.",
+  "focus_areas": [
+    {
+      "area": "PEEL development for discussion essays",
+      "rationale": "Your ideas are relevant but under-explained, which keeps Task Response at Band 6. Each claim needs a mechanism and an example.",
+      "corpus_drill": [
+        "05-band-6-to-7/task-response-upgrades.md",
+        "05-band-6-to-7/paragraph-structure-band7.md"
+      ]
+    },
+    {
+      "area": "Science / environment collocations",
+      "rationale": "Phrases like \"contribute to the issue\" (which actually means worsen it) and \"natural energy\" (should be renewable energy) weaken precision.",
+      "corpus_drill": [
+        "10-task2-topic-banks/topic-02-environment.md",
+        "10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Clear pronoun reference",
+      "rationale": "\"They\" appears repeatedly with unclear referents — sometimes resources, sometimes energy systems, sometimes natural science. The reader has to guess.",
+      "corpus_drill": [
+        "05-band-6-to-7/cohesion-upgrades.md",
+        "08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Controlled complex sentences",
+      "rationale": "You attempt \"Although\" and \"since\" clauses, but errors reduce accuracy. Drilling subordinator + comma rules will lift GRA.",
+      "corpus_drill": [
+        "05-band-6-to-7/grammar-upgrades.md",
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Cohesion beyond numbered linkers",
+      "rationale": "\"First and foremost\" and \"Secondly\" are serviceable but mechanical at this band. Vary with substitution and reference.",
+      "corpus_drill": [
+        "09-instructor-tips/08-cohesion-upgrades-instructor.md"
+      ]
+    }
+  ],
+  "whats_working": "You have a clear overall direction: \"natural science can play a crucial role\" and \"it is naïve to believe that natural science could solve everything\" show a balanced position. \"Scientific breakthroughs\" and \"reproducibility\" are useful topic words — keep using science-specific vocabulary. The four-paragraph structure is also appropriate for this discussion task.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "developing a sustainable energy system can contribute to the issue",
+      "improved": "developing renewable-energy systems can help address resource depletion by reducing dependence on finite fossil fuels",
+      "reason": "Fixes the wrong collocation \"contribute to the issue\" (which sounds like making it worse) and adds a clear mechanism.",
+      "citations": ["10-task2-topic-banks/topic-02-environment.md"],
+      "category": "lexical"
+    },
+    {
+      "id": 2,
+      "original": "In this essay, I will discuss",
+      "improved": "This essay argues that natural science can slow resource depletion through cleaner energy and material innovation, but it cannot remove human error, cost barriers, or uncertainty in complex natural systems.",
+      "reason": "Replaces a roadmap statement with a real Band-7 thesis that takes a position and previews the two-sided argument.",
+      "citations": ["09-instructor-tips/06-task2-sentence-frames.md"],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "people have been using natural resources whenever they need",
+      "improved": "societies have consumed natural resources whenever demand has arisen",
+      "reason": "Removes the missing object after \"need\" (need what?) and improves collocation.",
+      "citations": ["08-vocabulary-grammar/06-paraphrase-quick-lookup.md"],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "Although they can provide several benefits",
+      "improved": "Although these resources support economic growth and daily life, their supply is finite",
+      "reason": "Clarifies the ambiguous \"they\" with a noun phrase and makes the opening more specific.",
+      "citations": ["08-vocabulary-grammar/03-cohesion-error-correction-bank.md"],
+      "category": "coherence"
+    },
+    {
+      "id": 5,
+      "original": "Although they do not seem cost-effective at this moment",
+      "improved": "Although such technologies may not yet be cost-effective, further breakthroughs could make large-scale adoption more realistic",
+      "reason": "Clarifies the referent (\"they\" → \"such technologies\") and uses accurate hedging.",
+      "citations": ["05-band-6-to-7/vocabulary-upgrades.md"],
+      "category": "coherence"
+    },
+    {
+      "id": 6,
+      "original": "People did not fully understand when it comes to natural energy",
+      "improved": "Scientists still do not fully understand how to harness renewable energy at scale",
+      "reason": "Fixes tense (past → present), clarifies the structure, and uses the correct topic vocabulary (\"renewable energy\").",
+      "citations": ["10-task2-topic-banks/topic-17-science-and-research.md"],
+      "category": "lexical"
+    },
+    {
+      "id": 7,
+      "original": "natural science could solve everything since they do have limitations",
+      "improved": "natural science cannot solve every aspect of resource depletion because it has practical and human limitations",
+      "reason": "Corrects pronoun agreement (\"natural science… they\" → \"it\") and sharpens the claim.",
+      "citations": ["08-vocabulary-grammar/01-grammar-error-correction-bank.md"],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "human errors could happen in every research",
+      "improved": "human error can occur in any research project, especially when scientists interpret uncertain data",
+      "reason": "Fixes the uncountable noun \"research\" and develops the limitation with a specific cause.",
+      "citations": ["09-instructor-tips/10-common-korean-chinese-speaker-errors.md"],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "nature is simply too vast to research, in other words",
+      "improved": "nature is too vast to be fully understood; in other words, scientific knowledge will always remain incomplete",
+      "reason": "Fixes the comma splice (semicolon required) and improves academic phrasing.",
+      "citations": ["08-vocabulary-grammar/05-spelling-and-mechanics.md"],
+      "category": "spelling"
+    },
+    {
+      "id": 10,
+      "original": "To sum up",
+      "improved": "On balance, natural science is essential for developing cleaner energy and better resource-management methods, but it should be treated as one part of a broader response that also includes policy and behavioural change.",
+      "reason": "Turns a generic conclusion-opener into a synthesis that names what natural science CAN do, what it cannot, and the broader response needed.",
+      "citations": ["05-band-6-to-7/task-response-upgrades.md"],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "There is no prior chain, so the convergence rules require REFINING regardless of confidence. Future iterations could still sharpen the rewrite priorities or adjust calibration after comparing against another feedback pass.",
+  "raw_markdown": "_The full markdown is at `14-real-essays/feedback/W2-resource-depletion.md`. This payload was hand-extracted from that file; run `bun run extract` to refresh it._"
+}
