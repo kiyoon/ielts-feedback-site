@@ -14,7 +14,7 @@ export function EssayPane({
   activeRewriteId,
   onMarkClick,
   scrollKey,
-  onUnmatchedReport,
+  onLocationReport,
   promptOpen,
   setPromptOpen,
 }: {
@@ -23,11 +23,14 @@ export function EssayPane({
   activeRewriteId: number | null;
   onMarkClick: (rw: Rewrite) => void;
   scrollKey: number;
-  onUnmatchedReport: (ids: number[]) => void;
+  // Reports both truly-unmatched rewrites (`original` not in essay at all)
+  // and nested rewrites (`original` is in the essay but lives inside another
+  // rewrite's claim). Used by FeedbackPane to badge cards appropriately.
+  onLocationReport: (info: { unmatched: number[]; nested: Record<number, number> }) => void;
   promptOpen: boolean;
   setPromptOpen: (b: boolean) => void;
 }) {
-  const { spans, unmatched } = useMemo(
+  const { spans, unmatched, nested } = useMemo(
     () => buildSpans(essay.text, feedback.rewrites),
     [essay.text, feedback.rewrites],
   );
@@ -39,32 +42,48 @@ export function EssayPane({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    onUnmatchedReport(unmatched);
-  }, [unmatched, onUnmatchedReport]);
+    onLocationReport({ unmatched, nested });
+  }, [unmatched, nested, onLocationReport]);
 
-  // Scroll the active mark into view, but DO NOT call .focus(). The right-pane
-  // RewriteCard owns focus when activated from there; stealing focus would
-  // dueling-focus with that card and break keyboard navigation.
+  // Scroll the active mark into view, but DO NOT call .focus(). If the active
+  // rewrite is *nested* inside another, fall back to scrolling the containing
+  // rewrite's mark — the active state still pulses on the card on the right.
   useEffect(() => {
     if (activeRewriteId == null) return;
-    const node = containerRef.current?.querySelector(
-      `[data-rewrite-id="${activeRewriteId}"]`,
-    ) as HTMLElement | null;
+    let target = `[data-rewrite-id="${activeRewriteId}"]`;
+    let node = containerRef.current?.querySelector(target) as HTMLElement | null;
+    if (!node && nested[activeRewriteId] !== undefined) {
+      const parent = nested[activeRewriteId];
+      target = `[data-rewrite-id="${parent}"]`;
+      node = containerRef.current?.querySelector(target) as HTMLElement | null;
+    }
     node?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }, [activeRewriteId, scrollKey]);
+  }, [activeRewriteId, scrollKey, nested]);
 
-  const located = feedback.rewrites.length - unmatched.length;
+  const nestedCount = Object.keys(nested).length;
+  const located = spans.length;
+  const total = feedback.rewrites.length;
 
   return (
     <Card className="flex flex-col h-full overflow-hidden">
       <CardHeader className="pb-2">
         <CardTitle className="flex items-baseline justify-between gap-2">
           <span>Candidate response</span>
-          <span className="text-xs text-muted-foreground tabular-nums">
-            {essay.word_count} words ·{" "}
-            <Badge variant={unmatched.length === 0 ? "outline" : "warning"} className="text-[10px]">
-              {located}/{feedback.rewrites.length} located
+          <span className="text-xs text-muted-foreground tabular-nums flex items-baseline gap-1.5">
+            {essay.word_count} words ·
+            <Badge variant="outline" className="text-[10px]">
+              {located}/{total} highlighted
             </Badge>
+            {nestedCount > 0 && (
+              <Badge variant="outline" className="text-[10px]">
+                +{nestedCount} nested
+              </Badge>
+            )}
+            {unmatched.length > 0 && (
+              <Badge variant="warning" className="text-[10px]">
+                {unmatched.length} not found
+              </Badge>
+            )}
           </span>
         </CardTitle>
       </CardHeader>
@@ -98,6 +117,17 @@ export function EssayPane({
                 ),
               )}
             </article>
+            {nestedCount > 0 && (
+              <div className="rounded-md border border-dashed border-foreground/15 bg-muted/40 p-2 text-xs">
+                <div className="font-semibold">
+                  {nestedCount} suggestion{nestedCount === 1 ? " is" : "s are"} nested inside larger highlights
+                </div>
+                <div className="mt-1 text-muted-foreground">
+                  Their phrases really are in your essay, but a longer rewrite has already claimed
+                  the same region. Click them in the right pane to scroll the parent highlight.
+                </div>
+              </div>
+            )}
             {unmatched.length > 0 && (
               <div className="rounded-md border border-dashed border-[hsl(var(--warning)/0.5)] bg-[hsl(var(--warning)/0.06)] p-2 text-xs">
                 <div className="flex items-center gap-1 font-semibold">

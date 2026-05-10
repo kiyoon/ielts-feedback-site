@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import type { Rewrite } from "@/types";
 import { CATEGORY_LABEL, CATEGORY_SHORT, CATEGORY_TOKEN } from "@/types";
-import { ArrowRight, Quote, AlertTriangle } from "lucide-react";
+import { ArrowRight, Quote, AlertTriangle, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
@@ -12,12 +12,14 @@ export function RewriteCard({
   rewrite,
   active,
   unmatched,
+  nestedIn,
   onActivate,
   onCiteClick,
 }: {
   rewrite: Rewrite;
   active?: boolean;
   unmatched?: boolean;
+  nestedIn?: number;       // id of the larger rewrite whose span covers this one
   onActivate: () => void;
   onCiteClick?: (path: string) => void;
 }) {
@@ -49,6 +51,7 @@ export function RewriteCard({
         "group block w-full text-left rounded-lg border bg-card p-3 shadow-sm transition-shadow hover:shadow-md focus-visible:outline-none cursor-pointer",
         active && "ring-2 ring-ring shadow-md animate-pulse-once",
         unmatched && "opacity-70 border-dashed",
+        nestedIn !== undefined && "border-dashed",
       )}
     >
       <div className="flex items-start justify-between gap-2">
@@ -67,6 +70,12 @@ export function RewriteCard({
             <span className="inline-flex items-center gap-0.5 text-[hsl(var(--warning))]">
               <AlertTriangle className="h-3 w-3" />
               not in essay
+            </span>
+          )}
+          {!unmatched && nestedIn !== undefined && (
+            <span className="inline-flex items-center gap-0.5 text-muted-foreground">
+              <Layers className="h-3 w-3" />
+              covered by #{nestedIn}
             </span>
           )}
           <span>#{rewrite.id}</span>

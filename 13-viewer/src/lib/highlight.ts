@@ -9,32 +9,76 @@ export interface HighlightSpan {
 
 export interface HighlightResult {
   spans: HighlightSpan[];
-  unmatched: number[]; // rewrite ids that could not be located in the essay
+  // Rewrite ids whose `original` is not a substring of the essay at all.
+  // These are real bugs — either the LLM paraphrased the candidate's phrase
+  // or the extractor parsed the row incorrectly.
+  unmatched: number[];
+  // Rewrite ids whose `original` IS in the essay but is fully contained in
+  // another rewrite's already-claimed span. The phrase is real; we just
+  // can't draw two overlapping marks. Maps rewrite id → containing rewrite id.
+  nested: Record<number, number>;
 }
 
 // For each rewrite, locate `original` in the essay text. If offset is
 // preprovided in the payload, use it; otherwise fall back to substring search.
-// If the same phrase appears multiple times, only the first unclaimed
-// occurrence is highlighted (so a duplicate suggestion doesn't double-mark
-// the same span).
-//
-// Returns the matched spans AND a list of rewrite ids that could not be
-// matched, so the UI can surface this cleanly instead of silently dropping.
 export function buildSpans(essay: string, rewrites: Rewrite[]): HighlightResult {
   const claimed: boolean[] = Array(essay.length).fill(false);
+  const claimedBy: (number | undefined)[] = Array(essay.length).fill(undefined);
   const spans: HighlightSpan[] = [];
   const unmatched: number[] = [];
+  const nested: Record<number, number> = {};
+
   for (const r of rewrites) {
-    const span = findFreeSpan(essay, claimed, r);
-    if (!span) {
+    // Step 1 — does `original` appear in the essay AT ALL?
+    if (!substringExists(essay, r)) {
       unmatched.push(r.id);
       continue;
     }
-    spans.push({ ...span, rewriteId: r.id, category: r.category });
-    for (let i = span.start; i < span.end; i++) claimed[i] = true;
+    // Step 2 — try to claim a non-overlapping span.
+    const span = findFreeSpan(essay, claimed, r);
+    if (span) {
+      spans.push({ ...span, rewriteId: r.id, category: r.category });
+      for (let i = span.start; i < span.end; i++) {
+        claimed[i] = true;
+        claimedBy[i] = r.id;
+      }
+    } else {
+      // Step 3 — the substring exists but only inside an already-claimed
+      // region. Record which rewrite owns the containing span.
+      const occ = findAnyOccurrence(essay, r);
+      if (occ) {
+        // pick the claimedBy id at the start of the occurrence as the parent
+        const parent = claimedBy[occ.start] ?? -1;
+        if (parent > 0) nested[r.id] = parent;
+        else unmatched.push(r.id); // shouldn't happen but safe fallback
+      } else {
+        unmatched.push(r.id);
+      }
+    }
   }
   spans.sort((a, b) => a.start - b.start);
-  return { spans, unmatched };
+  return { spans, unmatched, nested };
+}
+
+function substringExists(essay: string, r: Rewrite): boolean {
+  const needle = r.original.trim();
+  if (!needle) return false;
+  return (
+    essay.includes(needle) ||
+    essay.toLowerCase().includes(needle.toLowerCase())
+  );
+}
+
+function findAnyOccurrence(
+  essay: string,
+  r: Rewrite,
+): { start: number; end: number } | null {
+  const needle = r.original.trim();
+  if (!needle) return null;
+  let i = essay.indexOf(needle);
+  if (i < 0) i = essay.toLowerCase().indexOf(needle.toLowerCase());
+  if (i < 0) return null;
+  return { start: i, end: i + needle.length };
 }
 
 function findFreeSpan(
@@ -49,20 +93,14 @@ function findFreeSpan(
       end <= essay.length &&
       start < end &&
       !rangeClaimed(claimed, start, end) &&
-      // Validate the precomputed offset still corresponds to the original
-      // phrase. A stale offset (essay edited after extraction) would otherwise
-      // happily highlight the wrong text.
       essay.slice(start, end).trim() === r.original.trim()
     ) {
       return { start, end };
     }
   }
-  const needle = r.original.trim();
-  if (!needle) return null;
-  // Try exact match first, then a case-insensitive fallback.
-  const exact = locate(essay, claimed, needle, false);
+  const exact = locate(essay, claimed, r.original.trim(), false);
   if (exact) return exact;
-  return locate(essay, claimed, needle, true);
+  return locate(essay, claimed, r.original.trim(), true);
 }
 
 function locate(
@@ -71,6 +109,7 @@ function locate(
   needle: string,
   caseInsensitive: boolean,
 ): { start: number; end: number } | null {
+  if (!needle) return null;
   const hay = caseInsensitive ? essay.toLowerCase() : essay;
   const ndl = caseInsensitive ? needle.toLowerCase() : needle;
   let idx = 0;
@@ -88,8 +127,6 @@ function rangeClaimed(claimed: boolean[], a: number, b: number): boolean {
   return false;
 }
 
-// Split an essay into segments alternating "plain" and "mark" so the renderer
-// can wrap marks without DOM-mutating innerHTML.
 export interface Segment {
   text: string;
   span?: HighlightSpan;

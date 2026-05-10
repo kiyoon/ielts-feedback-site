@@ -26,13 +26,26 @@ Then give:
 - Base your assessment PURELY on your training and the descriptors you remember.
 - Be specific: when you justify a score, quote phrases from the essay; when you suggest improvements, give the original phrase and the rewrite.
 
-Output your feedback as well-structured Markdown with the headings:
+Output your feedback as well-structured Markdown with the following headings, **in this order**:
 
 ```
 ## Per-criterion scores
+## Structural feedback
+## Focus areas
+## What's working
 ## Per-criterion justification
 ## Overall band
 ## Top concrete improvements
 ```
+
+Section guidance:
+
+- **Structural feedback** (3–8 sentences) — essay-level shape only: prompt coverage, position clarity, body-paragraph balance, conclusion quality, paragraph-level cohesion. NOT sentence-level fixes (those go in "Top concrete improvements"). If a structural change would deliver more band uplift than any sentence-level rewrite, say so explicitly.
+
+- **Focus areas** (3–6 bulleted items, ranked by band uplift) — pattern-level error categories the candidate should drill before their next attempt. Each item: `**[Area]** — [why it matters].` Examples: "article omission", "passive figure verbs in Task 1", "second-conditional inversion", "concession patterns for Task 2 opinion". Avoid vague areas like "vocabulary" or "grammar".
+
+- **What's working** (2–4 sentences) — concrete strengths the candidate should keep doing. Quote real phrases from their essay. If nothing band-7-worthy is present, say so honestly.
+
+- **Top concrete improvements** — 5–10 items, **ranked by band uplift** (#1 = highest). For each give: original phrase verbatim → improved version → one-sentence reason. Don't pad to 10 with cosmetic fixes.
 
 The candidate prompt and essay follow.

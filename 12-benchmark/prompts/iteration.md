@@ -47,14 +47,37 @@ Practical advice for reading efficiently:
 ## What changed from prior feedback
 2–6 sentences. Be concrete about what you corrected, sharpened, or added citations for. If the prior was already good and you're only making marginal changes, say so explicitly — that signals convergence.
 
+## Structural feedback
+3–8 sentences. Comment on **essay-level shape**, not individual phrases:
+- Does the essay address all parts of the prompt?
+- Is the position/thesis clear and consistently held throughout?
+- For Task 2: are the body paragraphs balanced? Is each one PEEL-shaped (point → explanation → example → link)? Is the conclusion a synthesis or just a restated intro?
+- For Task 1: is there a clear overview that **categorises** the data (not just lists it)? Are the body paragraphs organised by group/trend rather than chronologically?
+- Cohesion at the paragraph and inter-paragraph level (not the sentence level — that's covered by the rewrites table).
+
+If a structural change would deliver more band uplift than any sentence-level rewrite, say so explicitly: "The single highest-impact fix here is rewriting Body 2 as a developed claim+example, not the lexical upgrades in the table below."
+
+## Focus areas
+A short list (3–6 items) of **pattern-level error categories** the candidate should drill before their next attempt, ranked by band uplift. Each item must include a one-sentence rationale and one or two corpus files to study. Format:
+
+```
+- **[Area name]** — [why this matters]. Drill: `<corpus file 1>`, `<corpus file 2>`.
+```
+
+Examples of good areas: "article omission (the/a)", "passive figure verbs in Task 1", "second-conditional inversion", "concession patterns for Task 2 opinion", "cohesion beyond Firstly/Secondly". Examples of bad areas: vague things like "vocabulary" or "grammar" — those are too broad to act on.
+
+## What's working
+2–4 sentences naming concrete strengths the candidate should keep doing. Quote real phrases from their essay. This isn't filler — band-7 candidates often regress when they over-correct, so explicit anchoring matters. If genuinely nothing band-7-worthy is present, say so honestly.
+
 ## Per-criterion justification
 For each criterion: 3–6 sentences. Quote the candidate's actual phrases as evidence. Cite the descriptor or corpus file backing the band judgment.
 
-## Top 10 concrete rewrites
+## Top concrete rewrites (5–10, ranked by band uplift)
 | # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
 |---|---|---|---|---|
 | 1 | "..." | "..." | ... | `09-instructor-tips/01-paraphrase-banks-task1.md` |
-... 10 rows total. Prefer rewrites that target the highest-leverage flaws. If the prior already covers the obvious ones, push deeper into less-obvious upgrades from the corpus (e.g. inversion/cleft from `09-instructor-tips/07-band7-grammar-showcases.md`, passive figure verbs from `09-instructor-tips/04-passive-voice-patterns.md`).
+
+5 to 10 rows total, **ordered by band uplift (#1 = highest)**. Don't pad to 10 with cosmetic fixes if you've covered the high-leverage ones in 6. Prefer rewrites that target the highest-leverage flaws. If the prior already covers the obvious ones, push deeper into less-obvious upgrades from the corpus (e.g. inversion/cleft from `09-instructor-tips/07-band7-grammar-showcases.md`, passive figure verbs from `09-instructor-tips/04-passive-voice-patterns.md`).
 
 ## Overall band rationale
 1–2 sentences. Apply the rounding rule from `01-band-descriptors/scoring-rules.md`.

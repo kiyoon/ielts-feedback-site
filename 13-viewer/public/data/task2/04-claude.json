@@ -30,6 +30,49 @@
   "overall": 6.0,
   "overall_rationale": "Strict descriptor maths gives (6+6+7+6)/4 = 6.25 → rounds up to 6.5, but applying the best-fit principle of 01-band-descriptors/examiner-perspective.md §3 and corroborated by 11-quality-audit/02-task2-sample-audit.md (Band 6.0, \"Broadly accurate, High confidence\"), the holistic Band-6 profile (mechanical cohesion, systematic article omissions, underdeveloped Body 2, balanced position not crisply defended) keeps the overall at 6.0.",
   "what_changed": "Anchored the band judgement to the corpus's own audit verdict (`11-quality-audit/02-task2-sample-audit.md` flags this exact sample as \"Broadly accurate, High confidence\" at 6.0 with TR/CC/LR/GRA = 6/6/7/6) rather than to the unaudited published score, and surfaced the strict-rounding tension (6.25 → 6.5 mathematically vs 6.0 by best-fit). Suggestions are calibrated to the highest-leverage band-6→7 fixes from `05-band-6-to-7/top-30-fixes-band-6-to-7.md`.",
+  "structural_feedback": "**The biggest issue is structural, not lexical.** The prompt asks you to agree or disagree with an extreme position (\"avoid computers at all costs\"), but you've written a Discuss-Both-Views (Body 1 = computers help reading; Body 2 = handwriting helps writing) and tucked your actual position into the conclusion. To reach band 7 on TR, restructure: Body 1 should defend your balance position directly with one example; Body 2 should pre-empt the strongest counter-argument and concede partially. Also, **your introduction is six sentences but only contains one new idea** — the opening four (\"Children are born into the digital world… part of their daily life… School age children is no exception\") all say the same thing. Compress to two sentences. Body 2 is dangerously thin (3 sentences, no example) — band 7 needs at least one concrete supporting example per body paragraph.",
+  "focus_areas": [
+    {
+      "area": "Article omission (the / a / an)",
+      "rationale": "You missed articles 6 times in 285 words — \"From young age\", \"lead to decline\", \"good balance of both\", \"play positive role\", \"the use of computer\". This is your single most frequent error and the easiest band-7 win.",
+      "corpus_drill": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Body-paragraph development (claim → explanation → example → consequence)",
+      "rationale": "Your Body 2 has a claim and a brief explanation but no example. Band 7 TR explicitly requires \"developed main ideas\" — assertion alone keeps you at 6.",
+      "corpus_drill": [
+        "05-band-6-to-7/task-response-upgrades.md",
+        "05-band-6-to-7/paragraph-structure-band7.md"
+      ]
+    },
+    {
+      "area": "Reference & substitution (avoiding repeated nouns)",
+      "rationale": "You wrote \"computers\" 14 times. Band-7 cohesion uses pronouns, definite reference (\"these tools\"), and lexical substitution (\"digital tools\", \"the technology\"). This single fix addresses CC at scale.",
+      "corpus_drill": [
+        "05-band-6-to-7/cohesion-upgrades.md",
+        "08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Second-conditional inversion (Were it not for…)",
+      "rationale": "You attempted the second conditional (\"If it was not for the computers, they have to find someone\") but the apodosis is broken. Learning the inverted form (\"Were it not for X, they would Y\") is one rule that gives you a guaranteed band-7 grammar showcase.",
+      "corpus_drill": [
+        "09-instructor-tips/07-band7-grammar-showcases.md"
+      ]
+    },
+    {
+      "area": "Verb upgrades from band-6 cluster (help → enhance/foster, make → enable, get → obtain)",
+      "rationale": "The corpus calls help/make/get/many/good \"the band-6 trap word cluster\" — every essay you write should swap them out before submitting. You used \"help\" 4 times here.",
+      "corpus_drill": [
+        "09-instructor-tips/00-user-shared-feedback-2.md",
+        "08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ]
+    }
+  ],
+  "whats_working": "Your lexical reach is genuinely band-7 in places: \"utilise the computers\", \"confident users of computers\", \"come up with how to use it effectively\", and \"enhance students' reading and writing skills\" all show flexible vocabulary you should keep. Your essay also shows real structural awareness — four-paragraph layout with a topic-sentence opener in each, plus a concession in the conclusion (\"computers can be a great help if they use it effectively\"). The position itself is sensible (a balanced view, not a black-and-white agree/disagree). Don't lose any of that while fixing the issues above.",
   "rewrites": [
     {
       "id": 1,

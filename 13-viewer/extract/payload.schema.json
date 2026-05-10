@@ -9,6 +9,7 @@
     "what_changed", "rewrites",
     "convergence", "convergence_note", "raw_markdown"
   ],
+  "comment": "structural_feedback / focus_areas / whats_working are optional; old payloads predate them and remain valid.",
   "properties": {
     "id":            { "type": "string" },
     "task":          { "type": "string", "enum": ["task1", "task2"] },
@@ -56,7 +57,22 @@
     },
     "convergence":      { "type": "string", "enum": ["CONVERGED", "REFINING", "UNKNOWN"] },
     "convergence_note": { "type": "string" },
-    "raw_markdown":     { "type": "string" }
+    "raw_markdown":     { "type": "string" },
+    "structural_feedback": { "type": "string" },
+    "focus_areas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["area", "rationale", "corpus_drill"],
+        "properties": {
+          "area":         { "type": "string" },
+          "rationale":    { "type": "string" },
+          "corpus_drill": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "whats_working": { "type": "string" }
   },
   "$defs": {
     "criterion": {

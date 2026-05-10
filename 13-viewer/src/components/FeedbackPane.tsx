@@ -8,8 +8,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScoresCard } from "@/components/ScoresCard";
 import { RewriteCard } from "@/components/RewriteCard";
+import { FocusAreasCard } from "@/components/FocusAreasCard";
 import { MarkdownView } from "@/components/MarkdownView";
 import { fmtBand } from "@/lib/utils";
+import { Wrench, Sparkles } from "lucide-react";
 
 export function FeedbackPane({
   feedback,
@@ -18,6 +20,7 @@ export function FeedbackPane({
   setActiveRewriteId,
   onCiteClick,
   unmatchedIds,
+  nestedMap,
   paneSubtitle,
 }: {
   feedback: FeedbackPayload;
@@ -26,6 +29,7 @@ export function FeedbackPane({
   setActiveRewriteId: (id: number | null) => void;
   onCiteClick: (path: string) => void;
   unmatchedIds: Set<number>;
+  nestedMap?: Record<number, number>;
   paneSubtitle?: string;
 }) {
   const [filter, setFilter] = useState<Category | "all">("all");
@@ -64,12 +68,46 @@ export function FeedbackPane({
             <ScrollArea className="h-full">
               <div className="px-4 pb-4 space-y-3">
                 <ScoresCard feedback={feedback} baseline={baseline} defaultExpanded={false} />
+
+                {/* Structural feedback — essay-level shape critique. New schema field. */}
+                {feedback.structural_feedback && (
+                  <Card>
+                    <CardHeader className="pb-1">
+                      <CardTitle className="flex items-center gap-1.5 text-xs uppercase tracking-wide text-muted-foreground">
+                        <Wrench className="h-3.5 w-3.5" /> Structural feedback
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="text-sm">
+                      <MarkdownView>{feedback.structural_feedback}</MarkdownView>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Focus areas — pattern-level drill recommendations. */}
+                {feedback.focus_areas && feedback.focus_areas.length > 0 && (
+                  <FocusAreasCard areas={feedback.focus_areas} onCiteClick={onCiteClick} />
+                )}
+
+                {/* What's working — anchor strengths so the student doesn't over-correct. */}
+                {feedback.whats_working && (
+                  <Card>
+                    <CardHeader className="pb-1">
+                      <CardTitle className="flex items-center gap-1.5 text-xs uppercase tracking-wide text-muted-foreground">
+                        <Sparkles className="h-3.5 w-3.5" /> What's working — keep doing this
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="text-sm">
+                      <MarkdownView>{feedback.whats_working}</MarkdownView>
+                    </CardContent>
+                  </Card>
+                )}
+
                 {/*
                   "What changed from prior feedback" is intentionally not
                   rendered here — it's harness/iteration meta, not feedback the
                   student needs. It still ships in the JSON payload (so it can
                   be inspected via the Raw markdown tab) and is the basis of
-                  the CompareDiff view, which is where comparison belongs.
+                  the CompareDiff view.
                 */}
                 <FilterBar
                   filter={filter}
@@ -85,6 +123,7 @@ export function FeedbackPane({
                       rewrite={rw}
                       active={rw.id === activeRewriteId}
                       unmatched={unmatchedIds.has(rw.id)}
+                      nestedIn={nestedMap?.[rw.id]}
                       onActivate={() => setActiveRewriteId(rw.id)}
                       onCiteClick={onCiteClick}
                     />

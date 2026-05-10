@@ -25,6 +25,7 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [unmatchedIds, setUnmatchedIds] = useState<Set<number>>(new Set());
+  const [nestedMap, setNestedMap] = useState<Record<number, number>>({});
   const [promptOpen, setPromptOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -92,9 +93,13 @@ export default function App() {
     setActiveRewriteId(id);
     setScrollKey((k) => k + 1);
   }, []);
-  const onUnmatchedReport = useCallback((ids: number[]) => {
-    setUnmatchedIds(new Set(ids));
-  }, []);
+  const onLocationReport = useCallback(
+    (info: { unmatched: number[]; nested: Record<number, number> }) => {
+      setUnmatchedIds(new Set(info.unmatched));
+      setNestedMap(info.nested);
+    },
+    [],
+  );
 
   // Keyboard shortcuts via stable listener (don't re-bind on every j/k press).
   const navState = useRef({
@@ -217,7 +222,7 @@ export default function App() {
               activeRewriteId={activeRewriteId}
               onMarkClick={handleMarkClick}
               scrollKey={scrollKey}
-              onUnmatchedReport={onUnmatchedReport}
+              onLocationReport={onLocationReport}
               promptOpen={promptOpen}
               setPromptOpen={setPromptOpen}
             />
@@ -231,6 +236,7 @@ export default function App() {
                 setActiveRewriteId={handleSetActive}
                 onCiteClick={setCitation}
                 unmatchedIds={unmatchedIds}
+                nestedMap={nestedMap}
               />
             )}
           </div>

@@ -75,6 +75,12 @@ export interface Rewrite {
   offset?: { start: number; end: number };
 }
 
+export interface FocusArea {
+  area: string;            // short name e.g. "Article omission (the/a)"
+  rationale: string;       // one-sentence why-it-matters
+  corpus_drill: string[];  // corpus files to study (may be empty for baseline)
+}
+
 export interface FeedbackPayload {
   id: string; // "task1/04-claude"
   task: TaskKey;
@@ -93,6 +99,12 @@ export interface FeedbackPayload {
   overall_rationale: string;
 
   what_changed: string;
+
+  // Student-facing structural / pattern-level / strengths sections.
+  // All optional so old payloads (without these sections) still validate.
+  structural_feedback?: string;     // markdown — essay-level critique
+  focus_areas?: FocusArea[];        // ranked, drill recommendations
+  whats_working?: string;           // markdown — explicit strengths to anchor
 
   rewrites: Rewrite[];
 
