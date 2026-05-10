@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --primary: 222 47% 11%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 47% 11%;
+    --radius: 0.5rem;
+
+    /* category tokens — used for both light AND dark via opacity blending */
+    --cat-tr: 217 91% 50%;
+    --cat-cc: 142 71% 35%;
+    --cat-lr: 38 92% 40%;
+    --cat-gra: 0 84% 50%;
+    --cat-sp: 220 9% 40%;
+
+    /* status tokens for badges (legible in BOTH modes) */
+    --success: 142 71% 30%;
+    --success-foreground: 142 71% 96%;
+    --warning: 38 92% 35%;
+    --warning-foreground: 38 92% 96%;
+  }
+  .dark {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 213 27% 84%;
+
+    --cat-tr: 217 91% 65%;
+    --cat-cc: 142 71% 50%;
+    --cat-lr: 38 92% 60%;
+    --cat-gra: 0 72% 65%;
+    --cat-sp: 220 9% 60%;
+
+    --success: 142 71% 50%;
+    --success-foreground: 222 47% 7%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 222 47% 7%;
+  }
+
+  * { @apply border-border; }
+  body {
+    @apply font-sans;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Make focus rings visible everywhere — accessibility blocker fix */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* Highlight styles for essay pane */
+.essay-mark {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  border-radius: 0.125rem;
+  padding: 0 0.125rem;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  transition: background-color 120ms, outline-color 120ms;
+}
+.essay-mark[data-cat="task_response"] {
+  background-color: hsl(var(--cat-tr) / 0.18);
+  border-bottom: 1.5px solid hsl(var(--cat-tr) / 0.7);
+}
+.essay-mark[data-cat="coherence"] {
+  background-color: hsl(var(--cat-cc) / 0.18);
+  border-bottom: 1.5px solid hsl(var(--cat-cc) / 0.7);
+}
+.essay-mark[data-cat="lexical"] {
+  background-color: hsl(var(--cat-lr) / 0.2);
+  border-bottom: 1.5px solid hsl(var(--cat-lr) / 0.7);
+}
+.essay-mark[data-cat="grammar"] {
+  background-color: hsl(var(--cat-gra) / 0.18);
+  border-bottom: 1.5px solid hsl(var(--cat-gra) / 0.7);
+}
+.essay-mark[data-cat="spelling"] {
+  background-color: hsl(var(--cat-sp) / 0.18);
+  border-bottom: 1.5px solid hsl(var(--cat-sp) / 0.7);
+}
+
+.essay-mark:hover,
+.essay-mark[data-active="true"] {
+  filter: brightness(1.18);
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 1px;
+}
+
+/* Markdown body — applied to react-markdown output */
+.md-body { @apply text-sm leading-relaxed; }
+.md-body h1, .md-body h2, .md-body h3 { @apply font-semibold mt-4 mb-2; }
+.md-body h1 { @apply text-xl; }
+.md-body h2 { @apply text-lg; }
+.md-body h3 { @apply text-base; }
+.md-body p  { @apply my-2; }
+.md-body ul { @apply list-disc pl-5 my-2; }
+.md-body ol { @apply list-decimal pl-5 my-2; }
+.md-body code { @apply rounded bg-muted px-1 py-0.5 text-[0.85em]; }
+.md-body pre  { @apply rounded bg-muted p-3 my-3 overflow-x-auto text-xs; }
+.md-body blockquote { @apply border-l-2 pl-3 my-2 text-muted-foreground; }
+.md-body table { @apply w-full text-xs my-3 border-collapse; }
+.md-body th, .md-body td { @apply border border-border px-2 py-1 align-top; }
+.md-body th { @apply bg-muted text-left font-medium; }
+.md-body a { @apply underline decoration-dotted underline-offset-2; }
+
+/* Color-blind safe shape backups for the convergence dot */
+.shape-converged {
+  width: 0.6rem; height: 0.6rem;
+  background: hsl(var(--success));
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
+.shape-refining {
+  width: 0.6rem; height: 0.6rem;
+  border-radius: 9999px;
+  background: hsl(var(--warning));
+}
+.shape-unknown {
+  width: 0.6rem; height: 0.6rem;
+  background: hsl(var(--muted-foreground));
+}

@@ -1,0 +1,117 @@
+{
+  "id": "task1/00-baseline-codex",
+  "task": "task1",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-05-09T14:46:09Z",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "(no corpus access — codex baseline cited training-data IELTS descriptors only)",
+      "justification": "The response covers the main trends and includes an overview: \"the figure of USA stayed the highest, while India had the lowest level.\" It also reports key figures such as \"11,000 kWh,\" \"6,000 kWh,\" and \"1,200 kWh.\" However, the overview is a little weak and partly overgeneralised: \"electricity consumption in all three countries had a growth\" misses the important detail that the USA and Germany rose and then declined."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "(no corpus access — codex baseline)",
+      "justification": "The essay is logically organised into introduction, overview, and body paragraphs. Sequencing is generally clear with phrases like \"In 1990,\" \"After this,\" \"However,\" and \"In contrast.\" Cohesion is functional but mechanical, and some paragraphing is uneven. The sentence \"In contrast, India is different\" is too vague as a transition."
+    },
+    "lexical": {
+      "band": 5.5,
+      "descriptor_evidence": "(no corpus access — codex baseline)",
+      "justification": "There is enough vocabulary to describe the graph, including \"consumption,\" \"usage,\" \"peak,\" \"decline,\" and \"rapidly.\" However, word choice is often awkward or repetitive: \"the figure of USA,\" \"had a growth,\" \"all over the period,\" and \"India is different.\" The essay relies heavily on \"consumption,\" \"figure,\" and \"kWh.\""
+    },
+    "grammar": {
+      "band": 5.5,
+      "descriptor_evidence": "(no corpus access — codex baseline)",
+      "justification": "Frequent grammatical errors, especially with verb forms and articles: \"USA's consumption increase,\" \"it slightly decrease,\" \"had reach to,\" and \"grew slow.\" Some complex structures are attempted but accuracy is inconsistent."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "Average: (6.0 + 6.0 + 5.5 + 5.5) / 4 = 5.75, rounded to the nearest 0.5 = 6.0.",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "had a growth",
+      "improved": "increased overall",
+      "reason": "Replace the awkward 'had + growth' collocation with a single verb. Active and idiomatic.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 2,
+      "original": "the figure of USA",
+      "improved": "US consumption",
+      "reason": "'the figure of X' is non-idiomatic; use possessive 'US consumption' or 'the figure for the USA'.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 3,
+      "original": "all over the period",
+      "improved": "throughout the period",
+      "reason": "'all over' modifies space, not time. The standard collocation is 'throughout the period'.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "USA's consumption increase",
+      "improved": "US consumption increased",
+      "reason": "Past-tense verb is required for completed historical data, and 'USA's' should be 'US' (adjective form).",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "reached a peak about 13,500 kWh",
+      "improved": "reached a peak of about 13,500 kWh",
+      "reason": "Missing preposition: 'a peak of [value]' is the correct collocation.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "it slightly decrease",
+      "improved": "it decreased slightly",
+      "reason": "Past tense + adverb word order: '[verb-ed] [adverb]' not '[adverb] [verb]'.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "India is different",
+      "improved": "India followed a different pattern",
+      "reason": "'is different' is empty; specify what is different (the pattern of growth) for an analytical transition.",
+      "citations": [],
+      "category": "coherence"
+    },
+    {
+      "id": 8,
+      "original": "grew slow",
+      "improved": "grew slowly",
+      "reason": "Adverb form needed to modify the verb 'grew'.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "had reach to 1,200",
+      "improved": "had reached 1,200",
+      "reason": "Past participle for past perfect; 'reach' takes no preposition before a numeric figure.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 10,
+      "original": "Overall, electricity consumption in all three countries had a growth during this time period",
+      "improved": "Overall, the USA remained by far the largest consumer, while India stayed the lowest despite rapid growth. The USA and Germany both rose initially before declining slightly towards the end of the period.",
+      "reason": "Strengthen the overview by mentioning the rise-then-fall pattern, the largest-to-smallest order, and the relative-growth story.",
+      "citations": [],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-05-09T14:46:09Z by codex exec, run from `/var/folders/r5/9cpfjfjx3b73b6stl7_w712h0000gn/T/tmp.ZIOGkG5lmG` with read-only sandbox._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band |\n|---|---:|\n| Task Achievement | 6.0 |\n| Coherence and Cohesion | 6.0 |\n| Lexical Resource | 5.5 |\n| Grammatical Range and Accuracy | 5.5 |\n\n## Overall band\n\n**Overall Band: 6.0**\n\nAverage: `(6.0 + 6.0 + 5.5 + 5.5) / 4 = 5.75`, rounded to the nearest 0.5 = **6.0**.\n\n_(See structured tab for the full per-criterion justification and rewrites; raw markdown is truncated in this hand-extracted demo payload.)_"
+}

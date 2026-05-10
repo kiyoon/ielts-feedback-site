@@ -1,0 +1,47 @@
+# Iteration 24 — claude
+
+_Generated 2026-05-09T16:22:13Z. Prior chain depth: up to 3. Manifest: 99 files._
+
+---I've now read all 99 corpus files. Writing the iteration-1 feedback below.
+
+## Per-criterion scores
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---|---|
+| Task Response | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Coherence and Cohesion | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Lexical Resource | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Grammatical Range & Accuracy | 6.0 | `01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| **Overall** | **6.0** | rounded per `01-band-descriptors/scoring-rules.md` |
+
+## What changed from prior feedback
+This is iteration 1 — no prior chain exists. The diagnosis below is anchored in the official descriptors and the audit row for this exact essay in `11-quality-audit/02-task2-sample-audit.md` Band 6 §Sample 2 (verdict: Broadly accurate, High confidence). The source per-criterion mix is TR 6 / CC 6 / **LR 7** / GRA 6 (`04-task2-essays/samples-band-6_0.md` Sample 2). I retain LR at 6 rather than 7: the Band-7 items the source cites ("utilise / autocorrection / come up with") are real but are swamped by 14 occurrences of *computers*, missing articles, and a spelling slip — exactly the "rather restricted range or lack of precision" pattern flagged in `05-band-6-to-7/vocabulary-upgrades.md`. The mathematical effect on the overall is nil (4×6 = 6.0).
+
+## Per-criterion justification
+
+**Task Response — Band 6.** All main parts of the prompt are addressed and a position is presented — *"I believe good balance of both is needed to help students' reading and writing skills to improve"*. However, the position is hedged rather than "clear and developed" (Band 7 descriptor): the writer never commits to a degree of agreement, and the conclusion subtly drifts ("teachers need to come up with how to use it effectively"). Each body paragraph runs only three short sentences with no concrete example — no named app, no country, no study — so ideas remain "relevant, but … insufficiently developed" (Band 6 descriptor). This matches the canonical Band-6 leak in `05-band-6-to-7/task-response-upgrades.md` §10. The audit confirms 6.
+
+**Coherence & Cohesion — Band 6.** The four-paragraph shape gives overall progression, and topic sentences exist (*"Computers can help students with reading"*; *"writing skills need to be improved by lots of handwritten works"*). Cohesion is "faulty or mechanical" (descriptor): *"On the other hands"* is a plural-error linker, the introduction runs five sentences before the thesis (too long per `05-band-6-to-7/paragraph-structure-band7.md` §2), and reference is weak — *computers* repeats instead of becoming *they / such tools / these devices* (`05-band-6-to-7/cohesion-upgrades.md` Pillar 1). The conclusion paraphrases the intro rather than synthesising.
+
+**Lexical Resource — Band 6.** Some less-common items are present — *"utilise"*, *"autocorrection"*, *"come up with how to use it effectively"* — supporting the source's claim of LR 7. Against this, *computers* appears 14×, *students* 7×, *reading and writing skills* 5×, well above the band-7 threshold in `09-instructor-tips/13-vietnamese-instructor-tips-collected.md` §7 ("band 6 ≤ 2 keyword repetitions; band 7 zero"). Spelling slips ("the **unknow** words"), missing articles ("From **young age**", "play **positive role**", "**good balance**"), and the slightly off form *autocorrection* (idiomatic English prefers *autocorrect*) tip the balance to Band 6's "generally adequate but restricted range" (descriptor).
+
+**Grammatical Range & Accuracy — Band 6.** Simple and complex forms are mixed, but the complex ones are "not marked by the same level of accuracy" (descriptor). Concrete errors: SVA *"School age children **is** no exception"* (subject is plural); article omission *"From young age"*, *"play positive role"*, *"good balance"*; faulty second conditional *"If it was not for the computers, they **have to find** someone…"* (should be *would have to find* — see `08-vocabulary-grammar/01-grammar-error-correction-bank.md` §5). Error-free sentences are not "frequent" (Band 7 gating threshold per `01-band-descriptors/band-6-vs-7-comparison.md` §4).
+
+## Top 10 concrete rewrites
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---|---|---|---|---|
+| 1 | "School age children is no exception to the use of computers." | "School-age children are no exception." | SVA + concision. | `08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2 |
+| 2 | "From young age, they know how to operate computers, iPad, and TV." | "From a young age, they have learned to operate computers, tablets and televisions." | Missing article + plurals + present perfect for duration-to-now. | `08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1, §3 |
+| 3 | "I believe good balance of both is needed to help students' reading and writing skills to improve." | "I would argue that a measured balance — using digital tools selectively while preserving handwriting practice — offers the most defensible response." | Adds article, hedges via *I would argue*, restates the prompt's two halves with parallel structure (Band-7 thesis frame). | `05-band-6-to-7/task-response-upgrades.md` §7; `09-instructor-tips/06-task2-sentence-frames.md` §2 |
+| 4 | "Computers can help students with reading. For example, if students come across unknown words, they can search the unknow words and hear the pronunciation." | "Digital tools can demonstrably enhance reading: a pupil encountering an unfamiliar word can look it up instantly and hear its pronunciation through dictionary applications such as the Cambridge Dictionary or Forvo." | Replaces *help → enhance*, adds named example (concrete-example principle), fixes "unknow" typo. | `10-task2-topic-banks/topic-01-education.md` §FOR row 2; `05-band-6-to-7/task-response-upgrades.md` §6 |
+| 5 | "Therefore, computers can play positive role in students' reading skills." | "Such tools therefore play a pivotal role in developing reading proficiency." | Lexical chain (*such tools*) + missing article + Band-7 collocation *pivotal role*. | `05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 3; `09-instructor-tips/02-paraphrase-banks-task2.md` §1 |
+| 6 | "On the other hands, writing skills need to be improved by lots of handwritten works." | "Writing skills, by contrast, are best honed through sustained handwritten practice." | Fixes plural-error idiom; replaces *lots of* (informal); upgrades *improve → hone*. | `09-instructor-tips/08-cohesion-upgrades-instructor.md` §3; `08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §4 |
+| 7 | "If students are using computers all the time and getting the help of autocorrection, they will not improve their writing skills." | "**Were pupils to rely** exclusively on autocorrect, they **would forfeit** the editing instinct that disciplined handwriting cultivates." | Inverted second conditional — a single GRA showcase that lifts the whole essay. | `09-instructor-tips/07-band7-grammar-showcases.md` §1, §9; `05-band-6-to-7/grammar-upgrades.md` §3.1 |
+| 8 | "If it was not for the computers, they have to find someone who knows how to pronounce the words for them." | "Without such digital aids, learners would have to consult a fluent speaker for every unfamiliar pronunciation." | Repairs the second-conditional clash + lexical chain + register. | `08-vocabulary-grammar/01-grammar-error-correction-bank.md` §5 |
+| 9 | "teachers need to come up with how to use it effectively to enhance students' reading and writing skills." | "Educators must therefore devise pedagogically sound ways of integrating digital tools to enrich literacy outcomes." | Phrasal-verb upgrade *come up with → devise* (Band-7 register); precise topic vocabulary. | `08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §6; `10-task2-topic-banks/topic-01-education.md` C1 cluster |
+| 10 | Pervasive repetition: *computers* 14×, *students* 7×, *reading and writing skills* 5× | Rotate: *computers → digital tools → such devices → screen-based aids → these technologies*; *students → pupils → learners → young people*. | Lexical-chain replacement is the single highest-yield Band-6 → Band-7 lever. | `05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 3; `09-instructor-tips/13-vietnamese-instructor-tips-collected.md` §7 |
+
+## Overall band rationale
+All four criteria sit at Band 6, giving an unrounded average of 6.00 — reported as Band 6.0 (`01-band-descriptors/scoring-rules.md` rounding table: 6.00–6.24 → 6.0). The single highest-leverage upgrade is **TR idea development with concrete examples**, since this would also strengthen LR (lexical chains naturally arise in richer content) and CC (developed paragraphs require flexible referencing).
+
+## CONVERGENCE: REFINING
+The prior chain is empty, so the harness rules require REFINING regardless of confidence. Future iterations should pressure-test the LR=6 vs 7 call (the source/audit say 7; I say 6 due to repetition density), tighten rewrite #3's thesis register, and consider whether to add an inversion showcase from `09-instructor-tips/07-band7-grammar-showcases.md` §4 (*Convenient as digital tools are…*) as a substitute for #7.

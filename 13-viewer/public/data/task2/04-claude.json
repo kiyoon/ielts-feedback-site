@@ -1,0 +1,145 @@
+{
+  "id": "task2/04-claude",
+  "task": "task2",
+  "iteration": 4,
+  "tool": "claude",
+  "generated_at": "2026-05-09T15:14:20Z",
+  "prior_id": "task2/03-codex",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6 (\"position relevant; conclusions may be unclear, unjustified or repetitive; some main ideas insufficiently developed\")",
+      "justification": "The prompt is an opinion essay (\"To what extent do you agree or disagree?\") and the candidate adopts a balanced position: \"I believe good balance of both is needed.\" That is a relevant Band-6 position, but the structure is a Discuss-Both-Views (Body 1 = computers help reading; Body 2 = handwriting helps writing) rather than a defence of the balance itself, so coverage is uneven and the conclusion repeats the intro thesis. Body 2 is only three short sentences with no concrete example — \"writing skills need to be improved by lots of handwritten works\" is asserted, not developed. Per 05-band-6-to-7/task-response-upgrades.md §10, this \"underdeveloped main idea\" is the single most common 6→7 leak."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6 (\"cohesion may be faulty or mechanical due to misuse, overuse or omission\")",
+      "justification": "Four paragraphs with a clear progression — but cohesion is mechanical and at one point inaccurate. \"On the other hands\" is a collocation error (singular hand). \"Therefore, computers can play positive role\" is a wrong-relation linker — therefore implies a logical entailment the body has not actually established. The introduction is six sentences, four restating the same idea — \"paragraphing not always logical.\" Reference and substitution are absent: \"computers\" is repeated 14 times where varied references (they / these devices / such tools / digital tools) would be expected."
+    },
+    "lexical": {
+      "band": 7.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 7 (\"some less common items\"); upper edge — see 11-quality-audit/02-task2-sample-audit.md §Sample 2",
+      "justification": "The candidate reaches for some Band-7 items: \"utilise the computers\", \"confident users of computers\", \"come up with\", \"enhance students' reading and writing skills\". However, multiple word-form / spelling / countability slips push this against the band's ceiling: \"the unknow words\" (spelling), \"On the other hands\" (collocation), \"lots of handwritten works\" (work uncountable), \"autocorrection\" (non-standard — usual term is autocorrect). At least four such errors in 285 words is at the very edge of \"only a few errors in spelling/word formation\". Borderline 6/7."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task2-band-descriptors.md §Band 6 (\"complex less accurate than simple\"); article and SVA errors documented in 08-vocabulary-grammar/01-grammar-error-correction-bank.md §1, §2",
+      "justification": "Mix of simple and complex sentences (relative clauses present: \"computers that students are so used to\") but article omissions and SVA errors are systematic, not occasional. \"School age children is\" (SVA), \"From young age\" (missing article), \"lead to decline\" (article), \"good balance of both is needed\" (article), \"play positive role\" (article), \"teacher should not avoid the use of computer\" (number agreement). The conditional is faulty: \"If it was not for the computers, they have to find someone\" — the second-conditional protasis demands \"would have to\" in the apodosis."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "Strict descriptor maths gives (6+6+7+6)/4 = 6.25 → rounds up to 6.5, but applying the best-fit principle of 01-band-descriptors/examiner-perspective.md §3 and corroborated by 11-quality-audit/02-task2-sample-audit.md (Band 6.0, \"Broadly accurate, High confidence\"), the holistic Band-6 profile (mechanical cohesion, systematic article omissions, underdeveloped Body 2, balanced position not crisply defended) keeps the overall at 6.0.",
+  "what_changed": "Anchored the band judgement to the corpus's own audit verdict (`11-quality-audit/02-task2-sample-audit.md` flags this exact sample as \"Broadly accurate, High confidence\" at 6.0 with TR/CC/LR/GRA = 6/6/7/6) rather than to the unaudited published score, and surfaced the strict-rounding tension (6.25 → 6.5 mathematically vs 6.0 by best-fit). Suggestions are calibrated to the highest-leverage band-6→7 fixes from `05-band-6-to-7/top-30-fixes-band-6-to-7.md`.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "School age children is no exception to the use of computers.",
+      "improved": "School-age children are no exception.",
+      "reason": "SVA: plural subject takes plural verb; tighten redundant ending.",
+      "citations": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 2,
+      "original": "From young age, they know how to operate computers, iPad, and TV.",
+      "improved": "From a young age, they are accustomed to operating computers, tablets and televisions.",
+      "reason": "Missing indefinite article; iPad is brand-specific (use tablet); upgrade know how to operate → be accustomed to operating.",
+      "citations": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "09-instructor-tips/02-paraphrase-banks-task2.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 3,
+      "original": "which can lead to decline in reading and writing skills",
+      "improved": "which may erode core literacy skills",
+      "reason": "Add article (a decline) OR upgrade lexically: erode + core literacy skills is a Band-7 collocation.",
+      "citations": [
+        "10-task2-topic-banks/topic-01-education.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "I believe good balance of both is needed to help students' reading and writing skills to improve.",
+      "improved": "I would argue that a measured integration of both approaches is essential to develop literacy effectively.",
+      "reason": "Replace I believe with hedged I would argue; add article a; upgrade good balance → measured integration; tighten infinitive chain.",
+      "citations": [
+        "09-instructor-tips/02-paraphrase-banks-task2.md",
+        "05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 5,
+      "original": "Computers can help students with reading.",
+      "improved": "Digital tools can substantially enhance students' reading development.",
+      "reason": "Avoid help (Band-6 verb); replace with enhance / facilitate; vary the noun computers → digital tools to break the 14-times repetition.",
+      "citations": [
+        "09-instructor-tips/00-user-shared-feedback-2.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 6,
+      "original": "If it was not for the computers, they have to find someone who knows how to pronounce the words for them.",
+      "improved": "Were it not for such tools, they would be obliged to consult a more proficient speaker.",
+      "reason": "Inverted second conditional — a band-7 grammar showcase; fix the have → would have to protasis-apodosis mismatch.",
+      "citations": [
+        "09-instructor-tips/07-band7-grammar-showcases.md",
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "Therefore, computers can play positive role in students' reading skills.",
+      "improved": "Computers therefore play a pivotal role in fostering reading skills.",
+      "reason": "Add article a; upgrade positive role → pivotal role; replace help → foster; place therefore mid-sentence to avoid mechanical fronting.",
+      "citations": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "05-band-6-to-7/cohesion-upgrades.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "On the other hands, writing skills need to be improved by lots of handwritten works.",
+      "improved": "By contrast, writing proficiency is best cultivated through extensive handwritten practice.",
+      "reason": "Fix hands → hand (or replace with By contrast); works → work (uncountable); upgrade lots of → extensive and handwritten works → handwritten practice.",
+      "citations": [
+        "08-vocabulary-grammar/03-cohesion-error-correction-bank.md",
+        "09-instructor-tips/00-user-shared-feedback-2.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 9,
+      "original": "If students are using computers all the time and getting the help of autocorrection, they will not improve their writing skills.",
+      "improved": "Students who rely heavily on autocorrect are unlikely to develop the self-editing skills that durable writing competence requires.",
+      "reason": "Reduced relative clause + hedging unlikely to; autocorrection → autocorrect; replace vague help of with rely heavily on; add specific consequence (self-editing skills).",
+      "citations": [
+        "05-band-6-to-7/grammar-upgrades.md",
+        "09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 10,
+      "original": "Rather than avoiding computers that students are so used to, teachers need to come up with how to use it effectively to enhance students' reading and writing skills.",
+      "improved": "Rather than shunning a tool already integral to their pupils' lives, educators should devise pedagogical strategies that harness it for genuine literacy gain.",
+      "reason": "Eliminate phrasal come up with → devise; fix pronoun it (no clear singular antecedent → strategies that harness it); upgrade teachers → educators; concrete topic-7-collocation harness.",
+      "citations": [
+        "08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "10-task2-topic-banks/topic-03-technology.md"
+      ],
+      "category": "lexical"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "",
+  "raw_markdown": "# Iteration 04 — claude\n\n_Hand-extracted demo payload. The full verbatim markdown is at `12-benchmark/results/task2/04-claude.md` — run `bun run extract` to populate this field properly._"
+}

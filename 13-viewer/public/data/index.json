@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-05-10T00:00:00Z",
+  "tasks": {
+    "task1": {
+      "essay": {
+        "prompt": "The line graph below shows electricity consumption per person in three countries (the USA, Germany, and India) from 1990 to 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\n(Y-axis: kilowatt-hours per person per year. X-axis: years 1990–2020 in 5-year intervals.)",
+        "text": "The line graph illustrates electricity usage per person in three countries — the USA, Germany and India — from 1990 to 2020.\n\nOverall, electricity consumption in all three countries had a growth during this time period. However, the figure of USA stayed the highest, while India had the lowest level all over the period.\n\nIn 1990, the USA consumed approximately 11,000 kWh per person, which is much higher than Germany (around 6,000 kWh) and India (only 300 kWh). After this, USA's consumption increase steadily and reached a peak about 13,500 kWh in 2000. However, then it started to decline and in 2020 it became around 12,000 kWh. Germany had a similar pattern: it grew from 6,000 to 7,500 kWh in 2010, and after that it slightly decrease.\n\nIn contrast, India is different. Its consumption grew slow until 2000, but then increased rapidly. By 2020, the figure of India had reach to 1,200 kWh per person, which is four times higher than 1990.",
+        "word_count": 178
+      },
+      "iterations": [
+        {
+          "id": "task1/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6.0,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-09T14:46:09Z"
+        },
+        {
+          "id": "task1/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6.0,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-09T15:00:35Z"
+        }
+      ]
+    },
+    "task2": {
+      "essay": {
+        "prompt": "School children are becoming far too dependent on computers and this is having an alarming effect on reading and writing skills. Teachers need to avoid using computers in the classroom at all costs and go back to teaching basic study skills. To what extent do you agree or disagree?",
+        "text": "Children are born into the digital world. From young age, they know how to operate computers, iPad, and TV. It is part of their daily life. School age children is no exception to the use of computers. They are confident users of computers and very dependent on them which can lead to decline in reading and writing skills. Some teachers utilise the computers well in their lessons, while others avoid the use of computers in their classrooms. I believe good balance of both is needed to help students' reading and writing skills to improve.\n\nComputers can help students with reading. For example, if students come across unknown words, they can search the unknow words and hear the pronunciation. If it was not for the computers, they have to find someone who knows how to pronounce the words for them. Therefore, computers can play positive role in students' reading skills.\n\nOn the other hands, writing skills need to be improved by lots of handwritten works. If students are using computers all the time and getting the help of autocorrection, they will not improve their writing skills. They will not know how to edit as autocorrect is doing the job for them.\n\nIn conclusion, I believe that teachers should not allow students to do all the work on the computers especially writing tasks. However, teacher should not avoid the use of computer as computers can be a great help if they use it effectively. Rather than avoiding computers that students are so used to, teachers need to come up with how to use it effectively to enhance students' reading and writing skills.",
+        "word_count": 285
+      },
+      "iterations": [
+        {
+          "id": "task2/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6.0,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-09T14:46:37Z"
+        },
+        {
+          "id": "task2/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6.0,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-09T15:14:20Z"
+        }
+      ]
+    }
+  }
+}

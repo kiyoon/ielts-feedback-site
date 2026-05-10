@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FeedbackPayload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "task", "iteration", "tool", "generated_at",
+    "scores", "overall", "overall_rationale",
+    "what_changed", "rewrites",
+    "convergence", "convergence_note", "raw_markdown"
+  ],
+  "properties": {
+    "id":            { "type": "string" },
+    "task":          { "type": "string", "enum": ["task1", "task2"] },
+    "iteration":     { "type": "integer", "minimum": 0 },
+    "tool":          { "type": "string", "enum": ["codex", "claude", "baseline"] },
+    "generated_at":  { "type": "string" },
+    "prior_id":      { "type": "string" },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_response", "coherence", "lexical", "grammar"],
+      "properties": {
+        "task_response": { "$ref": "#/$defs/criterion" },
+        "coherence":     { "$ref": "#/$defs/criterion" },
+        "lexical":       { "$ref": "#/$defs/criterion" },
+        "grammar":       { "$ref": "#/$defs/criterion" }
+      }
+    },
+    "overall":           { "type": "number", "minimum": 0, "maximum": 9 },
+    "overall_rationale": { "type": "string" },
+    "what_changed":      { "type": "string" },
+    "rewrites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "original", "improved", "reason", "citations", "category"],
+        "properties": {
+          "id":        { "type": "integer", "minimum": 1 },
+          "original":  { "type": "string" },
+          "improved":  { "type": "string" },
+          "reason":    { "type": "string" },
+          "citations": { "type": "array", "items": { "type": "string" } },
+          "category": { "type": "string", "enum": ["task_response","coherence","lexical","grammar","spelling"] },
+          "offset": {
+            "type": "object",
+            "required": ["start", "end"],
+            "properties": {
+              "start": { "type": "integer", "minimum": 0 },
+              "end":   { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "convergence":      { "type": "string", "enum": ["CONVERGED", "REFINING", "UNKNOWN"] },
+    "convergence_note": { "type": "string" },
+    "raw_markdown":     { "type": "string" }
+  },
+  "$defs": {
+    "criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["band", "descriptor_evidence", "justification"],
+      "properties": {
+        "band":                { "type": "number", "minimum": 0, "maximum": 9 },
+        "descriptor_evidence": { "type": "string" },
+        "justification":       { "type": "string" }
+      }
+    }
+  }
+}

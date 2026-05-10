@@ -1,0 +1,148 @@
+{
+  "id": "task1/04-claude",
+  "task": "task1",
+  "iteration": 4,
+  "tool": "claude",
+  "generated_at": "2026-05-09T15:00:35Z",
+  "prior_id": "task1/03-codex",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task1-academic-band-descriptors.md §Band 6 (overview \"attempted\", figures used, key features only \"adequately\" highlighted)",
+      "justification": "The response covers the line graph and uses figures: \"approximately 11,000 kWh\", \"about 13,500 kWh in 2000\", \"7,500 kWh in 2010\", \"1,200 kWh per person\". The overview is attempted — \"all three countries had a growth\" + \"USA stayed the highest\" + \"India had the lowest level all over the period\" — but it does not categorise the data: the USA and Germany rose, peaked, then eased, while India rose continuously and showed by far the largest relative growth (~4×). Band 7 requires that data be appropriately categorised and main trends identified."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task1-academic-band-descriptors.md §Band 6 (cohesion \"mechanical\", reference repetitive)",
+      "justification": "Paragraphing is sensible (intro / overview / USA+Germany / India). However, cohesion is mechanical: \"After this,\" \"However, then it started to decline,\" \"after that it slightly decrease,\" and the empty pivot \"In contrast, India is different.\" Reference is repetitive — \"the figure of USA,\" \"the figure of India,\" \"consumption.\""
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task1-academic-band-descriptors.md §Band 6 (range \"restricted\", non-collocational items)",
+      "justification": "Adequate Task 1 vocabulary is present: \"consumed\", \"reached a peak\", \"decline\", \"similar pattern\", \"increased rapidly\". But range is restricted and several items are non-collocational: \"had a growth\", \"all over the period\", \"grew slow\", \"became around 12,000 kWh\", \"had reach to\". The comparison \"four times higher than 1990\" is imprecise."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "01-band-descriptors/task1-academic-band-descriptors.md §Band 6 (complex forms attempted but \"not marked by the same level of accuracy\")",
+      "justification": "Some complex structures are attempted (\"which is much higher than…\", \"By 2020, the figure of India had reach to…\"). But errors recur: \"USA's consumption increase\" and \"it slightly decrease\" (SVA / past-tense omission); \"had reach to\" (past-perfect form + preposition); \"the figure of USA\" (article: 'the USA'); tense slip \"which is much higher\" while describing 1990."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "All four criteria sit honestly at Band 6. Average is 6.00 → rounds to 6.0 under 01-band-descriptors/scoring-rules.md (strictly less than .25 → whole band).",
+  "what_changed": "The prior (iter 03) was already well-calibrated; this iteration is a marginal sharpening, not a re-banding. Three concrete additions: (i) push the rewrite table further into the user's own gold patterns from `09-instructor-tips/00-user-shared-feedback.md` (passive figure verbs `was recorded by` / `was held by`), which the prior under-used; (ii) correct the prior's USA/Germany comparator slightly — the candidate compares a country with a figure (\"higher than Germany\"), not figure with figure, so the upgrade should make the comparator explicit; (iii) add one band-7 grammar showcase (concessive `Although…`) drawn from `09-instructor-tips/07-band7-grammar-showcases.md`.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "Overall, electricity consumption in all three countries had a growth during this time period. However, the figure of USA stayed the highest, while India had the lowest level all over the period.",
+      "improved": "Overall, per-capita electricity use rose in all three countries, but the patterns diverged: consumption in the USA and Germany rose, peaked, and then eased, whereas India's continued to climb throughout. The USA recorded the highest figure throughout, while India remained by far the lowest.",
+      "reason": "Missing categorisation — the gating Band 7 TA feature; uses the 'diverged' pattern from Tier-1 model essays.",
+      "citations": [
+        "01-band-descriptors/task1-academic-band-descriptors.md",
+        "02-task1-academic/samples-band-7_0.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "the figure of USA stayed the highest",
+      "improved": "the highest per-capita figure was recorded by the USA throughout the period",
+      "reason": "User's signature instructor pattern: passive figure verb (was recorded by / was held by / was taken up by) shifts focus to the data and adds GRA range.",
+      "citations": [
+        "09-instructor-tips/00-user-shared-feedback.md",
+        "09-instructor-tips/04-passive-voice-patterns.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 3,
+      "original": "India had the lowest level all over the period",
+      "improved": "India consistently held the lowest figure throughout",
+      "reason": "'all over the period' is non-idiomatic; 'throughout' is the standard collocation; 'held' mirrors the passive figure-verb family.",
+      "citations": [
+        "09-instructor-tips/04-passive-voice-patterns.md",
+        "09-instructor-tips/05-superlative-and-comparative-upgrades.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "which is much higher than Germany (around 6,000 kWh) and India (only 300 kWh)",
+      "improved": "considerably higher than the figures for Germany (around 6,000 kWh) and India (just 300 kWh)",
+      "reason": "Compare figure with figure, not country with figure; add a hedging adverb (Korean-instructor rule: every comparative needs calibration).",
+      "citations": [
+        "09-instructor-tips/05-superlative-and-comparative-upgrades.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "USA's consumption increase steadily and reached a peak about 13,500 kWh in 2000",
+      "improved": "Per-capita consumption in the USA rose steadily, peaking at approximately 13,500 kWh in 2000",
+      "reason": "Fix tense (increase → rose); use a participle clause (peaking at…) — a band-7 GRA showcase; correct preposition (peak at, not peak about).",
+      "citations": [
+        "09-instructor-tips/03-trend-language-bank.md",
+        "09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "However, then it started to decline and in 2020 it became around 12,000 kWh",
+      "improved": "Thereafter, it declined gradually, settling at around 12,000 kWh by 2020",
+      "reason": "Remove the clumsy double linker 'However, then'; replace 'became' with the proper endpoint verb 'settle at'; change 'in 2020' to 'by 2020'.",
+      "citations": [
+        "09-instructor-tips/08-cohesion-upgrades-instructor.md",
+        "09-instructor-tips/03-trend-language-bank.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 7,
+      "original": "Germany had a similar pattern: it grew from 6,000 to 7,500 kWh in 2010",
+      "improved": "Germany followed a similar trajectory, climbing from 6,000 to 7,500 kWh by 2010",
+      "reason": "'had a similar pattern' is non-collocational ('had' + abstract noun); 'followed a trajectory / pattern' is the natural Band 7 collocation; 'by 2010' for endpoint.",
+      "citations": [
+        "08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "09-instructor-tips/03-trend-language-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "after that it slightly decrease",
+      "improved": "before easing slightly",
+      "reason": "Past-tense fix (SVA + tense); 'easing' is more precise than 'slightly decrease'; participle clause adds GRA range.",
+      "citations": [
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "In contrast, India is different. Its consumption grew slow until 2000, but then increased rapidly.",
+      "improved": "India, by contrast, followed a markedly different trajectory: consumption grew slowly until 2000 and then rose rapidly.",
+      "reason": "'is different' is empty after 'in contrast'; 'grew slow' → 'grew slowly' (adv form); colon links cause and elaboration cleanly.",
+      "citations": [
+        "09-instructor-tips/08-cohesion-upgrades-instructor.md",
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 10,
+      "original": "By 2020, the figure of India had reach to 1,200 kWh per person, which is four times higher than 1990.",
+      "improved": "Although India started from a far lower base, the figure had quadrupled by 2020, reaching 1,200 kWh per person — roughly four times its 1990 level.",
+      "reason": "Fix the verb form (had reached, no 'to'); use the concessive 'Although…' opener (a band-7 grammar showcase); replace the broken comparison 'four times higher than 1990' with the correct 'four times its 1990 level' / 'quadrupled'.",
+      "citations": [
+        "09-instructor-tips/07-band7-grammar-showcases.md",
+        "09-instructor-tips/05-superlative-and-comparative-upgrades.md",
+        "08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "Marginal change — converging. The prior (iter 03) was already correctly banded and well-justified; this iteration's value is in (a) sharpening row 2 to apply the user's own instructor's gold passive pattern (`was recorded by`), which the prior referenced but did not deploy at the most relevant slot; (b) tightening the apples-to-apples comparator in row 4; and (c) adding a concessive `Although…` showcase in row 10. The diagnosis, the band score, and the criterion-evidence quotes are essentially unchanged. Future iterations will yield diminishing returns.",
+  "raw_markdown": "# Iteration 04 — claude\n\n_Generated 2026-05-09T15:00:35Z. Prior: 03-codex. Manifest: 99 files._\n\n---\n\n_(See structured tab for the full per-criterion scores, justification, rewrites, and convergence note. Raw markdown truncated in this hand-extracted demo payload — run `bun run extract` for the full chain.)_"
+}
