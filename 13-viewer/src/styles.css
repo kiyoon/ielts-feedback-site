@@ -258,24 +258,31 @@
    elements that wrap across lines draw a single big bounding rectangle that
    the user reads as "the larger region got highlighted". Use stronger
    background + thicker bottom border instead; both render per-line for
-   inline elements, which is what we want. */
-.nested-child:hover,
-.nested-child:focus,
-.nested-child:focus-visible {
+   inline elements, which is what we want.
+
+   `:not(:has(.nested-child:hover/focus))` excludes outer ancestors when an
+   inner descendant is the actual target. Without this, CSS :hover propagation
+   in deep-nest cases (A⊃B⊃C) brightens BOTH the outer AND inner spans at
+   once — compounding `filter: brightness(1.2)` and confusing the user about
+   which child their pointer is over. The hover/focus styles now apply only
+   to the innermost matching .nested-child. */
+.nested-child:hover:not(:has(.nested-child:hover)),
+.nested-child:focus:not(:has(.nested-child:focus)),
+.nested-child:focus-visible:not(:has(.nested-child:focus-visible)) {
   filter: brightness(1.2);
   outline: none !important;
   border-bottom-width: 2.5px;
 }
-.nested-child:hover[data-cat="task_response"],
-.nested-child:focus[data-cat="task_response"]      { background-color: hsl(var(--cat-tr) / 0.36); }
-.nested-child:hover[data-cat="coherence"],
-.nested-child:focus[data-cat="coherence"]          { background-color: hsl(var(--cat-cc) / 0.36); }
-.nested-child:hover[data-cat="lexical"],
-.nested-child:focus[data-cat="lexical"]            { background-color: hsl(var(--cat-lr) / 0.38); }
-.nested-child:hover[data-cat="grammar"],
-.nested-child:focus[data-cat="grammar"]            { background-color: hsl(var(--cat-gra) / 0.36); }
-.nested-child:hover[data-cat="spelling"],
-.nested-child:focus[data-cat="spelling"]           { background-color: hsl(var(--cat-sp) / 0.36); }
+.nested-child:hover[data-cat="task_response"]:not(:has(.nested-child:hover)),
+.nested-child:focus[data-cat="task_response"]:not(:has(.nested-child:focus))      { background-color: hsl(var(--cat-tr) / 0.36); }
+.nested-child:hover[data-cat="coherence"]:not(:has(.nested-child:hover)),
+.nested-child:focus[data-cat="coherence"]:not(:has(.nested-child:focus))          { background-color: hsl(var(--cat-cc) / 0.36); }
+.nested-child:hover[data-cat="lexical"]:not(:has(.nested-child:hover)),
+.nested-child:focus[data-cat="lexical"]:not(:has(.nested-child:focus))            { background-color: hsl(var(--cat-lr) / 0.38); }
+.nested-child:hover[data-cat="grammar"]:not(:has(.nested-child:hover)),
+.nested-child:focus[data-cat="grammar"]:not(:has(.nested-child:focus))            { background-color: hsl(var(--cat-gra) / 0.36); }
+.nested-child:hover[data-cat="spelling"]:not(:has(.nested-child:hover)),
+.nested-child:focus[data-cat="spelling"]:not(:has(.nested-child:focus))           { background-color: hsl(var(--cat-sp) / 0.36); }
 .nested-child[data-cat="task_response"] { background-color: hsl(var(--cat-tr) / 0.18); border-bottom-color: hsl(var(--cat-tr) / 0.7); }
 .nested-child[data-cat="coherence"]     { background-color: hsl(var(--cat-cc) / 0.18); border-bottom-color: hsl(var(--cat-cc) / 0.7); }
 .nested-child[data-cat="lexical"]       { background-color: hsl(var(--cat-lr) / 0.20); border-bottom-color: hsl(var(--cat-lr) / 0.7); }
@@ -285,8 +292,8 @@
   border-bottom-style: dashed;
   box-shadow: inset 0 -0.5em 0 hsl(var(--warning) / 0.14);
 }
-.nested-child[data-overlap="true"]:hover,
-.nested-child[data-overlap="true"]:focus {
+.nested-child[data-overlap="true"]:hover:not(:has(.nested-child:hover)),
+.nested-child[data-overlap="true"]:focus:not(:has(.nested-child:focus)) {
   box-shadow: inset 0 -0.65em 0 hsl(var(--warning) / 0.22);
 }
 

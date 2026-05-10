@@ -1,6 +1,6 @@
 #!/bin/bash
 # Iteratively refine feedback for one essay across N alternating codex/claude calls.
-# Usage: run-iterations.sh <task1|task2> [N]
+# Usage: run-iterations.sh <task1|task2|w1|w2> [N]
 #
 # Iteration i (1-indexed) uses codex if i is odd, claude if even.
 # Each iteration is REQUIRED (by prompt) to read every corpus file in the manifest
@@ -35,11 +35,18 @@ mkdir -p "$OUT_DIR" "$BENCH/logs"
 ESSAY=$(cat "$ESSAY_FILE")
 TPL=$(cat "$PROMPT_FILE")
 
-# Build a manifest of EVERY .md in the repo, except the benchmark harness itself.
-MANIFEST=$(cd "$REPO" && find . -name '*.md' \
-                          -not -path './.git/*' \
-                          -not -path './12-benchmark/*' \
-            | sort | sed 's|^\./||')
+# Build a manifest of project markdown, except the benchmark harness itself.
+# Prefer ripgrep because it respects .gitignore; find is only a fallback.
+if command -v rg >/dev/null 2>&1; then
+  MANIFEST=$(cd "$REPO" && rg --files -g '*.md' -g '!12-benchmark/**' | sort)
+else
+  MANIFEST=$(cd "$REPO" && find . -name '*.md' \
+                            -not -path './.git/*' \
+                            -not -path '*/node_modules/*' \
+                            -not -path '*/dist/*' \
+                            -not -path './12-benchmark/*' \
+              | sort | sed 's|^\./||')
+fi
 MANIFEST_COUNT=$(printf '%s\n' "$MANIFEST" | wc -l | tr -d ' ')
 echo "[$(date +%T) it:$TASK] manifest=$MANIFEST_COUNT files; CONVERGE_K=$CONVERGE_K; PRIOR_DEPTH=$PRIOR_DEPTH" | tee -a "$LOG"
 
@@ -58,6 +65,9 @@ slot_file() {
     [ -s "$f" ] || continue
     local sz; sz=$(wc -c <"$f" | tr -d ' ')
     [ "$sz" -ge $((MIN_BYTES + 200)) ] || continue
+    if [ "$j" -ne 0 ] && ! grep -qE '^##[[:space:]]+CONVERGENCE:[[:space:]]+(CONVERGED|REFINING)' "$f"; then
+      continue
+    fi
     printf '%s' "$f"
     return 0
   done
@@ -65,16 +75,21 @@ slot_file() {
 }
 
 # Walk back from i-1 collecting up to PRIOR_DEPTH non-empty slots.
+# Slot 00 is the baseline feedback and is included when there is room.
 # Outputs them oldest → newest, separated by --- markers.
 build_prior_chain() {
   local i=$1
   local found=0
   local oldest=()
   local j=$((i - 1))
-  while [ "$j" -ge 1 ] && [ "$found" -lt "$PRIOR_DEPTH" ]; do
+  while [ "$j" -ge 0 ] && [ "$found" -lt "$PRIOR_DEPTH" ]; do
     local f
     if f=$(slot_file "$j"); then
-      oldest=("$j:$f" "${oldest[@]}")
+      if [ "${#oldest[@]}" -eq 0 ]; then
+        oldest=("$j:$f")
+      else
+        oldest=("$j:$f" "${oldest[@]}")
+      fi
       found=$((found + 1))
     fi
     j=$((j - 1))

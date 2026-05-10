@@ -249,9 +249,9 @@ export default function App() {
             panelRef={sidebarPanelRef}
             collapsible
             collapsedSize="0px"
-            defaultSize={sidebarCollapsed ? "0px" : "288px"}
-            minSize="220px"
-            maxSize="45%"
+            defaultSize={sidebarCollapsed ? "0px" : "200px"}
+            minSize="120px"
+            maxSize="28%"
             groupResizeBehavior="preserve-pixel-size"
             onResize={handleSidebarResize}
             className="h-full min-h-0 min-w-0"
@@ -271,7 +271,7 @@ export default function App() {
           <SidebarResizeHandle />
           <Panel
             id="viewer-main"
-            minSize="320px"
+            minSize="180px"
             className="h-full min-h-0 min-w-0"
             style={{ overflow: "hidden" }}
           >
@@ -309,9 +309,9 @@ export default function App() {
           panelRef={sidebarPanelRef}
           collapsible
           collapsedSize="0px"
-          defaultSize={sidebarCollapsed ? "0px" : "288px"}
-          minSize="220px"
-          maxSize="45%"
+          defaultSize={sidebarCollapsed ? "0px" : "200px"}
+          minSize="120px"
+          maxSize="28%"
           groupResizeBehavior="preserve-pixel-size"
           onResize={handleSidebarResize}
           className="h-full min-h-0 min-w-0"
@@ -331,7 +331,7 @@ export default function App() {
         <SidebarResizeHandle />
         <Panel
           id="viewer-main"
-          minSize="320px"
+          minSize="180px"
           className="h-full min-h-0 min-w-0"
           style={{ overflow: "hidden" }}
         >
@@ -387,7 +387,7 @@ export default function App() {
                   collapsible
                   collapsedSize="0px"
                   defaultSize={essayCollapsed ? "0px" : "50%"}
-                  minSize="280px"
+                  minSize="110px"
                   onResize={handleEssayResize}
                   className="h-full min-h-0 min-w-0"
                   style={{ overflow: "hidden" }}
@@ -413,7 +413,7 @@ export default function App() {
                   collapsible
                   collapsedSize="0px"
                   defaultSize={feedbackCollapsed ? "0px" : "50%"}
-                  minSize="320px"
+                  minSize="150px"
                   onResize={handleFeedbackResize}
                   className="h-full min-h-0 min-w-0"
                   style={{ overflow: "hidden" }}

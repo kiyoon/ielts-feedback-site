@@ -11,13 +11,24 @@ LOG=$HERE/run.log
 
 mkdir -p "$HERE/feedback"
 
-# Build the corpus manifest (same set the iteration loop reads)
-MANIFEST=$(cd "$REPO" && find . -name '*.md' \
-                         -not -path './.git/*' \
-                         -not -path './12-benchmark/*' \
-                         -not -path './13-viewer/*' \
-                         -not -path './14-real-essays/feedback/*' \
-            | sort | sed 's|^\./||')
+# Build the corpus manifest. Prefer ripgrep because it respects .gitignore;
+# find is only a fallback.
+if command -v rg >/dev/null 2>&1; then
+  MANIFEST=$(cd "$REPO" && rg --files -g '*.md' \
+                             -g '!12-benchmark/**' \
+                             -g '!13-viewer/**' \
+                             -g '!14-real-essays/feedback/**' \
+              | sort)
+else
+  MANIFEST=$(cd "$REPO" && find . -name '*.md' \
+                           -not -path './.git/*' \
+                           -not -path '*/node_modules/*' \
+                           -not -path '*/dist/*' \
+                           -not -path './12-benchmark/*' \
+                           -not -path './13-viewer/*' \
+                           -not -path './14-real-essays/feedback/*' \
+              | sort | sed 's|^\./||')
+fi
 MANIFEST_COUNT=$(printf '%s\n' "$MANIFEST" | wc -l | tr -d ' ')
 
 run_one() {

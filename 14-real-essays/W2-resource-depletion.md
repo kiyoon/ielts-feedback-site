@@ -1,8 +1,27 @@
 # W2 — Resource depletion and natural science (real student essay)
 
 **Source:** student-written practice essay (Telegram, 2026-05-10).
-**Task type:** Task 2 (discussion essay).
-**Prompt (inferred from the thesis):** Natural science is often seen as a way to address the depletion of natural resources. Discuss what natural science can offer to tackle the resource depletion issue and the limitations of this approach.
+**Task type:** Homework assignment; evaluate with IELTS Writing Task 2-style feedback, but judge Task Response against the exact assignment below.
+**Prompt source:** Extracted from the embedded DOCX prompt screenshot (`raw/W2 - resouce depletion and natural science.docx`, `word/media/image1.png`).
+
+## Prompt
+
+Homework Assignment
+
+Choose one global challenge discussed in the lecture (climate change, pandemics, or resource depletion).
+
+Write a short response answering:
+
+1. What is the scientific basis of this problem?
+2. What solutions does natural science offer?
+3. Why is international cooperation necessary?
+4. What is one limitation or challenge in solving this problem?
+
+Requirements:
+
+- 200-300 words
+- At least one example (real or hypothetical)
+- Clear structure
 
 ## Essay
 

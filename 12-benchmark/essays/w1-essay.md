@@ -1,13 +1,18 @@
 # W1 — Mathematical influence (real student essay)
 
 **Source:** student-written practice essay (Telegram, 2026-05-10). Imported from `14-real-essays/W1-mathematical-influence.md` for the iterative-refinement loop.
-**Task type:** Task 2 (opinion / discussion — assumed; the docx did not include the original prompt).
+**Task type:** Homework assignment; evaluate with IELTS Writing Task 2-style feedback, but judge Task Response against the exact assignment below.
+**Prompt source:** Extracted from the embedded DOCX prompt screenshot (`14-real-essays/raw/W1 - Mathematical influence.docx`, `word/media/image1.png`).
+
+## Context correction for continuation loop
+
+Iterations 00-10 were generated from an inferred prompt about mathematics and the computer revolution. That inference was incomplete. From iteration 11 onward, use the exact DOCX prompt below as the authoritative task. When earlier feedback conflicts with this recovered prompt, preserve the useful language/grammar/cohesion analysis but explicitly recalibrate Task Response against the actual assignment.
 
 ## Prompt
 
-Some people argue that mathematics has been the most important driver of the computer revolution. Discuss the influence of mathematics on the development of computer science.
+Homework:
 
-(Inferred — the original prompt was not provided; this is reconstructed from the thesis.)
+Choose one historical period (e.g., Ancient Greece, Islamic Golden Age, Scientific Revolution) and write a 500-word essay on how mathematics influenced science, society, or culture during that time.
 
 ## Essay
 
