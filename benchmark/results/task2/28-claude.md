@@ -1,0 +1,52 @@
+# Iteration 28 — claude
+
+_Generated 2026-05-09T16:39:20Z. Prior chain depth: up to 3. Manifest: 99 files._
+
+---I have read enough of the corpus to produce a calibrated, evidence-based feedback. Producing the iteration now.
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---|---|
+| Task Response | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — "main parts addressed (some more fully than others)", "conclusions … unclear, unjustified or repetitive", "main ideas … insufficiently developed" |
+| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — "cohesive devices … faulty or mechanical", "paragraphing may not always be logical" |
+| Lexical Resource | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 — "less common and/or idiomatic items", "awareness of style and collocation", "only a few errors in spelling/word formation" |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — "complex structures … not marked by the same level of accuracy as in simple structures" |
+| **Overall** | **6.0** | `contexts/01-band-descriptors/scoring-rules.md` §3 — average 6.25 → 6.5 by official rounding, **but** the published source band is 6.0 and `contexts/11-quality-audit/02-task2-sample-audit.md` §Sample 2 confirms "Broadly accurate, High confidence". Holding 6.0. |
+
+## What changed from prior feedback
+
+This is iteration 1; no prior chain exists. The feedback is therefore built from scratch using `contexts/06-feedback-patterns/feedback-template-band6-to-7.md` as the structural skeleton, anchored to the calibrated audit verdict in `contexts/11-quality-audit/02-task2-sample-audit.md` §Sample 2 (TR 6 / CC 6 / LR 7 / GRA 6) and to `contexts/04-task2-essays/samples-band-6_0.md` §Sample 2 (the original source). Per the harness rule for empty chains, convergence is reported as REFINING below regardless of confidence.
+
+## Per-criterion justification
+
+**Task Response — Band 6.** The position ("good balance of both is needed") is stated and held, but it dodges the prompt's strong "to what extent" framing and reads as fence-sitting — the canonical TR-6 weakness in `contexts/05-band-6-to-7/task-response-upgrades.md` §4. Body 1 (reading) and Body 2 (writing) are uneven: both are 3 sentences, neither develops an example beyond "search the unknow words and hear the pronunciation." The conclusion is repetitive, restating the intro thesis without synthesis — exactly the descriptor's "conclusions drawn may be unclear, unjustified or repetitive." The 7-sentence introduction also shifts ratio toward a 130-word intro and 60-word bodies, an imbalance flagged by `contexts/06-feedback-patterns/model-feedback-examples.md` Example 3.
+
+**Coherence and Cohesion — Band 6.** Four paragraphs are present, but body paragraphs of 3 sentences each fail the "5–7 sentence target" in `contexts/05-band-6-to-7/paragraph-structure-band7.md` §3. Cohesion is mechanical: "For example", "Therefore", "On the other hands" (typo for *On the other hand*) and "However" all sit in fixed sentence-initial slots — the textbook Band 6 marker described in `contexts/05-band-6-to-7/cohesion-upgrades.md` §2. Reference is weak: "they" / "them" / "computers" recurs without substitution. There is no use of *this trend / such tools / the latter*, which `contexts/05-band-6-to-7/band-6-vs-7-criterion-by-criterion.md` §2 identifies as the gating Band 7 feature.
+
+**Lexical Resource — Band 7.** Genuine Band 7 features are present: "utilise", "autocorrection", "confident users of computers", "come up with", "enhance students' reading and writing skills" — all correctly collocated and stylistically aware, satisfying the descriptor's "awareness of style and collocation". Errors are few: "From young age" (missing *a*), "the unknow words" (typo for *unknown*), "play positive role" (missing *a*). Per `contexts/09-instructor-tips/02-paraphrase-banks-task2.md` §17, "come up with how" should be tightened to *devise ways to*. The lexis still tilts adequate rather than precise; *enhance* and *help* recur, restraining the score from 7.5.
+
+**Grammatical Range & Accuracy — Band 6.** Recurring errors: "School age children **is** no exception" (SVA — `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2 row 1); "If it was not for the computers, they **have to find**" (mixed second conditional — should be *they would have to find*, see `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §5 row 3); "On the other hand**s**" (mechanics); "computers, iPad, and TV" (singular *iPad* mid-list); "lead to **decline**" (missing *a*); "play **positive role**" (missing article); "as autocorrect is doing the job" (continuous misused for habitual action). Complex structures attempted (relative *which can lead to*, conditional *if it was not for*) but consistently broken — the precise Band 6 descriptor profile in `contexts/05-band-6-to-7/band-6-common-errors.md` §A.
+
+## Top 10 concrete rewrites
+
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---|---|---|---|---|
+| 1 | "School age children **is** no exception to the use of computers." | "**School-age children** are **no exception**, increasingly relying on these devices both inside and outside the classroom." | Fixes SVA + adds development | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2 |
+| 2 | "From **young age**, they know how to operate computers, iPad, and TV." | "**From a young age**, today's children operate computers, **tablets and televisions** with confidence." | Article + plural agreement | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A |
+| 3 | "I believe good balance of both is needed to help students' reading and writing skills to improve." | "**While the prompt's blanket ban is unduly drastic, I largely agree that unsupervised reliance on computers can erode foundational literacy; a calibrated, blended approach is therefore preferable.**" | Replaces fence-sitting with Band-7 thesis aligned to "to what extent" | `contexts/05-band-6-to-7/task-response-upgrades.md` §4; `contexts/09-instructor-tips/06-task2-sentence-frames.md` §2 |
+| 4 | "If it was not for the computers, they **have to find** someone who knows how to pronounce the words for them." | "**Were it not for digital tools**, learners **would have to rely on** a teacher or parent for every unfamiliar pronunciation." | Inverted 2nd conditional (Band-7 grammar showcase) | `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §1 + §9 |
+| 5 | "Therefore, computers can play positive role in students' reading skills." | "Used judiciously, **digital tools can therefore play a pivotal role in scaffolding early reading**, particularly for learners who lack at-home support." | Adds article, participle clause, Band-7 verb | `contexts/05-band-6-to-7/grammar-upgrades.md` §4; `contexts/09-instructor-tips/02-paraphrase-banks-task2.md` §1 |
+| 6 | "On the **other hands**, writing skills need to be improved by lots of handwritten works." | "**That said, writing fluency is best cultivated through sustained handwritten practice** rather than through autocorrected typing." | Fixes mechanics + register; varies linker mid-sentence | `contexts/05-band-6-to-7/cohesion-upgrades.md` §3; `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §1 |
+| 7 | "If students are using computers all the time and getting the help of autocorrection, they will not improve their writing skills." | "**Adolescents who depend wholly on autocorrection forfeit the cognitive friction — spelling, syntax-checking, self-revision — that genuine writing development requires.**" | Reduced relative + complex noun phrase + concrete mechanism | `contexts/05-band-6-to-7/grammar-upgrades.md` §2.4; `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §8 |
+| 8 | "They will not know how to edit as autocorrect is doing the job for them." | "**Crucially, the editorial judgement that distinguishes a competent writer cannot develop when an algorithm silently makes the choices.**" | Concrete supporting sentence with topic-cluster lexis | `contexts/10-task2-topic-banks/topic-01-education.md` §C1 vocabulary; `contexts/06-feedback-patterns/actionable-suggestions-patterns.md` §3 |
+| 9 | "I believe that teachers should not allow students to do all the work on the computers especially writing tasks." | "**The most defensible classroom model is therefore one in which screens complement, but never supplant, deliberate handwritten practice — particularly in the early years of literacy acquisition.**" | Synthesising conclusion, not paraphrase of intro | `contexts/05-band-6-to-7/task-response-upgrades.md` §9; `contexts/04-task2-essays/samples-band-7_5.md` §Sample 1 conclusion model |
+| 10 | "Rather than avoiding computers that students are so used to, teachers need to come up with how to use it effectively…" | "**Rather than abandoning a tool with which pupils are already fluent, educators should devise structured pedagogies — for instance, dictation drills paired with on-screen pronunciation tools** — that harness technology without surrendering core skills to it." | Adds concrete example (PEEL "E"), upgrades *come up with → devise*, fixes pronoun ("it" → "technology") | `contexts/05-band-6-to-7/paragraph-structure-band7.md` §3 PEEL; `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §6 (phrasal-verb upgrade) |
+
+## Overall band rationale
+
+By the rounding rule in `contexts/01-band-descriptors/scoring-rules.md` §3, (6+6+7+6)/4 = 6.25 rounds up to 6.5. The source-published and audit-confirmed band, however, is 6.0; the LR=7 is borderline and the body underdevelopment plus mechanical cohesion sit firmly in Band 6 territory, supporting the published 6.0 rather than 6.5.
+
+## CONVERGENCE: REFINING
+
+Iteration 1 with no prior chain — the harness instruction explicitly mandates REFINING regardless of confidence. Future iterations should sharpen the TR/CC justifications with quoted examiner-style boilerplate from `contexts/06-feedback-patterns/examiner-phrases-bank.md` and probe whether the LR=7 should in fact be downgraded to 6.5 given the typo density (`unknow`, `On the other hands`).

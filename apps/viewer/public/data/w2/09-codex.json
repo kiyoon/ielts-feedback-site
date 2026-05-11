@@ -1,0 +1,171 @@
+{
+  "id": "w2/09-codex",
+  "task": "w2",
+  "iteration": 9,
+  "tool": "codex",
+  "generated_at": "2026-05-11T00:34:55Z",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` Band 6",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` Band 6",
+      "justification": "Overall progression is clear: offer, limitation, conclusion. However, cohesion is mechanical in places: “For instance,” “In addition,” “First and foremost,” “Secondly,” and “To sum up” create a list-like feel. Reference is also unclear in “they do not seem cost-effective” and “since they do have limitations.” Band 7 needs flexible reference and substitution, as explained in `contexts/05-band-6-to-7/cohesion-upgrades.md`."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` Band 6",
+      "justification": "Vocabulary is adequate for the topic, with “resource depletion,” “sustainable energy system,” “scientific breakthroughs,” and “reproducibility.” The Band 6 limit comes from imprecise collocation: “contribute to the issue,” “natural energy,” “reasonably high enough,” and “use energy without concern.” Band 7 requires more precision and collocational control, per `contexts/05-band-6-to-7/vocabulary-upgrades.md`."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` Band 6",
+      "justification": "You attempt complex forms: “Although they can provide several benefits,” “since it is possible,” and “which can lead people.” However, several complex sentences contain errors or awkward structure: “People did not fully understand when it comes to natural energy” and “nature is simply too vast to research, in other words...” Error-free sentences are not frequent enough for Band 7. This matches Band 6 GRA in `contexts/01-band-descriptors/task2-band-descriptors.md`."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "All four criteria best fit Band 6: the essay is relevant and coherent, but ideas are underdeveloped, cohesion is mechanical, vocabulary is sometimes imprecise, and complex grammar is not consistently accurate. The average is 6.0, rounded according to `contexts/01-band-descriptors/scoring-rules.md`.",
+  "what_changed": "No prior feedback chain was supplied, so there is no most recent iteration to audit or recalibrate. This feedback therefore establishes the baseline score directly from the official Task 2 descriptors. Because the prior chain is empty, convergence must remain `REFINING` under the harness rules.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "I will discuss what natural science can offer... and the limitations",
+      "improved": "This essay will argue that natural science can help by developing renewable substitutes and improving efficiency, but that it cannot solve depletion without policy and consumption changes.",
+      "reason": "Gives a clear thesis and covers both parts.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "can contribute to the issue",
+      "improved": "can help address resource depletion",
+      "reason": "“Contribute to the issue” means worsen the problem; use the correct collocation.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-02-environment.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "scientific breakthroughs could happen at some point",
+      "improved": "breakthroughs in battery storage or solar efficiency could make renewable energy cheaper and more reliable",
+      "reason": "Adds concrete support instead of vague optimism.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "People did not fully understand when it comes to natural energy",
+      "improved": "Scientists still do not fully understand how to exploit renewable sources without causing new environmental costs.",
+      "reason": "Fixes grammar, subject choice, and topic precision.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "natural science could solve everything since they do have limitations",
+      "improved": "natural science can solve resource depletion by itself, since scientific knowledge has practical limits",
+      "reason": "“Natural science” is singular; the limitation is made specific.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 6,
+      "original": "human errors could happen in every research",
+      "improved": "human error can occur in any research project",
+      "reason": "“Research” is usually uncountable; “research project” is countable.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "given the fact that they value reproducibility the most",
+      "improved": "given that scientists place a high value on reproducibility",
+      "reason": "More concise and removes unclear “they.”",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "nature is simply too vast to research, in other words...",
+      "improved": "Nature is too vast to be fully understood; in other words, science can reduce uncertainty but not remove it entirely.",
+      "reason": "Fixes comma splice and creates a stronger concluding idea.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "it is not possible to solve every problem",
+      "improved": "science can provide cleaner substitutes and more efficient technologies, but lasting progress also depends on regulation, affordability, and consumption habits.",
+      "reason": "Turns a generic conclusion into synthesis.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "The prior chain is empty, so the convergence rules require `REFINING`. A future iteration could still compare against this baseline and sharpen whether any criterion deserves 6.5-style commentary, even though official per-criterion scoring remains whole-band.",
+  "raw_markdown": "# Iteration 09 — codex\n\n_Generated 2026-05-10T10:26:49Z. Prior chain depth: up to 3. Manifest: 462 files._\n\n---## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---:|---|\n| Task Response | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` Band 6 |\n| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` Band 6 |\n| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` Band 6 |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` Band 6 |\n| **Overall** | 6.0 | rounded per `contexts/01-band-descriptors/scoring-rules.md` |\n\n## What changed from prior feedback\nNo prior feedback chain was supplied, so there is no most recent iteration to audit or recalibrate. This feedback therefore establishes the baseline score directly from the official Task 2 descriptors. Because the prior chain is empty, convergence must remain `REFINING` under the harness rules.\n\n## Structural feedback\nThe essay addresses both parts of the prompt: what natural science can offer and its limitations. The position is understandable: science can help, but it cannot solve everything. However, Body 1 mostly stays on one example, sustainable energy, and does not explain clearly how this tackles wider resource depletion. Body 2 gives limitations, but “human errors” and “nature is too vast” are not developed into a concrete resource-depletion argument. The single highest-impact fix here is rewriting Body 2 as a developed claim plus example, not the lexical upgrades in the table below. A Band 7 version would explain that science can produce renewable substitutes and efficiency gains, but policy, cost, consumption habits, and implementation limit what science alone can achieve.\n\n## Focus areas\n- **PEEL development for both prompt parts** — Your ideas are relevant but under-supported; Band 7 needs claim, explanation, example, and link. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md`, `contexts/05-band-6-to-7/paragraph-structure-band7.md`.\n- **Science/environment collocations** — Phrases like “contribute to the issue” and “natural energy” sound unnatural; use topic collocations such as “address resource depletion” and “renewable energy sources.” Drill: `contexts/10-task2-topic-banks/topic-02-environment.md`, `contexts/10-task2-topic-banks/topic-17-science-and-research.md`.\n- **Reference clarity: it/they/this** — “they” sometimes refers unclearly to resources, energy systems, or natural science. Drill: `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md`, `contexts/05-band-6-to-7/cohesion-upgrades.md`.\n- **Uncountable nouns and articles** — “every research” should become “every research project” or “all research.” Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md`.\n- **Controlled complex sentences** — You use “although,” “since,” and “which,” but errors remain in longer sentences. Drill: `contexts/05-band-6-to-7/grammar-upgrades.md`, `contexts/09-instructor-tips/07-band7-grammar-showcases.md`.\n\n## What's working\nYou have a clear essay shape with an introduction, two body paragraphs, and a conclusion. Phrases such as “Natural science can play a crucial role,” “scientific breakthroughs,” and “reproducibility” show useful topic vocabulary. Keep the balanced stance: “it is not possible to solve every problem” is a sensible position for this prompt.\n\n## Per-criterion justification\n**Task Response:** The essay answers both sides of the task, but unevenly. “Developing a sustainable energy system” is relevant, yet the explanation remains general and lacks a concrete example. The limitation paragraph also needs stronger support; “human errors could happen in every research” is not clearly linked to resource depletion. This fits Band 6 because ideas are relevant but “insufficiently developed,” per `contexts/01-band-descriptors/task2-band-descriptors.md`.\n\n**Coherence and Cohesion:** Overall progression is clear: offer, limitation, conclusion. However, cohesion is mechanical in places: “For instance,” “In addition,” “First and foremost,” “Secondly,” and “To sum up” create a list-like feel. Reference is also unclear in “they do not seem cost-effective” and “since they do have limitations.” Band 7 needs flexible reference and substitution, as explained in `contexts/05-band-6-to-7/cohesion-upgrades.md`.\n\n**Lexical Resource:** Vocabulary is adequate for the topic, with “resource depletion,” “sustainable energy system,” “scientific breakthroughs,” and “reproducibility.” The Band 6 limit comes from imprecise collocation: “contribute to the issue,” “natural energy,” “reasonably high enough,” and “use energy without concern.” Band 7 requires more precision and collocational control, per `contexts/05-band-6-to-7/vocabulary-upgrades.md`.\n\n**Grammatical Range & Accuracy:** You attempt complex forms: “Although they can provide several benefits,” “since it is possible,” and “which can lead people.” However, several complex sentences contain errors or awkward structure: “People did not fully understand when it comes to natural energy” and “nature is simply too vast to research, in other words...” Error-free sentences are not frequent enough for Band 7. This matches Band 6 GRA in `contexts/01-band-descriptors/task2-band-descriptors.md`.\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | “I will discuss what natural science can offer... and the limitations” | “This essay will argue that natural science can help by developing renewable substitutes and improving efficiency, but that it cannot solve depletion without policy and consumption changes.” | Gives a clear thesis and covers both parts. | `contexts/05-band-6-to-7/task-response-upgrades.md` |\n| 2 | “can contribute to the issue” | “can help address resource depletion” | “Contribute to the issue” means worsen the problem; use the correct collocation. | `contexts/10-task2-topic-banks/topic-02-environment.md` |\n| 3 | “scientific breakthroughs could happen at some point” | “breakthroughs in battery storage or solar efficiency could make renewable energy cheaper and more reliable” | Adds concrete support instead of vague optimism. | `contexts/10-task2-topic-banks/topic-17-science-and-research.md` |\n| 4 | “People did not fully understand when it comes to natural energy” | “Scientists still do not fully understand how to exploit renewable sources without causing new environmental costs.” | Fixes grammar, subject choice, and topic precision. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` |\n| 5 | “natural science could solve everything since they do have limitations” | “natural science can solve resource depletion by itself, since scientific knowledge has practical limits” | “Natural science” is singular; the limitation is made specific. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` |\n| 6 | “human errors could happen in every research” | “human error can occur in any research project” | “Research” is usually uncountable; “research project” is countable. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` |\n| 7 | “given the fact that they value reproducibility the most” | “given that scientists place a high value on reproducibility” | More concise and removes unclear “they.” | `contexts/10-task2-topic-banks/topic-17-science-and-research.md` |\n| 8 | “nature is simply too vast to research, in other words...” | “Nature is too vast to be fully understood; in other words, science can reduce uncertainty but not remove it entirely.” | Fixes comma splice and creates a stronger concluding idea. | `contexts/05-band-6-to-7/grammar-upgrades.md` |\n| 9 | “it is not possible to solve every problem” | “science can provide cleaner substitutes and more efficient technologies, but lasting progress also depends on regulation, affordability, and consumption habits.” | Turns a generic conclusion into synthesis. | `contexts/05-band-6-to-7/paragraph-structure-band7.md` |\n\n## Overall band rationale\nAll four criteria best fit Band 6: the essay is relevant and coherent, but ideas are underdeveloped, cohesion is mechanical, vocabulary is sometimes imprecise, and complex grammar is not consistently accurate. The average is 6.0, rounded according to `contexts/01-band-descriptors/scoring-rules.md`.\n\n## CONVERGENCE: REFINING\nThe prior chain is empty, so the convergence rules require `REFINING`. A future iteration could still compare against this baseline and sharpen whether any criterion deserves 6.5-style commentary, even though official per-criterion scoring remains whole-band.",
+  "structural_feedback": "The essay addresses both parts of the prompt: what natural science can offer and its limitations. The position is understandable: science can help, but it cannot solve everything. However, Body 1 mostly stays on one example, sustainable energy, and does not explain clearly how this tackles wider resource depletion. Body 2 gives limitations, but “human errors” and “nature is too vast” are not developed into a concrete resource-depletion argument. The single highest-impact fix here is rewriting Body 2 as a developed claim plus example, not the lexical upgrades in the table below. A Band 7 version would explain that science can produce renewable substitutes and efficiency gains, but policy, cost, consumption habits, and implementation limit what science alone can achieve.",
+  "focus_areas": [
+    {
+      "area": "PEEL development for both prompt parts",
+      "rationale": "Your ideas are relevant but under-supported; Band 7 needs claim, explanation, example, and link",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ]
+    },
+    {
+      "area": "Science/environment collocations",
+      "rationale": "Phrases like “contribute to the issue” and “natural energy” sound unnatural; use topic collocations such as “address resource depletion” and “renewable energy sources.”",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-02-environment.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Reference clarity: it/they/this",
+      "rationale": "“they” sometimes refers unclearly to resources, energy systems, or natural science",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md",
+        "contexts/05-band-6-to-7/cohesion-upgrades.md"
+      ]
+    },
+    {
+      "area": "Uncountable nouns and articles",
+      "rationale": "“every research” should become “every research project” or “all research.”",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Controlled complex sentences",
+      "rationale": "You use “although,” “since,” and “which,” but errors remain in longer sentences",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ]
+    }
+  ],
+  "whats_working": "You have a clear essay shape with an introduction, two body paragraphs, and a conclusion. Phrases such as “Natural science can play a crucial role,” “scientific breakthroughs,” and “reproducibility” show useful topic vocabulary. Keep the balanced stance: “it is not possible to solve every problem” is a sensible position for this prompt."
+}

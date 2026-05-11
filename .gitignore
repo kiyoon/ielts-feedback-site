@@ -184,33 +184,33 @@ screenshot/
 /*.jpeg
 /*.webp
 
-### 12-benchmark — runtime artefacts ###
+### benchmark — runtime artefacts ###
 # The actual results (results/*.md), analysis (analysis/*.md), essays,
 # prompts, and scripts ARE the experiment record and SHOULD be tracked.
 # Only the verbose runtime logs and process bookkeeping are ignored.
-12-benchmark/logs/*.log
-12-benchmark/logs/*.nohup.out
-12-benchmark/logs/*.pid
+benchmark/logs/*.log
+benchmark/logs/*.nohup.out
+benchmark/logs/*.pid
 
-### 13-viewer — viewer build & runtime artefacts ###
-13-viewer/dist/
-13-viewer/node_modules/
-13-viewer/package-lock.json
-13-viewer/extract/extract.log
+### apps/viewer — viewer build & runtime artefacts ###
+apps/viewer/dist/
+apps/viewer/node_modules/
+apps/viewer/package-lock.json
+apps/viewer/extract/extract.log
 
 # Reviewer-process ephemera. Keep the actual review outputs
 # (01-ui-codex.md / 02-ui-claude.md / 03-code-codex.md / 04-code-claude.md /
 # *-prompt.md) since they document the design history.
-13-viewer/reviews/round-*.log
-13-viewer/reviews/round-*.nohup.out
-13-viewer/reviews/round-*.pid
-13-viewer/reviews/*.nohup.out
+apps/viewer/reviews/round-*.log
+apps/viewer/reviews/round-*.nohup.out
+apps/viewer/reviews/round-*.pid
+apps/viewer/reviews/*.nohup.out
 
 # Vite serves the parent repo through a /corpus middleware in dev.
 # A leftover symlink at public/corpus would point outside the repo.
-13-viewer/public/corpus
+apps/viewer/public/corpus
 
-### 14-real-essays — source corpus ###
+### real-essays — source corpus ###
 # Raw .docx files and parsed .md/.json outputs are project data and
 # should stay visible to git.
 

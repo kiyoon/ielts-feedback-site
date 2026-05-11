@@ -1,0 +1,173 @@
+{
+  "id": "w1/04-claude",
+  "task": "w1",
+  "iteration": 4,
+  "tool": "claude",
+  "generated_at": "2026-05-11T00:34:55Z",
+  "scores": {
+    "task_response": {
+      "band": 4.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 4 (\"does not adequately address any part of the task\"; \"position is unclear\")",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"inadequate, inaccurate or over-use\" of cohesion; paragraphing not always logical)",
+      "justification": "Paragraphing exists but is unbalanced (Body 1 is twice the length of Body 2; no conclusion). Cohesion is mostly bare demonstratives — \"That strong will…\", \"This explains…\", \"This was developed even further\" — without explicit logical signposts. Referencing is sometimes unclear: in \"people finally invented a machine which can do several things in a single hardware, a computer\", the appositive is awkward. Per band 5: \"inadequate… use of cohesive devices… paragraphing may be inadequate.\""
+    },
+    "lexical": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"limited range… noticeable errors in word choice, spelling and/or word formation\")",
+      "justification": "Vocabulary is narrow and repeats \"people / wanted / developed / further\" heavily. There are noticeable errors: \"a full of small switches\" (article + noun phrase wrong), \"no physical objects such as people or dove needed\" (\"a dove\", missing verb), \"the first ever information which only used electronic signals\" (collocation error — information doesn't \"use signals\"). Zero domain vocabulary. Fits band 5: \"limited range… noticeable errors in word choice.\""
+    },
+    "grammar": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"limited range of structures… frequent grammatical errors\")",
+      "justification": "Sentence range is mostly simple + a few \"which\" relatives. Errors are frequent and impede meaning at points: \"Personally, and especially, that shone…\" (fragment-like, unclear referent), \"no physical objects such as people or dove needed\" (missing copula/aux), \"Computers consist of a full of small switches\" (preposition + article). Per band 5: \"limited range… frequent grammatical errors.\""
+    }
+  },
+  "overall": 5.0,
+  "overall_rationale": "4 + 5 + 5 + 5 = 19; 19 ÷ 4 = 4.75, which rounds **up** to **5.0** under `contexts/01-band-descriptors/scoring-rules.md`. The essay sits firmly at band 5 overall, gated by Task Response. Lifting TR to band 6 (clear position + addressing the actual prompt + a conclusion) would lift the overall to 5.5; lifting all four to band 6 would put the candidate on track for the 7.0 they are targeting.",
+  "what_changed": "This is iteration 1 — no prior feedback exists. Establishing baseline calibration: the essay is **well below the 6.0 the candidate believes they're scoring**. The single largest issue is Task Response: the essay never actually argues that mathematics drove the computer revolution; it tells a loose history of communication that drifts from Mesopotamia → Morse code → switches, with no defined position, no examples of *mathematical* contributions (Boolean algebra, Turing, Shannon, von Neumann), and no conclusion. That alone caps TR at band 4. The other three criteria sit at band 5 because the essay is broadly comprehensible but riddled with article/agreement errors and uses a very narrow lexical range.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "In this essay, I will discuss how mathematics influenced computer science.",
+      "improved": "This essay will argue that mathematics — particularly Boolean algebra and the theory of computation — has been the foundational driver of computer science, not merely one influence among many.",
+      "reason": "Replaces topic-announcement with a clear, defensible thesis; the band-6→7 jump on TR depends on this.",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "Personally, and especially, that shone during the period of the computer revolution.",
+      "improved": "This is especially evident in the twentieth-century computer revolution, when abstract mathematical ideas became the blueprints for physical machines.",
+      "reason": "Removes the ungrammatical \"Personally, and especially, that shone\"; introduces a cohesive bridge into the thesis.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 3,
+      "original": "people finally invented a machine which can do several things in a single hardware, a computer.",
+      "improved": "engineers eventually built general-purpose machines — computers — capable of executing any computable procedure.",
+      "reason": "Introduces the band-7 concept of a *general-purpose* computer (Turing's universality), which directly answers the prompt.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-03-technology.md",
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "Computers consist of a full of small switches which can turn on and off.",
+      "improved": "A modern computer is built from billions of transistors, each acting as a switch whose two states map directly onto the 0 and 1 of Boolean algebra.",
+      "reason": "Fixes \"a full of\"; introduces Boolean algebra (the missing math); shows a complex relative-clause structure.",
+      "citations": [
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 5,
+      "original": "If it has billions and trillions of switches, then it can go up to almost countless numbers.",
+      "improved": "With billions of such transistors operating in parallel, a computer can represent and manipulate practically unlimited ranges of values.",
+      "reason": "Replaces vague \"go up to almost countless\" with precise verbs (\"represent and manipulate\"); demonstrates wider lexical range.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 6,
+      "original": "The reason it matters is because every letter is actually a number, and every emoji is also a number.",
+      "improved": "This matters because every character, image and instruction the machine handles is ultimately encoded as a binary number — a direct consequence of Claude Shannon's information theory.",
+      "reason": "Fixes \"reason… is because\" redundancy; names a real mathematician; introduces the keyword \"encoded\" / \"information theory\".",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 7,
+      "original": "no physical objects such as people or dove needed",
+      "improved": "without the need for physical messengers such as couriers or carrier pigeons",
+      "reason": "Fixes article + plural + missing verb; uses appropriate collocation.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "(Add a missing conclusion paragraph)",
+      "improved": "In conclusion, the computer revolution would have been impossible without mathematics: Boolean algebra gave us logic gates, Turing's work defined what could be computed at all, and Shannon's theory let us encode every form of information as binary digits. Far from being merely an influence, mathematics is the language in which computers think.",
+      "reason": "The essay has no conclusion. Adding one is the single biggest TR uplift after the thesis fix.",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md",
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "This is the first iteration; per the harness rules, convergence cannot be declared. Future iterations should sharpen the rewrite table (especially adding 1–2 more grammar showcases — e.g. a passive structure and a concession sentence), and verify the band scoring against `contexts/11-quality-audit/02-task2-sample-audit.md` calibration exemplars.",
+  "raw_markdown": "# Iteration 04 — claude\n\n_Generated 2026-05-10T10:14:45Z. Prior chain depth: up to 3. Manifest: 462 files._\n\n---## Iteration 1 of 5\n\n## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response / Achievement | 4.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 4 (\"does not adequately address any part of the task\"; \"position is unclear\") |\n| Coherence and Cohesion       | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"inadequate, inaccurate or over-use\" of cohesion; paragraphing not always logical) |\n| Lexical Resource             | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"limited range… noticeable errors in word choice, spelling and/or word formation\") |\n| Grammatical Range & Accuracy | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"limited range of structures… frequent grammatical errors\") |\n| **Overall**                  | 5.0 | rounded per `contexts/01-band-descriptors/scoring-rules.md` §Rounding (4.0+5.0+5.0+5.0 = 19 ÷ 4 = 4.75 → rounds **up** to 5.0) |\n\n## What changed from prior feedback\nThis is iteration 1 — no prior feedback exists. Establishing baseline calibration: the essay is **well below the 6.0 the candidate believes they're scoring**. The single largest issue is Task Response: the essay never actually argues that mathematics drove the computer revolution; it tells a loose history of communication that drifts from Mesopotamia → Morse code → switches, with no defined position, no examples of *mathematical* contributions (Boolean algebra, Turing, Shannon, von Neumann), and no conclusion. That alone caps TR at band 4. The other three criteria sit at band 5 because the essay is broadly comprehensible but riddled with article/agreement errors and uses a very narrow lexical range.\n\n## Structural feedback\nThe essay does not address the prompt. The prompt asks for a **discussion of the influence of mathematics on computer science**, but the essay is a vague history of communication and electronic signals — Morse code is *not* a mathematical contribution to computing, and the body never names a single mathematician, theorem, or mathematical concept (Boolean logic, binary arithmetic, algorithms, information theory, λ-calculus). The thesis sentence \"I will discuss how mathematics influenced computer science\" announces a topic but takes no position, which is exactly what `contexts/05-band-6-to-7/task-response-upgrades.md` warns against. Body 1 is a 9-sentence ramble covering 4,000 years; Body 2 is only 4 sentences and stops mid-argument with no link back to \"mathematics.\" There is no conclusion paragraph at all — that alone prevents the essay from rising above band 5 on TR per `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"conclusion may be unclear or repetitive\"). **The single highest-impact fix is structural, not lexical**: rewrite as Intro (paraphrase + clear thesis: \"mathematics has been the *foundational*, not merely *contributing*, driver\") → Body 1 (Boolean algebra → logic gates) → Body 2 (Turing/Church → computability + algorithms) → Conclusion (synthesis). Without that re-shape, no amount of vocabulary upgrades will move the band.\n\n## Focus areas\n- **PEEL paragraph structure with a real thesis** — the essay currently has no point-evidence-explanation-link discipline; both body paragraphs wander. Drill: `contexts/05-band-6-to-7/paragraph-structure-band7.md`, `contexts/06-feedback-patterns/feedback-template-band6-to-7.md`.\n- **Topic-specific vocabulary (technology / science / research)** — currently the essay uses zero domain words (no \"algorithm\", \"binary\", \"logic\", \"computation\", \"encryption\"). Drill: `contexts/10-task2-topic-banks/topic-03-technology.md`, `contexts/10-task2-topic-banks/topic-17-science-and-research.md`.\n- **Article use (a / the / zero article)** — \"a computer\", \"the first ever information\", \"no physical objects such as people or dove\" — repeated article errors. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md`, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`.\n- **Cohesion beyond \"However / This\"** — the essay relies on bare demonstratives (\"That strong will…\", \"This explains…\", \"This was developed even further\") instead of signposted argument. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md`, `contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md`.\n- **Writing a real conclusion** — the essay simply stops. Drill: `contexts/09-instructor-tips/06-task2-sentence-frames.md` §Conclusion frames.\n- **Task 2 opinion frames (taking a clear position)** — \"Personally, and especially, that shone…\" is not a thesis. Drill: `contexts/09-instructor-tips/06-task2-sentence-frames.md` §Thesis/position frames.\n\n## What's working\nThe candidate clearly *enjoys* the topic and reaches for a historical sweep, which is the right instinct — examiners reward attempts at sustained argument over safe one-liners. The phrase \"Computers consist of a full of small switches which can turn on and off… it can calculate in binary digits\" shows they understand the binary substrate, which is exactly the kind of content that *should* anchor a math-and-computing essay if it were properly framed. Keep that domain instinct; redirect it through actual mathematical concepts.\n\n## Per-criterion justification\n**Task Response (4.0):** The prompt asks specifically about *mathematics* driving the *computer revolution*. The essay's actual content is about *communication tools* (Mesopotamian numerals, Morse code, switches). Morse code is an encoding scheme, not a mathematical contribution. No mathematician is named; no theorem, no Boolean logic, no Turing machine, no Shannon information theory. The \"thesis\" — \"I will discuss how mathematics influenced computer science\" — announces topic but takes no position, and the essay has no conclusion. Per `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 4, the response \"does not adequately address any part of the task\" and \"position is unclear\" — exactly fits.\n\n**Coherence and Cohesion (5.0):** Paragraphing exists but is unbalanced (Body 1 is twice the length of Body 2; no conclusion). Cohesion is mostly bare demonstratives — \"That strong will…\", \"This explains…\", \"This was developed even further\" — without explicit logical signposts. Referencing is sometimes unclear: in \"people finally invented a machine which can do several things in a single hardware, a computer\", the appositive is awkward. Per band 5: \"inadequate… use of cohesive devices… paragraphing may be inadequate.\"\n\n**Lexical Resource (5.0):** Vocabulary is narrow and repeats \"people / wanted / developed / further\" heavily. There are noticeable errors: \"a full of small switches\" (article + noun phrase wrong), \"no physical objects such as people or dove needed\" (\"a dove\", missing verb), \"the first ever information which only used electronic signals\" (collocation error — information doesn't \"use signals\"). Zero domain vocabulary. Fits band 5: \"limited range… noticeable errors in word choice.\"\n\n**Grammatical Range & Accuracy (5.0):** Sentence range is mostly simple + a few \"which\" relatives. Errors are frequent and impede meaning at points: \"Personally, and especially, that shone…\" (fragment-like, unclear referent), \"no physical objects such as people or dove needed\" (missing copula/aux), \"Computers consist of a full of small switches\" (preposition + article). Per band 5: \"limited range… frequent grammatical errors.\"\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | \"In this essay, I will discuss how mathematics influenced computer science.\" | \"This essay will argue that mathematics — particularly Boolean algebra and the theory of computation — has been the foundational driver of computer science, not merely one influence among many.\" | Replaces topic-announcement with a clear, defensible thesis; the band-6→7 jump on TR depends on this. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §Thesis frames; `contexts/05-band-6-to-7/task-response-upgrades.md` |\n| 2 | \"Personally, and especially, that shone during the period of the computer revolution.\" | \"This is especially evident in the twentieth-century computer revolution, when abstract mathematical ideas became the blueprints for physical machines.\" | Removes the ungrammatical \"Personally, and especially, that shone\"; introduces a cohesive bridge into the thesis. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` |\n| 3 | \"people finally invented a machine which can do several things in a single hardware, a computer.\" | \"engineers eventually built general-purpose machines — computers — capable of executing any computable procedure.\" | Introduces the band-7 concept of a *general-purpose* computer (Turing's universality), which directly answers the prompt. | `contexts/10-task2-topic-banks/topic-03-technology.md`; `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §appositive dashes |\n| 4 | \"Computers consist of a full of small switches which can turn on and off.\" | \"A modern computer is built from billions of transistors, each acting as a switch whose two states map directly onto the 0 and 1 of Boolean algebra.\" | Fixes \"a full of\"; introduces Boolean algebra (the missing math); shows a complex relative-clause structure. | `contexts/09-instructor-tips/07-band7-grammar-showcases.md`; `contexts/10-task2-topic-banks/topic-17-science-and-research.md` |\n| 5 | \"If it has billions and trillions of switches, then it can go up to almost countless numbers.\" | \"With billions of such transistors operating in parallel, a computer can represent and manipulate practically unlimited ranges of values.\" | Replaces vague \"go up to almost countless\" with precise verbs (\"represent and manipulate\"); demonstrates wider lexical range. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` |\n| 6 | \"The reason it matters is because every letter is actually a number, and every emoji is also a number.\" | \"This matters because every character, image and instruction the machine handles is ultimately encoded as a binary number — a direct consequence of Claude Shannon's information theory.\" | Fixes \"reason… is because\" redundancy; names a real mathematician; introduces the keyword \"encoded\" / \"information theory\". | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`; `contexts/10-task2-topic-banks/topic-17-science-and-research.md` |\n| 7 | \"no physical objects such as people or dove needed\" | \"without the need for physical messengers such as couriers or carrier pigeons\" | Fixes article + plural + missing verb; uses appropriate collocation. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` |\n| 8 | (Add a missing conclusion paragraph) | \"In conclusion, the computer revolution would have been impossible without mathematics: Boolean algebra gave us logic gates, Turing's work defined what could be computed at all, and Shannon's theory let us encode every form of information as binary digits. Far from being merely an influence, mathematics is the language in which computers think.\" | The essay has no conclusion. Adding one is the single biggest TR uplift after the thesis fix. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §Conclusion frames; `contexts/05-band-6-to-7/paragraph-structure-band7.md` |\n\n## Overall band rationale\n4 + 5 + 5 + 5 = 19; 19 ÷ 4 = 4.75, which rounds **up** to **5.0** under `contexts/01-band-descriptors/scoring-rules.md`. The essay sits firmly at band 5 overall, gated by Task Response. Lifting TR to band 6 (clear position + addressing the actual prompt + a conclusion) would lift the overall to 5.5; lifting all four to band 6 would put the candidate on track for the 7.0 they are targeting.\n\n## CONVERGENCE: REFINING\nThis is the first iteration; per the harness rules, convergence cannot be declared. Future iterations should sharpen the rewrite table (especially adding 1–2 more grammar showcases — e.g. a passive structure and a concession sentence), and verify the band scoring against `contexts/11-quality-audit/02-task2-sample-audit.md` calibration exemplars.\n",
+  "structural_feedback": "The essay does not address the prompt. The prompt asks for a **discussion of the influence of mathematics on computer science**, but the essay is a vague history of communication and electronic signals — Morse code is *not* a mathematical contribution to computing, and the body never names a single mathematician, theorem, or mathematical concept (Boolean logic, binary arithmetic, algorithms, information theory, λ-calculus). The thesis sentence \"I will discuss how mathematics influenced computer science\" announces a topic but takes no position, which is exactly what `contexts/05-band-6-to-7/task-response-upgrades.md` warns against. Body 1 is a 9-sentence ramble covering 4,000 years; Body 2 is only 4 sentences and stops mid-argument with no link back to \"mathematics.\" There is no conclusion paragraph at all — that alone prevents the essay from rising above band 5 on TR per `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"conclusion may be unclear or repetitive\"). **The single highest-impact fix is structural, not lexical**: rewrite as Intro (paraphrase + clear thesis: \"mathematics has been the *foundational*, not merely *contributing*, driver\") → Body 1 (Boolean algebra → logic gates) → Body 2 (Turing/Church → computability + algorithms) → Conclusion (synthesis). Without that re-shape, no amount of vocabulary upgrades will move the band.",
+  "focus_areas": [
+    {
+      "area": "PEEL paragraph structure with a real thesis",
+      "rationale": "the essay currently has no point-evidence-explanation-link discipline; both body paragraphs wander",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/06-feedback-patterns/feedback-template-band6-to-7.md"
+      ]
+    },
+    {
+      "area": "Topic-specific vocabulary (technology / science / research)",
+      "rationale": "currently the essay uses zero domain words (no \"algorithm\", \"binary\", \"logic\", \"computation\", \"encryption\")",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-03-technology.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Article use (a / the / zero article)",
+      "rationale": "\"a computer\", \"the first ever information\", \"no physical objects such as people or dove\" — repeated article errors",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Cohesion beyond \"However / This\"",
+      "rationale": "the essay relies on bare demonstratives (\"That strong will…\", \"This explains…\", \"This was developed even further\") instead of signposted argument",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md"
+      ]
+    },
+    {
+      "area": "Writing a real conclusion",
+      "rationale": "the essay simply stops",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ]
+    },
+    {
+      "area": "Task 2 opinion frames (taking a clear position)",
+      "rationale": "\"Personally, and especially, that shone…\" is not a thesis",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ]
+    }
+  ],
+  "whats_working": "The candidate clearly *enjoys* the topic and reaches for a historical sweep, which is the right instinct — examiners reward attempts at sustained argument over safe one-liners. The phrase \"Computers consist of a full of small switches which can turn on and off… it can calculate in binary digits\" shows they understand the binary substrate, which is exactly the kind of content that *should* anchor a math-and-computing essay if it were properly framed. Keep that domain instinct; redirect it through actual mathematical concepts."
+}

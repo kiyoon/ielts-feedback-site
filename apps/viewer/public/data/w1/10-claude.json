@@ -1,0 +1,171 @@
+{
+  "id": "w1/10-claude",
+  "task": "w1",
+  "iteration": 10,
+  "tool": "claude",
+  "generated_at": "2026-05-11T00:34:55Z",
+  "scores": {
+    "task_response": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 — \"main parts of the prompt are **incompletely addressed**\"; the essay drifts to communication history, no conclusion, position underdeveloped",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — overall progression visible across three paragraphs but topic-drift, no concluding paragraph; cohesion \"mechanical\" and topic of paragraphs unclear",
+      "justification": "Information is generally arranged coherently across three paragraphs (origins → development → computers) and there is \"*a clear overall progression*\" (`task2-band-descriptors.md` §Band 6). However, paragraphing is faulty: paragraph 2 has no topic sentence and crams ancient Mesopotamia, Morse code, and the invention of computers into one block. Cohesion is mechanical: \"*To do that*\", \"*to achieve that*\", \"*By doing that*\" repeat the same referencing strategy and \"*This was developed even further*\" leaves \"*this*\" ambiguous (`contexts/05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 1, §9 \"demonstrative without anchor\")."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"generally adequate… rather restricted range\"; some specifics (*base-60, binary digits, electronic signals*) but heavy reliance on *people, things, develop*",
+      "justification": "Resource is generally adequate. You attempt some less-common items — \"*timekeeping*\", \"*electronic signals*\", \"*binary digits*\" — and use them correctly, which is positive. However, range is restricted: \"*people*\" appears 6 times in 290 words; \"*develop*\"/\"*developed*\" appears 4 times; \"*things*\" appears as filler. There are also collocation/word-choice slips: \"*that shone*\" is the wrong register, \"*a full of small switches*\" is malformed, and \"*a single hardware*\" treats *hardware* as countable. This sits in Band 6's \"*restricted range or a lack of precision in word choice*\" (`task2-band-descriptors.md` §Band 6)."
+    },
+    "grammar": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 — \"complex sentences are attempted, they tend to be faulty\"; fragment \"*so that no physical objects such as people or dove needed*\" plus several broken complex structures",
+      "justification": "A mix of simple and complex sentences is attempted, but complex structures break repeatedly. Clear errors: \"*so that no physical objects such as people or dove needed*\" (fragment, missing verb, wrong article on *dove*); \"*Computers consist of a full of small switches*\" (broken determiner phrase); \"*The reason it matters is because*\" (cause-redundancy); \"*not to mention the Babylonians used base-60 for timekeeping*\" (subordination problem). Errors in complex sentences are systematic, matching Band 5's \"*complex sentences are attempted, they tend to be faulty*\" (`task2-band-descriptors.md` §Band 5). Error-free sentences are not yet *frequent*, which is the gating Band-7 feature."
+    }
+  },
+  "overall": 5.5,
+  "overall_rationale": "Per `contexts/01-band-descriptors/scoring-rules.md` §3, the criterion average (5+6+6+5)/4 = 5.50 reports as Band 5.5. The off-topic drift and missing conclusion pull TR down to 5; complex-sentence breakage pulls GRA to 5; CC and LR remain at Band 6.",
+  "what_changed": "This is iteration 1 — there is no prior feedback to compare against. The harness instructs me to mark this an early iteration.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "In this essay, I will discuss how mathematics influenced computer science.",
+      "improved": "While engineering breakthroughs often dominate the popular narrative, this essay will argue that the computer revolution rests fundamentally on three mathematical foundations: Boolean logic, binary representation, and the formal theory of computation.",
+      "reason": "Adds a clear, developed thesis with three categorisable strands — fixes the missing-position issue that caps TR at 5.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "Personally, and especially, that shone during the period of the computer revolution.",
+      "improved": "This contribution became especially visible during the mid-20th-century computer revolution, when abstract mathematical ideas were translated into physical machinery.",
+      "reason": "Removes the awkward stance marker; replaces vague \"*shone*\" with a precise verb-phrase; introduces a body-paragraph spine.",
+      "citations": [
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 3,
+      "original": "Computers consist of a full of small switches which can turn on and off.",
+      "improved": "A modern computer is built from billions of tiny switches whose on-and-off states correspond directly to the 0s and 1s of binary arithmetic — a representation Claude Shannon formalised in 1937 by mapping Boolean algebra onto electrical circuits.",
+      "reason": "Repairs the broken determiner; adds a relative clause + dash-clause + concrete name/date. Demonstrates the Band-7 \"variety of complex structures\" with on-prompt content.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 4,
+      "original": "so that no physical objects such as people or dove needed",
+      "improved": "meaning that messages no longer had to be carried physically — by couriers or homing pigeons — but could travel as patterns of electrical pulses.",
+      "reason": "Eliminates the sentence fragment; corrects collocation (*homing pigeons*); replaces vague \"*needed*\" with passive figure-style language.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/09-instructor-tips/04-passive-voice-patterns.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "If it has billions and trillions of switches, then it can go up to almost countless numbers.",
+      "improved": "Were a processor to contain billions of such switches, it could in principle represent any number expressible in binary, however large.",
+      "reason": "Replaces childlike phrasing with an inverted second conditional + hedging — a high-leverage Band-7 grammar showcase.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "The reason it matters is because every letter is actually a number, and every emoji is also a number.",
+      "improved": "What makes this binary substrate so powerful is the principle of encoding: every letter, image and emoji on a screen ultimately reduces to a sequence of integers that the machine can manipulate arithmetically.",
+      "reason": "Replaces *reason…because* redundancy with a cleft sentence; introduces the technical term *encoding*.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/09-instructor-tips/09-topic-vocabulary-clusters.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "Humans have always wanted to preserve their thoughts somewhere to communicate.",
+      "improved": "Long before electronic computation, humans were already harnessing mathematics — from the Babylonian base-60 system to Egyptian geometry — to record, calculate, and communicate.",
+      "reason": "Re-anchors the paragraph on mathematics rather than communication; uses a participle-style aside; deploys topic-cluster vocabulary.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "This was developed even further, and people finally invented a machine which can do several things in a single hardware, a computer.",
+      "improved": "Building on this lineage, mathematicians such as Alan Turing and John von Neumann eventually formalised the idea of a programmable machine — a single device capable of executing any computable algorithm.",
+      "reason": "Replaces ambiguous *this* with a clear participle clause; supplies on-topic domain figures; corrects *a single hardware*.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/05-band-6-to-7/cohesion-upgrades.md"
+      ],
+      "category": "coherence"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "This is iteration 1 of the chain — the prior-feedback context is empty — so per the harness rules I must mark this REFINING regardless of confidence. Future iterations should test whether TR=5 (versus a more lenient 6 on the grounds the prompt is partially answered) is the correct calibration, and should push deeper into less-obvious upgrades (inversion, cleft, passive figure verbs) if the obvious fixes converge.",
+  "raw_markdown": "# Iteration 10 — claude\n\n_Generated 2026-05-10T10:29:34Z. Prior chain depth: up to 3. Manifest: 462 files._\n\n---Now I have enough corpus material to produce calibrated feedback. The prior feedback chain is empty, so per the harness rules I will output REFINING regardless of confidence.\n\n## Per-criterion scores\n\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response | 5 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 — \"main parts of the prompt are **incompletely addressed**\"; the essay drifts to communication history, no conclusion, position underdeveloped |\n| Coherence and Cohesion | 6 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — overall progression visible across three paragraphs but topic-drift, no concluding paragraph; cohesion \"mechanical\" and topic of paragraphs unclear |\n| Lexical Resource | 6 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — \"generally adequate… rather restricted range\"; some specifics (*base-60, binary digits, electronic signals*) but heavy reliance on *people, things, develop* |\n| Grammatical Range & Accuracy | 5 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 — \"complex sentences are attempted, they tend to be faulty\"; fragment \"*so that no physical objects such as people or dove needed*\" plus several broken complex structures |\n| **Overall** | **5.5** | (5+6+6+5)/4 = 5.5; per `contexts/01-band-descriptors/scoring-rules.md` §3, .50 reports as 5.5 |\n\n## What changed from prior feedback\nThis is iteration 1 — there is no prior feedback to compare against. The harness instructs me to mark this an early iteration.\n\n## Structural feedback\nThe single highest-impact problem is **off-topic drift**: the prompt asks about the influence of *mathematics* on computer science, but the essay is a chronological history of *communication tools* (Mesopotamia, Egypt, Morse code, then computers). Mathematics is named in the introduction and reappears only in paragraph 3 as \"binary digits\", but you never explain *how* mathematical ideas (Boolean logic, algorithms, numerical representation, discrete maths, Turing's formal models) drove the computer revolution. Per `contexts/05-band-6-to-7/task-response-upgrades.md` §10 (\"off-topic drift\"), this caps Task Response at Band 5 even before considering depth.\n\nThe essay is also **truncated** — there is no conclusion paragraph, so neither a synthesised position nor a re-statement of stance exists. Combined with the missing thesis (\"*In this essay, I will discuss how mathematics influenced computer science*\" announces a topic but no claim), this confirms a Band-5 TR profile (`contexts/05-band-6-to-7/task-response-upgrades.md` §4 \"clear-position rule\").\n\nParagraph shape is the second highest-impact fix: none of the body paragraphs follows PEEL (Point → Explain → Example → Link). Paragraph 2 has no topic sentence — it opens with the universal claim \"*Humans have always wanted to preserve their thoughts*\", drifts through Mesopotamia and Morse, and ends on the invention of the computer. Re-architecting the body around two mathematical ideas (e.g., **Boolean logic and binary representation** in body 1; **algorithms and computability** in body 2), each PEEL-shaped, will deliver more uplift than any sentence-level rewrite below.\n\n## Focus areas\n\n- **On-prompt content selection** — the essay's biggest leak; everything you write must answer \"how did *mathematics* influence *computer science*?\". Drill: `contexts/05-band-6-to-7/task-response-upgrades.md`, `contexts/10-task2-topic-banks/topic-17-science-and-research.md`.\n- **PEEL paragraph structure with clear topic sentence** — none of your three body paragraphs has one. Drill: `contexts/05-band-6-to-7/paragraph-structure-band7.md`, `contexts/05-band-6-to-7/cohesion-upgrades.md` §5.\n- **Article use on abstract nouns and unique entities** — \"*the computer revolution*\" / \"*Morse code*\" / \"*humans*\" / \"*a single hardware*\" all need auditing. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1–A2.\n- **Sentence-fragment elimination after subordinators / participles** — \"*so that no physical objects such as people or dove needed*\" has no main verb. Drill: `contexts/05-band-6-to-7/grammar-upgrades.md` §12, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §I.\n- **Hedging and academic register** — \"*Personally, and especially, that shone*\" mixes informal stance markers awkwardly. Drill: `contexts/05-band-6-to-7/vocabulary-upgrades.md` §3 (hedging toolkit).\n- **Concrete domain vocabulary for the maths-CS link** — words you should be deploying but aren't: *Boolean algebra, binary representation, algorithms, computability, formal logic, abstraction, encoding, discrete mathematics, Turing's model, von Neumann architecture*. Drill: `contexts/09-instructor-tips/09-topic-vocabulary-clusters.md`.\n\n## What's working\nYou attempt **specific historical illustration** (\"*ancient Mesopotamia and Egypt*\", \"*the Babylonians used base-60 for timekeeping*\", \"*Samuel Morse invented Morse code in 1844*\"), which is exactly the kind of concrete support `contexts/05-band-6-to-7/task-response-upgrades.md` §6 rewards — keep this habit, but anchor the examples to a mathematical claim. Your final paragraph also lands one accurate, on-topic insight: \"*every letter is actually a number, and every emoji is also a number*\" — that's a real Band-7-able idea about *encoding*; it just needs developing.\n\n## Per-criterion justification\n\n**Task Response (5).** The prompt is incompletely addressed: the essay traces communication history rather than the *mathematical* drivers of computing. You write \"*Personally, and especially, that shone during the period of the computer revolution*\" as a thesis, but no clear position is stated and the body never engages with mathematics until the third paragraph mentions \"*binary digits*\". The response is also truncated with no conclusion, leaving the reader to infer the stance — exactly the Band 5 \"*position visible but underdeveloped*\" pattern (`task2-band-descriptors.md` §Band 5).\n\n**Coherence and Cohesion (6).** Information is generally arranged coherently across three paragraphs (origins → development → computers) and there is \"*a clear overall progression*\" (`task2-band-descriptors.md` §Band 6). However, paragraphing is faulty: paragraph 2 has no topic sentence and crams ancient Mesopotamia, Morse code, and the invention of computers into one block. Cohesion is mechanical: \"*To do that*\", \"*to achieve that*\", \"*By doing that*\" repeat the same referencing strategy and \"*This was developed even further*\" leaves \"*this*\" ambiguous (`contexts/05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 1, §9 \"demonstrative without anchor\").\n\n**Lexical Resource (6).** Resource is generally adequate. You attempt some less-common items — \"*timekeeping*\", \"*electronic signals*\", \"*binary digits*\" — and use them correctly, which is positive. However, range is restricted: \"*people*\" appears 6 times in 290 words; \"*develop*\"/\"*developed*\" appears 4 times; \"*things*\" appears as filler. There are also collocation/word-choice slips: \"*that shone*\" is the wrong register, \"*a full of small switches*\" is malformed, and \"*a single hardware*\" treats *hardware* as countable. This sits in Band 6's \"*restricted range or a lack of precision in word choice*\" (`task2-band-descriptors.md` §Band 6).\n\n**Grammatical Range & Accuracy (5).** A mix of simple and complex sentences is attempted, but complex structures break repeatedly. Clear errors: \"*so that no physical objects such as people or dove needed*\" (fragment, missing verb, wrong article on *dove*); \"*Computers consist of a full of small switches*\" (broken determiner phrase); \"*The reason it matters is because*\" (cause-redundancy); \"*not to mention the Babylonians used base-60 for timekeeping*\" (subordination problem). Errors in complex sentences are systematic, matching Band 5's \"*complex sentences are attempted, they tend to be faulty*\" (`task2-band-descriptors.md` §Band 5). Error-free sentences are not yet *frequent*, which is the gating Band-7 feature.\n\n## Top concrete rewrites (ranked by band uplift)\n\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | \"*In this essay, I will discuss how mathematics influenced computer science.*\" | \"*While engineering breakthroughs often dominate the popular narrative, this essay will argue that the computer revolution rests fundamentally on three mathematical foundations: Boolean logic, binary representation, and the formal theory of computation.*\" | Adds a clear, developed thesis with three categorisable strands — fixes the missing-position issue that caps TR at 5. | `contexts/05-band-6-to-7/task-response-upgrades.md` §4, §7 |\n| 2 | \"*Personally, and especially, that shone during the period of the computer revolution.*\" | \"*This contribution became especially visible during the mid-20th-century computer revolution, when abstract mathematical ideas were translated into physical machinery.*\" | Removes the awkward stance marker; replaces vague \"*shone*\" with a precise verb-phrase; introduces a body-paragraph spine. | `contexts/05-band-6-to-7/vocabulary-upgrades.md` §1 (replace vague evaluation) |\n| 3 | \"*Computers consist of a full of small switches which can turn on and off.*\" | \"*A modern computer is built from billions of tiny switches whose on-and-off states correspond directly to the 0s and 1s of binary arithmetic — a representation Claude Shannon formalised in 1937 by mapping Boolean algebra onto electrical circuits.*\" | Repairs the broken determiner; adds a relative clause + dash-clause + concrete name/date. Demonstrates the Band-7 \"variety of complex structures\" with on-prompt content. | `contexts/05-band-6-to-7/grammar-upgrades.md` §2 (relative clauses), §5 (complex noun phrases) |\n| 4 | \"*so that no physical objects such as people or dove needed*\" | \"*meaning that messages no longer had to be carried physically — by couriers or homing pigeons — but could travel as patterns of electrical pulses.*\" | Eliminates the sentence fragment; corrects collocation (*homing pigeons*); replaces vague \"*needed*\" with passive figure-style language. | `contexts/05-band-6-to-7/grammar-upgrades.md` §12 (punctuation, fragments); `contexts/09-instructor-tips/04-passive-voice-patterns.md` |\n| 5 | \"*If it has billions and trillions of switches, then it can go up to almost countless numbers.*\" | \"*Were a processor to contain billions of such switches, it could in principle represent any number expressible in binary, however large.*\" | Replaces childlike phrasing with an inverted second conditional + hedging — a high-leverage Band-7 grammar showcase. | `contexts/05-band-6-to-7/grammar-upgrades.md` §3.1 (inverted conditionals); `contexts/09-instructor-tips/07-band7-grammar-showcases.md` |\n| 6 | \"*The reason it matters is because every letter is actually a number, and every emoji is also a number.*\" | \"*What makes this binary substrate so powerful is the principle of encoding: every letter, image and emoji on a screen ultimately reduces to a sequence of integers that the machine can manipulate arithmetically.*\" | Replaces *reason…because* redundancy with a cleft sentence; introduces the technical term *encoding*. | `contexts/05-band-6-to-7/grammar-upgrades.md` §8 (cleft sentences); `contexts/09-instructor-tips/09-topic-vocabulary-clusters.md` |\n| 7 | \"*Humans have always wanted to preserve their thoughts somewhere to communicate.*\" | \"*Long before electronic computation, humans were already harnessing mathematics — from the Babylonian base-60 system to Egyptian geometry — to record, calculate, and communicate.*\" | Re-anchors the paragraph on mathematics rather than communication; uses a participle-style aside; deploys topic-cluster vocabulary. | `contexts/05-band-6-to-7/task-response-upgrades.md` §10 (off-topic drift); `contexts/05-band-6-to-7/vocabulary-upgrades.md` §4.0 |\n| 8 | \"*This was developed even further, and people finally invented a machine which can do several things in a single hardware, a computer.*\" | \"*Building on this lineage, mathematicians such as Alan Turing and John von Neumann eventually formalised the idea of a programmable machine — a single device capable of executing any computable algorithm.*\" | Replaces ambiguous *this* with a clear participle clause; supplies on-topic domain figures; corrects *a single hardware*. | `contexts/05-band-6-to-7/grammar-upgrades.md` §4 (participle clauses); `contexts/05-band-6-to-7/cohesion-upgrades.md` §9 |\n\n## Overall band rationale\nPer `contexts/01-band-descriptors/scoring-rules.md` §3, the criterion average (5+6+6+5)/4 = 5.50 reports as Band 5.5. The off-topic drift and missing conclusion pull TR down to 5; complex-sentence breakage pulls GRA to 5; CC and LR remain at Band 6.\n\n## CONVERGENCE: REFINING\nThis is iteration 1 of the chain — the prior-feedback context is empty — so per the harness rules I must mark this REFINING regardless of confidence. Future iterations should test whether TR=5 (versus a more lenient 6 on the grounds the prompt is partially answered) is the correct calibration, and should push deeper into less-obvious upgrades (inversion, cleft, passive figure verbs) if the obvious fixes converge.\n",
+  "structural_feedback": "The single highest-impact problem is **off-topic drift**: the prompt asks about the influence of *mathematics* on computer science, but the essay is a chronological history of *communication tools* (Mesopotamia, Egypt, Morse code, then computers). Mathematics is named in the introduction and reappears only in paragraph 3 as \"binary digits\", but you never explain *how* mathematical ideas (Boolean logic, algorithms, numerical representation, discrete maths, Turing's formal models) drove the computer revolution. Per `contexts/05-band-6-to-7/task-response-upgrades.md` §10 (\"off-topic drift\"), this caps Task Response at Band 5 even before considering depth.\n\nThe essay is also **truncated** — there is no conclusion paragraph, so neither a synthesised position nor a re-statement of stance exists. Combined with the missing thesis (\"*In this essay, I will discuss how mathematics influenced computer science*\" announces a topic but no claim), this confirms a Band-5 TR profile (`contexts/05-band-6-to-7/task-response-upgrades.md` §4 \"clear-position rule\").\n\nParagraph shape is the second highest-impact fix: none of the body paragraphs follows PEEL (Point → Explain → Example → Link). Paragraph 2 has no topic sentence — it opens with the universal claim \"*Humans have always wanted to preserve their thoughts*\", drifts through Mesopotamia and Morse, and ends on the invention of the computer. Re-architecting the body around two mathematical ideas (e.g., **Boolean logic and binary representation** in body 1; **algorithms and computability** in body 2), each PEEL-shaped, will deliver more uplift than any sentence-level rewrite below.",
+  "focus_areas": [
+    {
+      "area": "On-prompt content selection",
+      "rationale": "the essay's biggest leak; everything you write must answer \"how did *mathematics* influence *computer science*?\"",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "PEEL paragraph structure with clear topic sentence",
+      "rationale": "none of your three body paragraphs has one",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/05-band-6-to-7/cohesion-upgrades.md"
+      ]
+    },
+    {
+      "area": "Article use on abstract nouns and unique entities",
+      "rationale": "\"*the computer revolution*\" / \"*Morse code*\" / \"*humans*\" / \"*a single hardware*\" all need auditing",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Sentence-fragment elimination after subordinators / participles",
+      "rationale": "\"*so that no physical objects such as people or dove needed*\" has no main verb",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Hedging and academic register",
+      "rationale": "\"*Personally, and especially, that shone*\" mixes informal stance markers awkwardly",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ]
+    },
+    {
+      "area": "Concrete domain vocabulary for the maths-CS link",
+      "rationale": "words you should be deploying but aren't: *Boolean algebra, binary representation, algorithms, computability, formal logic, abstraction, encoding, discrete mathematics, Turing's model, von Neumann architecture*",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/09-topic-vocabulary-clusters.md"
+      ]
+    }
+  ],
+  "whats_working": "You attempt **specific historical illustration** (\"*ancient Mesopotamia and Egypt*\", \"*the Babylonians used base-60 for timekeeping*\", \"*Samuel Morse invented Morse code in 1844*\"), which is exactly the kind of concrete support `contexts/05-band-6-to-7/task-response-upgrades.md` §6 rewards — keep this habit, but anchor the examples to a mathematical claim. Your final paragraph also lands one accurate, on-topic insight: \"*every letter is actually a number, and every emoji is also a number*\" — that's a real Band-7-able idea about *encoding*; it just needs developing."
+}
