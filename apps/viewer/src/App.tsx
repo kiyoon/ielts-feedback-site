@@ -451,10 +451,10 @@ function SidebarResizeHandle() {
     <Separator
       id="viewer-sidebar-resize"
       aria-label="Resize or collapse sidebar (drag, or use ArrowLeft and ArrowRight keys)"
-      className="group relative z-20 flex w-4 cursor-col-resize items-center justify-center border-x bg-muted shadow-[inset_1px_0_0_hsl(var(--background)/0.45),inset_-1px_0_0_hsl(var(--background)/0.45)] hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
+      className="group relative z-20 flex w-2 cursor-col-resize items-center justify-center border-x bg-muted shadow-[inset_1px_0_0_hsl(var(--background)/0.45),inset_-1px_0_0_hsl(var(--background)/0.45)] hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
     >
       <span className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-border" />
-      <GripVertical className="relative h-5 w-5 opacity-80 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100" />
+      <GripVertical className="relative h-3.5 w-3.5 opacity-80 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100" />
     </Separator>
   );
 }
@@ -464,10 +464,10 @@ function PaneResizeHandle() {
     <Separator
       id="viewer-content-resize"
       aria-label="Resize or collapse essay and feedback panes (drag, or use ArrowLeft and ArrowRight keys)"
-      className="group relative z-20 mx-1 flex w-4 cursor-col-resize items-center justify-center rounded-sm border bg-muted shadow-[inset_1px_0_0_hsl(var(--background)/0.45),inset_-1px_0_0_hsl(var(--background)/0.45)] hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
+      className="group relative z-20 mx-0.5 flex w-2 cursor-col-resize items-center justify-center rounded-sm border bg-muted shadow-[inset_1px_0_0_hsl(var(--background)/0.45),inset_-1px_0_0_hsl(var(--background)/0.45)] hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
     >
       <span className="absolute inset-y-1 left-1/2 w-px -translate-x-1/2 bg-border" />
-      <GripVertical className="relative h-5 w-5 opacity-85 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100" />
+      <GripVertical className="relative h-3.5 w-3.5 opacity-85 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100" />
     </Separator>
   );
 }

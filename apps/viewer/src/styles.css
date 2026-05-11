@@ -129,17 +129,34 @@
 }
 
 /* Overlap-ghost mark: a visible fragment of a rewrite whose full range
-   partially crosses another located highlight. Distinct dashed warning
-   underline + light tint so the user can see WHERE the overlap reaches,
-   without disturbing any neighboring blocker's primary highlight. */
+   partially crosses another located highlight. It keeps the rewrite's
+   category color and switches to a dashed underline so it matches the
+   corresponding gutter bracket without disturbing the blocker highlight. */
 .essay-mark[data-kind="overlap-ghost"] {
-  background-color: hsl(var(--warning) / 0.10) !important;
-  border-bottom: 1.5px dashed hsl(var(--warning) / 0.7) !important;
+  border-bottom-style: dashed !important;
 }
 .essay-mark[data-kind="overlap-ghost"]:hover,
+.essay-mark[data-kind="overlap-ghost"]:focus-visible,
 .essay-mark[data-kind="overlap-ghost"][data-active="true"] {
-  background-color: hsl(var(--warning) / 0.20) !important;
+  filter: brightness(1.18);
+  outline: 2px dashed hsl(var(--ring));
+  outline-offset: 1px;
 }
+.essay-mark[data-kind="overlap-ghost"][data-cat="task_response"]:hover,
+.essay-mark[data-kind="overlap-ghost"][data-cat="task_response"]:focus-visible,
+.essay-mark[data-kind="overlap-ghost"][data-cat="task_response"][data-active="true"] { outline-color: hsl(var(--cat-tr)); }
+.essay-mark[data-kind="overlap-ghost"][data-cat="coherence"]:hover,
+.essay-mark[data-kind="overlap-ghost"][data-cat="coherence"]:focus-visible,
+.essay-mark[data-kind="overlap-ghost"][data-cat="coherence"][data-active="true"] { outline-color: hsl(var(--cat-cc)); }
+.essay-mark[data-kind="overlap-ghost"][data-cat="lexical"]:hover,
+.essay-mark[data-kind="overlap-ghost"][data-cat="lexical"]:focus-visible,
+.essay-mark[data-kind="overlap-ghost"][data-cat="lexical"][data-active="true"] { outline-color: hsl(var(--cat-lr)); }
+.essay-mark[data-kind="overlap-ghost"][data-cat="grammar"]:hover,
+.essay-mark[data-kind="overlap-ghost"][data-cat="grammar"]:focus-visible,
+.essay-mark[data-kind="overlap-ghost"][data-cat="grammar"][data-active="true"] { outline-color: hsl(var(--cat-gra)); }
+.essay-mark[data-kind="overlap-ghost"][data-cat="spelling"]:hover,
+.essay-mark[data-kind="overlap-ghost"][data-cat="spelling"]:focus-visible,
+.essay-mark[data-kind="overlap-ghost"][data-cat="spelling"][data-active="true"] { outline-color: hsl(var(--cat-sp)); }
 
 /* parent-shell: a NON-INTERACTIVE container for the parent rewrite's text
    when it has nested children. We don't apply any hover/active visuals to
@@ -163,19 +180,35 @@
 .parent-shell[data-active="true"][data-cat="grammar"]       { border-bottom-color: hsl(var(--cat-gra) / 0.7); }
 .parent-shell[data-active="true"][data-cat="spelling"]      { border-bottom-color: hsl(var(--cat-sp) / 0.7); }
 
-/* Right-margin gutter for parent-of-nested brackets. Aligned with the
-   article via JS layout measurement. */
+.essay-range-overlays {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.overlap-range-overlay {
+  position: absolute;
+  border: 2px solid currentColor;
+  border-radius: 0.2rem;
+  opacity: 0.95;
+}
+.overlap-range-overlay[data-cat="task_response"] { color: hsl(var(--cat-tr)); }
+.overlap-range-overlay[data-cat="coherence"]     { color: hsl(var(--cat-cc)); }
+.overlap-range-overlay[data-cat="lexical"]       { color: hsl(var(--cat-lr)); }
+.overlap-range-overlay[data-cat="grammar"]       { color: hsl(var(--cat-gra)); }
+.overlap-range-overlay[data-cat="spelling"]      { color: hsl(var(--cat-sp)); }
+
+/* Right-margin gutter for parent-of-nested and partial-overlap brackets.
+   Aligned with the article via JS layout measurement. */
 .essay-gutter {
   position: absolute;
   top: 0;
   right: 0;
-  width: 2.25rem;
   height: 100%;
   pointer-events: none;
 }
 .gutter-bracket {
   position: absolute;
-  right: 0.4rem;
   cursor: pointer;
   pointer-events: auto;
   display: flex;
@@ -225,17 +258,29 @@
 .gutter-bracket[data-cat="lexical"]       { color: hsl(var(--cat-lr)); }
 .gutter-bracket[data-cat="grammar"]       { color: hsl(var(--cat-gra)); }
 .gutter-bracket[data-cat="spelling"]      { color: hsl(var(--cat-sp)); }
+.gutter-bracket[data-kind="overlap"] .gutter-shape,
+.gutter-bracket[data-kind="overlap"] .gutter-count {
+  border-style: dashed;
+}
+.gutter-bracket[data-kind="overlap"] .gutter-shape {
+  opacity: 0.85;
+}
 .gutter-bracket:focus-visible {
-  outline: 2px solid hsl(var(--ring));
+  outline: 2px solid currentColor;
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-.essay-mark:hover,
-.essay-mark[data-active="true"] {
+.essay-mark:not([data-kind="overlap-ghost"]):hover,
+.essay-mark:not([data-kind="overlap-ghost"])[data-active="true"] {
   filter: brightness(1.18);
   outline: 2px solid hsl(var(--ring));
   outline-offset: 1px;
+}
+.essay-mark[data-overlap-participant="true"]:not([data-kind="overlap-ghost"]):hover,
+.essay-mark[data-overlap-participant="true"]:not([data-kind="overlap-ghost"])[data-active="true"] {
+  filter: none;
+  outline: none;
 }
 
 /* Inline marker for a nested child *inside* a parent mark — renders the

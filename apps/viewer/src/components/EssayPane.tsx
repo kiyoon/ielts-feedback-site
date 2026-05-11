@@ -3,7 +3,7 @@ import type { EssayDoc, FeedbackPayload, Rewrite } from "@/types";
 import { CATEGORY_SHORT, CATEGORY_TOKEN, isAdditionRewrite } from "@/types";
 import { buildSpans, segmentize } from "@/lib/highlight";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { ArrowRight, Layers, Search } from "lucide-react";
+import { ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,6 +14,152 @@ interface ChildMarker {
   end: number;
   rewrite: Rewrite;
   overlapIds: number[];
+}
+
+const GUTTER_EDGE_REM = 0.2;
+const GUTTER_LANE_STEP_REM = 1.9;
+const GUTTER_HANDLE_WIDTH_REM = 1.35;
+const ESSAY_SEGMENT_SELECTOR = '[data-essay-segment="true"]';
+
+interface OverlapMarkerInfo {
+  id: number;
+  start: number;
+  end: number;
+  rewrite: Rewrite;
+}
+
+interface RangeRect {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
+function buildOverlapMarkers(
+  overlaps: Record<number, { start: number; end: number; withIds: number[] }>,
+  rewritesById: Map<number, Rewrite>,
+): OverlapMarkerInfo[] {
+  return Object.entries(overlaps)
+    .map(([id, info]) => {
+      const rewriteId = Number(id);
+      const rewrite = rewritesById.get(rewriteId);
+      if (!rewrite || info.start >= info.end) return null;
+      return { id: rewriteId, start: info.start, end: info.end, rewrite };
+    })
+    .filter((m): m is OverlapMarkerInfo => m !== null)
+    .sort((a, b) => a.start - b.start || b.end - a.end || a.id - b.id);
+}
+
+function makeTextRange(root: HTMLElement, start: number, end: number): Range | null {
+  if (start < 0 || end <= start) return null;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      return node.parentElement?.closest(ESSAY_SEGMENT_SELECTOR)
+        ? NodeFilter.FILTER_ACCEPT
+        : NodeFilter.FILTER_REJECT;
+    },
+  });
+  const range = document.createRange();
+  let offset = 0;
+  let started = false;
+
+  while (true) {
+    const node = walker.nextNode() as Text | null;
+    if (!node) break;
+    const nextOffset = offset + node.data.length;
+
+    if (!started && start >= offset && start <= nextOffset) {
+      range.setStart(node, start - offset);
+      started = true;
+    }
+
+    if (started && end >= offset && end <= nextOffset) {
+      range.setEnd(node, end - offset);
+      return range;
+    }
+
+    offset = nextOffset;
+  }
+
+  return null;
+}
+
+function measureTextRange(
+  root: HTMLElement,
+  rootRect: DOMRect,
+  start: number,
+  end: number,
+): { top: number; height: number } | null {
+  const range = makeTextRange(root, start, end);
+  if (!range) return null;
+  const rects = Array.from(range.getClientRects()).filter(
+    (rect) => rect.width > 0 && rect.height > 0,
+  );
+  const firstRect = rects[0];
+  const lastRect = rects[rects.length - 1];
+  range.detach?.();
+  if (!firstRect || !lastRect) return null;
+  return {
+    top: firstRect.top - rootRect.top,
+    height: lastRect.bottom - firstRect.top,
+  };
+}
+
+function measureTextRangeRects(
+  root: HTMLElement,
+  containerRect: DOMRect,
+  start: number,
+  end: number,
+): RangeRect[] {
+  const range = makeTextRange(root, start, end);
+  if (!range) return [];
+  const rects = Array.from(range.getClientRects())
+    .filter((rect) => rect.width > 0 && rect.height > 0)
+    .map((rect) => ({
+      left: rect.left - containerRect.left,
+      top: rect.top - containerRect.top,
+      width: rect.width,
+      height: rect.height,
+    }));
+  range.detach?.();
+  return mergeLineRects(rects);
+}
+
+function mergeLineRects(rects: RangeRect[]): RangeRect[] {
+  const sorted = [...rects].sort((a, b) => a.top - b.top || a.left - b.left);
+  const lines: RangeRect[] = [];
+  for (const rect of sorted) {
+    const last = lines[lines.length - 1];
+    const rectRight = rect.left + rect.width;
+    if (
+      last &&
+      Math.abs(last.top - rect.top) <= 3 &&
+      Math.abs(last.height - rect.height) <= 3 &&
+      rect.left <= last.left + last.width + 4
+    ) {
+      const left = Math.min(last.left, rect.left);
+      const right = Math.max(last.left + last.width, rectRight);
+      last.top = Math.min(last.top, rect.top);
+      last.height = Math.max(last.height, rect.height);
+      last.left = left;
+      last.width = right - left;
+    } else {
+      lines.push({ ...rect });
+    }
+  }
+  return lines;
+}
+
+function assignGutterLanes<T extends { top: number; height: number }>(markers: T[]): (T & { lane: number })[] {
+  const sorted = [...markers].sort((a, b) => a.top - b.top || b.height - a.height);
+  const laneBottoms: number[] = [];
+  return sorted.map((marker) => {
+    const bottom = marker.top + marker.height;
+    let lane = laneBottoms.findIndex((existingBottom) => marker.top >= existingBottom + 4);
+    if (lane < 0) lane = laneBottoms.length;
+    laneBottoms[lane] = bottom;
+    return { ...marker, lane };
+  });
 }
 
 export function EssayPane({
@@ -58,6 +204,7 @@ export function EssayPane({
     () => new Map(feedback.rewrites.map((r) => [r.id, r])),
     [feedback.rewrites],
   );
+  const overlapMarkers = useMemo(() => buildOverlapMarkers(overlaps, rwById), [overlaps, rwById]);
   // For each parent rewrite, the list of nested children (with their absolute
   // positions in the essay). The mark renderer uses these to (a) show a "+N"
   // badge on the parent, and (b) render an inline marker inside the parent's
@@ -82,6 +229,7 @@ export function EssayPane({
   }, [nested, overlaps, feedback.rewrites]);
   const containerRef = useRef<HTMLDivElement>(null);
   const articleRef = useRef<HTMLElement>(null);
+  const [previewRewriteId, setPreviewRewriteId] = useState<number | null>(null);
 
   // App expects nested as Record<childId, parentId>; flatten our richer
   // NestedInfo down to just parent ids for the cross-pane callback.
@@ -95,7 +243,6 @@ export function EssayPane({
     for (const [k, v] of Object.entries(overlaps)) out[Number(k)] = v.withIds;
     return out;
   }, [overlaps]);
-
   useEffect(() => {
     onLocationReport({ unmatched, nested: nestedParentMap, overlaps: overlapMap });
   }, [unmatched, nestedParentMap, overlapMap, onLocationReport]);
@@ -121,12 +268,6 @@ export function EssayPane({
   }, [activeRewriteId, scrollKey, nested, overlaps]);
 
   const nestedCount = Object.keys(nested).length;
-  const overlapCount = Object.keys(overlaps).length;
-  // "highlighted" counts only PRIMARY spans (full-range located rewrites).
-  // Overlap-ghost spans are partial visible fragments of overlap rewrites,
-  // already accounted for in overlapCount — skip them so the header isn't
-  // double-counting.
-  const located = spans.filter((s) => s.kind !== "overlap-ghost").length;
   // Header shows N of (corrections only). Additions are reported separately.
   const total = correctionRewrites.length;
 
@@ -147,28 +288,40 @@ export function EssayPane({
     return out;
   }, [childrenByParent]);
 
-  // After every render, measure each "parent-of-nested" mark to position a
-  // right-margin "]" bracket aligned with its vertical range. Re-runs on
-  // window resize and content change.
-  type GutterMarker = {
+  // After every render, measure nested parents and partial-overlap feedbacks
+  // to position right-margin "]" brackets aligned with their text ranges.
+  // Re-runs on window resize and content change.
+  type BaseGutterMarker = {
+    key: string;
+    kind: "nested" | "overlap";
     rewriteId: number;
     top: number;
     height: number;
-    childCount: number;
+    nestedCount?: number;
+    category: Rewrite["category"];
+    label: string;
+  };
+  type GutterMarker = BaseGutterMarker & { lane: number };
+  type RangeOverlay = RangeRect & {
+    key: string;
+    rewriteId: number;
     category: Rewrite["category"];
   };
   const [gutterMarkers, setGutterMarkers] = useState<GutterMarker[]>([]);
+  const [rangeOverlays, setRangeOverlays] = useState<RangeOverlay[]>([]);
 
   useLayoutEffect(() => {
     const measure = () => {
       const article = articleRef.current;
-      if (!article) return;
+      const container = containerRef.current;
+      if (!article || !container) return;
       const articleRect = article.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
       // Each parent-shell is the non-interactive container around a region
       // that has nested children inside. Align the gutter bracket to the
       // first and last rendered line boxes for that inline range.
       const parents = article.querySelectorAll<HTMLElement>(".parent-shell");
-      const out: GutterMarker[] = [];
+      const out: BaseGutterMarker[] = [];
       parents.forEach((el) => {
         const id = Number(el.dataset.rewriteId);
         const cat = el.dataset.cat as Rewrite["category"];
@@ -179,14 +332,51 @@ export function EssayPane({
         const lastRect = rects[rects.length - 1];
         if (!firstRect || !lastRect) return;
         out.push({
+          key: `nested-${id}`,
+          kind: "nested",
           rewriteId: id,
           top: firstRect.top - articleRect.top,
           height: lastRect.bottom - firstRect.top,
-          childCount: descendantsByParent[id] ?? childrenByParent[id]?.length ?? 0,
+          nestedCount: descendantsByParent[id] ?? childrenByParent[id]?.length ?? 0,
           category: cat,
+          label: `#${id}`,
         });
       });
-      setGutterMarkers(out);
+      for (const marker of overlapMarkers) {
+        const rect = measureTextRange(article, articleRect, marker.start, marker.end);
+        if (!rect) continue;
+        out.push({
+          key: `overlap-${marker.id}`,
+          kind: "overlap",
+          rewriteId: marker.id,
+          top: rect.top,
+          height: rect.height,
+          category: marker.rewrite.category,
+          label: `#${marker.id}`,
+        });
+      }
+      setGutterMarkers(assignGutterLanes(out));
+
+      const highlightedOverlapId = previewRewriteId ?? activeRewriteId;
+      const highlightedOverlap =
+        highlightedOverlapId == null
+          ? null
+          : overlapMarkers.find((marker) => marker.id === highlightedOverlapId);
+      setRangeOverlays(
+        highlightedOverlap
+          ? measureTextRangeRects(
+              article,
+              containerRect,
+              highlightedOverlap.start,
+              highlightedOverlap.end,
+            ).map((rect, i) => ({
+              ...rect,
+              key: `overlap-range-${highlightedOverlap.id}-${i}`,
+              rewriteId: highlightedOverlap.id,
+              category: highlightedOverlap.rewrite.category,
+            }))
+          : [],
+      );
     };
     measure();
     const ro = new ResizeObserver(measure);
@@ -196,7 +386,46 @@ export function EssayPane({
       ro.disconnect();
       window.removeEventListener("resize", measure);
     };
-  }, [segments, childrenByParent, descendantsByParent, feedback.rewrites]);
+  }, [
+    segments,
+    childrenByParent,
+    descendantsByParent,
+    overlapMarkers,
+    feedback.rewrites,
+    activeRewriteId,
+    previewRewriteId,
+  ]);
+
+  const gutterLaneCount = gutterMarkers.reduce((max, g) => Math.max(max, g.lane + 1), 0);
+  const gutterWidthRem =
+    gutterLaneCount === 0
+      ? 0
+      : GUTTER_EDGE_REM + (gutterLaneCount - 1) * GUTTER_LANE_STEP_REM + GUTTER_HANDLE_WIDTH_REM;
+  const renderedSegments = segments.map((seg, i) =>
+    seg.span ? (
+      <MarkSpan
+        key={`m-${i}-${seg.span.rewriteId}-${seg.span.start}`}
+        text={seg.text}
+        spanStart={seg.span.start}
+        rewrite={rwById.get(seg.span.rewriteId)!}
+        active={seg.span.rewriteId === activeRewriteId}
+        kind={seg.span.kind ?? "primary"}
+        overlapParticipant={Boolean(overlaps[seg.span.rewriteId])}
+        nestedChildren={
+          seg.span.kind === "overlap-ghost"
+            ? []
+            : childrenByParent[seg.span.rewriteId] ?? []
+        }
+        childrenByParent={childrenByParent}
+        onClick={onMarkClick}
+        onHoverChange={setPreviewRewriteId}
+      />
+    ) : (
+      <span key={`p-${i}`} data-essay-segment="true">
+        {seg.text}
+      </span>
+    ),
+  );
 
   return (
     <Card className="flex flex-col h-full overflow-hidden">
@@ -206,16 +435,11 @@ export function EssayPane({
           <span className="text-xs text-muted-foreground tabular-nums flex items-baseline gap-1.5">
             {essay.word_count} words ·
             <Badge variant="outline" className="text-[10px]">
-              {located}/{total} highlighted
+              {total} feedback{total === 1 ? "" : "s"}
             </Badge>
             {nestedCount > 0 && (
               <Badge variant="outline" className="text-[10px]">
                 +{nestedCount} nested
-              </Badge>
-            )}
-            {overlapCount > 0 && (
-              <Badge variant="warning" className="text-[10px]">
-                {overlapCount} overlap{overlapCount === 1 ? "" : "s"}
               </Badge>
             )}
             {unmatched.length > 0 && (
@@ -241,50 +465,81 @@ export function EssayPane({
                 {essay.prompt}
               </p>
             </details>
-            <div className="relative pr-9" ref={containerRef}>
+            <div
+              className="relative"
+              ref={containerRef}
+              style={{ paddingRight: `${gutterWidthRem}rem` }}
+            >
               <article
                 ref={articleRef}
                 className="text-base leading-7 whitespace-pre-wrap"
-              >
-                {segments.map((seg) =>
-                  seg.span ? (
-                    <MarkSpan
-                      key={`m-${seg.span.rewriteId}-${seg.span.start}`}
-                      text={seg.text}
-                      spanStart={seg.span.start}
-                      rewrite={rwById.get(seg.span.rewriteId)!}
-                      active={seg.span.rewriteId === activeRewriteId}
-                      kind={seg.span.kind ?? "primary"}
-                      nestedChildren={
-                        seg.span.kind === "overlap-ghost"
-                          ? []
-                          : childrenByParent[seg.span.rewriteId] ?? []
-                      }
-                      childrenByParent={childrenByParent}
-                      onClick={onMarkClick}
+                children={renderedSegments}
+              />
+              {rangeOverlays.length > 0 && (
+                <div className="essay-range-overlays" aria-hidden="true">
+                  {rangeOverlays.map((overlay) => (
+                    <span
+                      key={overlay.key}
+                      className="overlap-range-overlay"
+                      data-cat={overlay.category}
+                      data-rewrite-id={overlay.rewriteId}
+                      style={{
+                        left: `${overlay.left}px`,
+                        top: `${overlay.top}px`,
+                        width: `${overlay.width}px`,
+                        height: `${overlay.height}px`,
+                      }}
                     />
-                  ) : (
-                    <span key={`p-${seg.text.length}-${seg.text.slice(0, 8)}`}>{seg.text}</span>
-                  ),
-                )}
-              </article>
+                  ))}
+                </div>
+              )}
               {gutterMarkers.length > 0 && (
-                <div className="essay-gutter" aria-hidden="false">
+                <div
+                  className="essay-gutter"
+                  aria-hidden="false"
+                  style={{ width: `${gutterWidthRem}rem` }}
+                >
                   {gutterMarkers.map((g) => {
                     const rw = rwById.get(g.rewriteId);
+                    const isOverlap = g.kind === "overlap";
+                    const isActive = g.rewriteId === activeRewriteId;
+                    const nestedCount = g.nestedCount ?? 0;
                     return (
                       <button
-                        key={g.rewriteId}
+                        key={g.key}
                         type="button"
                         className="gutter-bracket"
+                        data-kind={g.kind}
                         data-cat={g.category}
-                        data-active={g.rewriteId === activeRewriteId || undefined}
-                        style={{ top: `${g.top}px`, height: `${g.height}px` }}
-                        onClick={() => rw && onMarkClick(rw)}
-                        aria-label={`Region containing ${g.childCount} nested suggestion${g.childCount === 1 ? "" : "s"}: ${rw?.original ?? ""}. Click to open feedback.`}
+                        data-active={isActive || undefined}
+                        style={{
+                          top: `${g.top}px`,
+                          height: `${g.height}px`,
+                          right: `${GUTTER_EDGE_REM + g.lane * GUTTER_LANE_STEP_REM}rem`,
+                        }}
+                        onClick={() => {
+                          if (rw) onMarkClick(rw);
+                        }}
+                        onMouseEnter={() => {
+                          if (isOverlap) setPreviewRewriteId(g.rewriteId);
+                        }}
+                        onMouseLeave={() => {
+                          if (isOverlap) setPreviewRewriteId(null);
+                        }}
+                        onFocus={() => {
+                          if (isOverlap) setPreviewRewriteId(g.rewriteId);
+                        }}
+                        onBlur={() => {
+                          if (isOverlap) setPreviewRewriteId(null);
+                        }}
+                        aria-label={
+                          isOverlap
+                            ? `Overlapping suggestion #${g.rewriteId}: ${rw?.original ?? ""}. Click to open feedback.`
+                            : `Suggestion #${g.rewriteId}, containing ${nestedCount} nested suggestion${nestedCount === 1 ? "" : "s"}: ${rw?.original ?? ""}. Click to open feedback.`
+                        }
                       >
                         <span className="gutter-shape" />
-                        <span className="gutter-count">+{g.childCount}</span>
+                        <span className="gutter-count">{g.label}</span>
                       </button>
                     );
                   })}
@@ -298,23 +553,6 @@ export function EssayPane({
                 still shows a compact "+N nested" badge for at-a-glance count.
                 If a future case ever fails to render (e.g. a parent whose
                 bracket can't be measured), we'd surface a notice here. */}
-            {overlapCount > 0 && (
-              <button
-                type="button"
-                onClick={() => onSetLocationFilter("overlap")}
-                className="w-full text-left rounded-md border border-dashed border-[hsl(var(--warning)/0.5)] bg-[hsl(var(--warning)/0.06)] hover:bg-[hsl(var(--warning)/0.12)] p-2 text-xs transition-colors focus-visible:outline-none"
-                aria-label={`Show only the ${overlapCount} overlapping suggestion${overlapCount === 1 ? "" : "s"} in the right pane`}
-              >
-                <div className="flex items-center gap-1 font-semibold">
-                  <Layers className="h-3 w-3" /> {overlapCount} suggestion
-                  {overlapCount === 1 ? "" : "s"} overlap other highlight ranges →
-                </div>
-                <div className="mt-1 text-muted-foreground">
-                  Their phrases are present, but their ranges partially cross another suggestion.{" "}
-                  <span className="underline decoration-dotted">Click to filter the right pane to just these</span>.
-                </div>
-              </button>
-            )}
             {unmatched.length > 0 && (
               <button
                 type="button"
@@ -345,18 +583,22 @@ function MarkSpan({
   rewrite,
   active,
   kind,
+  overlapParticipant,
   nestedChildren,
   childrenByParent,
   onClick,
+  onHoverChange,
 }: {
   text: string;
   spanStart: number;
   rewrite: Rewrite;
   active: boolean;
   kind: "primary" | "overlap-ghost";
+  overlapParticipant: boolean;
   nestedChildren: ChildMarker[];
   childrenByParent: Record<number, ChildMarker[]>;
   onClick: (rw: Rewrite) => void;
+  onHoverChange: (id: number | null) => void;
 }) {
   const isGhost = kind === "overlap-ghost";
   const overlapping = !isGhost && nestedChildren.length > 0;
@@ -440,6 +682,7 @@ function MarkSpan({
     return (
       <span
         className="parent-shell"
+        data-essay-segment="true"
         data-rewrite-id={rewrite.id}
         data-cat={rewrite.category}
         data-active={active || undefined}
@@ -451,9 +694,9 @@ function MarkSpan({
 
   // Non-overlapping case: the standard interactive mark. Tooltip, click,
   // keyboard, hover — everything works because there are no nested children
-  // to interfere with state. The "overlap-ghost" variant uses the same
-  // interactive shell but a distinct dashed warning style and tooltip note
-  // so the user can see the visible portion of a partial-overlap rewrite.
+  // to interfere with state. Overlap participants preview their full measured
+  // range on hover/focus, because the visible clickable fragment may be only
+  // part of the feedback's original quote.
   return (
     <Tooltip>
       <TooltipTrigger asChild>
@@ -461,11 +704,25 @@ function MarkSpan({
           role="button"
           tabIndex={0}
           className="essay-mark"
+          data-essay-segment="true"
           data-cat={rewrite.category}
           data-kind={isGhost ? "overlap-ghost" : undefined}
           data-active={active || undefined}
+          data-overlap-participant={overlapParticipant || undefined}
           data-rewrite-id={rewrite.id}
           onClick={() => onClick(rewrite)}
+          onMouseEnter={() => {
+            if (overlapParticipant) onHoverChange(rewrite.id);
+          }}
+          onMouseLeave={() => {
+            if (overlapParticipant) onHoverChange(null);
+          }}
+          onFocus={() => {
+            if (overlapParticipant) onHoverChange(rewrite.id);
+          }}
+          onBlur={() => {
+            if (overlapParticipant) onHoverChange(null);
+          }}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
               e.preventDefault();
@@ -504,8 +761,8 @@ function MarkSpan({
           <div className="text-[11px] text-muted-foreground">{rewrite.reason}</div>
           {isGhost && (
             <div className="text-[11px] text-[hsl(var(--warning))] italic border-t pt-1 mt-1">
-              This rewrite's range crosses another highlight. Only the visible
-              fragment is marked here; see the right pane for the full quote.
+              This fragment is clickable; the bracket highlights the full
+              overlapping range.
             </div>
           )}
         </div>
