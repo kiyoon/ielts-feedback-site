@@ -1,6 +1,6 @@
 #!/bin/bash
 # Convert every feedback markdown in benchmark/results/ into a JSON payload.
-# Usage: extract-payloads.sh [task1|task2|all]
+# Usage: extract-payloads.sh [task-key|all]
 #   - default: all
 #   - re-run is idempotent: existing JSON payloads are skipped unless STALE=1.
 
@@ -16,13 +16,14 @@ PROMPT_FILE=$HERE/extract-prompt.md
 DATA=$VIEWER/public/data
 LOG=$VIEWER/extract/extract.log
 
-mkdir -p "$DATA/task1" "$DATA/task2" "$VIEWER/extract"
+mkdir -p "$VIEWER/extract"
 
 extract_one() {
   local task=$1 fname=$2
   local md=$BENCH/results/$task/$fname
   local id=${fname%.md}
   local out=$DATA/$task/$id.json
+  mkdir -p "$DATA/$task"
   if [ -s "$out" ] && [ "$STALE" != 1 ]; then
     echo "[skip] $task/$id"
     return 0
@@ -91,10 +92,20 @@ run_task() {
 }
 
 case $TARGET in
-  task1) run_task task1;;
-  task2) run_task task2;;
-  all)   run_task task1; run_task task2;;
-  *) echo "usage: $0 [task1|task2|all]"; exit 2;;
+  all)
+    for dir in "$BENCH/results"/*; do
+      [ -d "$dir" ] || continue
+      run_task "$(basename "$dir")"
+    done
+    ;;
+  *)
+    if [ -d "$BENCH/results/$TARGET" ]; then
+      run_task "$TARGET"
+    else
+      echo "usage: $0 [task-key|all] (unknown task: $TARGET)"
+      exit 2
+    fi
+    ;;
 esac
 
 # Rebuild index after extraction (only if any new payloads exist)

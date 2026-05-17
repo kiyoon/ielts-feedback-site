@@ -11,6 +11,7 @@ const BENCH = join(HERE, "..", "..", "..", "benchmark");
 const TASKS = [
   ["w1", { label: "W1 (real)", title: "Mathematical influence on computer science" }],
   ["w2", { label: "W2 (real)", title: "Resource depletion and natural science" }],
+  ["w3", { label: "W3 (real)", title: "Who should teach children social skills?" }],
   ["task1", { label: "T1 demo" }],
   ["task2", { label: "T2 demo" }],
 ];

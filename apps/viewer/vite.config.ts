@@ -53,6 +53,11 @@ function corpusPlugin(): Plugin {
   };
 }
 export default defineConfig({
+  // Relative base so the build works at any deploy path (site root or
+  // /repo/ sub-path on GitHub project pages). For dev/preview this still
+  // resolves correctly because import.meta.env.BASE_URL is "/" only when
+  // base is explicitly "/".
+  base: "./",
   plugins: [react(), corpusPlugin()],
   resolve: {
     alias: {

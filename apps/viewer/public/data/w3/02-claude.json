@@ -1,0 +1,194 @@
+{
+  "id": "w3/02-claude",
+  "task": "w3",
+  "iteration": 2,
+  "tool": "claude",
+  "generated_at": "2026-05-12T11:40:17Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "All three required parts are present in some form, which clears the Band 5 threshold (\"incompletely addressed\"). However, \"I believe it is up to individuals to learn the social skills\" sidesteps the parents-vs-school choice; the conclusions are therefore \"unclear, unjustified or repetitive\" — the exact Band 6 limiter in `contexts/01-band-descriptors/task2-band-descriptors.md`. Main ideas like \"they have experienced society for at least more than 20 years\" are relevant but under-developed: no example follows. Band 7 requires \"a clear and developed position\" plus ideas \"extended and supported\"."
+    },
+    "coherence": {
+      "band": 6,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "The essay has intro/body/conclusion shape, so there is \"clear overall progression\". The Band 6 features dominate: paragraphing is illogical (one body crammed, one body redundant), and cohesion is mechanical and faulty — \"However, this view is not shared by everyone, therefore some people take a different view\" is a comma-splice that adds no argumentative content. Reference is also weak: \"their logic could not fully explain\" leaves \"their\" ambiguous (parents' logic? children's?). Band 7 needs \"a clear central topic within each paragraph\" and \"reference and substitution used flexibly\"."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "Range is generally adequate (\"responsibility\", \"social norms\", \"fundamentally\", \"socialize\"). Precision is the Band 6 cap: \"strengthened their common senses\" (uncountable + wrong verb), \"educate their children how to adjust to society\" (wrong verb pattern), \"made a mistake to other students\" (wrong preposition + tense), \"the choices are ultimately on their side\" (non-idiom). These match the collocation/L1 patterns catalogued in `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3 and §8. Band 7 requires \"awareness of style and collocation … though inappropriacies occur\" — yours occur too densely."
+    },
+    "grammar": {
+      "band": 6,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "You attempt a reasonable range — \"given the fact that\", \"Although\", \"since\", \"Even though\" — but complex sentences break: \"Although their logic could not fully explain in some situations\" is missing an object; \"even if they made a mistake to other students\" has both a tense and a preposition error; \"given the fact that they have experienced society for at least more than 20 years\" is wordy and redundant (\"at least more than\"). Simple sentences are mostly correct. Per `contexts/01-band-descriptors/task2-band-descriptors.md`, this matches Band 6: \"more complex structures are not marked by the same level of accuracy as in simple structures.\" Band 7 needs \"error-free sentences are frequent\"."
+    }
+  },
+  "overall": 6,
+  "overall_rationale": "All four criteria fit Band 6 most closely under the best-fit rule: the essay is on-topic and organised, but position, paragraph development, collocation precision, and complex-sentence accuracy fall short of Band 7's \"developed position\", \"logical organisation\", \"awareness of collocation\", and \"frequent error-free sentences\". The simple average is 6.0, so the rounded overall band remains 6.0 per `contexts/01-band-descriptors/scoring-rules.md` §3.",
+  "what_changed": "Iteration 01's Band 6.0 calibration is well-supported by the descriptors, so the scores are unchanged. I sharpened three things. First, I diagnosed the Task Response problem more precisely: this is a three-part prompt (View A, View B, your opinion *on those two*), and your thesis answers a fourth, unasked question (\"who decides whether to apply social skills?\"), which is why TR cannot move above 6 — not just because the position is \"slightly off-centre\". Second, I flagged Body 1 as a *single overloaded paragraph* doing the work of two paragraphs — the highest-leverage structural fix and one the prior under-emphasised. Third, I added Korean-L1-typical article errors (\"the social skills\", \"the school\", \"the parents\") which the prior chain treats as a single rewrite but is actually a pattern recurring across the essay (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A2). I also pushed deeper into less-obvious upgrades: a concessive `Adj + as + S + V` pattern from `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4 and a participle-clause opener.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "I believe it is up to individuals to learn the social skills.",
+      "improved": "I would argue that, while parents lay the moral foundation, schools provide the daily practice that turns those values into habits.",
+      "reason": "Replaces the off-prompt thesis with a real parents-vs-school position.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "However, this view is not shared by everyone, therefore some people take a different view.",
+      "improved": "Valuable as parental guidance is, schools complement it by giving children repeated chances to practise social behaviour with peers their own age.",
+      "reason": "Removes mechanical pivot + comma splice; introduces a concessive inversion (Band-7 showcase).",
+      "citations": [
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 3,
+      "original": "the parents have strengthened their common senses which are extremely delicate and easy to understand",
+      "improved": "parents have developed practical wisdom through years of navigating social situations",
+      "reason": "Fixes the uncountable+verb collocation and replaces vague modifiers with topic-specific phrasing.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md",
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "Although their logic could not fully explain in some situations",
+      "improved": "Although parents cannot account for every social situation they encounter",
+      "reason": "Repairs the broken clause (missing object) and clarifies the ambiguous \"their\".",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "the children have to encounter others constantly",
+      "improved": "children interact with classmates and teachers throughout the school day",
+      "reason": "Removes the awkward \"encounter others\"; adds the topic-specific noun phrase.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-01-education.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 6,
+      "original": "even if they made a mistake to other students",
+      "improved": "even when they mishandle a social situation with classmates",
+      "reason": "Corrects tense, preposition, and abstract referent.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "given the fact that they have experienced society for at least more than 20 years",
+      "improved": "since most parents have spent two decades or more navigating social life",
+      "reason": "Removes the redundant \"at least more than\" and replaces wordy connector.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/06-paraphrase-quick-lookup.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "educate their children how to adjust to society",
+      "improved": "teach their children how to behave responsibly in society",
+      "reason": "Standard parenting collocation; \"educate sb how to\" is non-native.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 9,
+      "original": "the very basic social norms",
+      "improved": "fundamental social norms such as honesty, politeness, and respect for others",
+      "reason": "Adds the missing concrete example — Task Response uplift.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 10,
+      "original": "In conclusion, I believe children can indeed learn how to socialize with others from their parents or in school, but more fundamentally, it is always up to them to take the advice or not.",
+      "improved": "On balance, parents and schools play distinct but complementary roles: the home instils values, while the classroom gives children the social arena in which those values are tested and refined.",
+      "reason": "Turns the conclusion into a synthesis on the actual prompt question.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "The score matches the prior iteration, but this pass adds substantive new diagnoses (the three-part prompt analysis, the Body 1 structural fault as the highest-leverage fix, the article-with-abstract-noun pattern, and a concessive-inversion showcase rewrite) rather than only repackaging the prior. The chain has not yet stabilised — a further iteration could still meaningfully push into ordering the rewrites differently, swap in a participle-clause showcase, or recalibrate whether CC is genuinely 6 or 5.5 given the Body 1 paragraphing fault.",
+  "raw_markdown": "# Iteration 02 — claude\n\n_Generated 2026-05-12T11:40:17Z. Prior chain depth: up to 3. Manifest: 123 files._\n\n---I've covered the descriptor framework, band-6-to-7 strategy, sample essays, instructor tips, error banks, family/children topic bank, source reliability, and prior chain. Now writing iteration 02.\n\n---\n\n## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response / Achievement | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Coherence and Cohesion       | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Lexical Resource             | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| **Overall**                  | 6.0 | rounded per `contexts/01-band-descriptors/scoring-rules.md` |\n\n## What changed from prior feedback\nIteration 01's Band 6.0 calibration is well-supported by the descriptors, so the scores are unchanged. I sharpened three things. First, I diagnosed the Task Response problem more precisely: this is a three-part prompt (View A, View B, your opinion *on those two*), and your thesis answers a fourth, unasked question (\"who decides whether to apply social skills?\"), which is why TR cannot move above 6 — not just because the position is \"slightly off-centre\". Second, I flagged Body 1 as a *single overloaded paragraph* doing the work of two paragraphs — the highest-leverage structural fix and one the prior under-emphasised. Third, I added Korean-L1-typical article errors (\"the social skills\", \"the school\", \"the parents\") which the prior chain treats as a single rewrite but is actually a pattern recurring across the essay (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A2). I also pushed deeper into less-obvious upgrades: a concessive `Adj + as + S + V` pattern from `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4 and a participle-clause opener.\n\n## Structural feedback\nThe essay has a four-paragraph shape, but the shape does not match the question type. \"Discuss both views and give your opinion\" needs **three** discrete content units — parent-view paragraph, school-view paragraph, your opinion (per `contexts/04-task2-essays/question-types-overview.md` §2). You compress parent-view + school-view into Body 1 (joined by the mechanical pivot \"However, this view is not shared by everyone, therefore…\"), so neither view gets a developed PEEL paragraph; then Body 2 introduces a *new* position (\"it is up to individuals\") that does not engage with either side. The conclusion repeats Body 2 rather than synthesising. **The single highest-impact fix is splitting Body 1 into two separate paragraphs and rewriting Body 2 as a genuine opinion on which side weighs more — not lexical polish.** A clean band-7 plan: (intro) thesis = parents lay the foundation, schools provide practice; (Body 1) parents teach the basic values, with example; (Body 2) schools let children practise socially with peers, with example; (conclusion) synthesise — both matter, but in complementary ways.\n\n## Focus areas\n- **Three-part prompt coverage** — your opinion must engage with the parents-vs-school choice, not redirect to a third issue. Drill: `contexts/04-task2-essays/question-types-overview.md` §2, `contexts/05-band-6-to-7/task-response-upgrades.md` §4.\n- **One paragraph per main idea (PEEL)** — Body 1 currently has two competing claims; split them. Drill: `contexts/05-band-6-to-7/paragraph-structure-band7.md` §3, `contexts/10-task2-topic-banks/topic-11-family-and-children.md` (sample body paragraphs).\n- **Articles with abstract/general nouns** — \"the social skills\", \"the school\", \"the parents\" all wrongly definite when meaning is generic. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A2, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1.\n- **Family/parenting collocations** — \"strengthened their common senses\", \"made a mistake to other students\", \"educate their children how to adjust\" all read as non-native. Drill: `contexts/10-task2-topic-banks/topic-11-family-and-children.md` §Common collocations, `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3.\n- **Cohesion beyond Although/Even though** — you lean on subordinators for nearly every contrast. Drill: `contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md` §3, `contexts/05-band-6-to-7/cohesion-upgrades.md` §4.\n- **One showcase grammar structure** — a concessive `Valuable as parents' guidance is, …` would deliver visible GRA uplift. Drill: `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4.\n\n## What's working\nYou do address both sides at least nominally — \"children can learn from their parents\" and \"A school can be a better place to learn social norms\" — and you do attempt complex subordinators (\"whereas\", \"Although\", \"since\", \"Even though\"). The conclusion holds a consistent (if off-prompt) position: \"it is always up to them to take the advice or not.\" Keep the willingness to write complex clauses; the next step is making them grammatical and pointing them at the right question.\n\n## Per-criterion justification\n**Task Response (Band 6):** All three required parts are present in some form, which clears the Band 5 threshold (\"incompletely addressed\"). However, \"I believe it is up to individuals to learn the social skills\" sidesteps the parents-vs-school choice; the conclusions are therefore \"unclear, unjustified or repetitive\" — the exact Band 6 limiter in `contexts/01-band-descriptors/task2-band-descriptors.md`. Main ideas like \"they have experienced society for at least more than 20 years\" are relevant but under-developed: no example follows. Band 7 requires \"a clear and developed position\" plus ideas \"extended and supported\".\n\n**Coherence & Cohesion (Band 6):** The essay has intro/body/conclusion shape, so there is \"clear overall progression\". The Band 6 features dominate: paragraphing is illogical (one body crammed, one body redundant), and cohesion is mechanical and faulty — \"However, this view is not shared by everyone, therefore some people take a different view\" is a comma-splice that adds no argumentative content. Reference is also weak: \"their logic could not fully explain\" leaves \"their\" ambiguous (parents' logic? children's?). Band 7 needs \"a clear central topic within each paragraph\" and \"reference and substitution used flexibly\".\n\n**Lexical Resource (Band 6):** Range is generally adequate (\"responsibility\", \"social norms\", \"fundamentally\", \"socialize\"). Precision is the Band 6 cap: \"strengthened their common senses\" (uncountable + wrong verb), \"educate their children how to adjust to society\" (wrong verb pattern), \"made a mistake to other students\" (wrong preposition + tense), \"the choices are ultimately on their side\" (non-idiom). These match the collocation/L1 patterns catalogued in `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3 and §8. Band 7 requires \"awareness of style and collocation … though inappropriacies occur\" — yours occur too densely.\n\n**Grammatical Range & Accuracy (Band 6):** You attempt a reasonable range — \"given the fact that\", \"Although\", \"since\", \"Even though\" — but complex sentences break: \"Although their logic could not fully explain in some situations\" is missing an object; \"even if they made a mistake to other students\" has both a tense and a preposition error; \"given the fact that they have experienced society for at least more than 20 years\" is wordy and redundant (\"at least more than\"). Simple sentences are mostly correct. Per `contexts/01-band-descriptors/task2-band-descriptors.md`, this matches Band 6: \"more complex structures are not marked by the same level of accuracy as in simple structures.\" Band 7 needs \"error-free sentences are frequent\".\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | \"I believe it is up to individuals to learn the social skills.\" | \"I would argue that, while parents lay the moral foundation, schools provide the daily practice that turns those values into habits.\" | Replaces the off-prompt thesis with a real parents-vs-school position. | `contexts/05-band-6-to-7/task-response-upgrades.md` §4, `contexts/10-task2-topic-banks/topic-11-family-and-children.md` §thesis 2 |\n| 2 | \"However, this view is not shared by everyone, therefore some people take a different view.\" | \"Valuable as parental guidance is, schools complement it by giving children repeated chances to practise social behaviour with peers their own age.\" | Removes mechanical pivot + comma splice; introduces a concessive inversion (Band-7 showcase). | `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4 |\n| 3 | \"the parents have strengthened their common senses which are extremely delicate and easy to understand\" | \"parents have developed practical wisdom through years of navigating social situations\" | Fixes the uncountable+verb collocation and replaces vague modifiers with topic-specific phrasing. | `contexts/10-task2-topic-banks/topic-11-family-and-children.md` §Common collocations, `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3 |\n| 4 | \"Although their logic could not fully explain in some situations\" | \"Although parents cannot account for every social situation they encounter\" | Repairs the broken clause (missing object) and clarifies the ambiguous \"their\". | `contexts/05-band-6-to-7/grammar-upgrades.md` §13, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §11 |\n| 5 | \"the children have to encounter others constantly\" | \"children interact with classmates and teachers throughout the school day\" | Removes the awkward \"encounter others\"; adds the topic-specific noun phrase. | `contexts/10-task2-topic-banks/topic-01-education.md` §collocations |\n| 6 | \"even if they made a mistake to other students\" | \"even when they mishandle a social situation with classmates\" | Corrects tense, preposition, and abstract referent. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4 |\n| 7 | \"given the fact that they have experienced society for at least more than 20 years\" | \"since most parents have spent two decades or more navigating social life\" | Removes the redundant \"at least more than\" and replaces wordy connector. | `contexts/08-vocabulary-grammar/06-paraphrase-quick-lookup.md`, `contexts/05-band-6-to-7/vocabulary-upgrades.md` §3 |\n| 8 | \"educate their children how to adjust to society\" | \"teach their children how to behave responsibly in society\" | Standard parenting collocation; \"educate sb how to\" is non-native. | `contexts/10-task2-topic-banks/topic-11-family-and-children.md` §Common collocations |\n| 9 | \"the very basic social norms\" | \"fundamental social norms such as honesty, politeness, and respect for others\" | Adds the missing concrete example — Task Response uplift. | `contexts/05-band-6-to-7/task-response-upgrades.md` §6 |\n| 10 | \"In conclusion, I believe children can indeed learn how to socialize with others from their parents or in school, but more fundamentally, it is always up to them to take the advice or not.\" | \"On balance, parents and schools play distinct but complementary roles: the home instils values, while the classroom gives children the social arena in which those values are tested and refined.\" | Turns the conclusion into a synthesis on the actual prompt question. | `contexts/05-band-6-to-7/paragraph-structure-band7.md` §5, `contexts/09-instructor-tips/06-task2-sentence-frames.md` §8 |\n\n## Overall band rationale\nAll four criteria fit Band 6 most closely under the best-fit rule: the essay is on-topic and organised, but position, paragraph development, collocation precision, and complex-sentence accuracy fall short of Band 7's \"developed position\", \"logical organisation\", \"awareness of collocation\", and \"frequent error-free sentences\". The simple average is 6.0, so the rounded overall band remains 6.0 per `contexts/01-band-descriptors/scoring-rules.md` §3.\n\n## CONVERGENCE: REFINING\nThe score matches the prior iteration, but this pass adds substantive new diagnoses (the three-part prompt analysis, the Body 1 structural fault as the highest-leverage fix, the article-with-abstract-noun pattern, and a concessive-inversion showcase rewrite) rather than only repackaging the prior. The chain has not yet stabilised — a further iteration could still meaningfully push into ordering the rewrites differently, swap in a participle-clause showcase, or recalibrate whether CC is genuinely 6 or 5.5 given the Body 1 paragraphing fault.",
+  "structural_feedback": "The essay has a four-paragraph shape, but the shape does not match the question type. \"Discuss both views and give your opinion\" needs **three** discrete content units — parent-view paragraph, school-view paragraph, your opinion (per `contexts/04-task2-essays/question-types-overview.md` §2). You compress parent-view + school-view into Body 1 (joined by the mechanical pivot \"However, this view is not shared by everyone, therefore…\"), so neither view gets a developed PEEL paragraph; then Body 2 introduces a *new* position (\"it is up to individuals\") that does not engage with either side. The conclusion repeats Body 2 rather than synthesising. **The single highest-impact fix is splitting Body 1 into two separate paragraphs and rewriting Body 2 as a genuine opinion on which side weighs more — not lexical polish.** A clean band-7 plan: (intro) thesis = parents lay the foundation, schools provide practice; (Body 1) parents teach the basic values, with example; (Body 2) schools let children practise socially with peers, with example; (conclusion) synthesise — both matter, but in complementary ways.",
+  "focus_areas": [
+    {
+      "area": "Three-part prompt coverage",
+      "rationale": "your opinion must engage with the parents-vs-school choice, not redirect to a third issue.",
+      "corpus_drill": [
+        "contexts/04-task2-essays/question-types-overview.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ]
+    },
+    {
+      "area": "One paragraph per main idea (PEEL)",
+      "rationale": "Body 1 currently has two competing claims; split them.",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md"
+      ]
+    },
+    {
+      "area": "Articles with abstract/general nouns",
+      "rationale": "\"the social skills\", \"the school\", \"the parents\" all wrongly definite when meaning is generic.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Family/parenting collocations",
+      "rationale": "\"strengthened their common senses\", \"made a mistake to other students\", \"educate their children how to adjust\" all read as non-native.",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md",
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Cohesion beyond Although/Even though",
+      "rationale": "you lean on subordinators for nearly every contrast.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md",
+        "contexts/05-band-6-to-7/cohesion-upgrades.md"
+      ]
+    },
+    {
+      "area": "One showcase grammar structure",
+      "rationale": "a concessive `Valuable as parents' guidance is, …` would deliver visible GRA uplift.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ]
+    }
+  ],
+  "whats_working": "You do address both sides at least nominally — \"children can learn from their parents\" and \"A school can be a better place to learn social norms\" — and you do attempt complex subordinators (\"whereas\", \"Although\", \"since\", \"Even though\"). The conclusion holds a consistent (if off-prompt) position: \"it is always up to them to take the advice or not.\" Keep the willingness to write complex clauses; the next step is making them grammatical and pointing them at the right question."
+}

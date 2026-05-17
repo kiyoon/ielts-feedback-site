@@ -121,7 +121,7 @@ export interface FeedbackPayload {
   iteration: number; // 0 for baseline
   tool: Tool;
   generated_at: string;
-  prior_id?: string;
+  prior_id?: string | null;
 
   scores: {
     task_response: CriterionScore;
@@ -136,9 +136,9 @@ export interface FeedbackPayload {
 
   // Student-facing structural / pattern-level / strengths sections.
   // All optional so old payloads (without these sections) still validate.
-  structural_feedback?: string;     // markdown — essay-level critique
-  focus_areas?: FocusArea[];        // ranked, drill recommendations
-  whats_working?: string;           // markdown — explicit strengths to anchor
+  structural_feedback?: string | null; // markdown — essay-level critique
+  focus_areas?: FocusArea[] | null;    // ranked, drill recommendations
+  whats_working?: string | null;       // markdown — explicit strengths to anchor
 
   rewrites: Rewrite[];
 

@@ -1,5 +1,12 @@
 import type { FeedbackPayload, IndexPayload } from "@/types";
 
+// Vite injects BASE_URL based on `base` in vite.config.ts. Using it lets the
+// same build work both at site root (custom domain) and under a sub-path
+// (e.g. GitHub project-page deploy at username.github.io/repo/).
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + "/";
+
 const cache = new Map<string, FeedbackPayload>();
 const inflight = new Map<string, Promise<FeedbackPayload>>();
 
@@ -24,7 +31,7 @@ function isFeedback(p: unknown): p is FeedbackPayload {
 }
 
 export async function loadIndex(): Promise<IndexPayload> {
-  const r = await fetch("/data/index.json");
+  const r = await fetch(`${BASE}data/index.json`);
   if (!r.ok) throw new Error(`index.json missing — run \`bun run extract\``);
   const json: unknown = await r.json();
   if (!isIndex(json)) throw new Error("index.json shape is invalid");
@@ -38,7 +45,7 @@ export async function loadFeedback(id: string): Promise<FeedbackPayload> {
   if (live) return live;
   const promise = (async () => {
     try {
-      const r = await fetch(`/data/${id}.json`);
+      const r = await fetch(`${BASE}data/${id}.json`);
       if (!r.ok) throw new Error(`${id} payload missing`);
       const json: unknown = await r.json();
       if (!isFeedback(json)) throw new Error(`${id} payload shape is invalid`);
@@ -55,7 +62,7 @@ export async function loadFeedback(id: string): Promise<FeedbackPayload> {
 export async function loadCorpusFile(path: string): Promise<string> {
   // The dev/preview server exposes repo-root files through the /corpus
   // middleware configured in vite.config.ts.
-  const r = await fetch(`/corpus/${path}`);
+  const r = await fetch(`${BASE}corpus/${path}`);
   if (!r.ok) return `_(corpus file ${path} not available)_`;
   return r.text();
 }

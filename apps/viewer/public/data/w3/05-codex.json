@@ -1,0 +1,180 @@
+{
+  "id": "w3/05-codex",
+  "task": "w3",
+  "iteration": 5,
+  "tool": "codex",
+  "generated_at": "2026-05-12T11:53:53Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "This is Band 6 because all main parts are present but unevenly developed. The thesis “it is up to individuals to learn the social skills” does not directly choose or balance parents versus schools. The parent argument, “they have experienced society for at least more than 20 years,” is relevant but unsupported by a concrete example. Band 7 requires a clear developed position and extended support, as described in `contexts/01-band-descriptors/task2-band-descriptors.md`."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "The essay has an introduction, body, and conclusion, so there is clear overall progression. However, Body 1 mixes two central topics, and Body 2 repeats the individual-choice idea rather than advancing the discussion. “However, this view is not shared by everyone, therefore…” is both mechanical and a comma splice. Band 7 needs generally effective paragraphing and flexible cohesion, not just contrast markers; see `contexts/05-band-6-to-7/cohesion-upgrades.md`."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "Your topic vocabulary is adequate: “responsibility,” “social norms,” “socialize,” and “fundamentally” are relevant. The Band 6 limit is precision: “educate their children how to adjust,” “strengthened their common senses,” “the choices are ultimately on their side,” and “made a mistake to other students” are unnatural collocations. These errors do not usually block meaning, but they are too frequent for Band 7 collocational control. This matches `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "You attempt complex sentences, which is positive. However, several complex clauses break: “Although their logic could not fully explain in some situations” is missing a clear object, and “even if they made a mistake to other students” has tense and preposition problems. Simple sentences are mostly understandable, so Band 6 is fair. Band 7 would require frequent error-free sentences and better control of complex structures, per `contexts/05-band-6-to-7/grammar-upgrades.md`."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "All four criteria best fit Band 6: the essay is relevant and understandable, but the position, paragraph development, cohesion, collocation, and complex-sentence accuracy are not yet consistent enough for Band 7. Four 6.0 criterion scores average to 6.0 under `contexts/01-band-descriptors/scoring-rules.md`.",
+  "what_changed": "Iteration 04 is already well calibrated: the four Band 6 scores match the official descriptors and the 6→7 gates. I have kept the same core diagnosis but made the rewrite priorities slightly more learner-facing: structural repair first, then concrete examples, then collocation/grammar. I also avoid treating the concessive inversion as a “must”; for this essay, PEEL development and a prompt-focused opinion are worth more than showcase grammar. No substantial new error category appears beyond the prior feedback, so this is a convergence pass.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "I believe it is up to individuals to learn the social skills.",
+      "improved": "I would argue that parents should lay the foundation for social behaviour, while schools provide the daily practice that turns those values into habits.",
+      "reason": "Directly answers the parents-vs-schools question.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-01-education.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "To begin with, it is true that children can learn from their parents",
+      "improved": "Parents are often the first people to instil basic values such as honesty, politeness, and respect for others.",
+      "reason": "Gives Body 1 a clear PEEL topic sentence.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 3,
+      "original": "A school can be a better place to learn social norms",
+      "improved": "Schools may be better placed to teach social behaviour because children interact with classmates and teachers every day.",
+      "reason": "Uses generic plural “schools” and adds a reason.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-01-education.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 4,
+      "original": "By having a discussion or even making a few mistakes",
+      "improved": "Through group work and minor conflicts, children learn to apologise, compromise, and respect shared rules.",
+      "reason": "Turns vague support into concrete examples.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 5,
+      "original": "However, this view is not shared by everyone, therefore some people take a different view.",
+      "improved": "This parental guidance, however, is only one side of the issue; schools also give children repeated opportunities to practise these skills.",
+      "reason": "Fixes mechanical cohesion and the comma splice.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md",
+        "contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 6,
+      "original": "the parents have strengthened their common senses",
+      "improved": "parents have developed practical wisdom through years of social experience",
+      "reason": "Corrects an unnatural collocation.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 7,
+      "original": "Although their logic could not fully explain in some situations",
+      "improved": "Although parents may not be able to explain every social situation clearly",
+      "reason": "Repairs the broken clause and clarifies the subject.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "even if they made a mistake to other students",
+      "improved": "even when they make mistakes while interacting with classmates",
+      "reason": "Corrects tense, preposition, and word choice.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "In conclusion, I believe children can indeed learn",
+      "improved": "On balance, parents and schools play complementary roles: the home instils values, while the classroom gives children the chance to practise them.",
+      "reason": "Makes the conclusion a synthesis of both views.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "CONVERGED",
+  "convergence_note": "The scores match the most recent prior iteration exactly, and the suggestion list overlaps by well over 70%: thesis repair, Body 1 split, PEEL development, articles, collocations, cohesion, and complex-clause control remain the same issues. Across iterations 02–04 and this pass, changes are now mostly phrasing and prioritisation rather than new diagnosis. I do not see a meaningful concrete improvement that another iteration would add.",
+  "raw_markdown": "# Iteration 05 — codex\n\n_Generated 2026-05-12T11:53:53Z. Prior chain depth: up to 3. Manifest: 123 files._\n\n---## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response / Achievement | 6.0 | contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 |\n| Coherence and Cohesion       | 6.0 | contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 |\n| Lexical Resource             | 6.0 | contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 |\n| Grammatical Range & Accuracy | 6.0 | contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 |\n| **Overall**                  | 6.0 | rounded per `contexts/01-band-descriptors/scoring-rules.md` |\n\n## What changed from prior feedback\nIteration 04 is already well calibrated: the four Band 6 scores match the official descriptors and the 6→7 gates. I have kept the same core diagnosis but made the rewrite priorities slightly more learner-facing: structural repair first, then concrete examples, then collocation/grammar. I also avoid treating the concessive inversion as a “must”; for this essay, PEEL development and a prompt-focused opinion are worth more than showcase grammar. No substantial new error category appears beyond the prior feedback, so this is a convergence pass.\n\n## Structural feedback\nThis essay answers the broad topic, but the opinion does not answer the exact choice in the prompt. The question asks whether parents or schools are better placed to teach children social skills; your answer shifts to “it is up to individuals,” which is related but off-centre. Body 1 contains both views in one paragraph, so neither the parents view nor the school view becomes a full PEEL paragraph. Body 2 then repeats the individual-choice idea instead of weighing parents against schools. The conclusion restates that same off-prompt position rather than synthesising the two views. The single highest-impact fix here is rewriting the thesis and body plan together: parents lay the foundation, schools provide daily practice.\n\n## Focus areas\n- **Prompt-focused opinion** — Your opinion must weigh the two given views, not introduce a third answer. Drill: `contexts/04-task2-essays/question-types-overview.md`, `contexts/05-band-6-to-7/task-response-upgrades.md`.\n- **One PEEL paragraph per view** — Band 7 needs each view explained, exemplified, and linked back to your stance. Drill: `contexts/05-band-6-to-7/paragraph-structure-band7.md`, `contexts/05-band-6-to-7/top-30-fixes-band-6-to-7.md`.\n- **Concrete examples for social behaviour** — “social norms” needs examples such as apologising, sharing rules, compromise, and respect. Drill: `contexts/10-task2-topic-banks/topic-01-education.md`, `contexts/10-task2-topic-banks/topic-11-family-and-children.md`.\n- **Generic articles** — “the school,” “the parents,” and “the social skills” show a repeated article problem with general nouns. Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md`.\n- **Collocation control** — Phrases like “strengthened their common senses” and “mistake to other students” block Band 7 lexical precision. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`, `contexts/05-band-6-to-7/vocabulary-upgrades.md`.\n\n## What's working\nYou do address both sides at least once: “children can learn from their parents” and “A school can be a better place to learn social norms.” You also attempt complex linking with “whereas,” “Although,” “since,” and “Even though.” Keep the balanced discussion instinct; the next step is to make your own opinion directly compare the two sides.\n\n## Per-criterion justification\n**Task Response:** This is Band 6 because all main parts are present but unevenly developed. The thesis “it is up to individuals to learn the social skills” does not directly choose or balance parents versus schools. The parent argument, “they have experienced society for at least more than 20 years,” is relevant but unsupported by a concrete example. Band 7 requires a clear developed position and extended support, as described in `contexts/01-band-descriptors/task2-band-descriptors.md`.\n\n**Coherence and Cohesion:** The essay has an introduction, body, and conclusion, so there is clear overall progression. However, Body 1 mixes two central topics, and Body 2 repeats the individual-choice idea rather than advancing the discussion. “However, this view is not shared by everyone, therefore…” is both mechanical and a comma splice. Band 7 needs generally effective paragraphing and flexible cohesion, not just contrast markers; see `contexts/05-band-6-to-7/cohesion-upgrades.md`.\n\n**Lexical Resource:** Your topic vocabulary is adequate: “responsibility,” “social norms,” “socialize,” and “fundamentally” are relevant. The Band 6 limit is precision: “educate their children how to adjust,” “strengthened their common senses,” “the choices are ultimately on their side,” and “made a mistake to other students” are unnatural collocations. These errors do not usually block meaning, but they are too frequent for Band 7 collocational control. This matches `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`.\n\n**Grammatical Range & Accuracy:** You attempt complex sentences, which is positive. However, several complex clauses break: “Although their logic could not fully explain in some situations” is missing a clear object, and “even if they made a mistake to other students” has tense and preposition problems. Simple sentences are mostly understandable, so Band 6 is fair. Band 7 would require frequent error-free sentences and better control of complex structures, per `contexts/05-band-6-to-7/grammar-upgrades.md`.\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | “I believe it is up to individuals to learn the social skills.” | “I would argue that parents should lay the foundation for social behaviour, while schools provide the daily practice that turns those values into habits.” | Directly answers the parents-vs-schools question. | `contexts/05-band-6-to-7/task-response-upgrades.md`; `contexts/10-task2-topic-banks/topic-01-education.md` |\n| 2 | “To begin with, it is true that children can learn from their parents…” | “Parents are often the first people to instil basic values such as honesty, politeness, and respect for others.” | Gives Body 1 a clear PEEL topic sentence. | `contexts/05-band-6-to-7/paragraph-structure-band7.md`; `contexts/10-task2-topic-banks/topic-11-family-and-children.md` |\n| 3 | “A school can be a better place to learn social norms” | “Schools may be better placed to teach social behaviour because children interact with classmates and teachers every day.” | Uses generic plural “schools” and adds a reason. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`; `contexts/10-task2-topic-banks/topic-01-education.md` |\n| 4 | “By having a discussion or even making a few mistakes…” | “Through group work and minor conflicts, children learn to apologise, compromise, and respect shared rules.” | Turns vague support into concrete examples. | `contexts/05-band-6-to-7/task-response-upgrades.md`; `contexts/09-instructor-tips/06-task2-sentence-frames.md` |\n| 5 | “However, this view is not shared by everyone, therefore some people take a different view.” | “This parental guidance, however, is only one side of the issue; schools also give children repeated opportunities to practise these skills.” | Fixes mechanical cohesion and the comma splice. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md`; `contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md` |\n| 6 | “the parents have strengthened their common senses” | “parents have developed practical wisdom through years of social experience” | Corrects an unnatural collocation. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`; `contexts/10-task2-topic-banks/topic-11-family-and-children.md` |\n| 7 | “Although their logic could not fully explain in some situations” | “Although parents may not be able to explain every social situation clearly” | Repairs the broken clause and clarifies the subject. | `contexts/05-band-6-to-7/grammar-upgrades.md`; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` |\n| 8 | “even if they made a mistake to other students” | “even when they make mistakes while interacting with classmates” | Corrects tense, preposition, and word choice. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` |\n| 9 | “In conclusion, I believe children can indeed learn…” | “On balance, parents and schools play complementary roles: the home instils values, while the classroom gives children the chance to practise them.” | Makes the conclusion a synthesis of both views. | `contexts/05-band-6-to-7/paragraph-structure-band7.md`; `contexts/09-instructor-tips/06-task2-sentence-frames.md` |\n\n## Overall band rationale\nAll four criteria best fit Band 6: the essay is relevant and understandable, but the position, paragraph development, cohesion, collocation, and complex-sentence accuracy are not yet consistent enough for Band 7. Four 6.0 criterion scores average to 6.0 under `contexts/01-band-descriptors/scoring-rules.md`.\n\n## CONVERGENCE: CONVERGED\nThe scores match the most recent prior iteration exactly, and the suggestion list overlaps by well over 70%: thesis repair, Body 1 split, PEEL development, articles, collocations, cohesion, and complex-clause control remain the same issues. Across iterations 02–04 and this pass, changes are now mostly phrasing and prioritisation rather than new diagnosis. I do not see a meaningful concrete improvement that another iteration would add.",
+  "structural_feedback": "This essay answers the broad topic, but the opinion does not answer the exact choice in the prompt. The question asks whether parents or schools are better placed to teach children social skills; your answer shifts to “it is up to individuals,” which is related but off-centre. Body 1 contains both views in one paragraph, so neither the parents view nor the school view becomes a full PEEL paragraph. Body 2 then repeats the individual-choice idea instead of weighing parents against schools. The conclusion restates that same off-prompt position rather than synthesising the two views. The single highest-impact fix here is rewriting the thesis and body plan together: parents lay the foundation, schools provide daily practice.",
+  "focus_areas": [
+    {
+      "area": "Prompt-focused opinion",
+      "rationale": "Your opinion must weigh the two given views, not introduce a third answer.",
+      "corpus_drill": [
+        "contexts/04-task2-essays/question-types-overview.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ]
+    },
+    {
+      "area": "One PEEL paragraph per view",
+      "rationale": "Band 7 needs each view explained, exemplified, and linked back to your stance.",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/05-band-6-to-7/top-30-fixes-band-6-to-7.md"
+      ]
+    },
+    {
+      "area": "Concrete examples for social behaviour",
+      "rationale": "“social norms” needs examples such as apologising, sharing rules, compromise, and respect.",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-01-education.md",
+        "contexts/10-task2-topic-banks/topic-11-family-and-children.md"
+      ]
+    },
+    {
+      "area": "Generic articles",
+      "rationale": "“the school,” “the parents,” and “the social skills” show a repeated article problem with general nouns.",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Collocation control",
+      "rationale": "Phrases like “strengthened their common senses” and “mistake to other students” block Band 7 lexical precision.",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ]
+    }
+  ],
+  "whats_working": "You do address both sides at least once: “children can learn from their parents” and “A school can be a better place to learn social norms.” You also attempt complex linking with “whereas,” “Although,” “since,” and “Even though.” Keep the balanced discussion instinct; the next step is to make your own opinion directly compare the two sides."
+}

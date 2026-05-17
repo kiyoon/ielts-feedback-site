@@ -7,16 +7,17 @@
     "id", "task", "iteration", "tool", "generated_at",
     "scores", "overall", "overall_rationale",
     "what_changed", "rewrites",
-    "convergence", "convergence_note", "raw_markdown"
+    "convergence", "convergence_note", "raw_markdown",
+    "prior_id", "structural_feedback", "focus_areas", "whats_working"
   ],
   "comment": "structural_feedback / focus_areas / whats_working are optional; old payloads predate them and remain valid.",
   "properties": {
     "id":            { "type": "string" },
-    "task":          { "type": "string", "enum": ["task1", "task2"] },
+    "task":          { "type": "string" },
     "iteration":     { "type": "integer", "minimum": 0 },
     "tool":          { "type": "string", "enum": ["codex", "claude", "baseline"] },
     "generated_at":  { "type": "string" },
-    "prior_id":      { "type": "string" },
+    "prior_id":      { "type": ["string", "null"] },
     "scores": {
       "type": "object",
       "additionalProperties": false,
@@ -43,24 +44,16 @@
           "improved":  { "type": "string" },
           "reason":    { "type": "string" },
           "citations": { "type": "array", "items": { "type": "string" } },
-          "category": { "type": "string", "enum": ["task_response","coherence","lexical","grammar","spelling"] },
-          "offset": {
-            "type": "object",
-            "required": ["start", "end"],
-            "properties": {
-              "start": { "type": "integer", "minimum": 0 },
-              "end":   { "type": "integer", "minimum": 0 }
-            }
-          }
+          "category": { "type": "string", "enum": ["task_response","coherence","lexical","grammar","spelling"] }
         }
       }
     },
     "convergence":      { "type": "string", "enum": ["CONVERGED", "REFINING", "UNKNOWN"] },
     "convergence_note": { "type": "string" },
     "raw_markdown":     { "type": "string" },
-    "structural_feedback": { "type": "string" },
+    "structural_feedback": { "type": ["string", "null"] },
     "focus_areas": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -72,7 +65,7 @@
         }
       }
     },
-    "whats_working": { "type": "string" }
+    "whats_working": { "type": ["string", "null"] }
   },
   "$defs": {
     "criterion": {

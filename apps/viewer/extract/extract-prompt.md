@@ -8,11 +8,11 @@ type Convergence = "CONVERGED" | "REFINING" | "UNKNOWN";
 
 type Payload = {
   id: string;                  // e.g. "task1/04-claude" — use the value provided in PAYLOAD_ID below
-  task: "task1" | "task2";     // use the value provided in PAYLOAD_TASK below
+  task: string;                // use the value provided in PAYLOAD_TASK below
   iteration: number;           // use the value provided in PAYLOAD_ITER below
   tool: "codex" | "claude" | "baseline"; // use PAYLOAD_TOOL below
   generated_at: string;        // ISO 8601 UTC string. Use the timestamp from the input header if present, else the current time.
-  prior_id?: string;           // optional reference to the prior iteration's id (omit if unknown)
+  prior_id: string | null;     // optional reference to the prior iteration's id; use null if unknown
 
   scores: {
     task_response:  { band: number; descriptor_evidence: string; justification: string };
@@ -26,15 +26,14 @@ type Payload = {
   what_changed: string;        // text from the "What changed from prior feedback" section, empty string if absent
 
   // Optional structured sections — present in newer feedback markdown, absent
-  // in older runs. If absent in the input, OMIT the field entirely (don't emit
-  // an empty string / array). Validate against the JSON schema regardless.
-  structural_feedback?: string;     // verbatim text from "## Structural feedback"
-  focus_areas?: Array<{             // parsed from the "## Focus areas" bulleted list
+  // in older runs. If absent in the input, emit null.
+  structural_feedback: string | null;  // verbatim text from "## Structural feedback"
+  focus_areas: Array<{                // parsed from the "## Focus areas" bulleted list
     area: string;                   // bold area name without surrounding **
     rationale: string;              // the explanation sentence after the em-dash
     corpus_drill: string[];         // any corpus file paths cited in that bullet (split on ; , and "and")
-  }>;
-  whats_working?: string;           // verbatim text from "## What's working"
+  }> | null;
+  whats_working: string | null;     // verbatim text from "## What's working"
 
   rewrites: Array<{
     id: number;                // 1-indexed, matches the row number in the markdown table
@@ -73,7 +72,7 @@ When in doubt, look at the cited corpus path:
 ## Hard rules
 
 - The `original` field MUST be a verbatim substring of the candidate essay (whitespace-trimmed). If the markdown shows a quoted phrase like `"the figure of USA"`, drop the surrounding quotes but keep internal punctuation. If the original isn't actually present in the essay, omit that rewrite (do not invent matches).
-- For `structural_feedback`, `focus_areas`, `whats_working`: if the corresponding `## ` heading is **absent** from the input, OMIT the field entirely. Don't emit `""` or `[]` — leave the key off. The viewer treats absence as "this older feedback didn't surface that section" and renders nothing.
+- For `structural_feedback`, `focus_areas`, `whats_working`: if the corresponding `## ` heading is **absent** from the input, emit `null`. Don't emit `""` or `[]` for absent sections.
 - `convergence`:
   - If `## CONVERGENCE: CONVERGED` or `## CONVERGENCE: REFINING` appears, use that verdict and copy the section body into `convergence_note`.
   - If only `## Convergence note` (or similar without an explicit verdict) appears, set `convergence` to `"UNKNOWN"` and copy that section's body into `convergence_note` so the user-visible reasoning isn't lost.
