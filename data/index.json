@@ -1,0 +1,466 @@
+{
+  "generated_at": "2026-05-12T12:20:45.152Z",
+  "tasks": {
+    "w1": {
+      "label": "W1 (real)",
+      "title": "Mathematical influence on computer science",
+      "essay": {
+        "prompt": "Homework:\n\nChoose one historical period (e.g., Ancient Greece, Islamic Golden Age, Scientific Revolution) and write a 500-word essay on how mathematics influenced science, society, or culture during that time.",
+        "text": "Mathematics has been developed for a long time. People have built up mathematical rules by defining new logics to solve problems. Personally, and especially, that shone during the period of the computer revolution. In this essay, I will discuss how mathematics influenced computer science.\n\nHumans have always wanted to preserve their thoughts somewhere to communicate. To do that, people need to invent new tools, and to achieve that, mathematics is inevitable. That strong will can be seen in ancient Mesopotamia and Egypt, not to mention the Babylonians used base-60 for timekeeping. However, people wanted to develop that even further. People wanted to deliver their messages only, without any physical effort. This explains how Samuel Morse invented Morse code in 1844, the first ever information which only used electronic signals, so that no physical objects such as people or dove needed. This was developed even further, and people finally invented a machine which can do several things in a single hardware, a computer.\n\nComputers consist of a full of small switches which can turn on and off. By doing that, it can calculate in binary digits. If it has billions and trillions of switches, then it can go up to almost countless numbers. The reason it matters is because every letter is actually a number, and every emoji is also a number. The graphic on the screen is just a number as well.",
+        "word_count": 290
+      },
+      "iterations": [
+        {
+          "id": "w1/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/01-codex",
+          "iteration": 1,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/06-claude",
+          "iteration": 6,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/07-codex",
+          "iteration": 7,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/08-claude",
+          "iteration": 8,
+          "tool": "claude",
+          "overall": 5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/09-codex",
+          "iteration": 9,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/10-claude",
+          "iteration": 10,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/11-codex",
+          "iteration": 11,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/12-claude",
+          "iteration": 12,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/13-codex",
+          "iteration": 13,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/14-claude",
+          "iteration": 14,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/15-codex",
+          "iteration": 15,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/16-claude",
+          "iteration": 16,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/17-codex",
+          "iteration": 17,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/18-claude",
+          "iteration": 18,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/19-codex",
+          "iteration": 19,
+          "tool": "codex",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w1/20-claude",
+          "iteration": 20,
+          "tool": "claude",
+          "overall": 5.5,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        }
+      ]
+    },
+    "w2": {
+      "label": "W2 (real)",
+      "title": "Resource depletion and natural science",
+      "essay": {
+        "prompt": "Homework Assignment\n\nChoose one global challenge discussed in the lecture (climate change, pandemics, or resource depletion).\n\nWrite a short response answering:\n\n1. What is the scientific basis of this problem?\n2. What solutions does natural science offer?\n3. Why is international cooperation necessary?\n4. What is one limitation or challenge in solving this problem?\n\nRequirements:\n\n- 200-300 words\n- At least one example (real or hypothetical)\n- Clear structure",
+        "text": "Over the past few decades, people have been using natural resources whenever they need. Although they can provide several benefits, it is clear that the amount of resources is limited. In this essay, I will discuss what natural science can offer to tackle the resource depletion issue and the limitations in solving the problem.\n\nNatural science can play a crucial role in addressing the resource depletion issue. For instance, developing a sustainable energy system can contribute to the issue since it is possible to generate energy nearly infinitely. Although they do not seem cost-effective at this moment, scientific breakthroughs could happen at some point, which can lead people to use energy without concern. In addition, it is of note that the chance of finding alternative ways of generating energy is reasonably high enough. People did not fully understand when it comes to natural energy, because of the complexity of how nature works.\n\nHowever, it is naïve to believe that natural science could solve everything since they do have limitations. First and foremost, human errors could happen in every research, and natural science is not an exception. Although the scientific method could handle several errors given the fact that they value reproducibility the most, it is still up to humans to interpret a result. Secondly, nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever.\n\nTo sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.",
+        "word_count": 280
+      },
+      "iterations": [
+        {
+          "id": "w2/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/01-codex",
+          "iteration": 1,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/06-claude",
+          "iteration": 6,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/07-codex",
+          "iteration": 7,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/08-claude",
+          "iteration": 8,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/09-codex",
+          "iteration": 9,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/10-claude",
+          "iteration": 10,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/11-codex",
+          "iteration": 11,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/12-claude",
+          "iteration": 12,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/13-codex",
+          "iteration": 13,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/14-claude",
+          "iteration": 14,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/15-codex",
+          "iteration": 15,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/16-claude",
+          "iteration": 16,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/17-codex",
+          "iteration": 17,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/18-claude",
+          "iteration": 18,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        },
+        {
+          "id": "w2/19-codex",
+          "iteration": 19,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-11T00:34:55Z"
+        }
+      ]
+    },
+    "w3": {
+      "label": "W3 (real)",
+      "title": "Who should teach children social skills?",
+      "essay": {
+        "prompt": "Some people think that parents should teach their children how to be good members of society. Others, however, believe that school is the best place to learn this. Discuss both views and give your own opinion.",
+        "text": "There are people who argue that it is the parents’ responsibility to educate their children how to adjust to society, whereas some people believe the school can do a better job. Both views will be discussed, but I believe it is up to individuals to learn the social skills.\n\nTo begin with, it is true that children can learn from their parents, given the fact that they have experienced society for at least more than 20 years, which is enough to form their own logic. Although their logic could not fully explain in some situations, it is still enough to teach the very basic social norms to their children. However, this view is not shared by everyone, therefore some people take a different view. A school can be a better place to learn social norms, since the children have to encounter others constantly. By having a discussion or even making a few mistakes, they can naturally learn what to do and what not to do by themselves.\n\nIn my opinion, I believe both arguments are valid, but fundamentally, it is up to individuals to learn from their parents or experience because the choices are ultimately on their side. Even though the parents have strengthened their common senses which are extremely delicate and easy to understand, it is no use if the children refuse to listen to their parents. A similar scenario could happen in school, even if they made a mistake to other students.\n\nIn conclusion, I believe children can indeed learn how to socialize with others from their parents or in school, but more fundamentally, it is always up to them to take the advice or not.",
+        "word_count": 278
+      },
+      "iterations": [
+        {
+          "id": "w3/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-12T11:29:56Z"
+        },
+        {
+          "id": "w3/01-codex",
+          "iteration": 1,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-12T11:30:02Z"
+        },
+        {
+          "id": "w3/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-12T11:40:17Z"
+        },
+        {
+          "id": "w3/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-12T11:42:24Z"
+        },
+        {
+          "id": "w3/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-12T11:52:40Z"
+        },
+        {
+          "id": "w3/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-12T11:53:53Z"
+        }
+      ]
+    },
+    "task1": {
+      "label": "T1 demo",
+      "essay": {
+        "prompt": "The line graph below shows electricity consumption per person in three countries (the USA, Germany, and India) from 1990 to 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\n(Y-axis: kilowatt-hours per person per year. X-axis: years 1990–2020 in 5-year intervals.)",
+        "text": "The line graph illustrates electricity usage per person in three countries — the USA, Germany and India — from 1990 to 2020.\n\nOverall, electricity consumption in all three countries had a growth during this time period. However, the figure of USA stayed the highest, while India had the lowest level all over the period.\n\nIn 1990, the USA consumed approximately 11,000 kWh per person, which is much higher than Germany (around 6,000 kWh) and India (only 300 kWh). After this, USA's consumption increase steadily and reached a peak about 13,500 kWh in 2000. However, then it started to decline and in 2020 it became around 12,000 kWh. Germany had a similar pattern: it grew from 6,000 to 7,500 kWh in 2010, and after that it slightly decrease.\n\nIn contrast, India is different. Its consumption grew slow until 2000, but then increased rapidly. By 2020, the figure of India had reach to 1,200 kWh per person, which is four times higher than 1990.",
+        "word_count": 178
+      },
+      "iterations": [
+        {
+          "id": "task1/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-09T14:46:09Z"
+        },
+        {
+          "id": "task1/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-09T15:00:35Z"
+        }
+      ]
+    },
+    "task2": {
+      "label": "T2 demo",
+      "essay": {
+        "prompt": "School children are becoming far too dependent on computers and this is having an alarming effect on reading and writing skills. Teachers need to avoid using computers in the classroom at all costs and go back to teaching basic study skills. To what extent do you agree or disagree?",
+        "text": "Children are born into the digital world. From young age, they know how to operate computers, iPad, and TV. It is part of their daily life. School age children is no exception to the use of computers. They are confident users of computers and very dependent on them which can lead to decline in reading and writing skills. Some teachers utilise the computers well in their lessons, while others avoid the use of computers in their classrooms. I believe good balance of both is needed to help students' reading and writing skills to improve.\n\nComputers can help students with reading. For example, if students come across unknown words, they can search the unknow words and hear the pronunciation. If it was not for the computers, they have to find someone who knows how to pronounce the words for them. Therefore, computers can play positive role in students' reading skills.\n\nOn the other hands, writing skills need to be improved by lots of handwritten works. If students are using computers all the time and getting the help of autocorrection, they will not improve their writing skills. They will not know how to edit as autocorrect is doing the job for them.\n\nIn conclusion, I believe that teachers should not allow students to do all the work on the computers especially writing tasks. However, teacher should not avoid the use of computer as computers can be a great help if they use it effectively. Rather than avoiding computers that students are so used to, teachers need to come up with how to use it effectively to enhance students' reading and writing skills.",
+        "word_count": 285
+      },
+      "iterations": [
+        {
+          "id": "task2/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-09T14:46:37Z"
+        },
+        {
+          "id": "task2/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-09T15:14:20Z"
+        }
+      ]
+    }
+  }
+}

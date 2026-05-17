@@ -1,0 +1,138 @@
+{
+  "id": "w2/00-baseline-codex",
+  "task": "w2",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-05-11T00:34:55Z",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "The essay is logically organised into introduction, benefits, limitations, and conclusion. Paragraphing is clear, and linking phrases such as “For instance,” “In addition,” “However,” and “To sum up” help the reader follow the structure. However, cohesion is sometimes mechanical, especially with “First and foremost” and “Secondly.” Pronoun reference is also unclear in places: “Although they can provide several benefits” seems to refer to “natural resources,” while “since they do have limitations” seems to refer to “natural science,” but “science” is singular in meaning here."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "There is enough topic-related vocabulary for band 6, including “limited,” “sustainable energy system,” “cost-effective,” “scientific breakthroughs,” “reproducibility,” and “interpret a result.” However, several collocations are inaccurate or unnatural. For example, “contribute to the issue” should be “help address the issue,” and “natural energy” would be better as “renewable energy.” “The chance of finding alternative ways of generating energy is reasonably high enough” is also wordy and unnatural. These errors do not usually block meaning, but they stop the essay reaching band 7."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "The candidate uses some complex structures, such as “Although they do not seem cost-effective at this moment” and “given the fact that they value reproducibility the most.” However, there are frequent problems with agreement, tense, and sentence control. For example, “people have been using natural resources whenever they need” is incomplete because it needs an object after “need.” “Natural science could solve everything since they do have limitations” has pronoun agreement problems because “natural science” should take “it,” not “they.” There are enough accurate sentences to maintain communication, but not enough frequent error-free complex sentences for band 7."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "**Overall: 6.0**\n\nAverage: 6.0 across the four criteria. This is a solid band-6 essay: relevant, organised, and understandable, but too general and linguistically uneven for band 7.",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "developing a sustainable energy system can contribute to the issue",
+      "improved": "developing sustainable energy systems can help address resource depletion",
+      "reason": "This fixes the wrong collocation and makes the link to the task clear.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 2,
+      "original": "generate energy nearly infinitely",
+      "improved": "generate energy from renewable sources such as sunlight, wind, and tidal movement",
+      "reason": "This replaces an exaggerated claim with specific, credible examples.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 3,
+      "original": "scientific breakthroughs could happen at some point",
+      "improved": "further scientific breakthroughs could make storage technology cheaper and more efficient",
+      "reason": "This develops the idea instead of leaving it vague.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "People did not fully understand when it comes to natural energy",
+      "improved": "At present, scientists still do not fully understand how to use many natural processes efficiently",
+      "reason": "This corrects the grammar and clarifies the meaning.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "natural science could solve everything since they do have limitations",
+      "improved": "natural science cannot solve everything because it has clear limitations",
+      "reason": "This fixes pronoun agreement and removes awkward emphasis.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 6,
+      "original": "human errors could happen in every research",
+      "improved": "human error can occur in any research project",
+      "reason": "This uses the correct uncountable/countable form and a more natural academic phrase.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 7,
+      "original": "it is still up to humans to interpret a result",
+      "improved": "results still have to be interpreted by humans, so bias, limited data, or commercial pressure may affect decisions",
+      "reason": "This gives the limitation clearer development.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "nature is simply too vast to research",
+      "improved": "natural systems are too complex to be fully measured, predicted, or controlled",
+      "reason": "This is more precise and better suited to an academic essay.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 9,
+      "original": "To sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.",
+      "improved": "To sum up, natural science can reduce resource depletion by improving renewable energy and efficiency, but it is limited by human judgement and the complexity of natural systems.",
+      "reason": "This gives a fuller conclusion that summarises both sides of the discussion.",
+      "citations": [],
+      "category": "lexical"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-05-10T10:03:47Z by codex exec, run from `/var/folders/r5/9cpfjfjx3b73b6stl7_w712h0000gn/T/tmp.O0I15nQ14B` with read-only sandbox._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band |\n|---|---:|\n| Task Response | 6.0 |\n| Coherence and Cohesion | 6.0 |\n| Lexical Resource | 6.0 |\n| Grammatical Range and Accuracy | 6.0 |\n\n## Structural feedback\n\nThe essay covers both sides of the prompt: what natural science can offer and why it has limits. However, the first body paragraph is too narrow because it mainly discusses energy, while “resource depletion” also includes water, minerals, soil, forests, and food systems. The second body paragraph gives two limitations, but both remain quite abstract and would need clearer real-world consequences. The conclusion is also too short: it repeats the general idea but does not summarise the two main arguments. The biggest band uplift would come from developing each body paragraph with one clear example and one clear explanation of how it connects to resource depletion.\n\n## Focus areas\n\n- **Idea extension after examples** — the essay often gives an idea, such as “scientific breakthroughs,” but does not explain exactly how it would reduce depletion.\n- **Accurate referencing with “it/they/this”** — pronouns such as “they” are sometimes unclear, which weakens cohesion.\n- **Collocation with academic nouns** — phrases like “contribute to the issue” and “natural energy” sound unnatural and reduce lexical accuracy.\n- **Complex sentences with controlled clauses** — several complex structures are attempted, but they contain errors or awkward phrasing.\n- **Conclusion development** — the final sentence is too general for band 7 and should briefly summarise both sides.\n\n## What's working\n\nThe essay has a clear discussion structure, with one paragraph on potential benefits and one on limitations. There is some useful topic vocabulary, including “resource depletion,” “sustainable energy system,” “scientific breakthroughs,” “scientific method,” and “reproducibility.” The sentence “it is still up to humans to interpret a result” is a relevant limitation and could become band-7-worthy with fuller explanation.\n\n## Per-criterion justification\n\n**Task Response: 6.0**  \nThe response addresses both parts of the task: natural science can help through “developing a sustainable energy system,” while limitations include “human errors” and the fact that “nature is simply too vast to research.” However, the ideas are not developed enough for band 7. For example, “scientific breakthroughs could happen at some point” is relevant but vague, and the essay does not explain what kind of breakthrough or how it would reduce resource depletion. The conclusion, “it is not possible to solve every problem,” is also too broad and does not clearly summarise the argument.\n\n**Coherence and Cohesion: 6.0**  \nThe essay is logically organised into introduction, benefits, limitations, and conclusion. Paragraphing is clear, and linking phrases such as “For instance,” “In addition,” “However,” and “To sum up” help the reader follow the structure. However, cohesion is sometimes mechanical, especially with “First and foremost” and “Secondly.” Pronoun reference is also unclear in places: “Although they can provide several benefits” seems to refer to “natural resources,” while “since they do have limitations” seems to refer to “natural science,” but “science” is singular in meaning here.\n\n**Lexical Resource: 6.0**  \nThere is enough topic-related vocabulary for band 6, including “limited,” “sustainable energy system,” “cost-effective,” “scientific breakthroughs,” “reproducibility,” and “interpret a result.” However, several collocations are inaccurate or unnatural. For example, “contribute to the issue” should be “help address the issue,” and “natural energy” would be better as “renewable energy.” “The chance of finding alternative ways of generating energy is reasonably high enough” is also wordy and unnatural. These errors do not usually block meaning, but they stop the essay reaching band 7.\n\n**Grammatical Range and Accuracy: 6.0**  \nThe candidate uses some complex structures, such as “Although they do not seem cost-effective at this moment” and “given the fact that they value reproducibility the most.” However, there are frequent problems with agreement, tense, and sentence control. For example, “people have been using natural resources whenever they need” is incomplete because it needs an object after “need.” “Natural science could solve everything since they do have limitations” has pronoun agreement problems because “natural science” should take “it,” not “they.” There are enough accurate sentences to maintain communication, but not enough frequent error-free complex sentences for band 7.\n\n## Overall band\n\n**Overall: 6.0**\n\nAverage: 6.0 across the four criteria. This is a solid band-6 essay: relevant, organised, and understandable, but too general and linguistically uneven for band 7.\n\n## Top concrete improvements\n\n1. “developing a sustainable energy system can contribute to the issue” → “developing sustainable energy systems can help address resource depletion” → This fixes the wrong collocation and makes the link to the task clear.\n\n2. “generate energy nearly infinitely” → “generate energy from renewable sources such as sunlight, wind, and tidal movement” → This replaces an exaggerated claim with specific, credible examples.\n\n3. “scientific breakthroughs could happen at some point” → “further scientific breakthroughs could make storage technology cheaper and more efficient” → This develops the idea instead of leaving it vague.\n\n4. “People did not fully understand when it comes to natural energy” → “At present, scientists still do not fully understand how to use many natural processes efficiently” → This corrects the grammar and clarifies the meaning.\n\n5. “natural science could solve everything since they do have limitations” → “natural science cannot solve everything because it has clear limitations” → This fixes pronoun agreement and removes awkward emphasis.\n\n6. “human errors could happen in every research” → “human error can occur in any research project” → This uses the correct uncountable/countable form and a more natural academic phrase.\n\n7. “it is still up to humans to interpret a result” → “results still have to be interpreted by humans, so bias, limited data, or commercial pressure may affect decisions” → This gives the limitation clearer development.\n\n8. “nature is simply too vast to research” → “natural systems are too complex to be fully measured, predicted, or controlled” → This is more precise and better suited to an academic essay.\n\n9. “To sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.” → “To sum up, natural science can reduce resource depletion by improving renewable energy and efficiency, but it is limited by human judgement and the complexity of natural systems.” → This gives a fuller conclusion that summarises both sides of the discussion.",
+  "structural_feedback": "The essay covers both sides of the prompt: what natural science can offer and why it has limits. However, the first body paragraph is too narrow because it mainly discusses energy, while “resource depletion” also includes water, minerals, soil, forests, and food systems. The second body paragraph gives two limitations, but both remain quite abstract and would need clearer real-world consequences. The conclusion is also too short: it repeats the general idea but does not summarise the two main arguments. The biggest band uplift would come from developing each body paragraph with one clear example and one clear explanation of how it connects to resource depletion.",
+  "focus_areas": [
+    {
+      "area": "Idea extension after examples",
+      "rationale": "the essay often gives an idea, such as “scientific breakthroughs,” but does not explain exactly how it would reduce depletion",
+      "corpus_drill": []
+    },
+    {
+      "area": "Accurate referencing with “it/they/this”",
+      "rationale": "pronouns such as “they” are sometimes unclear, which weakens cohesion",
+      "corpus_drill": []
+    },
+    {
+      "area": "Collocation with academic nouns",
+      "rationale": "phrases like “contribute to the issue” and “natural energy” sound unnatural and reduce lexical accuracy",
+      "corpus_drill": []
+    },
+    {
+      "area": "Complex sentences with controlled clauses",
+      "rationale": "several complex structures are attempted, but they contain errors or awkward phrasing",
+      "corpus_drill": []
+    },
+    {
+      "area": "Conclusion development",
+      "rationale": "the final sentence is too general for band 7 and should briefly summarise both sides",
+      "corpus_drill": []
+    }
+  ],
+  "whats_working": "The essay has a clear discussion structure, with one paragraph on potential benefits and one on limitations. There is some useful topic vocabulary, including “resource depletion,” “sustainable energy system,” “scientific breakthroughs,” “scientific method,” and “reproducibility.” The sentence “it is still up to humans to interpret a result” is a relevant limitation and could become band-7-worthy with fuller explanation."
+}

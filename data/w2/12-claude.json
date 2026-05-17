@@ -1,0 +1,188 @@
+{
+  "id": "w2/12-claude",
+  "task": "w2",
+  "iteration": 12,
+  "tool": "claude",
+  "generated_at": "2026-05-11T00:34:55Z",
+  "scores": {
+    "task_response": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5; explicit cap at line 33 (\"does not address all parts of the prompt cannot be rated above Band 5 on TR\")",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"cohesive devices… mechanical\"; reference \"may lack flexibility or clarity\")",
+      "justification": "Overall progression is clear (intro → role → limits → conclusion) but the structure does not match the four required questions, and cohesion is mechanical — *\"For instance\"*, *\"In addition\"*, *\"However\"*, *\"First and foremost\"*, *\"Secondly\"*, *\"To sum up\"* are stamped at sentence/paragraph fronts (`contexts/05-band-6-to-7/cohesion-upgrades.md` §2). Reference is faulty: *\"Although they can provide\"* (resources or people?), *\"since they do have limitations\"* (singular *natural science* + plural *they*). Band 7 requires flexible reference and substitution."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"rather restricted range or a lack of precision in word choice\")",
+      "justification": "Genuine science items (*\"scientific breakthroughs\"*, *\"reproducibility\"*, *\"cost-effective\"*, *\"the scientific method\"*) sit alongside imprecise collocations: *\"contribute to the issue\"* reads as *worsen the issue* (`contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`); *\"natural energy\"* should be *renewable energy* (`contexts/10-task2-topic-banks/topic-02-environment.md`); *\"every research\"* misuses an uncountable (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2); *\"reasonably high enough\"* is tautological; *\"use energy without concern\"* is wrong register. Strengths prevent it dropping below 6, but precision is not consistent enough for Band 7's \"awareness of style and collocation\"."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"complex structures not marked by the same level of accuracy\")",
+      "justification": "Respectable variety attempted — concessive *Although*, relative *which can lead*, noun-complement *the chance of finding* — but the Band-7 gate (\"error-free sentences are frequent\") is not met. *\"people have been using natural resources whenever they need\"* drops the object *them*; *\"natural science … they\"* disagrees in number; *\"nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever\"* is a comma splice with misplaced *ever*; *\"People did not fully understand when it comes to natural energy\"* mixes tense and structure. Errors don't impede communication, so it stays at 6."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "TR is capped at 5.0 because two of four required prompt parts are absent (`contexts/01-band-descriptors/task2-band-descriptors.md` line 33). CC/LR/GRA each best-fit Band 6 — adequate but not yet flexible, precise, or consistently error-free. Average = (5+6+6+6)/4 = 5.75 → rounds to **6.0** under `contexts/01-band-descriptors/scoring-rules.md` §3.",
+  "what_changed": "Iter 11 was already well-calibrated and I preserve its score profile and its sensible decision to fit advice to the 200–300 word homework format (not a 5-paragraph IELTS expansion). Three sharpenings: (1) I reinstate the **self-cancelling concession** finding from iter 04/10 that iter 11 dropped — *\"Although the scientific method could handle several errors … it is still up to humans\"* concedes the very limitation Body 2 should assert, which is its own TR leak independent of missing prompt parts; (2) I make explicit that since the essay is already 280 words, adding parts 1 and 3 requires **trimming** the existing parts 2 and 4, not just extending — iter 11 left this implicit; (3) I add one Band-7 grammar showcase (`Adj+as+S+V` concession from `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4) which iter 11 omitted but iter 04/06/10 had as a high-leverage single-structure upgrade the candidate currently has zero of.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "(Missing — Part 1: scientific basis)",
+      "improved": "Add 2 sentences after the intro: *\"Scientifically, resource depletion arises from a simple imbalance — fossil fuels, key minerals and freshwater are extracted faster than geological and ecological cycles can replace them. The peak-oil curve illustrates how a finite stock can be drawn down within decades while regeneration would require millions of years.",
+      "reason": "Answers Q1 and supplies the mandatory concrete example. Without it, TR is capped at 5.",
+      "citations": [
+        "contexts/01-band-descriptors/task2-band-descriptors.md",
+        "contexts/10-task2-topic-banks/topic-02-environment.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "(Missing — Part 3: international cooperation)",
+      "improved": "Add 2 sentences: *\"International cooperation is essential because many of these resources — atmospheric carbon, migratory fish stocks, transboundary aquifers, mineral supply chains — do not respect national borders, so unilateral conservation is undermined by free-riders. The Montreal Protocol's coordinated phase-out of CFCs shows that science-led treaties succeed only when states act collectively.",
+      "reason": "Answers Q3, the second blocker; reinforces the example slot.",
+      "citations": [
+        "contexts/01-band-descriptors/task2-band-descriptors.md",
+        "contexts/10-task2-topic-banks/topic-02-environment.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "(Trim to make room — current draft is already ~280 words)",
+      "improved": "Cut *\"Although they do not seem cost-effective at this moment, scientific breakthroughs could happen at some point, which can lead people to use energy without concern. In addition, it is of note that the chance of finding alternative ways of generating energy is reasonably high enough.\"* (~50 words of vague speculation)",
+      "reason": "Frees the word budget that parts 1 and 3 need; removes Korean discourse-marker calque *it is of note that* and tautology *reasonably high enough*.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 4,
+      "original": "Although the scientific method could handle several errors given the fact that they value reproducibility the most, it is still up to humans to interpret a result.",
+      "improved": "Even where peer review and reproducibility filter out crude mistakes, the interpretation of ambiguous data ultimately rests on human judgement, which can be skewed by funding pressures or incomplete datasets.",
+      "reason": "Removes the self-cancelling concession; develops the limitation with mechanism.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 5,
+      "original": "developing a sustainable energy system can contribute to the issue since it is possible to generate energy nearly infinitely",
+      "improved": "shifting to renewable-energy systems can directly mitigate resource depletion by replacing finite fossil fuels with effectively inexhaustible inputs such as solar and wind generation",
+      "reason": "Fixes the *contribute to the issue* miscollocation (sounds like *worsen*); supplies the missing mechanism; corrects *natural energy*.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-02-environment.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 6,
+      "original": "However, it is naïve to believe that natural science could solve everything since they do have limitations.",
+      "improved": "Powerful as the scientific method is**, it would be naïve to suppose that science alone can resolve every dimension of resource depletion.",
+      "reason": "Fixes singular/plural agreement and inserts one Band-7 *Adj+as+S+V* concessive showcase — single highest-leverage GRA upgrade.",
+      "citations": [
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "human errors could happen in every research, and natural science is not an exception.",
+      "improved": "Human error can occur in any research project, and science is no exception — the recent replication crisis in psychology and biomedicine has shown how easily even peer-reviewed findings fail to hold up.",
+      "reason": "Fixes uncountable *research*, introduces *no exception* idiom, adds the mandatory concrete example.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever.",
+      "improved": "Nature is too complex to be fully understood; in other words, scientific knowledge of natural systems will always remain provisional, no matter how rapidly research advances.",
+      "reason": "Removes the comma splice and the misplaced *ever*; promotes formal hedging.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md"
+      ],
+      "category": "spelling"
+    },
+    {
+      "id": 9,
+      "original": "In this essay, I will discuss what natural science can offer to tackle the resource depletion issue and the limitations in solving the problem.",
+      "improved": "This response first explains the scientific basis of resource depletion, then evaluates the technical solutions science offers, considers why international cooperation is essential to deploy them, and finally identifies one major limitation on what science alone can achieve.",
+      "reason": "Replaces the band-6 outline with a thesis that explicitly previews all four prompt parts — anchors TR at Band 7 if bodies follow through.",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 10,
+      "original": "To sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.",
+      "improved": "On balance, natural science can ease resource depletion through cleaner energy and material innovation, but its solutions depend on coordinated international action and remain bounded by human judgement and ecological complexity.",
+      "reason": "Synthesising conclusion that touches all four prompt parts.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "Score profile matches iter 11 exactly, and the rewrite list overlaps it ~75 % — consistent with the convergence threshold. However, only iters 10–11 have used the recalibrated prompt, and this iteration adds two non-cosmetic items (the explicit word-budget trade-off in Rewrite #3, and reinstating the self-cancelling-concession finding the prior dropped), so under the \"across last 2–3 iterations, mostly cosmetic\" rule the chain has not yet stabilised. One more iteration should confirm whether the trim-to-redistribute advice and the `Adj+as+S+V` showcase persist, after which CONVERGED would be appropriate.",
+  "raw_markdown": "# Iteration 12 — claude\n\n_Generated 2026-05-10T15:24:50Z. Prior chain depth: up to 20. Manifest: 122 files._\n\n---I'll produce iteration 12 of the feedback. Re-reading the recovered 4-part prompt, the candidate essay (~280 words), and prior chain (especially iters 10–11 with the corrected calibration), I see room to sharpen the trade-off advice for the 200–300 word budget that iter 11 only partially addressed.\n\n---\n\n## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response                | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5; explicit cap at line 33 (\"does not address all parts of the prompt cannot be rated above Band 5 on TR\") |\n| Coherence and Cohesion       | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"cohesive devices… mechanical\"; reference \"may lack flexibility or clarity\") |\n| Lexical Resource             | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"rather restricted range or a lack of precision in word choice\") |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"complex structures not marked by the same level of accuracy\") |\n| **Overall**                  | 6.0 | average 5.75 → 6.0 per `contexts/01-band-descriptors/scoring-rules.md` §3 (5.75–6.24 → 6.0) |\n\n## What changed from prior feedback\nIter 11 was already well-calibrated and I preserve its score profile and its sensible decision to fit advice to the 200–300 word homework format (not a 5-paragraph IELTS expansion). Three sharpenings: (1) I reinstate the **self-cancelling concession** finding from iter 04/10 that iter 11 dropped — *\"Although the scientific method could handle several errors … it is still up to humans\"* concedes the very limitation Body 2 should assert, which is its own TR leak independent of missing prompt parts; (2) I make explicit that since the essay is already 280 words, adding parts 1 and 3 requires **trimming** the existing parts 2 and 4, not just extending — iter 11 left this implicit; (3) I add one Band-7 grammar showcase (`Adj+as+S+V` concession from `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4) which iter 11 omitted but iter 04/06/10 had as a high-leverage single-structure upgrade the candidate currently has zero of.\n\n## Structural feedback\nThe essay's blocking failure is **prompt coverage**, not paragraph shape: only parts 2 (solutions) and 4 (limitation) are addressed, while part 1 (scientific basis) and part 3 (international cooperation) are completely absent, capping TR at Band 5 per the descriptor's explicit rule. The mandatory \"at least one example\" is also unmet — *\"For instance, developing a sustainable energy system…\"* introduces a general idea, not a real case (no Montreal Protocol, no peak-oil curve, no lithium recycling, no figure). Because the essay already sits at ~280 words at the top of the 200–300 budget, the fix is **not** to bolt on two extra paragraphs but to redistribute: a 4-sentence basis paragraph and a 4-sentence cooperation paragraph each cost ~50–60 words, which means trimming the current Body 1's hedged speculation (*\"scientific breakthroughs could happen at some point, which can lead people to use energy without concern\"*) and the Body 2 self-cancelling concession. Body 2 also contains an internal contradiction — *\"the scientific method could handle several errors … it is still up to humans\"* effectively concedes the limitation it was meant to assert (the Band-6 *\"conclusions… unclear, unjustified or repetitive\"* pattern). The conclusion is one repeated sentence with no synthesis. **The single highest-impact fix is rewriting to the 4-question shape with one real example, not the lexical upgrades below — without this, TR remains at 5 regardless of polish.**\n\n## Focus areas\n- **Prompt audit before drafting** — list each numbered question, tick each off after a paragraph addresses it. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §1–3, `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md`.\n- **One concrete named example** — the prompt explicitly requires it; the essay has zero. Drill: `contexts/10-task2-topic-banks/topic-02-environment.md`, `contexts/10-task2-topic-banks/topic-17-science-and-research.md`.\n- **Concession that doesn't cancel itself** — Body 2's *\"Although the scientific method could handle several errors … it is still up to humans\"* weakens its own claim. Drill: `contexts/09-instructor-tips/06-task2-sentence-frames.md` §6 (concession openers), `contexts/10-task2-topic-banks/topic-17-science-and-research.md` §Concession patterns.\n- **Pronoun-number agreement (singular abstract noun + *they*)** — *\"natural science … they\"*, *\"they value reproducibility\"*, *\"Although they can provide\"* (4 occurrences). Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §C3, `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md`.\n- **Comma splices around *in other words*** — *\"too vast to research, in other words, it is impossible…\"* needs a semicolon or full stop. Drill: `contexts/05-band-6-to-7/grammar-upgrades.md` §12, `contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md`.\n- **Topic collocation precision** — *natural energy* (→ *renewable*), *contribute to the issue* (means *worsen*), *every research* (uncountable), *reasonably high enough* (tautology). Drill: `contexts/10-task2-topic-banks/topic-02-environment.md` §C1, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2.\n- **One Band-7 grammar showcase per essay** — the script has zero inversions, clefts, participle clauses, or `Adj+as+S+V` concessions. Drill: `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4.\n\n## What's working\nKeep the balanced framing: *\"natural science can play a crucial role\"* paired with *\"it is naïve to believe that natural science could solve everything\"* is the right two-sided shape for a discussion-style homework prompt. Topic-level vocabulary is genuinely science-aware — *\"sustainable energy system\"*, *\"scientific breakthroughs\"*, *\"reproducibility\"*, *\"the scientific method\"* sit in the right register per `contexts/10-task2-topic-banks/topic-17-science-and-research.md`. The hedging modal *could* in *\"breakthroughs could happen\"* is correctly academic; preserve it when you re-draft.\n\n## Per-criterion justification\n**Task Response (5.0):** Of four required parts, only two are addressed — solutions (*\"developing a sustainable energy system\"*) and a limitation (*\"human errors\"*, *\"too vast\"*). Part 1 (scientific basis) is absent: no mechanism for *why* resources deplete (no extraction-vs-regeneration, no peak-oil curve, no biogeochemical limit). Part 3 (international cooperation) is never mentioned — no treaty, no shared commons, no transboundary logic. The mandatory \"at least one example\" is also unmet — *\"For instance\"* is followed by a generality. This is exactly the Band-5 profile in `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 (\"main parts of the prompt are incompletely addressed\").\n\n**Coherence and Cohesion (6.0):** Overall progression is clear (intro → role → limits → conclusion) but the structure does not match the four required questions, and cohesion is mechanical — *\"For instance\"*, *\"In addition\"*, *\"However\"*, *\"First and foremost\"*, *\"Secondly\"*, *\"To sum up\"* are stamped at sentence/paragraph fronts (`contexts/05-band-6-to-7/cohesion-upgrades.md` §2). Reference is faulty: *\"Although they can provide\"* (resources or people?), *\"since they do have limitations\"* (singular *natural science* + plural *they*). Band 7 requires flexible reference and substitution.\n\n**Lexical Resource (6.0):** Genuine science items (*\"scientific breakthroughs\"*, *\"reproducibility\"*, *\"cost-effective\"*, *\"the scientific method\"*) sit alongside imprecise collocations: *\"contribute to the issue\"* reads as *worsen the issue* (`contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`); *\"natural energy\"* should be *renewable energy* (`contexts/10-task2-topic-banks/topic-02-environment.md`); *\"every research\"* misuses an uncountable (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2); *\"reasonably high enough\"* is tautological; *\"use energy without concern\"* is wrong register. Strengths prevent it dropping below 6, but precision is not consistent enough for Band 7's \"awareness of style and collocation\".\n\n**Grammatical Range & Accuracy (6.0):** Respectable variety attempted — concessive *Although*, relative *which can lead*, noun-complement *the chance of finding* — but the Band-7 gate (\"error-free sentences are frequent\") is not met. *\"people have been using natural resources whenever they need\"* drops the object *them*; *\"natural science … they\"* disagrees in number; *\"nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever\"* is a comma splice with misplaced *ever*; *\"People did not fully understand when it comes to natural energy\"* mixes tense and structure. Errors don't impede communication, so it stays at 6.\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | *(Missing — Part 1: scientific basis)* | Add 2 sentences after the intro: *\"Scientifically, resource depletion arises from a simple imbalance — fossil fuels, key minerals and freshwater are extracted faster than geological and ecological cycles can replace them. The peak-oil curve illustrates how a finite stock can be drawn down within decades while regeneration would require millions of years.\"* | Answers Q1 and supplies the mandatory concrete example. Without it, TR is capped at 5. | `contexts/01-band-descriptors/task2-band-descriptors.md` line 33; `contexts/10-task2-topic-banks/topic-02-environment.md` §C1 |\n| 2 | *(Missing — Part 3: international cooperation)* | Add 2 sentences: *\"International cooperation is essential because many of these resources — atmospheric carbon, migratory fish stocks, transboundary aquifers, mineral supply chains — do not respect national borders, so unilateral conservation is undermined by free-riders. The Montreal Protocol's coordinated phase-out of CFCs shows that science-led treaties succeed only when states act collectively.\"* | Answers Q3, the second blocker; reinforces the example slot. | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7; `contexts/10-task2-topic-banks/topic-02-environment.md` |\n| 3 | *(Trim to make room — current draft is already ~280 words)* | Cut *\"Although they do not seem cost-effective at this moment, scientific breakthroughs could happen at some point, which can lead people to use energy without concern. In addition, it is of note that the chance of finding alternative ways of generating energy is reasonably high enough.\"* (~50 words of vague speculation) | Frees the word budget that parts 1 and 3 need; removes Korean discourse-marker calque *it is of note that* and tautology *reasonably high enough*. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §K; `contexts/05-band-6-to-7/vocabulary-upgrades.md` §3 |\n| 4 | \"Although the scientific method could handle several errors given the fact that they value reproducibility the most, it is still up to humans to interpret a result.\" | \"Even where peer review and reproducibility filter out crude mistakes, the interpretation of ambiguous data ultimately rests on human judgement, which can be skewed by funding pressures or incomplete datasets.\" | Removes the self-cancelling concession; develops the limitation with mechanism. | `contexts/05-band-6-to-7/task-response-upgrades.md` §5; `contexts/10-task2-topic-banks/topic-17-science-and-research.md` |\n| 5 | \"developing a sustainable energy system can contribute to the issue since it is possible to generate energy nearly infinitely\" | \"shifting to renewable-energy systems can directly mitigate resource depletion by replacing finite fossil fuels with effectively inexhaustible inputs such as solar and wind generation\" | Fixes the *contribute to the issue* miscollocation (sounds like *worsen*); supplies the missing mechanism; corrects *natural energy*. | `contexts/10-task2-topic-banks/topic-02-environment.md` §C1; `contexts/05-band-6-to-7/vocabulary-upgrades.md` §1 |\n| 6 | \"However, it is naïve to believe that natural science could solve everything since they do have limitations.\" | \"**Powerful as the scientific method is**, it would be naïve to suppose that science alone can resolve every dimension of resource depletion.\" | Fixes singular/plural agreement and inserts one Band-7 *Adj+as+S+V* concessive showcase — single highest-leverage GRA upgrade. | `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4 |\n| 7 | \"human errors could happen in every research, and natural science is not an exception.\" | \"Human error can occur in any research project, and science is no exception — the recent replication crisis in psychology and biomedicine has shown how easily even peer-reviewed findings fail to hold up.\" | Fixes uncountable *research*, introduces *no exception* idiom, adds the mandatory concrete example. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2; `contexts/10-task2-topic-banks/topic-17-science-and-research.md` |\n| 8 | \"nature is simply too vast to research, in other words, it is impossible to fully comprehend nature ever.\" | \"Nature is too complex to be fully understood; in other words, scientific knowledge of natural systems will always remain provisional, no matter how rapidly research advances.\" | Removes the comma splice and the misplaced *ever*; promotes formal hedging. | `contexts/05-band-6-to-7/grammar-upgrades.md` §12; `contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md` |\n| 9 | \"In this essay, I will discuss what natural science can offer to tackle the resource depletion issue and the limitations in solving the problem.\" | \"This response first explains the scientific basis of resource depletion, then evaluates the technical solutions science offers, considers why international cooperation is essential to deploy them, and finally identifies one major limitation on what science alone can achieve.\" | Replaces the band-6 outline with a thesis that explicitly previews all four prompt parts — anchors TR at Band 7 if bodies follow through. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §2; `contexts/05-band-6-to-7/task-response-upgrades.md` §7 |\n| 10 | \"To sum up, although natural science has the potential to solve global challenges, it is not possible to solve every problem.\" | \"On balance, natural science can ease resource depletion through cleaner energy and material innovation, but its solutions depend on coordinated international action and remain bounded by human judgement and ecological complexity.\" | Synthesising conclusion that touches all four prompt parts. | `contexts/05-band-6-to-7/task-response-upgrades.md` §9 |\n\n## Overall band rationale\nTR is capped at 5.0 because two of four required prompt parts are absent (`contexts/01-band-descriptors/task2-band-descriptors.md` line 33). CC/LR/GRA each best-fit Band 6 — adequate but not yet flexible, precise, or consistently error-free. Average = (5+6+6+6)/4 = 5.75 → rounds to **6.0** under `contexts/01-band-descriptors/scoring-rules.md` §3.\n\n## CONVERGENCE: REFINING\nScore profile matches iter 11 exactly, and the rewrite list overlaps it ~75 % — consistent with the convergence threshold. However, only iters 10–11 have used the recalibrated prompt, and this iteration adds two non-cosmetic items (the explicit word-budget trade-off in Rewrite #3, and reinstating the self-cancelling-concession finding the prior dropped), so under the \"across last 2–3 iterations, mostly cosmetic\" rule the chain has not yet stabilised. One more iteration should confirm whether the trim-to-redistribute advice and the `Adj+as+S+V` showcase persist, after which CONVERGED would be appropriate.\n",
+  "structural_feedback": "The essay's blocking failure is **prompt coverage**, not paragraph shape: only parts 2 (solutions) and 4 (limitation) are addressed, while part 1 (scientific basis) and part 3 (international cooperation) are completely absent, capping TR at Band 5 per the descriptor's explicit rule. The mandatory \"at least one example\" is also unmet — *\"For instance, developing a sustainable energy system…\"* introduces a general idea, not a real case (no Montreal Protocol, no peak-oil curve, no lithium recycling, no figure). Because the essay already sits at ~280 words at the top of the 200–300 budget, the fix is **not** to bolt on two extra paragraphs but to redistribute: a 4-sentence basis paragraph and a 4-sentence cooperation paragraph each cost ~50–60 words, which means trimming the current Body 1's hedged speculation (*\"scientific breakthroughs could happen at some point, which can lead people to use energy without concern\"*) and the Body 2 self-cancelling concession. Body 2 also contains an internal contradiction — *\"the scientific method could handle several errors … it is still up to humans\"* effectively concedes the limitation it was meant to assert (the Band-6 *\"conclusions… unclear, unjustified or repetitive\"* pattern). The conclusion is one repeated sentence with no synthesis. **The single highest-impact fix is rewriting to the 4-question shape with one real example, not the lexical upgrades below — without this, TR remains at 5 regardless of polish.**",
+  "focus_areas": [
+    {
+      "area": "Prompt audit before drafting",
+      "rationale": "list each numbered question, tick each off after a paragraph addresses it",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "One concrete named example",
+      "rationale": "the prompt explicitly requires it; the essay has zero",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-02-environment.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Concession that doesn't cancel itself",
+      "rationale": "Body 2's *\"Although the scientific method could handle several errors … it is still up to humans\"* weakens its own claim",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Topic collocation precision",
+      "rationale": "*natural energy* (→ *renewable*), *contribute to the issue* (means *worsen*), *every research* (uncountable), *reasonably high enough* (tautology)",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-02-environment.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "One Band-7 grammar showcase per essay",
+      "rationale": "the script has zero inversions, clefts, participle clauses, or `Adj+as+S+V` concessions",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
+      ]
+    }
+  ],
+  "whats_working": "Keep the balanced framing: *\"natural science can play a crucial role\"* paired with *\"it is naïve to believe that natural science could solve everything\"* is the right two-sided shape for a discussion-style homework prompt. Topic-level vocabulary is genuinely science-aware — *\"sustainable energy system\"*, *\"scientific breakthroughs\"*, *\"reproducibility\"*, *\"the scientific method\"* sit in the right register per `contexts/10-task2-topic-banks/topic-17-science-and-research.md`. The hedging modal *could* in *\"breakthroughs could happen\"* is correctly academic; preserve it when you re-draft."
+}

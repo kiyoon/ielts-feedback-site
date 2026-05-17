@@ -1,0 +1,117 @@
+{
+  "id": "task2/00-baseline-codex",
+  "task": "task2",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-05-09T14:46:37Z",
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "(no corpus access — codex baseline cited training-data IELTS descriptors only)",
+      "justification": "The essay addresses the task and gives a clear position: \"I believe good balance of both is needed.\" It disagrees with the extreme idea that teachers should avoid computers \"at all costs\" and gives reasons for both reading and writing. However, the argument is only partially developed. The reading paragraph gives one example (\"they can search the unknow words and hear the pronunciation\") but the writing paragraph is brief and not deeply explored. The essay would need more specific explanation of \"basic study skills\" and stronger development of why complete avoidance is unnecessary."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "(no corpus access — codex baseline)",
+      "justification": "The essay is clearly organised into an introduction, two body paragraphs, and a conclusion. The progression is easy to follow. Cohesive devices include \"For example,\" \"Therefore,\" \"On the other hands,\" \"In conclusion.\" However, cohesion is sometimes mechanical or inaccurate. \"On the other hands\" should be \"On the other hand,\" and some referencing is unclear (e.g. \"use it effectively,\" where \"it\" refers to plural \"computers\")."
+    },
+    "lexical": {
+      "band": 7.0,
+      "descriptor_evidence": "(no corpus access — codex baseline)",
+      "justification": "Good range of topic vocabulary: \"digital world,\" \"operate computers,\" \"dependent,\" \"decline in reading and writing skills,\" \"utilise,\" \"autocorrection,\" \"enhance.\" Some flexibility and topic awareness. Noticeable errors in word choice and form: \"From young age,\" \"unknow words,\" missing articles in \"positive role.\" These do not block meaning so the lexical score remains relatively strong."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "(no corpus access — codex baseline)",
+      "justification": "Mix of simple and complex structures, e.g. \"If students are using computers all the time and getting the help of autocorrection, they will not improve their writing skills.\" An attempted conditional: \"If it was not for the computers…\" Frequent errors: \"School age children is no exception,\" \"teacher should not avoid,\" \"the use of computer,\" \"computers can play positive role.\" These reduce accuracy though meaning remains clear."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "Average: (6 + 6 + 7 + 6) / 4 = 6.25, rounded to the nearest 0.5 = 6.0 (best-fit; the holistic Band-6 profile dominates the borderline rounding).",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "From young age",
+      "improved": "From a young age",
+      "reason": "Missing indefinite article. \"A young age\" is the standard collocation.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 2,
+      "original": "computers, iPad, and TV",
+      "improved": "computers, iPads, and televisions",
+      "reason": "Plural agreement (multiple devices) and avoid brand-specific singular term in academic register.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 3,
+      "original": "School age children is no exception",
+      "improved": "School-age children are no exception",
+      "reason": "Plural subject takes plural verb; hyphenate compound modifier.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 4,
+      "original": "which can lead to decline in reading and writing skills",
+      "improved": "which can lead to a decline in their reading and writing skills",
+      "reason": "Missing indefinite article before \"decline\"; possessive \"their\" makes the referent explicit.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "I believe good balance of both is needed",
+      "improved": "I believe a good balance between computer-based learning and traditional study skills is needed",
+      "reason": "Missing article; specify what the two things being balanced are (the prompt asks for it).",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 6,
+      "original": "they can search the unknow words",
+      "improved": "they can look up unknown words",
+      "reason": "Spelling fix (unknow → unknown); \"look up\" is the natural collocation with words/definitions.",
+      "citations": [],
+      "category": "spelling"
+    },
+    {
+      "id": 7,
+      "original": "On the other hands",
+      "improved": "On the other hand",
+      "reason": "Idiom is singular: \"on the other hand\" not \"hands\".",
+      "citations": [],
+      "category": "coherence"
+    },
+    {
+      "id": 8,
+      "original": "writing skills need to be improved by lots of handwritten works",
+      "improved": "writing skills need to be developed through regular handwritten practice",
+      "reason": "\"Lots of\" is informal; \"works\" is a count noun for art pieces, not practice; \"developed through\" is the natural collocation.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 9,
+      "original": "teacher should not avoid the use of computer",
+      "improved": "teachers should not avoid the use of computers",
+      "reason": "Plural subject and plural object — generic claim about all teachers and all computers.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 10,
+      "original": "teachers need to come up with how to use it effectively",
+      "improved": "teachers need to develop effective ways to use computers in the classroom",
+      "reason": "Phrasal \"come up with\" is informal; \"it\" lacks a singular antecedent; specify \"in the classroom\" for context.",
+      "citations": [],
+      "category": "lexical"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-05-09T14:46:37Z by codex exec, run from a tmpdir with read-only sandbox._\n\n---\n\n_(Hand-extracted demo payload — see structured tab for the full feedback. Run `bun run extract` for the verbatim markdown.)_"
+}

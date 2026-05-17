@@ -1,0 +1,171 @@
+{
+  "id": "w1/11-codex",
+  "task": "w1",
+  "iteration": 11,
+  "tool": "codex",
+  "generated_at": "2026-05-11T00:34:55Z",
+  "scores": {
+    "task_response": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5",
+      "justification": "Paragraphing exists, but progression is not wholly logical. The route from “ancient Mesopotamia and Egypt” to Morse code to “a computer” is not clearly organised around the chosen period. References are weak: “that shone,” “to achieve that,” “That strong will,” and “By doing that” all force the reader to infer the noun. Band 7 needs logical paragraphing and flexible reference/substitution, which are not yet controlled (`contexts/05-band-6-to-7/cohesion-upgrades.md`)."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "This is the relative strength. Terms like “electronic signals,” “binary digits,” “hardware,” and “base-60” are relevant and mostly understandable. However, precision slips are frequent: “new logics,” “mathematics is inevitable,” “the first ever information,” and “a single hardware.” That is Band 6: adequate range with noticeable collocation and word-choice problems (`contexts/05-band-6-to-7/vocabulary-upgrades.md`)."
+    },
+    "grammar": {
+      "band": 5.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5",
+      "justification": "You attempt complex sentences, but many are faulty. “Computers consist of a full of small switches,” “so that no physical objects such as people or dove needed,” and “a machine which can do several things in a single hardware” all contain grammar problems that make the reader pause. Simple ideas are clearer than complex ones, which fits Band 5 GRA. Band 7 requires varied complex structures with frequent error-free sentences (`contexts/05-band-6-to-7/grammar-upgrades.md`)."
+    }
+  },
+  "overall": 5.5,
+  "overall_rationale": "The four criteria average 5.25, which rounds to 5.5 under `contexts/01-band-descriptors/scoring-rules.md`. Lexical Resource reaches Band 6, but incomplete development, weak period control, unclear cohesion, and faulty complex grammar keep the essay below Band 6 overall.",
+  "what_changed": "The latest prior feedback was still partly calibrated to the wrong prompt: it treated this as an argument about whether mathematics was the “most important driver” of the computer revolution. The recovered prompt only asks you to choose one historical period and explain how mathematics influenced science, society, or culture, so the feedback no longer asks for a concession about engineering or physics. I also lower Coherence and Cohesion from 6.0 to 5.0 because, under the real prompt, Body 1 moves outside the chosen period and the essay has no conclusion. The overall band remains 5.5, but the reason is sharper.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "In this essay, I will discuss how mathematics influenced computer science.",
+      "improved": "During the computer revolution, mathematics shaped computer science through formal logic, binary representation, and the encoding of information.",
+      "reason": "Gives a clear period + thesis + roadmap.",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "The graphic on the screen is just a number as well.",
+      "improved": "Overall, mathematics gave computers a numerical language for storing, processing, and displaying information.",
+      "reason": "Turns the abrupt ending into a synthesis conclusion.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "Computers consist of a full of small switches which can turn on and off.",
+      "improved": "At the heart of a computer are tiny switches whose two states correspond to 0 and 1.",
+      "reason": "Fixes grammar and adds a clean relative clause.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 4,
+      "original": "By doing that, it can calculate in binary digits.",
+      "improved": "By combining these two states, a computer can perform calculations in binary.",
+      "reason": "Replaces vague reference with a precise lexical chain.",
+      "citations": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 5,
+      "original": "The reason it matters is because every letter is actually a number",
+      "improved": "This matters because every letter can be encoded as a number.",
+      "reason": "Fixes “reason is because” and adds the key term “encoded.”",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "People have built up mathematical rules by defining new logics",
+      "improved": "Mathematicians developed systems of formal logic",
+      "reason": "Fixes collocation and makes the mathematical mechanism explicit.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 7,
+      "original": "the first ever information which only used electronic signals",
+      "improved": "one of the earliest systems for transmitting messages through electrical signals",
+      "reason": "“Information” is the wrong noun; “system for transmitting messages” is clearer.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "so that no physical objects such as people or dove needed",
+      "improved": "so that messages no longer had to be carried by human messengers or carrier pigeons",
+      "reason": "Fixes passive form, plural noun, and countability.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "a machine which can do several things in a single hardware",
+      "improved": "a general-purpose machine capable of performing many tasks on a single piece of hardware",
+      "reason": "Fixes uncountable “hardware” and uses precise technology wording.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-03-technology.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "This iteration does not converge because the latest prior feedback was calibrated against the wrong version of the prompt and gave Coherence and Cohesion too much credit. The main rewrite priorities overlap with earlier feedback, but the task-level diagnosis has changed substantively: the essay now needs tighter historical-period control, not an argument about whether mathematics was the single most important driver.",
+  "raw_markdown": "# Iteration 11 — codex\n\n_Generated 2026-05-10T15:20:22Z. Prior chain depth: up to 20. Manifest: 122 files._\n\n---## Per-criterion scores\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---|---|\n| Task Response / Achievement | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 |\n| Coherence and Cohesion       | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 |\n| Lexical Resource             | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Grammatical Range & Accuracy | 5.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 5 |\n| **Overall**                  | 5.5 | rounded per `contexts/01-band-descriptors/scoring-rules.md` |\n\n## What changed from prior feedback\nThe latest prior feedback was still partly calibrated to the wrong prompt: it treated this as an argument about whether mathematics was the “most important driver” of the computer revolution. The recovered prompt only asks you to choose one historical period and explain how mathematics influenced science, society, or culture, so the feedback no longer asks for a concession about engineering or physics. I also lower Coherence and Cohesion from 6.0 to 5.0 because, under the real prompt, Body 1 moves outside the chosen period and the essay has no conclusion. The overall band remains 5.5, but the reason is sharper.\n\n## Structural feedback\nYou choose a workable period, “the period of the computer revolution,” and computer science fits the “science” part of the assignment. However, the essay does not hold that period clearly: Body 1 jumps to “ancient Mesopotamia and Egypt,” “the Babylonians,” and “Samuel Morse” before returning to computers. The thesis, “I will discuss how mathematics influenced computer science,” is relevant but too general; it should name the mechanisms: formal logic, binary representation, and encoding. Body 2 is the strongest paragraph, but it is not PEEL-shaped because the binary idea is explained briefly and then the essay stops. There is no conclusion, and the homework asks for about 500 words, so the response reads unfinished. The single highest-impact fix here is rewriting Body 2 as a developed claim + example + link, not the lexical upgrades in the table below.\n\n## Focus areas\n- **Period control** — stay inside one historical period and make earlier examples serve that period, not replace it. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md`, `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md`.\n- **PEEL development for technical ideas** — “binary digits” needs explanation, example, and link to mathematical influence. Drill: `contexts/05-band-6-to-7/paragraph-structure-band7.md`, `contexts/10-task2-topic-banks/topic-17-science-and-research.md`.\n- **Clear reference chains** — vague “that,” “this,” and “it” repeatedly weaken flow. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md`, `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md`.\n- **Precise computing vocabulary** — use “binary representation,” “encoding,” “algorithm,” and “formal logic” instead of vague phrases like “new logics.” Drill: `contexts/10-task2-topic-banks/topic-03-technology.md`, `contexts/05-band-6-to-7/vocabulary-upgrades.md`.\n- **Articles, countability, and passive clauses** — errors like “a single hardware” and “dove needed” block Band 7 grammar. Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md`.\n\n## What's working\nYou have genuinely useful content: “base-60 for timekeeping,” “Morse code in 1844,” “binary digits,” and “every letter is actually a number.” The best insight is the final idea that letters, emojis, and graphics are numbers; this is exactly the kind of mathematical mechanism the whole essay should develop. Keep the technical examples, but connect each one explicitly to the computer revolution.\n\n## Per-criterion justification\n**Task Response / Achievement:** The essay partly answers the assignment because it chooses “the computer revolution” and discusses mathematics’ influence on computer science. However, it does not stay focused on one period, and the 500-word homework response is visibly incomplete at about 290 words with no conclusion. Body 1 spends too long on communication history: “People wanted to deliver their messages only, without any physical effort.” This matches Band 5: main ideas are present but limited and insufficiently developed (`contexts/01-band-descriptors/task2-band-descriptors.md`; `contexts/05-band-6-to-7/task-response-upgrades.md`).\n\n**Coherence and Cohesion:** Paragraphing exists, but progression is not wholly logical. The route from “ancient Mesopotamia and Egypt” to Morse code to “a computer” is not clearly organised around the chosen period. References are weak: “that shone,” “to achieve that,” “That strong will,” and “By doing that” all force the reader to infer the noun. Band 7 needs logical paragraphing and flexible reference/substitution, which are not yet controlled (`contexts/05-band-6-to-7/cohesion-upgrades.md`).\n\n**Lexical Resource:** This is the relative strength. Terms like “electronic signals,” “binary digits,” “hardware,” and “base-60” are relevant and mostly understandable. However, precision slips are frequent: “new logics,” “mathematics is inevitable,” “the first ever information,” and “a single hardware.” That is Band 6: adequate range with noticeable collocation and word-choice problems (`contexts/05-band-6-to-7/vocabulary-upgrades.md`).\n\n**Grammatical Range & Accuracy:** You attempt complex sentences, but many are faulty. “Computers consist of a full of small switches,” “so that no physical objects such as people or dove needed,” and “a machine which can do several things in a single hardware” all contain grammar problems that make the reader pause. Simple ideas are clearer than complex ones, which fits Band 5 GRA. Band 7 requires varied complex structures with frequent error-free sentences (`contexts/05-band-6-to-7/grammar-upgrades.md`).\n\n## Top concrete rewrites (5–10, ranked by band uplift)\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | “In this essay, I will discuss how mathematics influenced computer science.” | “During the computer revolution, mathematics shaped computer science through formal logic, binary representation, and the encoding of information.” | Gives a clear period + thesis + roadmap. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` |\n| 2 | “The graphic on the screen is just a number as well.” | “Overall, mathematics gave computers a numerical language for storing, processing, and displaying information.” | Turns the abrupt ending into a synthesis conclusion. | `contexts/05-band-6-to-7/paragraph-structure-band7.md` |\n| 3 | “Computers consist of a full of small switches which can turn on and off.” | “At the heart of a computer are tiny switches whose two states correspond to 0 and 1.” | Fixes grammar and adds a clean relative clause. | `contexts/05-band-6-to-7/grammar-upgrades.md` |\n| 4 | “By doing that, it can calculate in binary digits.” | “By combining these two states, a computer can perform calculations in binary.” | Replaces vague reference with a precise lexical chain. | `contexts/05-band-6-to-7/cohesion-upgrades.md` |\n| 5 | “The reason it matters is because every letter is actually a number” | “This matters because every letter can be encoded as a number.” | Fixes “reason is because” and adds the key term “encoded.” | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` |\n| 6 | “People have built up mathematical rules by defining new logics” | “Mathematicians developed systems of formal logic” | Fixes collocation and makes the mathematical mechanism explicit. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` |\n| 7 | “the first ever information which only used electronic signals” | “one of the earliest systems for transmitting messages through electrical signals” | “Information” is the wrong noun; “system for transmitting messages” is clearer. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` |\n| 8 | “so that no physical objects such as people or dove needed” | “so that messages no longer had to be carried by human messengers or carrier pigeons” | Fixes passive form, plural noun, and countability. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` |\n| 9 | “a machine which can do several things in a single hardware” | “a general-purpose machine capable of performing many tasks on a single piece of hardware” | Fixes uncountable “hardware” and uses precise technology wording. | `contexts/10-task2-topic-banks/topic-03-technology.md` |\n\n## Overall band rationale\nThe four criteria average 5.25, which rounds to 5.5 under `contexts/01-band-descriptors/scoring-rules.md`. Lexical Resource reaches Band 6, but incomplete development, weak period control, unclear cohesion, and faulty complex grammar keep the essay below Band 6 overall.\n\n## CONVERGENCE: REFINING\nThis iteration does not converge because the latest prior feedback was calibrated against the wrong version of the prompt and gave Coherence and Cohesion too much credit. The main rewrite priorities overlap with earlier feedback, but the task-level diagnosis has changed substantively: the essay now needs tighter historical-period control, not an argument about whether mathematics was the single most important driver.",
+  "structural_feedback": "You choose a workable period, “the period of the computer revolution,” and computer science fits the “science” part of the assignment. However, the essay does not hold that period clearly: Body 1 jumps to “ancient Mesopotamia and Egypt,” “the Babylonians,” and “Samuel Morse” before returning to computers. The thesis, “I will discuss how mathematics influenced computer science,” is relevant but too general; it should name the mechanisms: formal logic, binary representation, and encoding. Body 2 is the strongest paragraph, but it is not PEEL-shaped because the binary idea is explained briefly and then the essay stops. There is no conclusion, and the homework asks for about 500 words, so the response reads unfinished. The single highest-impact fix here is rewriting Body 2 as a developed claim + example + link, not the lexical upgrades in the table below.",
+  "focus_areas": [
+    {
+      "area": "Period control",
+      "rationale": "stay inside one historical period and make earlier examples serve that period, not replace it",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "PEEL development for technical ideas",
+      "rationale": "“binary digits” needs explanation, example, and link to mathematical influence",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/10-task2-topic-banks/topic-17-science-and-research.md"
+      ]
+    },
+    {
+      "area": "Clear reference chains",
+      "rationale": "vague “that,” “this,” and “it” repeatedly weaken flow",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Precise computing vocabulary",
+      "rationale": "use “binary representation,” “encoding,” “algorithm,” and “formal logic” instead of vague phrases like “new logics.”",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-03-technology.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ]
+    },
+    {
+      "area": "Articles, countability, and passive clauses",
+      "rationale": "errors like “a single hardware” and “dove needed” block Band 7 grammar",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    }
+  ],
+  "whats_working": "You have genuinely useful content: “base-60 for timekeeping,” “Morse code in 1844,” “binary digits,” and “every letter is actually a number.” The best insight is the final idea that letters, emojis, and graphics are numbers; this is exactly the kind of mathematical mechanism the whole essay should develop. Keep the technical examples, but connect each one explicitly to the computer revolution."
+}
