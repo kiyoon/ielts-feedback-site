@@ -2,7 +2,7 @@
 
 _Generated 2026-05-10T10:20:24Z. Prior chain depth: up to 3. Manifest: 462 files._
 
----I have enough corpus to refine. The prior chain is empty per the harness, so this must report REFINING regardless. The on-disk prior at `real-essays/feedback/W1-mathematical-influence.md` is the working baseline; I'll sharpen it.
+---I have enough corpus to refine. The prior chain is empty per the harness, so this must report REFINING regardless. The on-disk prior at `real-essays/feedback/W1-T2-mathematical-influence.md` is the working baseline; I'll sharpen it.
 
 ## Per-criterion scores
 | Criterion | Band | Descriptor evidence (file path) |

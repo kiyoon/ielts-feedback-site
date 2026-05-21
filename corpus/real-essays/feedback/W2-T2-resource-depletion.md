@@ -1,4 +1,4 @@
-# Feedback — W2-resource-depletion
+# Feedback — W2-T2-resource-depletion
 
 _Generated 2026-05-10T04:26:55Z by codex exec, single-shot (no iteration chain)._
 
