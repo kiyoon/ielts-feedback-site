@@ -1,0 +1,61 @@
+# Iteration 02 — claude
+
+_Generated 2026-05-21T16:05:31Z. Prior chain depth: up to 3. Manifest: 168 files._
+
+---I've now read the decisive descriptor, scoring, band-6→7, travel-topic, grammar-showcase, sentence-frame, and calibration files, plus the W4 band-7 model answer and the prior chain. That's enough to sharpen the prior iteration meaningfully. Here is the refined feedback.
+
+---
+
+## Per-criterion scores
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---|---|
+| Task Response / Achievement | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 ("some main ideas… insufficiently developed"; "conclusions… repetitive") |
+| Coherence and Cohesion       | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 ("cohesion… mechanical"; "reference… may lack clarity") |
+| Lexical Resource             | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 ("lack of precision in word choice"; risk-taker errors) |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 ("mix of simple and complex… flexibility is limited") |
+| **Overall**                  | 6.0 | average 6.00 → 6.0 per `contexts/01-band-descriptors/scoring-rules.md` |
+
+## What changed from prior feedback
+Iteration 01's four-band 6.0 calibration is correct and I retain it. My substantive additions: (1) I anchor the structural advice to the **existing Band 7 model** at `real-essays/W4-T2-international-travel.model-band7.md`, which neither prior cited — it demotes the disadvantages to a short concession and runs **two** developed advantage paragraphs, so the highest-impact fix is a restructure, not just "develop Body 2." (2) I add a concrete GRA lever (participle/relative clauses) that iter 01 left vague, citing `contexts/09-instructor-tips/07-band7-grammar-showcases.md`. (3) I flag two items both priors missed: the register-odd "**I opine that**" and the logic slip "**For instance, they might want to alleviate**." Otherwise the rewrite set overlaps heavily with iter 01 — the chain is close to stable.
+
+## Structural feedback
+Your four-paragraph shape and clear thesis ("the benefits outweigh the drawbacks") are solid Band-6 foundations. But for an **outweigh** question, the structure itself is working against you: Body 1 spends a whole paragraph on disadvantages that you never rebut, while Body 2 is supposed to prove the two advantages you promised ("new experience," "raise revenue") yet drifts into *air travel being easier* — which explains access, not why benefits win. **The single highest-impact fix here is restructuring, not lexical polish:** compress the disadvantages into one short concession ("Admittedly… these can be managed…"), then develop **two** advantage paragraphs in PEEL shape — one on cultural exposure for travellers, one on revenue/jobs for the host country — exactly as the model answer at `real-essays/W4-T2-international-travel.model-band7.md` does. This both fixes Task Response (ideas extended *and* supported, per `contexts/05-band-6-to-7/task-response-upgrades.md` §5) and converts your repetitive conclusion into a genuine weighing. Each body paragraph currently stops at "Point + brief explanation"; add a concrete example and a link sentence (`contexts/05-band-6-to-7/paragraph-structure-band7.md` §3).
+
+## Focus areas
+- **Weighing, not listing, in "outweigh" essays** — you place advantages after "Nevertheless" but never show they are *stronger*; concede disadvantages then rebut. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §8.3, `real-essays/W4-T2-international-travel.model-band7.md`.
+- **PEEL development with concrete examples** — every body idea is named, none is illustrated; add a real example (Venice/Barcelona over-tourism, tourism as top employer). Drill: `contexts/05-band-6-to-7/paragraph-structure-band7.md`, `contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md`.
+- **Complex-structure range (relative & participle clauses)** — your complex sentences are almost all "although/because/while" subordination; you use zero relative or participle clauses, which caps GRA range at 6. Drill: `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §7–8, `contexts/05-band-6-to-7/grammar-upgrades.md` §2,4.
+- **Flexible cohesion beyond Firstly/Secondly** — replace mechanical sequencers and fix the vague "this tactic." Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md` §3,9.
+- **Tourism collocation & register** — "target nation," "exotic values," "I opine," "raise/maximise revenue" repeated. Drill: `contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md`, `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`.
+
+## What's working
+Your position is genuinely clear and held from intro to conclusion — "I opine that the benefits outweigh the drawbacks" and "it is more beneficial to travellers and countries" — which is the gating Band-7 TR feature you already meet. You also select relevant, on-topic vocabulary: "overtourism," "traffic jams," "domestic travel," "pickpockets." Keep this disciplined opinion-led structure; the gap to Band 7 is development and grammatical range, not relevance.
+
+## Per-criterion justification
+**Task Response — 6.0.** Both sides are addressed and the stance is consistent, satisfying part of Band 7. But ideas are named, not extended: "they might want to alleviate the issue of traffic jams" gives no example, and Body 2's "advent of the aeroplane" proves access rather than the promised benefits. The conclusion restates the intro almost verbatim — the Band 6 marker "conclusions… may be… repetitive" (`task2-band-descriptors.md` §Band 6). Development, not relevance, holds this at 6.
+
+**Coherence and Cohesion — 6.0.** Clear four-paragraph progression, but cohesion is mechanical — "First and foremost," "Secondly," "Furthermore" carry the linking, exactly the pattern flagged in `contexts/05-band-6-to-7/cohesion-upgrades.md` §2. "The government can effectively use **this tactic**" has an unclear referent (tourism is not a tactic). No reference/substitution flexibility yet → 6, not 7.
+
+**Lexical Resource — 6.0.** You take risks with less-common items ("merits and demerits," "overtourism," "alleviate"), but inaccuracy follows — the Band 6 "risk-taker" profile (`task2-band-descriptors.md` §Band 6). Collocation errors: "target nation," "different and exotic values," "seeking for a help"; "I **opine** that" is register-odd; "revenue" appears three times unvaried. Meaning is clear but precision is short of 7.
+
+**Grammatical Range & Accuracy — 6.0.** A mix of simple and complex sentences with "although/because/while/since/when," but flexibility is limited — no relative clauses, participle clauses, or conditionals, the range markers Band 7 needs (`contexts/05-band-6-to-7/grammar-upgrades.md` §1). Article/preposition slips recur: "seeking for **a** help," "due to **the** overtourism." Several error-free sentences exist, but range is the binding constraint at 6.
+
+## Top concrete rewrites (5–10, ranked by band uplift)
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---|---|---|---|---|
+| 1 | "international travel can offer different and exotic values from domestic travel to travellers" | "international travel lets visitors experience other cultures first-hand — different languages, cuisines and customs — which tends to make them more open-minded" | Develops the vague claim into a supported idea (TR + LR) | `real-essays/W4-T2-international-travel.model-band7.md`; `contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md` |
+| 2 | "they might want to alleviate the issue of traffic jams" | "they often struggle with overcrowding, as residents of cities such as Venice and Barcelona, who have staged large protests, know well" | Adds a concrete example + a relative clause (TR + GRA range) | `contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md` (over-tourism row) |
+| 3 | "although there are issues to tackle… I believe that it is more beneficial" | "while problems such as petty crime and congestion are real, they can largely be managed, whereas the cultural and economic gains are lasting" | Turns a repetitive conclusion into a genuine weighing | `real-essays/W4-T2-international-travel.model-band7.md`; `contexts/09-instructor-tips/06-task2-sentence-frames.md` §8 |
+| 4 | "because of the advent of the aeroplane, they can save significant amounts of time as well as money" | "Drawn by cheaper flights and simpler visa procedures, far more people now travel abroad than ever before" | Replaces dated phrasing; adds a participle-clause opener (GRA range) | `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §7 |
+| 5 | "the target nation" / "the country visited" | "the host country" / "the destination" | Standard tourism collocation | `contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md` (host community) |
+| 6 | "For this reason, some petty thieves such as pickpockets tend to target tourists only." | "This language barrier can also leave tourists more vulnerable to petty crime, such as pickpocketing." | Fixes a broken cause-effect link and the overstated "only" | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` |
+| 7 | "the government can effectively use this tactic to maximise the revenue" | "host governments can channel this rise in visitor numbers into tax income and support for local businesses" | Fixes vague reference + unvaries "revenue" (CC + LR) | `contexts/05-band-6-to-7/cohesion-upgrades.md` §3 |
+| 8 | "seeking for a help can be difficult" | "asking for help can be difficult" | Removes wrong preposition + article (GRA accuracy) | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` |
+| 9 | "I opine that the benefits outweigh the drawbacks" | "I firmly believe that the benefits outweigh the drawbacks" | "opine" is register-odd; natural thesis verb | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §2 |
+| 10 | "due to the overtourism" | "because of overtourism" | Zero article with the general noun | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` |
+
+## Overall band rationale
+All four criteria best-fit Band 6 (relevant and organised, but underdeveloped, mechanical cohesion, imprecise collocation, limited complex-structure range); the average is 6.00, which rounds to **6.0** per `contexts/01-band-descriptors/scoring-rules.md`.
+
+## CONVERGENCE: REFINING
+The scores are now stable at 6/6/6/6 across all three iterations and the rewrite set overlaps iteration 01 by roughly 70%, so we are close to convergence. However, this iteration adds one genuinely new high-leverage diagnosis — restructuring to a concession + two developed advantage paragraphs, anchored for the first time to the existing Band 7 model — plus a concrete relative/participle-clause GRA lever. One more iteration should converge.

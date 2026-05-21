@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T15:54:53.286Z",
+  "generated_at": "2026-05-21T16:47:16.603Z",
   "tasks": {
     "w1": {
       "label": "W1 (real)",
@@ -420,12 +420,76 @@
       },
       "iterations": [
         {
-          "id": "w4/00-codex",
+          "id": "w4/00-baseline-codex",
           "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-05-21T16:02:17Z"
+        },
+        {
+          "id": "w4/01-codex",
+          "iteration": 1,
           "tool": "codex",
           "overall": 6,
           "convergence": "REFINING",
-          "generated_at": "2026-05-21T15:54:39Z"
+          "generated_at": "2026-05-21T16:02:17Z"
+        },
+        {
+          "id": "w4/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-21T16:05:31Z"
+        },
+        {
+          "id": "w4/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-21T16:07:44Z"
+        },
+        {
+          "id": "w4/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-21T16:12:10Z"
+        },
+        {
+          "id": "w4/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-21T16:14:10Z"
+        },
+        {
+          "id": "w4/06-claude",
+          "iteration": 6,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-21T16:18:45Z"
+        },
+        {
+          "id": "w4/07-codex",
+          "iteration": 7,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-21T16:20:20Z"
+        },
+        {
+          "id": "w4/08-claude",
+          "iteration": 8,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-05-21T16:25:51Z"
         }
       ]
     },

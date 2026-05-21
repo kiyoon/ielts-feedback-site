@@ -1,0 +1,147 @@
+{
+  "id": "w4/00-baseline-codex",
+  "task": "w4",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-05-21T16:02:17Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "The essay addresses both sides and gives a clear opinion: “the benefits outweigh the drawbacks.” However, the support is not fully developed.",
+      "justification": "The disadvantages are relevant, including language problems, “pickpockets,” and “traffic jams,” but the advantages are less convincing. The country’s benefit is repeated rather than developed: “raise revenue,” “maximise the revenue,” and “generate revenue” all appear, but there is little explanation of how this happens."
+    },
+    "coherence": {
+      "band": 6.5,
+      "descriptor_evidence": "The essay is clearly organised into four paragraphs, and the progression is easy to follow.",
+      "justification": "Cohesive devices such as “To begin with,” “First and foremost,” “Secondly,” “Nevertheless,” “Furthermore,” and “In conclusion” guide the reader, but some links are mechanical or not fully logical. “For this reason” does not clearly follow from the previous sentence, and “this tactic” is unclear."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "There is enough topic vocabulary to communicate the argument: “merits and demerits,” “overtourism,” “traffic jams,” “domestic travel,” and “generate revenue.”",
+      "justification": "Several word choices are unnatural or inaccurate, including “target nation,” “seeking for a help,” and “different and exotic values.” The vocabulary is mostly adequate, but collocation errors prevent a band 7 score."
+    },
+    "grammar": {
+      "band": 6,
+      "descriptor_evidence": "The essay uses a mix of simple and complex sentences, such as “although there are issues to tackle…” and “because of the advent of the aeroplane…”.",
+      "justification": "Errors occur in articles, prepositions, and sentence phrasing, including “seeking for a help,” “due to the overtourism,” and “the country can effectively use this tactic.” There are some error-free sentences, but accuracy is not frequent enough for band 7."
+    }
+  },
+  "overall": 6,
+  "overall_rationale": "Average: 6.125, rounded to 6.0. This is a solid band 6 response with a clear position, but it needs fuller development, more natural collocation, and more controlled complex grammar to reach band 7.",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "the target nation",
+      "improved": "the host country",
+      "reason": "This is the standard collocation for the country visited.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 2,
+      "original": "travellers can have a new experience",
+      "improved": "travellers can experience new cultures, customs and ways of life",
+      "reason": "This makes the benefit more specific and developed.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "seeking for a help can be difficult",
+      "improved": "seeking help can be difficult",
+      "reason": "Removes two grammar/collocation errors at once.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "especially when people speak a different language in the country visited",
+      "improved": "especially when they do not speak the local language",
+      "reason": "Clearer and more natural.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "For this reason, some petty thieves such as pickpockets tend to target tourists only.",
+      "improved": "This language barrier can also make tourists more vulnerable to petty crime, such as pickpocketing.",
+      "reason": "Improves the logic and makes the cause-effect relationship clearer.",
+      "citations": [],
+      "category": "coherence"
+    },
+    {
+      "id": 6,
+      "original": "due to the overtourism",
+      "improved": "due to overtourism",
+      "reason": "No article is needed before this general noun.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "the government can effectively use this tactic to maximise the revenue",
+      "improved": "host governments can use tourism to increase tax income and support local businesses",
+      "reason": "This develops the country benefit instead of repeating “revenue.”",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "because of the advent of the aeroplane",
+      "improved": "because air travel has become faster and more affordable",
+      "reason": "The original sounds outdated and slightly unnatural.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 9,
+      "original": "countries can expect more tourists than ever before, since easy access encourages people to travel more",
+      "improved": "As a result, more visitors spend money on hotels, restaurants and transport, which creates jobs and raises public revenue.",
+      "reason": "This directly proves why the advantages outweigh the disadvantages.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 10,
+      "original": "although there are issues to tackle",
+      "improved": "although international travel can create problems such as petty crime and congestion",
+      "reason": "The conclusion becomes more specific and balanced.",
+      "citations": [],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-05-21T16:02:17Z by codex exec, run from `/var/folders/r5/9cpfjfjx3b73b6stl7_w712h0000gn/T/tmp.wg7uqAeLFC` with read-only sandbox._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band |\n|---|---:|\n| Task Response | 6.0 |\n| Coherence and Cohesion | 6.5 |\n| Lexical Resource | 6.0 |\n| Grammatical Range and Accuracy | 6.0 |\n\n## Structural feedback\n\nThe essay answers the question and gives a clear overall position: “the benefits outweigh the drawbacks.” The structure is logical: introduction, disadvantages, advantages, conclusion. However, the advantages paragraph is not developed strongly enough for band 7 because it spends too much time on easier access to travel rather than clearly proving why the advantages outweigh the disadvantages. The country’s benefit, “generate revenue,” is mentioned several times but not explained with examples such as jobs, taxes, hotels, restaurants, or local businesses. The biggest structural uplift would come from making the advantages paragraph more specific and more clearly comparative: why are the benefits larger than the problems?\n\n## Focus areas\n\n- **Idea development with concrete examples** — Band 7 needs main ideas to be extended, not just stated.\n- **Clear benefit categorisation** — Separate traveller benefits from host-country benefits more explicitly.\n- **Cause-and-effect accuracy** — Some links are weak, such as “For this reason” before pickpocketing.\n- **Collocation accuracy** — Phrases like “seeking for a help” and “target nation” sound unnatural.\n- **Complex sentence control** — The essay uses complex structures, but errors reduce accuracy.\n\n## What's working\n\nThe position is clear from the introduction: “I opine that the benefits outweigh the drawbacks.” The essay also has a sensible paragraph structure and uses contrast effectively with “Nevertheless.” Some vocabulary is appropriate for the topic, such as “overtourism,” “traffic jams,” “generate revenue,” and “domestic travel.”\n\n## Per-criterion justification\n\n**Task Response — Band 6.0**  \nThe essay addresses both sides and gives a clear opinion: “the benefits outweigh the drawbacks.” However, the support is not fully developed. The disadvantages are relevant, including language problems, “pickpockets,” and “traffic jams,” but the advantages are less convincing. The sentence “because of the advent of the aeroplane, they can save significant amounts of time as well as money” does not directly explain the main advantage of international travel today. The country’s benefit is also repeated rather than developed: “raise revenue,” “maximise the revenue,” and “generate revenue” all appear, but there is little explanation of how this happens.\n\n**Coherence and Cohesion — Band 6.5**  \nThe essay is clearly organised into four paragraphs, and the progression is easy to follow. Cohesive devices such as “To begin with,” “First and foremost,” “Secondly,” “Nevertheless,” “Furthermore,” and “In conclusion” help guide the reader. However, some links are mechanical or not fully logical. For example, “For this reason, some petty thieves such as pickpockets tend to target tourists only” does not clearly follow from the previous sentence about language barriers. Also, “this tactic” is unclear because international travel is not really a tactic.\n\n**Lexical Resource — Band 6.0**  \nThere is enough topic vocabulary to communicate the argument: “merits and demerits,” “overtourism,” “traffic jams,” “domestic travel,” and “generate revenue.” However, several word choices are unnatural or inaccurate. “Target nation” should be “host country” or “destination country.” “Seeking for a help” should be “seeking help” or “asking for help.” “Different and exotic values” is vague and unnatural; “new cultural experiences” would be clearer. The vocabulary is mostly adequate, but collocation errors prevent a band 7 score.\n\n**Grammatical Range and Accuracy — Band 6.0**  \nThe essay uses a mix of simple and complex sentences, such as “although there are issues to tackle…” and “because of the advent of the aeroplane…”. However, errors occur in articles, prepositions, and sentence phrasing. Examples include “seeking for a help,” “due to the overtourism,” and “the country can effectively use this tactic.” There are some error-free sentences, but accuracy is not frequent enough for band 7.\n\n## Overall band\n\n**Overall: 6.0**\n\nAverage: 6.125, rounded to **6.0**. This is a solid band 6 response with a clear position, but it needs fuller development, more natural collocation, and more controlled complex grammar to reach band 7.\n\n## Top concrete improvements\n\n1. **“the target nation” → “the host country”** — This is the standard collocation for the country visited.\n\n2. **“travellers can have a new experience” → “travellers can experience new cultures, customs and ways of life”** — This makes the benefit more specific and developed.\n\n3. **“seeking for a help can be difficult” → “seeking help can be difficult”** — Removes two grammar/collocation errors at once.\n\n4. **“especially when people speak a different language in the country visited” → “especially when they do not speak the local language”** — Clearer and more natural.\n\n5. **“For this reason, some petty thieves such as pickpockets tend to target tourists only.” → “This language barrier can also make tourists more vulnerable to petty crime, such as pickpocketing.”** — Improves the logic and makes the cause-effect relationship clearer.\n\n6. **“due to the overtourism” → “due to overtourism”** — No article is needed before this general noun.\n\n7. **“the government can effectively use this tactic to maximise the revenue” → “host governments can use tourism to increase tax income and support local businesses”** — This develops the country benefit instead of repeating “revenue.”\n\n8. **“because of the advent of the aeroplane” → “because air travel has become faster and more affordable”** — The original sounds outdated and slightly unnatural.\n\n9. **“countries can expect more tourists than ever before, since easy access encourages people to travel more” → “As a result, more visitors spend money on hotels, restaurants and transport, which creates jobs and raises public revenue.”** — This directly proves why the advantages outweigh the disadvantages.\n\n10. **“although there are issues to tackle” → “although international travel can create problems such as petty crime and congestion”** — The conclusion becomes more specific and balanced.",
+  "structural_feedback": "The essay answers the question and gives a clear overall position: “the benefits outweigh the drawbacks.” The structure is logical: introduction, disadvantages, advantages, conclusion. However, the advantages paragraph is not developed strongly enough for band 7 because it spends too much time on easier access to travel rather than clearly proving why the advantages outweigh the disadvantages. The country’s benefit, “generate revenue,” is mentioned several times but not explained with examples such as jobs, taxes, hotels, restaurants, or local businesses. The biggest structural uplift would come from making the advantages paragraph more specific and more clearly comparative: why are the benefits larger than the problems?",
+  "focus_areas": [
+    {
+      "area": "Idea development with concrete examples",
+      "rationale": "Band 7 needs main ideas to be extended, not just stated.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Clear benefit categorisation",
+      "rationale": "Separate traveller benefits from host-country benefits more explicitly.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Cause-and-effect accuracy",
+      "rationale": "Some links are weak, such as “For this reason” before pickpocketing.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Collocation accuracy",
+      "rationale": "Phrases like “seeking for a help” and “target nation” sound unnatural.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Complex sentence control",
+      "rationale": "The essay uses complex structures, but errors reduce accuracy.",
+      "corpus_drill": []
+    }
+  ],
+  "whats_working": "The position is clear from the introduction: “I opine that the benefits outweigh the drawbacks.” The essay also has a sensible paragraph structure and uses contrast effectively with “Nevertheless.” Some vocabulary is appropriate for the topic, such as “overtourism,” “traffic jams,” “generate revenue,” and “domestic travel.”"
+}
