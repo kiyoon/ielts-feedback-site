@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T12:20:45.152Z",
+  "generated_at": "2026-05-21T15:54:53.286Z",
   "tasks": {
     "w1": {
       "label": "W1 (real)",
@@ -407,6 +407,25 @@
           "overall": 6,
           "convergence": "CONVERGED",
           "generated_at": "2026-05-12T11:53:53Z"
+        }
+      ]
+    },
+    "w4": {
+      "label": "W4 (real)",
+      "title": "Is it worth travelling to other countries?",
+      "essay": {
+        "prompt": "International travel has many advantages to both travellers and the country visited. Do you think the advantages outweigh the disadvantages?",
+        "text": "It is true that travelling to different nations has both merits and demerits for those who are on a trip and the target nation. However, I opine that the benefits outweigh the drawbacks because travellers can have a new experience, while the country can raise revenue.\n\nTo begin with, it is of note that there are a few challenges to tackle when people travel to other countries. First and foremost, seeking for a help can be difficult when travellers encounter an incident, especially when people speak a different language in the country visited. For this reason, some petty thieves such as pickpockets tend to target tourists only. Secondly, due to the overtourism, governments might face several challenges. For instance, they might want to alleviate the issue of traffic jams.\n\nNevertheless, international travel can offer different and exotic values from domestic travel to travellers, and the government can effectively use this tactic to maximise the revenue. From a tourist’s perspective, because of the advent of the aeroplane, they can save significant amounts of time as well as money. Furthermore, the process of travelling to other countries has also been simplified. This means that countries can expect more tourists than ever before, since easy access encourages people to travel more.\n\nIn conclusion, although there are issues to tackle when it comes to international travel, I believe that it is more beneficial to travellers and countries because people can experience new cultures easily, while the countries can generate revenue.",
+        "word_count": 246
+      },
+      "iterations": [
+        {
+          "id": "w4/00-codex",
+          "iteration": 0,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-05-21T15:54:39Z"
         }
       ]
     },

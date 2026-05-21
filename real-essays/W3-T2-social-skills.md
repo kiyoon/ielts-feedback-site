@@ -1,6 +1,6 @@
-# W3 — Who should teach children social skills? (real student essay)
+# W3 (Task 2) — Who should teach children social skills? (real student essay)
 
-**Source:** student-written practice essay (`raw-materials/W3 - Who Should Teach Children Social Skills.docx`).
+**Source:** student-written practice essay (`raw-materials/W3 - T2 - Who Should Teach Children Social Skills.docx`).
 **Task type:** IELTS Writing Task 2 discussion essay.
 **Prompt source:** Extracted from the embedded DOCX prompt screenshot (`word/media/image1.png`).
 

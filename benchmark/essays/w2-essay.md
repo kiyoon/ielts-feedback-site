@@ -1,6 +1,6 @@
 # W2 — Resource depletion and natural science (real student essay)
 
-**Source:** student-written practice essay (Telegram, 2026-05-10). Imported from `real-essays/W2-resource-depletion.md` for the iterative-refinement loop.
+**Source:** student-written practice essay (Telegram, 2026-05-10). Imported from `real-essays/W2-T2-resource-depletion.md` for the iterative-refinement loop.
 **Task type:** Homework assignment; evaluate with IELTS Writing Task 2-style feedback, but judge Task Response against the exact assignment below.
 **Prompt source:** Extracted from the embedded DOCX prompt screenshot (`real-essays/raw-materials/W2 - resouce depletion and natural science.docx`, `word/media/image1.png`).
 

@@ -28,9 +28,9 @@ import {
 
 export default function App() {
   const [index, setIndex] = useState<IndexPayload | null>(null);
-  // Default to w1 (the user's real essay) when present; the snap-to-existing
-  // effect below promotes the first available key if w1 isn't in the index.
-  const [task, setTask] = useState<TaskKey>("w1");
+  // Default to w4 (the most recent real essay) when present; the snap-to-existing
+  // effect below promotes the first available key if w4 isn't in the index.
+  const [task, setTask] = useState<TaskKey>("w4");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<FeedbackPayload | null>(null);
   const [baseline, setBaseline] = useState<FeedbackPayload | null>(null);

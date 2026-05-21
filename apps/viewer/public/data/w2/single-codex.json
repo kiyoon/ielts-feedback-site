@@ -156,5 +156,5 @@
   ],
   "convergence": "REFINING",
   "convergence_note": "There is no prior chain, so the convergence rules require REFINING regardless of confidence. Future iterations could still sharpen the rewrite priorities or adjust calibration after comparing against another feedback pass.",
-  "raw_markdown": "_The full markdown is at `real-essays/feedback/W2-resource-depletion.md`. This payload was hand-extracted from that file; run `bun run extract` to refresh it._"
+  "raw_markdown": "_The full markdown is at `real-essays/feedback/W2-T2-resource-depletion.md`. This payload was hand-extracted from that file; run `bun run extract` to refresh it._"
 }

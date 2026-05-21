@@ -149,5 +149,5 @@
   ],
   "convergence": "REFINING",
   "convergence_note": "There is no prior feedback chain, so the convergence rules require REFINING. Future iterations could still improve the exact calibration if the full original prompt or a complete version of the essay becomes available.",
-  "raw_markdown": "_The full markdown is at `real-essays/feedback/W1-mathematical-influence.md`. This payload was hand-extracted from that file; run `bun run extract` to refresh it._"
+  "raw_markdown": "_The full markdown is at `real-essays/feedback/W1-T2-mathematical-influence.md`. This payload was hand-extracted from that file; run `bun run extract` to refresh it._"
 }

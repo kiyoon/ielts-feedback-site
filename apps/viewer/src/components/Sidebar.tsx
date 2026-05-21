@@ -38,9 +38,10 @@ export function Sidebar({
     ref.current?.scrollIntoView({ block: "nearest" });
   }, [selectedId, filtered]);
 
-  // Build a per-essay summary for the chat-style list at the top
+  // Build a per-essay summary for the chat-style list at the top.
+  // Order: real essays newest-submission first (W4 -> W1), demos last.
   const essayList = useMemo(() => {
-    return Object.entries(index.tasks).map(([key, bundle]) => {
+    const list = Object.entries(index.tasks).map(([key, bundle]) => {
       const its = bundle.iterations;
       const ordered = [...its].sort((a, b) => b.iteration - a.iteration);
       const latest = ordered[0];
@@ -48,6 +49,7 @@ export function Sidebar({
         bundle.title ||
         bundle.label ||
         (key === "task1" ? "Task 1" : key === "task2" ? "Task 2" : key.toUpperCase());
+      const weekMatch = /^w(\d+)$/.exec(key);
       return {
         key,
         title,
@@ -55,7 +57,14 @@ export function Sidebar({
         wordCount: bundle.essay.word_count,
         iterCount: its.length,
         latestBand: latest?.overall,
+        // Real weekly essays sort ahead of demos; newer weeks first.
+        isDemo: weekMatch === null,
+        week: weekMatch ? Number(weekMatch[1]) : -1,
       };
+    });
+    return list.sort((a, b) => {
+      if (a.isDemo !== b.isDemo) return a.isDemo ? 1 : -1;
+      return b.week - a.week;
     });
   }, [index]);
 

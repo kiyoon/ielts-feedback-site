@@ -1,6 +1,6 @@
 # W1 — Mathematical influence (real student essay)
 
-**Source:** student-written practice essay (Telegram, 2026-05-10). Imported from `real-essays/W1-mathematical-influence.md` for the iterative-refinement loop.
+**Source:** student-written practice essay (Telegram, 2026-05-10). Imported from `real-essays/W1-T2-mathematical-influence.md` for the iterative-refinement loop.
 **Task type:** Homework assignment; evaluate with IELTS Writing Task 2-style feedback, but judge Task Response against the exact assignment below.
 **Prompt source:** Extracted from the embedded DOCX prompt screenshot (`real-essays/raw-materials/W1 - Mathematical influence.docx`, `word/media/image1.png`).
 

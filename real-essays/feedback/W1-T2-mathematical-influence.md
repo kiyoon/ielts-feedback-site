@@ -1,4 +1,4 @@
-# Feedback — W1-mathematical-influence
+# Feedback — W1-T2-mathematical-influence
 
 _Generated 2026-05-10T04:27:05Z by codex exec, single-shot (no iteration chain)._
 
