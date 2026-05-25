@@ -1,0 +1,56 @@
+{
+  "task": "w2",
+  "target_band": 7.0,
+  "prompt": "Choose one global challenge discussed in the lecture (climate change, pandemics, or resource depletion). Write a short response answering: (1) What is the scientific basis of this problem? (2) What solutions does natural science offer? (3) Why is international cooperation necessary? (4) What is one limitation or challenge in solving this problem? Requirements: 200–300 words, at least one example, clear structure.",
+  "intro_note": "Rewrite organised around the four required questions (basis → solution → cooperation → limitation), with one concrete example (battery recycling) doing several jobs. The original answers only Q2 and Q4, which caps Task Response at Band 5; this version restores prompt coverage. Hover any highlighted phrase for the band-7 craft note.",
+  "word_count": 237,
+  "paragraphs": [
+    {
+      "spans": [
+        { "text": "Over the past few decades, humanity has been " },
+        { "text": "drawing on natural resources at an unprecedented rate", "highlight": { "label": "Natural collocation", "kind": "lexical", "explanation": "\"draw on\" + \"unprecedented rate\" are journalistic, idiomatic, and topic-precise — replaces the original's flat \"using natural resources whenever they need\"." } },
+        { "text": ". " },
+        { "text": "This response explains why resources are being depleted, how natural science can slow the process, why international cooperation is essential, and what limits science still faces", "highlight": { "label": "Four-part roadmap", "kind": "task_response", "explanation": "Previews ALL FOUR required questions in one sentence — the gating Task Response fix. Without explicit prompt coverage, TR is capped at Band 5 no matter how good the language is." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Scientifically", "highlight": { "label": "Discipline-framing adverb", "kind": "coherence", "explanation": "Single-word adverb fronts the paragraph and signals \"this is the scientific-basis answer\". More flexible than \"Firstly\" / \"To begin with\" — Band-7 cohesion places connectives by function, not by position alone." } },
+        { "text": ", resource depletion " },
+        { "text": "occurs when societies extract finite fuels, minerals, water and forests faster than natural or geological processes can replace them", "highlight": { "label": "Scientific basis (Q1)", "kind": "task_response", "explanation": "Names the actual mechanism: extraction rate > regeneration rate. The original never answers Q1 at all — adding this sentence alone moves TR from 5 toward 6." } },
+        { "text": ". Natural science offers two main responses: " },
+        { "text": "developing renewable-energy systems that mitigate depletion by reducing reliance on fossil fuels", "highlight": { "label": "Solution + mechanism (Q2)", "kind": "lexical", "explanation": "\"mitigate depletion\" is a precise Band-7 collocation. \"By reducing reliance on fossil fuels\" makes the causal mechanism explicit — answers HOW renewable energy helps, not just THAT it helps." } },
+        { "text": ", and engineering more efficient recovery methods. For example, " },
+        { "text": "battery-recycling technology can now extract lithium, cobalt and nickel from used devices", "highlight": { "label": "Concrete example", "kind": "task_response", "explanation": "Specific technology + specific minerals. Replaces the original's vague \"scientific breakthroughs could happen at some point\". The 200–300-word brief explicitly demands at least one example — this is it." } },
+        { "text": ", " },
+        { "text": "which reduces the need for new mining and lengthens the useful life of finite metals", "highlight": { "label": "Non-defining relative + paired result", "kind": "grammar", "explanation": "\"which\" attaches a non-defining relative carrying TWO parallel results (\"reduces… and lengthens…\"). Packs cause-and-effect into one Band-7 sentence rather than splitting into two simple ones." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "International cooperation is essential because mineral supply chains, rivers and fish stocks cross national borders", "highlight": { "label": "Cooperation logic (Q3)", "kind": "task_response", "explanation": "Answers Q3 directly with the shared-resources / transboundary argument. Names three concrete cross-border resources — exactly the topic-bank vocabulary the feedback drills." } },
+        { "text": "; " },
+        { "text": "without shared rules, one country's conservation effort can be undermined by another's overuse", "highlight": { "label": "Collective-action explanation", "kind": "task_response", "explanation": "States the WHY behind cooperation — one country's restraint is wasted without binding shared rules. This collective-action logic is the Band-7 move; merely asserting \"cooperation is needed\" is Band 6." } },
+        { "text": ". " },
+        { "text": "Lithium-ion battery production, for instance, depends on cobalt mined in Central Africa and processed in East Asia", "highlight": { "label": "Same example, second job", "kind": "task_response", "explanation": "Reuses the battery example from Body 2 to also answer Q3 — one concrete case doing several jobs. In a 280-word essay, every example must work hard." } },
+        { "text": ", so any meaningful recycling target must be jointly agreed. Even so, science alone has its limits. " },
+        { "text": "Powerful as the scientific method is", "highlight": { "label": "Adj + as + S + V inversion", "kind": "grammar", "explanation": "Concessive inversion — the §4 grammar showcase. Replaces a flat \"Although science is powerful…\" with one of the cleanest band-7 sentence openings available." } },
+        { "text": ", " },
+        { "text": "human error can occur in any research project", "highlight": { "label": "Countability fix", "kind": "grammar", "explanation": "\"any research project\" replaces the original's \"every research\" — \"research\" is uncountable, so it can't be pluralised or counted by \"every\". Common Korean/Chinese L1 error flagged in §B2 of the error correction bank." } },
+        { "text": ", scaling up laboratory results to industry is expensive, and " },
+        { "text": "ecological systems remain too complex to model precisely", "highlight": { "label": "Specific limitation (Q4)", "kind": "task_response", "explanation": "Names a concrete limit (modelling complexity) rather than the original's vague \"nature is simply too vast to research\". Triadic structure: human error + scaling cost + modelling complexity — three substantive limits in one sentence." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "On balance", "highlight": { "label": "Weighing conclusion frame", "kind": "coherence", "explanation": "\"On balance\" is the standard Band-7 weighing opener for a four-part task. Replaces \"To sum up\" / \"In conclusion\" with something that signals a verdict, not just a recap." } },
+        { "text": ", science can slow resource depletion through renewable energy and recycling, but its solutions require international coordination and " },
+        { "text": "remain bounded by cost, human judgement and ecological uncertainty", "highlight": { "label": "Triadic synthesis", "kind": "lexical", "explanation": "Three precise limits (cost / human judgement / ecological uncertainty) condense Q4 into one final clause. Replaces \"it is not possible to solve every problem\" with substance — a Band-7 conclusion gives the marker something to remember." } },
+        { "text": "." }
+      ]
+    }
+  ]
+}

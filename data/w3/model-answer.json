@@ -1,0 +1,55 @@
+{
+  "task": "w3",
+  "target_band": 7.0,
+  "prompt": "Some people think that parents should teach their children how to be good members of society. Others, however, believe that school is the best place to learn this. Discuss both views and give your own opinion.",
+  "intro_note": "Discuss-both-views rewrite with a thesis that directly weighs parents against schools (parents lay the foundation; schools provide daily practice) — the original drifts to a third position (\"individuals\") which is off-prompt. Each body is one full PEEL paragraph for one view, with concrete social-behaviour examples. Hover any highlighted phrase for the band-7 craft note.",
+  "word_count": 274,
+  "paragraphs": [
+    {
+      "spans": [
+        { "text": "Some argue that parents bear the primary responsibility for teaching children how to function in society, while others maintain that schools are better placed to do so", "highlight": { "label": "Paraphrased both-views opener", "kind": "lexical", "explanation": "Two different reporting verbs (\"argue\" / \"maintain\") and re-cast nouns (\"primary responsibility\", \"better placed\"). Avoids copying the prompt — a Band-7 LR move the original ignores by re-using the prompt's wording." } },
+        { "text": ". Although both settings clearly contribute, " },
+        { "text": "I would argue that parents should lay the foundation for social behaviour, while schools provide the daily practice", "highlight": { "label": "Prompt-focused thesis", "kind": "task_response", "explanation": "DIRECTLY weighs the two given options (parents vs. schools) instead of drifting to a third option. The original's \"it is up to individuals\" is off-prompt and caps TR at Band 6 — this is the single highest-impact fix the feedback flags." } },
+        { "text": " that turns those values into habits." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Parents are often the first people to instil basic values such as honesty, politeness and respect for others", "highlight": { "label": "PEEL — Point", "kind": "coherence", "explanation": "One clear topic sentence stating ONE view (parents). Replaces the original's Body 1 which crams both views into one paragraph — neither view ever gets a full PEEL development." } },
+        { "text": ". Long before a child enters a classroom, mothers and fathers " },
+        { "text": "model how to apologise after a mistake, how to share a favourite toy and how to listen when someone else is speaking", "highlight": { "label": "Concrete tripled examples", "kind": "task_response", "explanation": "Three specific behaviours — apologising, sharing, listening — instead of the original's abstract \"social norms\". The feedback's topic-bank drill explicitly demands these named examples for Band 7 development." } },
+        { "text": ". " },
+        { "text": "A child who watches a parent thank a shop assistant or wait patiently in a queue, for instance", "highlight": { "label": "Defining relative + worked example", "kind": "grammar", "explanation": "\"A child who watches…\" embeds a defining relative clause inside the example itself. Two everyday actions (thanking, queuing) anchor the abstract claim — PEEL Example done concretely." } },
+        { "text": ", learns these courtesies " },
+        { "text": "far more deeply than one who is merely told to be polite", "highlight": { "label": "Comparative + relative", "kind": "grammar", "explanation": "\"far more X than one who…\" combines an adverb-intensified comparative with a defining relative clause. The kind of error-free complex sentence Band 7 GRA needs to be \"frequent\"." } },
+        { "text": ". " },
+        { "text": "Because this learning takes place in the closest emotional setting a child knows", "highlight": { "label": "Causal subordinator + relative", "kind": "coherence", "explanation": "\"Because + S + V\" subordinator with an embedded reduced relative (\"a child knows\"). Replaces \"this view\" / \"that\" with a clearly anchored chain — fixes the unanchored-demonstrative pattern the feedback flags." } },
+        { "text": ", the values it produces tend to be durable." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Schools, however, offer something the home cannot easily replicate", "highlight": { "label": "Mid-sentence \"however\"", "kind": "coherence", "explanation": "Embeds \"however\" between commas instead of fronting it — Band-7 cohesion places connectives flexibly. Also pivots between the two views in one clean sentence." } },
+        { "text": ": " },
+        { "text": "a much wider community in which to practise those values daily", "highlight": { "label": "Preposition + relative (\"in which to\")", "kind": "grammar", "explanation": "\"a community in which to practise…\" is a formal Band-7 structure — preposition fronted before \"which\" + bare infinitive. Far more sophisticated than \"a community where they can practise…\"." } },
+        { "text": ". Through group work, sports teams and minor classroom conflicts, children learn " },
+        { "text": "to compromise, to follow shared rules and to interact with peers from very different backgrounds", "highlight": { "label": "Parallel infinitive triplet", "kind": "coherence", "explanation": "Three parallel \"to + V\" infinitives — same shape, ascending in social complexity (compromise → rules → diverse peers). Parallel structure is a Band-7 cohesion marker." } },
+        { "text": ". Teachers can also intervene at the moment a problem arises, " },
+        { "text": "turning a playground argument into a structured discussion about fairness", "highlight": { "label": "-ing result clause", "kind": "grammar", "explanation": "Present-participle clause expresses the result of intervening — same showcase as Body 1's adverbial structures. Adds Band-7 grammar range without writing a separate sentence." } },
+        { "text": " — a teaching opportunity most parents do not have." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "On balance", "highlight": { "label": "Weighing conclusion frame", "kind": "coherence", "explanation": "\"On balance\" signals a verdict between two sides — exactly what a Discuss-Both-Views question demands. Replaces the original's \"In conclusion, I believe\" which then re-states an off-prompt position." } },
+        { "text": ", parents and schools play " },
+        { "text": "complementary rather than competing roles", "highlight": { "label": "Paired-adjective contrast", "kind": "lexical", "explanation": "\"complementary rather than competing\" is a precise Band-7 collocation that resolves the two views without picking only one. Replaces \"I believe both arguments are valid\" — same idea, much sharper language." } },
+        { "text": ": " },
+        { "text": "the home instils values, while the classroom gives children the repeated opportunities they need to practise them", "highlight": { "label": "Parallel paired clauses", "kind": "task_response", "explanation": "Two clauses in the same shape (\"the home X, while the classroom Y\") synthesise both views in a single sentence. Echoes the thesis without restating it verbatim — closes the Band-6 \"repetitive conclusions\" gap." } },
+        { "text": ". The strongest social development happens " },
+        { "text": "when both settings work in alignment", "highlight": { "label": "Closing collocation", "kind": "lexical", "explanation": "\"in alignment\" is a concise, semi-formal collocation that lands the verdict. Replaces \"it is always up to them to take the advice or not\" — same length, far more precise meaning." } },
+        { "text": "." }
+      ]
+    }
+  ]
+}

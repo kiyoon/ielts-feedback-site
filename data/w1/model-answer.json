@@ -1,0 +1,81 @@
+{
+  "task": "w1",
+  "target_band": 7.0,
+  "prompt": "Choose one historical period (e.g., Ancient Greece, Islamic Golden Age, Scientific Revolution) and write a 500-word essay on how mathematics influenced science, society, or culture during that time.",
+  "intro_note": "Period-controlled rewrite focused on the twentieth-century computer revolution. Compresses ancient history into one background clause, names mechanisms (formal logic, binary, encoding), anchors each body on a named in-period figure (Shannon, Turing, von Neumann, ENIAC), and devotes a full paragraph to the science / society / culture impact the prompt asks for. Hover any highlighted phrase for the band-7 craft note.",
+  "word_count": 491,
+  "paragraphs": [
+    {
+      "spans": [
+        { "text": "Building on numerical traditions reaching back to Babylonian base-60", "highlight": { "label": "Background participle clause", "kind": "grammar", "explanation": "\"Building on…\" front-loads pre-twentieth-century history into ONE subordinate clause so the rest of the essay can stay inside the chosen period. The original spends half of Body 1 outside the computer revolution — this single move fixes period drift." } },
+        { "text": ", the twentieth-century computer revolution " },
+        { "text": "rested on three mathematical foundations", "highlight": { "label": "Thesis names a mechanism", "kind": "task_response", "explanation": "Replaces \"In this essay, I will discuss…\" (a topic announcement) with a real claim. \"Rested on three mathematical foundations\" both states a position AND tells the marker what the bodies will deliver." } },
+        { "text": ": " },
+        { "text": "formal logic, binary representation and the numerical encoding of all information", "highlight": { "label": "Three-mechanism roadmap", "kind": "task_response", "explanation": "Previews EXACTLY three concrete mathematical mechanisms — the Band 5→6 gating fix the feedback flags. Body 1 develops mechanism 2 (binary + logic), Body 2 develops mechanism 3 (encoding); the colon list also matches mechanism 1 (formal logic) implicitly." } },
+        { "text": ". This essay examines how these mathematical foundations " },
+        { "text": "transformed computation from an abstract theory into a technology that reshaped scientific research, communication and everyday economic life", "highlight": { "label": "Scope-of-impact clause", "kind": "task_response", "explanation": "The prompt asks how mathematics influenced \"science, society or culture\". This clause names all three domains up-front so the marker can score Task Response on the right rubric — without it, the essay reads as pure technology history and is capped on TR." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "At the heart of every modern computer is an array of tiny switches", "highlight": { "label": "Subject-fronted inversion", "kind": "grammar", "explanation": "Place adverbial + inverted subject (\"At the heart of X is Y\") — a Band-7 grammar showcase. Replaces the broken \"Computers consist of a full of small switches\" while keeping the same image." } },
+        { "text": " " },
+        { "text": "whose two states map directly onto the 0 and 1 of Boolean algebra", "highlight": { "label": "Non-defining relative + precise term", "kind": "grammar", "explanation": "\"whose\" introduces a non-defining relative — a more sophisticated reference than \"which\". Pairs it with the precise technical term \"Boolean algebra\" instead of vague \"binary digits\"." } },
+        { "text": " — a correspondence " },
+        { "text": "Claude Shannon formalised in his 1937 master's thesis", "highlight": { "label": "Named in-period figure + date", "kind": "task_response", "explanation": "One specific, datable figure inside the chosen period — exactly what the feedback's Tier-1 PEEL guidance asks for. The original's only named figure (Morse, 1844) sits OUTSIDE the computer revolution." } },
+        { "text": ". By translating logical operations into electrical circuits, Shannon showed that any decision a machine needs to make could, in principle, be built from combinations of AND, OR and NOT gates. " },
+        { "text": "Were a single processor to contain billions of such switches", "highlight": { "label": "Inverted Type-2 conditional", "kind": "grammar", "explanation": "\"Were S to V…\" is an inverted second conditional — the highest-leverage Band-7 GRA showcase per character of effort. Replaces the childlike \"If it has billions and trillions of switches, then it can go up to almost countless numbers\"." } },
+        { "text": ", the range of values it could represent would grow " },
+        { "text": "astronomically, far beyond anything practical computation requires", "highlight": { "label": "Bounded intensifier (hedge)", "kind": "lexical", "explanation": "\"Astronomically, far beyond anything practical computation requires\" — replaces the original's overreach (\"any value, however large\") with mathematically defensible hedging. Band 7 LR rewards precision, not exaggeration." } },
+        { "text": ". This insight turned abstract logic into practical engineering, " },
+        { "text": "enabling reliable digital circuits that later powered scientific modelling, business automation and mass communication", "highlight": { "label": "Result clause naming impact", "kind": "task_response", "explanation": "Present-participle result clause (\"enabling…\") names three concrete downstream impacts — science, business, communication. Bridges the mechanism in Body 1 to the broader influence the prompt actually asks about." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "What makes this binary substrate so powerful is", "highlight": { "label": "Pseudo-cleft (Band-7 showcase)", "kind": "grammar", "explanation": "\"What X is Y\" is a pseudo-cleft — emphasises the mechanism and avoids the original's \"The reason it matters is because\" redundancy. Specifically called out in §6 of band7-grammar-showcases." } },
+        { "text": " " },
+        { "text": "the principle of encoding", "highlight": { "label": "Precise technical term", "kind": "lexical", "explanation": "Names the third thesis mechanism explicitly. \"Encoding\" is the standard term in computer science and matches the precision Band 7 LR expects on technical topics." } },
+        { "text": ": " },
+        { "text": "every character, image and instruction", "highlight": { "label": "Concrete lexical chain", "kind": "coherence", "explanation": "Three concrete instances replace the original's listing (\"every letter… every emoji… the graphic\"). Parallel triplets are a Band-7 cohesion pattern — same grammatical shape, ascending generality." } },
+        { "text": " the machine handles ultimately reduces to a sequence of integers. Alan Turing's 1936 paper on computable numbers had already established that a single, general-purpose machine could execute any procedure expressible as a precise algorithm, and " },
+        { "text": "von Neumann's stored-program architecture of 1945", "highlight": { "label": "Second named figure + date", "kind": "task_response", "explanation": "Pairs Turing (1936) with von Neumann (1945) inside the same paragraph — gives Body 2 two anchored, datable references and demonstrates extended knowledge of the period." } },
+        { "text": " turned that idea into a usable design. " },
+        { "text": "The ENIAC, completed in 1946 to compute artillery firing tables", "highlight": { "label": "Concrete worked example", "kind": "task_response", "explanation": "Specific machine + specific date + specific use-case. PEEL Example move — replaces abstract claims with a real, in-period instantiation of the mathematics the bodies have argued for." } },
+        { "text": ", already embodied this principle: nearly eighteen thousand vacuum tubes were arranged, programmed and re-programmed entirely through the same handful of mathematical ideas Turing and von Neumann had set out a decade earlier. From then on, text, photographs, sound and even running programs were no longer distinct objects but " },
+        { "text": "variations of one underlying form", "highlight": { "label": "Synthesising apposition", "kind": "lexical", "explanation": "Restates the encoding claim in abstract terms — \"variations of one underlying form\" is the kind of figurative-but-precise phrasing that Band 7 LR rewards." } },
+        { "text": " — numbers stored in memory and processed by logic." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "The cultural and scientific impact of these foundations was profound", "highlight": { "label": "Impact-paragraph topic sentence", "kind": "task_response", "explanation": "Opens a dedicated paragraph on the science / society / culture dimensions the prompt explicitly asks about. Without this paragraph, the essay is technology history and the marker has nothing to score on the prompt's actual question." } },
+        { "text": ". In the sciences, " },
+        { "text": "encoded computation allowed researchers to simulate phenomena — from weather systems to protein folding — that no purely analytical method could resolve", "highlight": { "label": "Scientific impact, named domains", "kind": "task_response", "explanation": "Two concrete scientific domains (weather, protein folding) anchor the abstract claim about simulation. Replaces the original essay's drift into communication history." } },
+        { "text": ", and statistical analyses that once took months by hand could be completed in seconds. Society felt the same wave: " },
+        { "text": "by the 1980s, banking, payroll and air-traffic control had all been re-implemented on digital substrates", "highlight": { "label": "Past-perfect passive triplet", "kind": "grammar", "explanation": "\"had all been re-implemented\" — past perfect + passive packaged with three concrete societal domains. The kind of error-free complex sentence Band 7 GRA wants to see frequently." } },
+        { "text": ", while by the 2000s, " },
+        { "text": "billions of ordinary conversations were being routed as packets of binary code", "highlight": { "label": "Past continuous passive", "kind": "grammar", "explanation": "\"were being routed\" — past continuous passive carrying a culturally vivid claim. Pairs the band-7 grammar showcase with topic-precise vocabulary (\"packets\", \"routed\") drawn from the technology topic bank." } },
+        { "text": ". Even cultural memory shifted form, as " },
+        { "text": "photographs, music and film, once anchored to physical media, were absorbed into the same numerical stream", "highlight": { "label": "Reduced relative + image-rich claim", "kind": "lexical", "explanation": "\"once anchored to physical media\" — reduced relative clause functioning as a back-reference. The metaphor (\"absorbed into the numerical stream\") shows Band-7 figurative precision, which the original essay never attempts." } },
+        { "text": " — " },
+        { "text": "fundamentally changing how people store, share and reinterpret the past", "highlight": { "label": "Result clause + parallel triplet", "kind": "coherence", "explanation": "Present-participle result clause (\"changing…\") with three parallel verbs (\"store, share, reinterpret\"). Synthesises the cultural-impact case in one Band-7 closing move rather than restating it." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Taken together, these examples show that", "highlight": { "label": "Synthesis-conclusion frame", "kind": "task_response", "explanation": "The MISSING conclusion is the cheapest band uplift in the whole essay — without it, TR is capped at Band 5. \"Taken together…\" is a standard Band-7 conclusion frame that signals synthesis rather than mere restatement." } },
+        { "text": " " },
+        { "text": "mathematics did not merely assist the computer revolution; it supplied the very language", "highlight": { "label": "\"Not merely X; Y\" emphasis", "kind": "grammar", "explanation": "Negative-emphatic correlative (\"not merely…; it [also]…\"). Promotes the central claim from informational to argumentative — exactly what a Band-7 conclusion sounds like." } },
+        { "text": " — binary, logical, encoded — in which computation became possible at all. " },
+        { "text": "Without Shannon's algebra, Turing's machine and the practice of encoding", "highlight": { "label": "Parallel callback to bodies", "kind": "coherence", "explanation": "Names the three pieces of evidence already developed (Shannon = Body 1, Turing = Body 2, encoding = thesis mechanism 3). Parallel triplet structure reinforces the synthesis without re-arguing it." } },
+        { "text": ", the twentieth century's most transformative technology — " },
+        { "text": "and the scientific, economic and cultural change it carried with it", "highlight": { "label": "Three-domain callback", "kind": "task_response", "explanation": "Repeats the science / society / culture triad from the intro and Body 3 in the final clause — closes the loop on the prompt's actual question and ensures TR is scored on the right rubric." } },
+        { "text": " — would have remained an idea on paper." }
+      ]
+    }
+  ]
+}
