@@ -1,0 +1,81 @@
+{
+  "task": "w4",
+  "target_band": 7.0,
+  "prompt": "International travel has many advantages to both travellers and the country visited. Do you think the advantages outweigh the disadvantages?",
+  "intro_note": "One-sided rewrite of the original W4 essay. Both bodies argue for advantages; drawbacks are conceded briefly then rebutted, so the \"outweigh\" position is held end-to-end. Hover any highlighted phrase for a band-7 craft note.",
+  "word_count": 310,
+  "paragraphs": [
+    {
+      "spans": [
+        { "text": "Crossing borders for leisure or work", "highlight": { "label": "Topic paraphrase", "kind": "task_response", "explanation": "Recasts \"international travel\" → \"crossing borders for leisure or work\" without copying the prompt. A fresh paraphrase opener is one of the cheapest Band-7 TR signals — markers see it in the first sentence." } },
+        { "text": " has become far more common than it once was, and it clearly affects both the people who travel and the nations that receive them. " },
+        { "text": "Although international travel is not without its problems", "highlight": { "label": "Concession opener (litotes)", "kind": "grammar", "explanation": "\"not without its problems\" = double negative for understated acknowledgement. Combined with \"Although…\", it concedes briefly so the upcoming thesis sounds weighed rather than naïve." } },
+        { "text": ", " },
+        { "text": "I firmly believe that its benefits outweigh its drawbacks", "highlight": { "label": "Band-7 thesis register", "kind": "lexical", "explanation": "Replaces the original's \"I opine that\" (register-odd) with a natural stance verb + intensifier. Anchors a clear position the conclusion can echo without verbatim restatement." } },
+        { "text": ", because it " },
+        { "text": "broadens travellers' horizons", "highlight": { "label": "Natural collocation", "kind": "lexical", "explanation": "Strong figurative collocation (broaden + horizons). Band 7 LR rewards \"less-common items used accurately\" — this one is idiomatic and unambiguous." } },
+        { "text": " and " },
+        { "text": "brings valuable income to host countries", "highlight": { "label": "Body roadmap", "kind": "task_response", "explanation": "Names the TWO reasons the bodies will develop — a mini-outline that prevents \"listing\" drift. Body 2 should match this phrase, not invent a new direction." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "The most obvious advantage for travellers themselves is", "highlight": { "label": "PEEL — Point", "kind": "coherence", "explanation": "Body topic sentence states ONE main idea (advantage to travellers). Replaces the original's fronted sequencer \"First and foremost\" with content-driven framing." } },
+        { "text": " the chance to experience cultures that cannot be found at home. " },
+        { "text": "By living among local people, even briefly", "highlight": { "label": "Participle-clause opener", "kind": "grammar", "explanation": "\"By + V-ing\" fronts a non-finite clause — exactly the showcase structure §7 in `band7-grammar-showcases.md` wants. The original essay uses only finite \"although/because/while\" subordinators." } },
+        { "text": ", visitors encounter different languages, cuisines and customs first-hand, " },
+        { "text": "which tends to make them more open-minded and adaptable", "highlight": { "label": "Non-defining relative + hedged claim", "kind": "grammar", "explanation": "\"which tends to…\" attaches a non-defining relative clause AND softens the claim with \"tends to\" — markers credit both range and tentative phrasing." } },
+        { "text": ". " },
+        { "text": "A student who spends a summer abroad, for instance", "highlight": { "label": "PEEL — Example", "kind": "task_response", "explanation": "Concrete example (a student, a summer abroad) anchors the abstract claim. The original essay names ideas like \"new experience\" but never illustrates them — the gap that holds it at TR 6." } },
+        { "text": ", often returns " },
+        { "text": "not only with improved language skills but also with a broader perspective", "highlight": { "label": "Correlative \"not only…but also\"", "kind": "coherence", "explanation": "Paired conjunction balances two outcomes in one sentence — flexible cohesion within the sentence, not just between sentences. A Band-7 alternative to \"Also,\" / \"In addition,\"." } },
+        { "text": " on how others live. " },
+        { "text": "Such personal growth", "highlight": { "label": "Content link (referencing)", "kind": "coherence", "explanation": "\"Such + noun phrase\" links back to the prior sentence by summarising its content — exactly the §3 fix in `cohesion-upgrades.md` for the original's vague \"this tactic\"." } },
+        { "text": " is difficult to gain from books or films alone, and it stays with travellers long after the trip ends." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "International tourism is, " },
+        { "text": "in addition", "highlight": { "label": "Mid-sentence connective", "kind": "coherence", "explanation": "Embedded \"in addition\" (not fronted) replaces the original's \"Secondly,\" / \"Furthermore,\" pattern. Band 7 CC = flexible placement, not mechanical sequencers." } },
+        { "text": ", " },
+        { "text": "a powerful source of revenue", "highlight": { "label": "Topic-bank collocation", "kind": "lexical", "explanation": "From the tourism topic bank — \"source of revenue\", later \"tourism receipts\". Replaces the original's repeated \"maximise the revenue\"." } },
+        { "text": " for the destinations involved. Money spent by visitors on accommodation, transport and food flows directly into local businesses, " },
+        { "text": "creating jobs and encouraging governments to invest", "highlight": { "label": "Present-participle result clause", "kind": "grammar", "explanation": "\"-ing\" clause expresses RESULT without starting a new sentence — packs cause-and-effect efficiently and adds GRA range beyond finite subordination." } },
+        { "text": " in roads, airports and public services. In many regions, tourism is in fact " },
+        { "text": "the single largest employer", "highlight": { "label": "Precise collocation", "kind": "lexical", "explanation": "\"single largest employer\" is a standard, journalistic collocation — concrete and verifiable, not vague (\"helps the economy\")." } },
+        { "text": ", supporting families " },
+        { "text": "who would otherwise struggle to find stable work", "highlight": { "label": "Counterfactual with \"would\"", "kind": "grammar", "explanation": "\"would + otherwise\" sets up a hypothetical alternative — a small conditional-like structure that adds range without writing a full \"If…\" sentence." } },
+        { "text": ". " },
+        { "text": "This economic boost", "highlight": { "label": "Content link (summary noun)", "kind": "coherence", "explanation": "\"This + summary noun phrase\" (economic boost) refers cleanly back to the prior paragraph's main idea — replaces the mechanical \"Furthermore,\" of the original." } },
+        { "text": " benefits not just the tourism sector but the wider community." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Admittedly", "highlight": { "label": "Concession marker", "kind": "task_response", "explanation": "Signals \"I will now ADMIT the other side\" — the move that turns the essay from listing into weighing. Without it, an outweigh-question essay reads as 50/50." } },
+        { "text": ", international travel can create difficulties, " },
+        { "text": "such as overtourism in popular cities", "highlight": { "label": "Specific concession", "kind": "task_response", "explanation": "Names the strongest opposing point (overtourism) BEFORE rebutting it. Conceding only weak points looks evasive — concede something real." } },
+        { "text": " or the vulnerability of visitors who do not speak the local language. " },
+        { "text": "These concerns are real, yet they can largely be managed", "highlight": { "label": "Rebuttal pattern", "kind": "task_response", "explanation": "\"Concerns are real, YET…\" — acknowledges before pushing back. This is the structural fix the feedback flagged for Band 6 → 7 TR uplift." } },
+        { "text": " through sensible regulation and better traveller awareness, " },
+        { "text": "whereas the cultural and economic gains are lasting", "highlight": { "label": "Weighing contrast", "kind": "task_response", "explanation": "\"whereas\" sets up an explicit comparison: manageable problems vs. lasting gains. This is what an *outweigh* question demands — a verdict that is ARGUED, not just asserted." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "In conclusion, " },
+        { "text": "while the disadvantages of international travel should not be ignored", "highlight": { "label": "Concessive subordinator", "kind": "grammar", "explanation": "\"while + S + V\" front-loads the concession in the conclusion too — keeps the weighing tone consistent end-to-end. Avoids the Band 6 trap of repeating the intro verbatim." } },
+        { "text": ", " },
+        { "text": "I am convinced that", "highlight": { "label": "Varied stance verb", "kind": "lexical", "explanation": "Uses a different stance phrase from the intro (\"I firmly believe\"). Repeating the exact intro phrase triggers the Band 6 descriptor \"conclusions may be repetitive\"." } },
+        { "text": " the advantages are " },
+        { "text": "considerably greater", "highlight": { "label": "Adverb-intensified comparison", "kind": "lexical", "explanation": "\"considerably + comparative\" is more precise than \"much more\" and avoids the original's flat \"more beneficial\". Small lexical uplift, high frequency in Band-7 model answers." } },
+        { "text": ", since " },
+        { "text": "travellers grow as individuals and host nations prosper economically", "highlight": { "label": "Paired result (parallel structure)", "kind": "coherence", "explanation": "Parallel SVO clauses (travellers grow / nations prosper) restate the TWO body claims in fresh words — answers the prompt's TWO sides without copy-pasting the intro." } },
+        { "text": "." }
+      ]
+    }
+  ]
+}
