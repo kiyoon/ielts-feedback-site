@@ -1,0 +1,62 @@
+{
+  "task": "w5",
+  "target_band": 7.0,
+  "prompt": "Some say that music, art and drama are as important as other school subjects, especially at the primary level. Do you agree or disagree?",
+  "intro_note": "Band-7 rewrite of the original W5 essay keeping the writer's own two reasons and examples (K-pop training, drawing/melodies). It applies the examiner panel's agreed fixes: creative-subjects register, explicit subjects in long sentences, bare plurals for generic nouns, a completed PEEL link, and a synthesising conclusion. Hover any highlight for the craft note and what it fixes.",
+  "word_count": 279,
+  "paragraphs": [
+    {
+      "spans": [
+        { "text": "It is sometimes claimed that " },
+        { "text": "creative subjects such as music, art and drama", "highlight": { "label": "Names the category correctly", "kind": "lexical", "explanation": "The original called them \"minor subjects\" four times — quietly arguing against its own thesis that they are equal. \"Creative subjects\" / \"arts subjects\" is the neutral exam-register label, and the essay rotates these labels instead of repeating one." } },
+        { "text": " deserve the same status as core subjects, particularly at primary school. " },
+        { "text": "I fully agree with this view", "highlight": { "label": "Agreement + register fix", "kind": "grammar", "explanation": "Fixes the original thesis sentence \"This essay totally agree with that statement\": the verb needed -s, and \"totally\" is spoken register. An error in the sentence an examiner reads first is the most expensive kind." } },
+        { "text": ", because " },
+        { "text": "early exposure to the arts", "highlight": { "label": "Natural collocation", "kind": "lexical", "explanation": "Replaces \"in the early stage\" — the natural collocations are \"at an early age\" / \"early exposure to X\". Collocation precision is the panel's #1 focus area for this writer." } },
+        { "text": " helps children discover their hidden talents and " },
+        { "text": "trains the kind of open-ended thinking that single-answer subjects rarely exercise", "highlight": { "label": "Roadmap with content", "kind": "task_response", "explanation": "The introduction previews BOTH body reasons in fresh words (talent discovery + creative thinking). The bodies then deliver exactly these two — the no-drift discipline W4's Body 2 slipped on." } },
+        { "text": "." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Schools should value", "highlight": { "label": "Generic plural — no \"the\"", "kind": "grammar", "explanation": "The original wrote \"the school should treat\". Generic reference takes a bare plural (schools, students, pupils) — this writer's most persistent error class, seen in W3, W4 and W5. Every generic noun in this model uses the bare plural." } },
+        { "text": " arts subjects " },
+        { "text": "just as highly as academic ones", "highlight": { "label": "Equative comparison", "kind": "grammar", "explanation": "The pattern is \"just as X as Y\" (or \"equally X\" with no \"as\"). The original conclusion fused the two into \"equally important as\"." } },
+        { "text": " chiefly because every child has a unique talent, and " },
+        { "text": "the earlier it is spotted, the more room it has to grow", "highlight": { "label": "The more…, the more…", "kind": "grammar", "explanation": "A comparative correlative — short, safe Band-7 range that appears nowhere in W1–W5. One of the panel's stretch goals: structures to attempt, not just errors to avoid." } },
+        { "text": ". Once students reach secondary school, " },
+        { "text": "entrance exams begin to dominate their timetables", "highlight": { "label": "Collocation upgrade", "kind": "lexical", "explanation": "Replaces \"spend more time on preparing university's entrance exam\" (preposition + possessive errors, flat phrasing). \"Exams dominate timetables\" is precise, active and article-safe." } },
+        { "text": ", " },
+        { "text": "so they lose the chance to explore these disciplines and may never fully develop their abilities", "highlight": { "label": "Subject survives the sentence", "kind": "grammar", "explanation": "The original collapsed here: \"…and eventually, cannot develop their talents\" — the subject vanished before \"cannot\" (Korean topic-drop). Every coordinated verb keeps its subject: THEY lose … and MAY never develop. \"These disciplines\" also continues the label rotation." } },
+        { "text": ". For example, " },
+        { "text": "since many K-pop artists begin systematic training in their early teens", "highlight": { "label": "Plural fixed, example kept", "kind": "lexical", "explanation": "Keeps the writer's own K-pop example but fixes \"when they are teenager\" (missing plural) and upgrades \"a lot of\" (spoken register) to \"many\"." } },
+        { "text": ", " },
+        { "text": "a child whose musical talent is noticed in a primary school music class stands a far better chance of being ready in time", "highlight": { "label": "PEEL link completed", "kind": "task_response", "explanation": "The original example proved early training matters but never mentioned school. This clause supplies the missing link — the talent is spotted IN a school music class — using a defining relative clause (\"whose…\") for grammatical range." } },
+        { "text": ". " },
+        { "text": "Primary school is therefore the only stage at which every child, not just a lucky few, gets that opportunity.", "highlight": { "label": "Paragraph link-back", "kind": "coherence", "explanation": "A closing sentence ties the example back to the claim — the L of PEEL, missing from every W1–W4 body paragraph. \"The only stage at which…\" adds a preposition + relative structure." } }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "A further reason for taking the arts seriously", "highlight": { "label": "8-word topic sentence", "kind": "coherence", "explanation": "Replaces the original's 30–40-word frame (\"The second main reason why teaching those minor subjects is important especially for elementary school students is that…\"). Short claim first, support after — and \"the arts\" continues the label rotation." } },
+        { "text": " is that they teach children to think in more inventive ways. " },
+        { "text": "Most academic subjects, such as mathematics or science, lead to a single correct answer, whereas creative subjects do not", "highlight": { "label": "Kept from your original", "kind": "grammar", "explanation": "Your \"whereas\" contrast was already error-free Band-7 grammar — the panel's What's-working note. The model keeps your best sentence almost unchanged (only \"the subjects like music, art and drama\" → bare \"creative subjects\")." } },
+        { "text": ": " },
+        { "text": "a portrait can be drawn in countless styles, and a melody can be composed in millions of ways", "highlight": { "label": "Example developed + passives", "kind": "task_response", "explanation": "Develops the thin \"it is possible to draw a person in various ways, and there are millions of unique mdelodies\" into a balanced pair, adds two passives for range, and fixes the \"melodies\" spelling." } },
+        { "text": ". Pupils therefore learn that some problems have many good solutions, and " },
+        { "text": "this habit of mind", "highlight": { "label": "Summary-noun reference", "kind": "coherence", "explanation": "\"This + summary noun\" refers back to the whole previous idea without repeating it — the reference-and-substitution device Band 7 CC asks for, replacing repeated noun phrases." } },
+        { "text": " later enriches even their academic work." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "In conclusion, " },
+        { "text": "because talent surfaces early and creativity cannot be learned from an answer key", "highlight": { "label": "Synthesis, not restatement", "kind": "task_response", "explanation": "The original conclusion repeated the introduction almost verbatim — the recurring W2/W4 problem. This compresses both body arguments into fresh imagery (\"an answer key\") instead." } },
+        { "text": ", I believe " },
+        { "text": "primary schools should give music, art and drama just as much weight as any core subject", "highlight": { "label": "Bare plural + fixed equative", "kind": "grammar", "explanation": "\"Primary schools\" (generic bare plural, not \"the school\") and \"just as much weight as\" (not \"equally important as\") — the writer's two recurring grammar classes, both correct in the sentence that leaves the final impression." } },
+        { "text": "." }
+      ]
+    }
+  ]
+}

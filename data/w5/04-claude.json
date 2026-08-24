@@ -3,7 +3,7 @@
   "task": "w5",
   "iteration": 4,
   "tool": "claude",
-  "generated_at": "2026-08-23T18:58:02Z",
+  "generated_at": "2026-08-24T02:59:07Z",
   "scores": {
     "task_response": {
       "band": 7.0,
@@ -32,7 +32,7 @@
   "rewrites": [
     {
       "id": 1,
-      "original": "This essay totally agree with that statement because they can encourage students…",
+      "original": "This essay totally agree with that statement because they can encourage students",
       "improved": "I completely agree, because these subjects encourage children to discover their talents early and to think creatively.",
       "reason": "Fixes agreement + informal \"totally\"; clears the ambiguous \"they.\"",
       "citations": [
@@ -55,9 +55,9 @@
     },
     {
       "id": 3,
-      "original": "minor subjects\" (×4)",
+      "original": "minor subjects",
       "improved": "arts subjects\" / \"creative subjects\" / \"these subjects",
-      "reason": "Register: don't call them minor while arguing they're equal; also fixes repetition.",
+      "reason": "Register: don't call them minor while arguing they're equal; also fixes repetition. (×4)",
       "citations": [
         "08/06-paraphrase-quick-lookup.md",
         "10/topic-16-arts-and-culture.md"
@@ -108,7 +108,7 @@
     },
     {
       "id": 8,
-      "original": "In conclusion, I strongly believe that subjects like music, art and drama are equally important…",
+      "original": "In conclusion, I strongly believe that subjects like music, art and drama are equally important",
       "improved": "In conclusion, because talent surfaces early and creativity cannot be taught from an answer key, primary schools should give the arts the same weight as any core subject.",
       "reason": "Synthesis instead of restatement (same note as W4); fold in \"mdelodies\"→\"melodies\" in S10.",
       "citations": [

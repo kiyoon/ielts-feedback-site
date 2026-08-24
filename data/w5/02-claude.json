@@ -3,7 +3,7 @@
   "task": "w5",
   "iteration": 2,
   "tool": "claude",
-  "generated_at": "2026-08-23T18:58:02Z",
+  "generated_at": "2026-08-24T02:59:07Z",
   "scores": {
     "task_response": {
       "band": 7.0,
@@ -54,7 +54,7 @@
     },
     {
       "id": 3,
-      "original": "The primary reason why the school should treat minor subjects as important as other subjects is because…",
+      "original": "The primary reason why the school should treat minor subjects as important as other subjects is because",
       "improved": "One compelling reason for schools to value creative subjects equally is that…",
       "reason": "Fixes \"reason… is because\" (also in W1: \"The reason it matters is because…\"), generic \"the school\" (W3), and the mechanical frame in one stroke",
       "citations": [
