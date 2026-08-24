@@ -1,0 +1,168 @@
+{
+  "id": "w5/04-claude",
+  "task": "w5",
+  "iteration": 4,
+  "tool": "claude",
+  "generated_at": "2026-08-23T18:58:02Z",
+  "scores": {
+    "task_response": {
+      "band": 7.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7",
+      "justification": ""
+    },
+    "coherence": {
+      "band": 7.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7",
+      "justification": ""
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": ""
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": ""
+    }
+  },
+  "overall": 6.5,
+  "overall_rationale": "TR 7 + CC 7 + LR 6 + GRA 6 averages 6.5 exactly (`contexts/01-band-descriptors/scoring-rules.md`). This is the writer's best essay: structure and task response now operate at 7, and the score is held at 6.5 solely by the two sentence-level systems that have recurred since W1 — collocation/register precision and clause-level accuracy (subjects, agreement, articles, plurals). Those are drill-able; fixing them converts this exact essay shape into a 7.0.",
+  "what_changed": "Both examiners now agree on all four criteria. I moved CC 6→7 on the grounds above; codex had already conceded that articles/countability/plural belongs in the top three (its Panel 01 had it lower). The evidence base is corrected: \"minor subjects\" ×4; no corpus-attested Korean-calque claim; K-pop rewrite no longer invents facts. The top-3 priority list is now identical across the panel and unchanged from the anti-churn baseline: collocation/register → complex-clause control → articles/plural marking. Nothing else in the diagnosis moved; this pass tightened evidence rather than re-litigating scores.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "This essay totally agree with that statement because they can encourage students…",
+      "improved": "I completely agree, because these subjects encourage children to discover their talents early and to think creatively.",
+      "reason": "Fixes agreement + informal \"totally\"; clears the ambiguous \"they.\"",
+      "citations": [
+        "08/02-vocabulary-error-correction-bank.md",
+        "08/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 2,
+      "original": "The primary reason why the school should treat minor subjects as important as other subjects is because everyone has their own unique talents",
+      "improved": "One key reason is that schools should value arts subjects equally: every child has unique talents, and these are easiest to uncover early.",
+      "reason": "\"is because\"→\"is that\"; generic \"the school\"→\"schools\"; restores missing *as*; kills the 22-word frame.",
+      "citations": [
+        "05/cohesion-upgrades.md",
+        "08/01",
+        "09/10"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 3,
+      "original": "minor subjects\" (×4)",
+      "improved": "arts subjects\" / \"creative subjects\" / \"these subjects",
+      "reason": "Register: don't call them minor while arguing they're equal; also fixes repetition.",
+      "citations": [
+        "08/06-paraphrase-quick-lookup.md",
+        "10/topic-16-arts-and-culture.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "which will lead them to lose the opportunity to study those minor subjects and eventually, cannot develop their talents",
+      "improved": "…so they lose the chance to study these subjects and, as a result, may never develop their talents.",
+      "reason": "Restores the dropped subject in the coordinated clause.",
+      "citations": [
+        "09/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "a lot of K-POP artists need to be trained when they are teenager, and figuring out their skills as soon as possible can lead to success",
+      "improved": "if a child shows musical promise in primary school, they can begin training in their early teens — the age at which most professional performers, including K-pop artists, start.",
+      "reason": "Plural \"teenagers\" fixed; example now links to *school* discovery — without inventing facts (per codex's audit).",
+      "citations": [
+        "09/10",
+        "05/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 6,
+      "original": "are equally important as other major subjects",
+      "improved": "are just as important as academic subjects",
+      "reason": "The *as…as* comparative frame.",
+      "citations": [
+        "08/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "as they will spend more time on preparing university's entrance exam",
+      "improved": "as they spend more time preparing for university entrance exams",
+      "reason": "Article/plural + gerund pattern.",
+      "citations": [
+        "08/01",
+        "09/10"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "In conclusion, I strongly believe that subjects like music, art and drama are equally important…",
+      "improved": "In conclusion, because talent surfaces early and creativity cannot be taught from an answer key, primary schools should give the arts the same weight as any core subject.",
+      "reason": "Synthesis instead of restatement (same note as W4); fold in \"mdelodies\"→\"melodies\" in S10.",
+      "citations": [
+        "05/task-response-upgrades.md",
+        "08/05-spelling-and-mechanics.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "CONVERGED",
+  "convergence_note": "Both examiners now stand at TR 7 / CC 7 / LR 6 / GRA 6 → 6.5, after I conceded CC 7 on descriptor and calibration grounds and codex conceded the article-priority point. Our top-3 priorities are identical and history-verified: (1) collocation/register, (2) complex-clause control with explicit subjects, (3) articles/countability/plural marking. Remaining differences are phrasing-level only; a further round would churn wording, not diagnosis.",
+  "raw_markdown": "# Panel 04 — claude (discussion)\n\n_Generated 2026-08-23T18:19:55Z. Examiner-panel discussion; corpus manifest: 150 files._\n\n---\n\nEvery file in the 150-file manifest and all writer history has now been read and verified. Here is my Panel 04 discussion message.\n\n---\n\n# Panel message 04 — claude (discussion round)\n\n**Response to codex (msg 03).** I accept all three audit findings against my msg 02: \"minor subjects\" appears **×4** (S1, S3, S4, S6), not ×5/×8 — my counts were wrong. The 주요과목/예체능 calque claim is withdrawn as a corpus-cited fact: neither `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` nor file 11 documents it, so I keep only the internal-logic version of the register point (the essay labels the very subjects it defends \"minor,\" which quietly undermines the thesis — no L1 attribution needed). My K-pop rewrite invented biography (\"talent first spotted in school music classes\"); the replacement below uses a hypothetical child instead.\n\n**On CC, I concede: 7.** Three things moved me. (1) Descriptor fit: Band 7 explicitly tolerates \"a range of cohesive devices including reference and substitution… used flexibly but with some inaccuracies or some over/under use,\" and W5 genuinely has the range — reference (\"those unique specialities,\" \"This will help the pupils\"), substitution (\"whereas the subjects like music, art and drama **do not**\"), mid-sentence subordination (\"even though,\" \"as they will spend,\" \"which will lead them\") — with the paired topic-sentence frames being overuse, not absence. (2) Paragraphing is fully logical (one central topic per paragraph); Band 6's \"paragraphing may not always be logical\" simply doesn't apply, and examiner research weights organisation heavily (`contexts/01-band-descriptors/examiner-perspective.md`). (3) Calibration: the Tier-1 examiner report in `contexts/06-feedback-patterns/model-feedback-examples.md` awards CC 7 despite a \"tendency to overuse\" linkers, and the audit-endorsed Band 7 anchors in `contexts/04-task2-essays/samples-band-7_0.md` / `contexts/11-quality-audit/05-calibration-exemplars.md` carry heavier sequencer scaffolds than W5. Mechanical-but-correct sits at 7; faulty sits at 6. This is a descriptor-based concession, not a split.\n\n**History check (completed against `real-essays/`).** Codex's W2 complex-clause claim is confirmed verbatim: W2 feedback flags \"you attempt 'Although' and 'since' clauses, but errors reduce accuracy.\" One addition: the **\"reason … is because\"** frame is older than either of us said — W1's essay itself contains \"The reason it matters **is because** every letter is actually a number,\" so W5's S3 is a five-essay-old habit being flagged for the first time.\n\nThe complete updated feedback follows.\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band | Descriptor evidence |\n|---|---:|---|\n| Task Response | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 |\n| Coherence and Cohesion | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 |\n| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| **Overall** | **6.5** | `contexts/01-band-descriptors/scoring-rules.md` (7+7+6+6 → 6.5 exactly) |\n\n## What changed from prior feedback\n\nBoth examiners now agree on all four criteria. I moved CC 6→7 on the grounds above; codex had already conceded that articles/countability/plural belongs in the top three (its Panel 01 had it lower). The evidence base is corrected: \"minor subjects\" ×4; no corpus-attested Korean-calque claim; K-pop rewrite no longer invents facts. The top-3 priority list is now identical across the panel and unchanged from the anti-churn baseline: collocation/register → complex-clause control → articles/plural marking. Nothing else in the diagnosis moved; this pass tightened evidence rather than re-litigating scores.\n\n## Progress across essays\n\n**Recurring — still open (priority = uplift × persistence):**\n- **Collocation/register precision (LR):** W1 \"new logics,\" \"a single hardware\" → W2 \"natural energy,\" \"contribute to the issue\" → W3 \"strengthened their common senses\" → W4 \"target nation,\" \"different and exotic values\" → W5 \"minor subjects\" (×4), \"totally agree,\" \"figuring out their skills.\" Flagged in every feedback file W1–W4; the single biggest LR blocker.\n- **Complex-clause control with explicit subjects (GRA):** W1 (\"so that no physical objects such as people or dove needed\"), W2 (\"you attempt 'Although' and 'since' clauses, but errors reduce accuracy\"), W3 (\"Although their logic could not fully explain in some situations\"), W5 (\"…which will lead them to lose the opportunity to study those minor subjects and eventually, cannot develop their talents\" — the second clause has no subject).\n- **Articles/countability/plural (GRA):** W1 (\"a single hardware,\" \"dove needed\" — \"Band 7 blockers\"), W2 (\"every research\"), W3 (\"Generic articles — 'the school,' 'the parents,' and 'the social skills' show a repeated article problem\"), W4 (\"seeking for a help,\" \"due to the overtourism\" — \"small but repeated Band 6 signals\"), W5 (\"the school should treat,\" \"when they are teenager,\" \"preparing university's entrance exam\"). Clearest as a generic-article pattern W3–W5, as codex noted, but the thread runs from W1.\n- **\"The reason … is because\" (GRA/LR):** W1 essay → W5 S3. Newly flagged; never corrected because never named.\n\n**Improved:** Task response is the success story — W3's off-prompt thesis (\"it is up to individuals\") and W4's thin Body 2 have become a W5 position held from introduction to conclusion with two on-prompt, developed reasons; TR has genuinely reached 7. Paragraph logic and within-sentence cohesion (\"whereas… do not,\" \"even though,\" relative clauses) also stepped up — W4's feedback noted \"few relative clauses\"; W5 uses them.\n\n**Fixed:** W1's truncation/missing conclusion; W3's third-answer drift.\n\n**New in W5:** the *as…as* comparative frame breaks twice (\"treat minor subjects **as important as** other subjects\" — missing the first *as*; \"are **equally important as** other major subjects\"); one spelling slip (\"mdelodies\").\n\n## Structural feedback\n\nThe architecture is the best of the five essays: agree/disagree answered with a consistent position, two single-topic body paragraphs, and a conclusion that restates both reasons. Two structural residues keep this a strong 6.5 rather than a 7.0. First, the twin topic sentences are template-heavy clones — \"The primary reason why… is because…\" / \"The second main reason why… is that…\" — 20-plus-word frames before the idea arrives; the corpus's Band 7 frames do the same job in six words (\"One key reason is that…\", `contexts/05-band-6-to-7/cohesion-upgrades.md` §8; `contexts/09-instructor-tips/06-task2-sentence-frames.md`). Second, Body 1's example proves the wrong clause: K-pop trainees prove *early training matters*, not *primary-school music classes matter* — the link back to school subjects is left implicit. The conclusion also restates rather than synthesises (the same note W4's feedback made). The single highest-impact structural fix: rewrite the two topic sentences with the short frames and add one linking sentence to the K-pop example.\n\n## Focus areas\n\n- **Collocation and register (LR, #1)** — replace self-undermining/informal choices: \"minor subjects\" → \"arts subjects\"/\"these subjects,\" \"totally agree\" → \"completely agree\"/\"fully agree.\" Drill: `contexts/05-band-6-to-7/vocabulary-upgrades.md`, `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`.\n- **Complex clauses with explicit subjects (GRA, #2)** — every coordinated or relative clause needs its own stated subject; watch subject–verb agreement in the first sentence of each paragraph. Drill: `contexts/05-band-6-to-7/grammar-upgrades.md`, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §K.\n- **Articles, countability, plural -s (GRA, #3)** — generic plurals for general statements (\"schools,\" \"teenagers,\" \"entrance exams\"). Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md`, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A–B.\n- **Example-to-claim linking (TR)** — one sentence tying each example back to the school-subject claim. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md`, `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md`.\n- **Cohesion flexibility + synthesis conclusion (CC)** — vary the topic-sentence frames; make the conclusion weigh, not repeat. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md` §8, `contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md`.\n\n## What's working\n\nThe position is unmistakable and held throughout — exactly what W3's feedback asked for. Both reasons are relevant, developed, and tied to the primary-level angle (\"develop their potential talents in the early stage,\" \"help them improve their creativity\"). The contrast machinery is genuinely good: \"Most of the major subjects such as mathematics or science have a specific answer, whereas the subjects like music, art and drama do not\" is a Band 7 contrast with substitution, and \"even though it can be difficult to find out which subject will be the one\" is a real concession. \"Pupils\" and \"foster their creativity\" show paraphrase effort. Keep all of this.\n\n## Per-criterion justification\n\n**TR 7.0.** All parts addressed; \"a clear position throughout\" (\"This essay totally agree… I strongly believe\"); both main ideas extended and supported. The Band 7 limiter — \"a tendency to over-generalise and/or supporting ideas may lack focus\" — is exactly what the K-pop example (early *training*, not school *subjects*) and \"there are millions of unique mdelodies and scenarios\" show. Not 8 (support not fully focused), comfortably above 6 (no unclear or underdeveloped position anywhere).\n\n**CC 7.0 (conceded).** Logical organisation, clear progression, fully logical paragraphing with one central topic each. The device range includes reference and substitution used flexibly (\"those,\" \"This,\" \"do not\"), with the paired frames and fronted \"Moreover/For example/For instance\" being the tolerated \"some over/under use.\" Band 6's \"faulty or mechanical\" cohesion and \"paragraphing may not always be logical\" do not describe this essay; the calibration anchors (`contexts/04-task2-essays/samples-band-7_0.md`, `contexts/06-feedback-patterns/model-feedback-examples.md`) award 7 to heavier scaffolding than this. One ambiguous \"they\" in the thesis is a Band 7 \"some inaccuracy,\" not a coherence failure.\n\n**LR 6.0.** Adequate range with attempts at less common items (\"core subjects,\" \"unconventional ways,\" \"foster\"), but precision fails too often for 7: \"minor subjects\" (register — the essay's own label argues against its thesis), \"totally agree\" (informal, `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §4), \"figuring out their skills\" (collocation — you figure out *what your skills are*), \"which subject will be the one\" (vague), \"mdelodies\" (spelling, `contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md`). Band 7 requires \"some awareness of style and collocation\" with only occasional errors; the collocation-error density here matches Band 6 across W1–W5.\n\n**GRA 6.0.** Good mix of complex forms — relative, concessive, comparative — but \"frequent error-free sentences\" is not met: \"This essay totally agree\" (agreement), \"treat minor subjects as important as\" (broken *as…as*), \"when they are teenager\" (plural, §B1), \"on preparing university's entrance exam\" (article/gerund phrasing), \"and eventually, cannot develop their talents\" (omitted subject, §K), \"the subjects like music\" (article). Errors rarely impede communication — classic Band 6, fifth essay running.\n\n## Top concrete rewrites (ranked by band uplift)\n\n| # | Original (verbatim) | Band 7 rewrite | Why | Corpus |\n|---|---|---|---|---|\n| 1 | \"This essay totally agree with that statement because they can encourage students…\" | \"I completely agree, because these subjects encourage children to discover their talents early and to think creatively.\" | Fixes agreement + informal \"totally\"; clears the ambiguous \"they.\" | `08/02-vocabulary-error-correction-bank.md` §4; `08/01-grammar-error-correction-bank.md` |\n| 2 | \"The primary reason why the school should treat minor subjects as important as other subjects is because everyone has their own unique talents\" | \"One key reason is that schools should value arts subjects equally: every child has unique talents, and these are easiest to uncover early.\" | \"is because\"→\"is that\"; generic \"the school\"→\"schools\"; restores missing *as*; kills the 22-word frame. | `05/cohesion-upgrades.md` §8; `08/01` §11, §14; `09/10` §A |\n| 3 | \"minor subjects\" (×4) | \"arts subjects\" / \"creative subjects\" / \"these subjects\" | Register: don't call them minor while arguing they're equal; also fixes repetition. | `08/06-paraphrase-quick-lookup.md`; `10/topic-16-arts-and-culture.md` |\n| 4 | \"which will lead them to lose the opportunity to study those minor subjects and eventually, cannot develop their talents\" | \"…so they lose the chance to study these subjects and, as a result, may never develop their talents.\" | Restores the dropped subject in the coordinated clause. | `09/10-common-korean-chinese-speaker-errors.md` §K |\n| 5 | \"a lot of K-POP artists need to be trained when they are teenager, and figuring out their skills as soon as possible can lead to success\" | \"if a child shows musical promise in primary school, they can begin training in their early teens — the age at which most professional performers, including K-pop artists, start.\" | Plural \"teenagers\" fixed; example now links to *school* discovery — without inventing facts (per codex's audit). | `09/10` §B1; `05/task-response-upgrades.md` |\n| 6 | \"are equally important as other major subjects\" | \"are just as important as academic subjects\" | The *as…as* comparative frame. | `08/01-grammar-error-correction-bank.md` §14 |\n| 7 | \"as they will spend more time on preparing university's entrance exam\" | \"as they spend more time preparing for university entrance exams\" | Article/plural + gerund pattern. | `08/01`; `09/10` §A |\n| 8 | \"In conclusion, I strongly believe that subjects like music, art and drama are equally important…\" | \"In conclusion, because talent surfaces early and creativity cannot be taught from an answer key, primary schools should give the arts the same weight as any core subject.\" | Synthesis instead of restatement (same note as W4); fold in \"mdelodies\"→\"melodies\" in S10. | `05/task-response-upgrades.md`; `08/05-spelling-and-mechanics.md` |\n\n## Overall band rationale\n\nTR 7 + CC 7 + LR 6 + GRA 6 averages 6.5 exactly (`contexts/01-band-descriptors/scoring-rules.md`). This is the writer's best essay: structure and task response now operate at 7, and the score is held at 6.5 solely by the two sentence-level systems that have recurred since W1 — collocation/register precision and clause-level accuracy (subjects, agreement, articles, plurals). Those are drill-able; fixing them converts this exact essay shape into a 7.0.\n\n## CONVERGENCE: CONVERGED\n\nBoth examiners now stand at TR 7 / CC 7 / LR 6 / GRA 6 → 6.5, after I conceded CC 7 on descriptor and calibration grounds and codex conceded the article-priority point. Our top-3 priorities are identical and history-verified: (1) collocation/register, (2) complex-clause control with explicit subjects, (3) articles/countability/plural marking. Remaining differences are phrasing-level only; a further round would churn wording, not diagnosis.\n",
+  "structural_feedback": "The architecture is the best of the five essays: agree/disagree answered with a consistent position, two single-topic body paragraphs, and a conclusion that restates both reasons. Two structural residues keep this a strong 6.5 rather than a 7.0. First, the twin topic sentences are template-heavy clones — \"The primary reason why… is because…\" / \"The second main reason why… is that…\" — 20-plus-word frames before the idea arrives; the corpus's Band 7 frames do the same job in six words (\"One key reason is that…\", `contexts/05-band-6-to-7/cohesion-upgrades.md` §8; `contexts/09-instructor-tips/06-task2-sentence-frames.md`). Second, Body 1's example proves the wrong clause: K-pop trainees prove *early training matters*, not *primary-school music classes matter* — the link back to school subjects is left implicit. The conclusion also restates rather than synthesises (the same note W4's feedback made). The single highest-impact structural fix: rewrite the two topic sentences with the short frames and add one linking sentence to the K-pop example.",
+  "focus_areas": [
+    {
+      "area": "Collocation and register (LR, #1)",
+      "rationale": "replace self-undermining/informal choices: \"minor subjects\" → \"arts subjects\"/\"these subjects,\" \"totally agree\" → \"completely agree\"/\"fully agree.\"",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md",
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Complex clauses with explicit subjects (GRA, #2)",
+      "rationale": "every coordinated or relative clause needs its own stated subject; watch subject–verb agreement in the first sentence of each paragraph",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Articles, countability, plural -s (GRA, #3)",
+      "rationale": "generic plurals for general statements (\"schools,\" \"teenagers,\" \"entrance exams\")",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "Example-to-claim linking (TR)",
+      "rationale": "one sentence tying each example back to the school-subject claim",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md"
+      ]
+    },
+    {
+      "area": "Cohesion flexibility + synthesis conclusion (CC)",
+      "rationale": "vary the topic-sentence frames; make the conclusion weigh, not repeat",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md"
+      ]
+    }
+  ],
+  "whats_working": "The position is unmistakable and held throughout — exactly what W3's feedback asked for. Both reasons are relevant, developed, and tied to the primary-level angle (\"develop their potential talents in the early stage,\" \"help them improve their creativity\"). The contrast machinery is genuinely good: \"Most of the major subjects such as mathematics or science have a specific answer, whereas the subjects like music, art and drama do not\" is a Band 7 contrast with substitution, and \"even though it can be difficult to find out which subject will be the one\" is a real concession. \"Pupils\" and \"foster their creativity\" show paraphrase effort. Keep all of this."
+}
