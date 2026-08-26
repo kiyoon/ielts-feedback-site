@@ -1,0 +1,97 @@
+# Panel 09 — codex (discussion)
+
+_Generated 2026-08-26T03:04:15Z. Examiner-panel discussion; corpus manifest: 153 files._
+
+---
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---:|---|
+| Task Response / Achievement | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 |
+| Coherence and Cohesion | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 |
+| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| **Overall** | **6.5** | (7 + 7 + 6 + 6) ÷ 4 = 6.5, per `contexts/01-band-descriptors/scoring-rules.md` |
+
+## What changed from prior feedback
+
+Claude is right that Coherence and Cohesion reaches Band 7, so CC, LR, GRA, the overall score and the three leading priorities are now agreed. The cited Tier-1 analogue received TR 6 because it devoted substantially more attention to one view and effectively omitted a separate paragraph for the other (`contexts/06-feedback-patterns/model-feedback-examples.md`; [IELTS Advantage report](https://www.ieltsadvantage.com/2015/09/09/band-6-student-answer-with-examiners-report/)). W6 instead gives each view its own four-sentence paragraph, so source reliability does not make the two coverage patterns equivalent (`contexts/11-quality-audit/07-summary-of-source-reliability.md`). I therefore retain low TR 7: the weaknesses are an implicit funding link and over-generalised technology claim, both permitted by Band 7’s precision qualifier. I also correct the record: “those issues” stays within Body 1, W1–W4 show a generic claim-to-proof problem rather than a funding-specific one, and W5 removed First/Second linkers but retained formulaic “primary/second reason” frames.
+
+## Progress across essays
+
+| Pattern | History | Status | Evidence in this essay |
+|---|---|---|---|
+| Collocation and register precision | flagged W1–W5 | **recurring** | “by consuming tax”; “help people rewind” |
+| Complex-clause subject/verb control | flagged W1–W3 and W5 | **recurring** | “people who believes”; “provide them…can be regarded” |
+| Articles, countability and noun number | flagged W1–W5 | **recurring** | “a huge financial support”; “a efficient way”; “people’s mind” |
+| Support that proves the exact proposition | present W1–W4; improved W5 | **recurring** | art’s benefits do not fully explain why public funding is needed |
+| Reference, substitution and lexical-chain precision | flagged W1, W2, W4 and W5 | **recurring** | “those issues” is locally recoverable, but “them” has a distant antecedent |
+| Conclusion synthesis and qualification | flagged W2–W5 | **recurring** | the “while” synthesis is followed by an unqualified waste verdict |
+| Prompt-focused position | weak W3; improved W4; fixed W5 | **fixed** | “the money could be spent elsewhere” remains the position throughout |
+| Explicit First/Second linker chain | used W2 and W4; improved W5 | **fixed** | W6 contains no ordinal sequencing frame |
+
+## Structural feedback
+
+The essay addresses both views in separate, substantial paragraphs and keeps the same opinion from introduction to conclusion. Body 1 develops a clear chain—artistic work, emotional benefit, then examples—but leaves the public-funding mechanism implicit. Body 2 begins circularly by calling support wasteful “because it is a waste of money,” but the following finite-budget and chatbot sentences supply genuine reasons. Your conclusion does weigh both sides through “while artists…help people,” although the final absolute verdict is stronger than the evidence. The single highest-impact structural fix is to add one sentence explaining why grants enable public access to art, then compare the cost or reach of art funding and digital tools directly. This can be done within the existing 287 words by replacing repetition rather than adding another paragraph.
+
+## Focus areas
+
+- **Collocation and register precision** — Literal combinations continue to block LR 7 despite ambitious vocabulary. Seen in: W1–W6. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`, `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md`.
+- **Complex-clause subject/verb control** — Agreement and clause-subject errors recur when you build longer arguments. Seen in: W1–W3, W5–W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §C, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2.
+- **Articles, countability and noun number** — Korean does not mark these distinctions like English, so they repeatedly fail under time pressure. Seen in: W1–W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A–B, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1.
+- **Support that proves the exact proposition** — A relevant benefit must be connected explicitly to the policy claim being debated. Seen in: W1–W4, W6. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §5, `contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2.
+- **Precise reference and lexical chains** — Replace general labels such as “issues” with the exact problem, while maintaining useful substitutions. Seen in: W1, W2, W4–W6. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md` §3, `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §§3, 5.
+- **Qualified synthesis conclusions** — Weigh both arguments and avoid making a broader verdict than your evidence proves. Seen in: W2–W6. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §9.
+
+## What's working
+
+The position fixed in W5 remains secure: “I believe that the money could be spent elsewhere” is consistently supported. The explicit First/Second chain from W2 and W4 is now absent; unlike W5, W6 also avoids “primary reason/second reason” topic frames. “Some…others,” “artworks…creative works” and “a number of chatbots are” demonstrate useful substitution, lexical chaining and correct plural agreement.
+
+## Per-criterion justification
+
+### Task Response / Achievement — 7.0
+
+Both views receive separate development: the first paragraph explains art’s mental-health value and illustrates it with paintings and music, while the second uses finite budgets and chatbots to support redirecting funds. Your position is explicit and maintained throughout. The conclusion is traceable to both bodies: “while artists…help people” acknowledges the benefit before preferring technology. The missing explanation of why government funding is necessary and the claim that artists “can be replaced” are over-generalised, but Band 7 explicitly permits some lack of precision. The cited TR-6 analogue is not equivalent because its report identifies materially unequal coverage and the effective omission of one view; that does not occur here (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7).
+
+### Coherence and Cohesion — 7.0
+
+The four-paragraph progression is logical, and each body has a clear central topic. “Some…others,” “However,” “Since” and “Despite” express contrast, example, cause and concession rather than merely numbering ideas. “Those issues” refers back to mental-health issues within Body 1, and “the issues” follows stress within Body 2, so neither crosses a paragraph boundary. “The same problems” carries a general reference into the conclusion and final “them” is distant, but these limited inaccuracies fit Band 7’s allowance for occasional overuse or error (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7).
+
+### Lexical Resource — 6.0
+
+Useful less-common language includes “alleviate,” “annual spending” and “the advent of large language models.” However, inaccurate combinations remain frequent: “consuming tax,” “spend the tax,” “finance them” and “help people rewind.” “From the perspective of sociology” also promises a disciplinary analysis that never follows. Meaning remains clear, but collocational control is not yet consistent enough for Band 7 (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6).
+
+### Grammatical Range & Accuracy — 6.0
+
+You attempt relative, concessive, causal and passive structures, so grammatical range is adequate. Accuracy is less stable in complex sentences: “people who believes,” “a efficient way,” “their works are not the only one” and “the society” all require correction. The final sentence also needs a gerund clause as its subject: “Providing artists…” rather than “provide them…”. Roughly five of twelve sentences are grammatically clean, so error-free sentences are not yet frequent enough for Band 7 (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6).
+
+## Top concrete rewrites
+
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---:|---|---|---|---|
+| 1 | “providing a huge financial support to artists by consuming tax” | “using tax revenue to subsidise the arts” | Recurring W1–W6 collocation/countability problem; use an established funding combination. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` |
+| 2 | “there are people who believes that governments should spend the tax elsewhere because it is a waste of money to support artists” | “Critics argue that governments should redirect tax revenue to digital innovation because public budgets are finite.” | Repairs recurring agreement and replaces the claim-as-reason loop with evidence. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2; `contexts/05-band-6-to-7/task-response-upgrades.md` §5 |
+| 3 | “spending the large amount of money by giving financial support to artists is not a efficient way of spending taxes because their works are not the only one that can help people relieve stress” | “Allocating large sums to artists may be an inefficient use of public funds because art is only one way to relieve stress.” | Repairs recurring articles, number agreement and repeated *spending*. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A–B |
+| 4 | “From the perspective of sociology, it is true that artists can contribute to society by creating their unique artworks” | “Supporters argue that public grants enable artists to provide affordable exhibitions and music programmes that benefit the wider community.” | Connects public funding—not merely art—to the claimed social benefit. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md`; `contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2 |
+| 5 | “Therefore, provide them with a lot of money can be regarded as a waste of money.” | “Providing artists with large general subsidies is therefore difficult to justify when digital tools may offer more direct support.” | Repairs the gerund subject and gives the conclusion a qualified comparison. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §C1; `contexts/05-band-6-to-7/task-response-upgrades.md` §9 |
+| 6 | “well-made paintings or characters can soothe people’s mind, and some music can help people rewind” | “Visual art can soothe viewers, while music can help listeners unwind.” | Recurring noun-number error; *unwind*, not *rewind*, means relax. | `contexts/09-instructor-tips/09-topic-vocabulary-clusters.md` §4; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B1 |
+| 7 | “a number of chatbots are able to address the issues more practically and straightforwardly” | “Chatbots may offer immediate, low-cost support to people experiencing stress or loneliness.” | Names the problem and states the cost/reach comparison your argument needs to establish. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §3; `contexts/05-band-6-to-7/task-response-upgrades.md` §5 |
+| 8 | “Despite the fact that artists can also contribute to the society, I believe they can be replaced by modern technologies.” | “Although artists contribute to society, digital tools may address some mental-health needs more directly and may therefore deserve greater public investment.” | Removes the article error and narrows the unsupported replacement claim while preserving your preference for technology. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A2; `contexts/05-band-6-to-7/task-response-upgrades.md` §5 |
+
+## Before your next essay
+
+- Spend 12 minutes making correction cards for *consume tax → use tax revenue*, *spend the tax → allocate public funds*, *finance artists → fund artists* and *a financial support → financial support*. Produce one new sentence with each (`contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md`).
+- Spend 12 minutes correcting five subject/verb errors from W1, W3, W5 and W6. Underline each subject and circle its finite verb; include one gerund-subject sentence (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §C).
+- Spend 12 minutes sorting *support, revenue, artwork, artist, mind, society, amount* and *technology* by countability, then use each with the correct article and number (`contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1).
+- Spend 20 minutes rewriting Body 1 and the conclusion: add a funding → access → benefit chain, then make a cost/reach comparison with digital tools. As a stretch goal, open one sentence with controlled *By + -ing* (`contexts/09-instructor-tips/07-band7-grammar-showcases.md`).
+- Reserve four exam minutes for three passes: articles/numbers, subjects/verbs, then collocations. Retire collocation from the top position only when one timed essay contains three accurate topic collocations and none of the old literal translations (`contexts/05-band-6-to-7/top-30-fixes-band-6-to-7.md`).
+
+## Overall band rationale
+
+The four criterion scores total 26; 26 ÷ 4 gives an overall Band 6.5. Raising either LR or GRA to 7 would produce 6.75, rounded to the target Band 7.0 (`contexts/01-band-descriptors/scoring-rules.md`).
+
+## CONVERGENCE: REFINING
+
+The panel now agrees on CC 7, LR 6, GRA 6, the overall Band 6.5 and the shared top-three priorities. Substantive disagreement remains on TR: the Tier-1 analogue supports Band 6 for materially unequal view coverage, whereas W6 develops both views separately, so I retain low Band 7 rather than claiming convergence.
+

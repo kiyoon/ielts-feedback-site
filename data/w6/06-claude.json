@@ -1,0 +1,183 @@
+{
+  "id": "w6/06-claude",
+  "task": "w6",
+  "iteration": 6,
+  "tool": "claude",
+  "generated_at": "2026-08-26T02:37:05Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/band-6-vs-7-comparison.md` line 52 (conclusions unjustified/repetitive)",
+      "justification": "Both views and your opinion are clear, which puts you above Band 5. But Band 7 requires main ideas that are extended and supported, and a conclusion with no negative qualifier attached to it. Yours is repetitive — \"modern technologies can solve the same problems more efficiently\" is Body 2 restated — and unjustified, because the claim that artists \"can be replaced by modern technologies\" rests on the single sentence about chatbots. Band 6's wording, \"conclusions drawn may be unclear, unjustified or repetitive,\" matches exactly (`contexts/01-band-descriptors/band-6-vs-7-comparison.md` line 52)."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (reference/substitution lacks flexibility)",
+      "justification": "The paragraph plan is clear and the linkers are varied — both real strengths. What holds this at 6 is the one thing Band 7 names explicitly: reference **and** substitution used flexibly. \"Therefore, provide **them** with a lot of money\" points to the wrong noun; \"those issues\" and \"the issues\" reach across paragraph boundaries; and \"a waste of money\" appears three times with no attempt to rename it. Band 6 describes reference and substitution that \"may lack flexibility or clarity and result in some repetition or error\" — you have both the repetition and the error."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/05-band-6-to-7/vocabulary-upgrades.md` §1",
+      "justification": "\"Alleviate,\" \"annual spending\" and \"the advent of large language models\" show real reach. But \"a huge financial support,\" \"consuming tax,\" \"spend the tax,\" \"help people rewind\" and \"produce and release their creative works\" are frequent enough imprecisions to block the \"awareness of style and collocation\" Band 7 requires. Meaning always survives, so Band 5 is too low."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "You attempt concessions, relative clauses and passives, and most of them land. But basic errors are spread evenly across the essay — \"people who believes,\" \"a efficient way,\" \"the society,\" \"their works are not the only one,\" and the bare verb in \"Therefore, provide them\" — so error-free sentences are not yet *frequent* in the Band 7 sense."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "TR 6 + CC 6 + LR 6 + GRA 6 averages 6.00, so the reported band is **6.0**. The two arguable upgrades both fail on a named descriptor: TR 7 requires a conclusion with no repetitiveness or want of justification, and CC 7 requires reference *and* substitution used flexibly. Fix the final sentence's pronoun, stop repeating \"a waste of money,\" and give each body a genuine mechanism, and 6.5 becomes the honest reading of the same essay.",
+  "what_changed": "One correction first: you were told your 287 words left room for 30–40 more. That was wrong. `contexts/01-band-descriptors/scoring-rules.md` §4 targets 260–290 and `contexts/05-band-6-to-7/paragraph-structure-band7.md` §1 targets 270–290 — 287 is comfortably inside. Don't pad. Two other points have also been withdrawn: your linking words are **not** overused (about eleven distinct devices, roughly one per sentence — that clears the audit thresholds), and your \"However, I believe…\" turn inside Body 1 is legitimate, not a structural fault. What's new is a specific reference error in your final sentence, and a circular topic sentence in Body 2 that earlier feedback missed.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "Therefore, provide them with a lot of money can be regarded as a waste of money.",
+      "improved": "Therefore, while public art has real value, the same funds do more measurable good in healthcare and education.",
+      "reason": "Fixes the wrong-antecedent reference, the missing gerund subject, the third \"a waste of money,\" and the non-synthesising conclusion in one move.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md",
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "there are people who believes that governments should spend the tax elsewhere because it is a waste of money to support artists",
+      "improved": "Critics argue that public funds should be redirected to more pressing priorities, because the arts reach a far narrower audience than schools or hospitals do.",
+      "reason": "Replaces a reason that just restates the claim with a real one; fixes agreement and the finance collocation.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-06-government-and-politics.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "artists can contribute to society by creating their unique artworks",
+      "improved": "Public funding sustains art forms that commercial markets cannot support alone — orchestras, regional theatres, heritage crafts.",
+      "reason": "Supplies the missing why-the-state mechanism; this is the six-essay development ceiling.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "However, I believe there are numerous other ways that are able to tackle those issues.",
+      "improved": "However, counselling services and public sports programmes address the same mental-health needs far more directly.",
+      "reason": "Replaces a vague cross-paragraph reference and an unsupported claim with a named alternative.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 5,
+      "original": "providing a huge financial support to artists by consuming tax",
+      "improved": "using taxpayers' money to subsidise the arts",
+      "reason": "Fixes the countability and collocation pattern visible in all six essays.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 6,
+      "original": "is not a efficient way of spending taxes because their works are not the only one",
+      "improved": "is not an efficient use of public funds, because art is not the only way to relieve stress",
+      "reason": "Repairs the article, the number mismatch and the overloaded clause together.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "Despite the fact that artists can also contribute to the society",
+      "improved": "Beneficial as public art may be, …",
+      "reason": "Removes the generic-noun *the* and upgrades an existing strength into a Band-7 structure.",
+      "citations": [
+        "contexts/09-instructor-tips/07-band7-grammar-showcases.md",
+        "contexts/09-instructor-tips/11-korean-instructor-tips-collected.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "well-made paintings or characters can soothe people's mind, and some music can help people rewind",
+      "improved": "well-crafted paintings can soothe people's minds, and music can help them unwind",
+      "reason": "Fixes the plural and the word choice (*rewind* ≠ relax).",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 9,
+      "original": "a waste of money",
+      "improved": "a waste of money → an inefficient use of public funds → poor value for taxpayers",
+      "reason": "At Band 7 a key phrase should not repeat; rotating it is also your missing substitution. (three times)",
+      "citations": [
+        "contexts/09-instructor-tips/13-vietnamese-instructor-tips-collected.md",
+        "contexts/09-instructor-tips/12-chinese-instructor-tips-collected.md"
+      ],
+      "category": "lexical"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "---\n\n**Summary of the panel state:** LR 6, GRA 6, and the top three priorities are agreed. TR and CC remain contested — codex holds 7/7 (overall 6.5), I hold 6/6 (overall 6.0), each on a named descriptor. Declaring CONVERGED now would freeze a disagreement rather than resolve it.",
+  "raw_markdown": "# Panel 06 — claude (discussion)\n\n_Generated 2026-08-26T02:37:05Z. Examiner-panel discussion; corpus manifest: 153 files._\n\n---\n\nAll 153 manifest files are now read — the complete Writing corpus, the full W1–W6 history with feedback, the prior panel chain, and the entire Speaking corpus including every `from-claude` / `from-codex` variant.\n\n---\n\n# Panel 06 — claude (discussion round)\n\n**codex —** three concessions, then two holds and one thing neither of us has flagged.\n\n**Conceded: word count.** I was wrong. `contexts/01-band-descriptors/scoring-rules.md` §4 sets the Task 2 target at 260–290; `contexts/05-band-6-to-7/paragraph-structure-band7.md` §1 says 270–290. At 287 the essay is inside both. My \"room for 30–40 more words\" was a miscalibration and I've removed it and the 300–320 advice from the student text.\n\n**Conceded: linker front-loading.** My \"ten of twelve sentences open with framing\" argument doesn't survive the corpus's own metric. `contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md` §16 sets the audit at >1 linker per sentence (caps CC at 6.5) and <6 distinct linkers (variety flag). W6 runs ~11 distinct devices at roughly one per sentence — it passes both tests. And `contexts/06-feedback-patterns/model-feedback-examples.md` Example 1 (IELTS Advantage, Tier 1) awards **CC 7** to a discuss-both-views essay while explicitly telling the candidate \"you do have a tendency to overuse them.\" Device density is off my ledger entirely. Your lexical-chain observation is also right and I've credited it: *artworks → creative works → paintings/music*, and *modern technologies → large language models → chatbots*.\n\n**Conceded (again): Body 1's \"However\" pivot.** `paragraph-structure-band7.md` §4.2 puts personal assessment in the **L** slot of a discussion-essay PEEL. Withdrawn.\n\n**Holding TR 6.** `contexts/01-band-descriptors/band-6-vs-7-comparison.md` line 52 is the whole argument: Band 6 names \"conclusions drawn may be **unclear, unjustified or repetitive**\"; Band 7 carries **no negative qualifier on conclusions at all**. W6's conclusion is both — it restates Body 2's comparison and its verdict rests on one sentence about chatbots. `contexts/04-task2-essays/samples-band-7_0.md` Sample 8 is the direct parallel: TR **6** because \"the stance… is dismissive\" and \"the example of Japan is a fact-substitute rather than evidence.\" \"I believe they can be replaced by modern technologies,\" supported by one chatbot sentence, is the same move. Your 6.5 anchors (`contexts/11-quality-audit/05-calibration-exemplars.md` Samples 2 and 4, TR 7/CC 7/LR 6/GRA 6) are real — but their TR 7 rests on conclusions that actually weigh the two sides. Note the 6.0 anchor in the same file, Sample 1 \"Wages of Entertainers\": TR 7 / **CC 6** / LR 6 / GRA 6 — nearest topic in the set, and even it takes CC 6.\n\n**Holding CC 6, now on reference and substitution alone.** Band 7 (line 76) requires devices \"**including reference and substitution**… used flexibly\"; Band 6 (line 97) says reference and substitution \"may lack flexibility or clarity and result in some repetition **or** error.\" W6 has both. (a) A genuine error: \"Therefore, **provide them** with a lot of money\" — the nearest plural antecedents are *modern technologies* and *the same problems*; the intended referent is a paragraph away. That is `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §7 row 14, severity H. (b) \"those issues\" / \"the issues\" leap across paragraphs. (c) Zero substitution moves anywhere, with \"a waste of money\" ×3.\n\nA clear four-paragraph plan doesn't decide this — Band 6 also grants \"a clear overall progression.\"\n\n**Falsifiable test:** name one instance of substitution in W6. If you can, I move. And I'll take CC 7 the moment the final *them* resolves to its nearest antecedent and \"a waste of money\" stops appearing three times.\n\n**New — unflagged in all five prior messages.** Body 2's topic sentence is circular: \"governments should spend the tax elsewhere **because it is a waste of money to support artists**.\" The reason *is* the claim. That's `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §4 at topic-sentence level, and it's the cheapest TR repair in the essay.\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---:|---|\n| Task Response | 6.0 | `contexts/01-band-descriptors/band-6-vs-7-comparison.md` line 52 (conclusions unjustified/repetitive) |\n| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (reference/substitution lacks flexibility) |\n| Lexical Resource | 6.0 | `contexts/05-band-6-to-7/vocabulary-upgrades.md` §1 |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| **Overall** | **6.0** | (6+6+6+6)/4 = 6.00 per `contexts/01-band-descriptors/scoring-rules.md` §1 |\n\n## What changed from prior feedback\n\nOne correction first: you were told your 287 words left room for 30–40 more. That was wrong. `contexts/01-band-descriptors/scoring-rules.md` §4 targets 260–290 and `contexts/05-band-6-to-7/paragraph-structure-band7.md` §1 targets 270–290 — 287 is comfortably inside. Don't pad. Two other points have also been withdrawn: your linking words are **not** overused (about eleven distinct devices, roughly one per sentence — that clears the audit thresholds), and your \"However, I believe…\" turn inside Body 1 is legitimate, not a structural fault. What's new is a specific reference error in your final sentence, and a circular topic sentence in Body 2 that earlier feedback missed.\n\n## Progress across essays\n\n| Pattern | History | Status | Evidence in this essay |\n|---|---|---|---|\n| Conclusion restates instead of justifying | W2–W5 | **recurring** | \"modern technologies can solve the same problems more efficiently\" repeats Body 2; \"a waste of money\" lands a third time |\n| Vague pronoun and noun reference | W1–W5 (vague) | **recurring, now an error** | \"provide **them**\" — the nearest plural nouns are *modern technologies* and *the same problems*, not artists |\n| Articles, countability, number | Visible in W1–W5 | **recurring** | \"a huge financial support,\" \"a efficient way,\" \"the society,\" \"people's mind,\" \"their works are not the only one\" |\n| Collocation calques | W1 \"new logics\"; W2 \"natural energy\"; W3 \"common senses\"; W4 \"exotic values\"; W5 \"minor subjects\" | **recurring** | \"consuming tax,\" \"help people rewind\" |\n| Agreement in relative clauses | W1–W3, W5 | **recurring** | \"people who believes\" |\n| Circular topic sentence (claim used as its own reason) | not seen W1–W5 | **new** | \"should spend the tax elsewhere **because it is a waste of money to support artists**\" |\n| Direct, prompt-relevant opinion held throughout | W3 off-centre; fixed in W5 | **fixed** | Your stance is identical in the introduction and the conclusion |\n| Mechanical numbered sequencing | Mechanical in W2/W4; removed W5 | **fixed** | No `Firstly/Secondly` chain; a genuinely varied device set |\n\n## Structural feedback\n\nThe four-part shape works and your opinion is visible from the first paragraph to the last. The real gap is that neither body paragraph finishes its own argument. Body 1 shows that art can soothe people but never explains why **taxpayers**, rather than audiences or private patrons, should pay for that. Body 2 opens with a topic sentence whose reason simply repeats its claim, then narrows the whole comparison to stress relief and rests the substitution claim on one sentence about chatbots. Because both bodies stop early, the conclusion has nothing new to synthesise, so it restates the technology comparison instead of weighing the two public benefits against each other. The single highest-value change is to give each body a real second half — mechanism, then a specific example, then an explicit link back to public funding — before touching any individual word.\n\n## Focus areas\n\n- **Conclusions that justify rather than repeat** — Band 7 has no allowance for a repetitive or unjustified conclusion; Band 6 names it explicitly, and this is the descriptor holding your Task Response down. Seen in: W2, W3, W4, W5, W6. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §9, `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §5.\n- **Reference and substitution** — Band 7 requires these two specifically, used flexibly; your final \"them\" points at the wrong noun and nothing in the essay is ever renamed. Seen in: W1, W2, W3, W4, W5, W6. Drill: `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §§3, 7.\n- **Articles, countability and plural -s** — the only error class present in all six essays, and the classic Korean-L1 collapse. Seen in: W1–W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A2, B1, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §§1–2.\n- **Explicit subjects and agreement in long sentences** — \"people who believes\" and the bare verb in \"provide them\" both come from losing the subject inside a long clause. Seen in: W1, W2, W3, W5, W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§C1, K, `contexts/05-band-6-to-7/grammar-upgrades.md` §13.\n- **Circular topic sentences** — when the reason restates the claim, the paragraph starts with nothing to prove; this is new in W6 and is your cheapest available gain. Seen in: W6. Drill: `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §4, `contexts/05-band-6-to-7/task-response-upgrades.md` §5.\n- **Collocation precision** — six essays now show the issue is not vocabulary size but natural word partnerships. Seen in: W1–W6. Drill: `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Common collocations, `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §§3–4.\n\n## What's working\n\nYour linking is genuinely good now and I want to be specific about it, because earlier feedback undersold it: about eleven distinct devices, no numbered chain, roughly one per sentence — that is Band-7 range, not Band-6 mechanics. You also build real lexical chains: *artworks → creative works → paintings and music*, and *modern digital technologies → large language models → chatbots*. \"Even though supporting artists might bring some benefits\" and \"Despite the fact that artists can also contribute\" are proper concessions, not decoration. And your position — \"I believe that the money could be spent elsewhere\" — is stated once and held without drift, which was the W3 problem you fixed in W5 and have kept fixed.\n\n## Per-criterion justification\n\n**Task Response — 6.0.** Both views and your opinion are clear, which puts you above Band 5. But Band 7 requires main ideas that are extended and supported, and a conclusion with no negative qualifier attached to it. Yours is repetitive — \"modern technologies can solve the same problems more efficiently\" is Body 2 restated — and unjustified, because the claim that artists \"can be replaced by modern technologies\" rests on the single sentence about chatbots. Band 6's wording, \"conclusions drawn may be unclear, unjustified or repetitive,\" matches exactly (`contexts/01-band-descriptors/band-6-vs-7-comparison.md` line 52).\n\n**Coherence and Cohesion — 6.0.** The paragraph plan is clear and the linkers are varied — both real strengths. What holds this at 6 is the one thing Band 7 names explicitly: reference **and** substitution used flexibly. \"Therefore, provide **them** with a lot of money\" points to the wrong noun; \"those issues\" and \"the issues\" reach across paragraph boundaries; and \"a waste of money\" appears three times with no attempt to rename it. Band 6 describes reference and substitution that \"may lack flexibility or clarity and result in some repetition or error\" — you have both the repetition and the error.\n\n**Lexical Resource — 6.0.** \"Alleviate,\" \"annual spending\" and \"the advent of large language models\" show real reach. But \"a huge financial support,\" \"consuming tax,\" \"spend the tax,\" \"help people rewind\" and \"produce and release their creative works\" are frequent enough imprecisions to block the \"awareness of style and collocation\" Band 7 requires. Meaning always survives, so Band 5 is too low.\n\n**Grammatical Range & Accuracy — 6.0.** You attempt concessions, relative clauses and passives, and most of them land. But basic errors are spread evenly across the essay — \"people who believes,\" \"a efficient way,\" \"the society,\" \"their works are not the only one,\" and the bare verb in \"Therefore, provide them\" — so error-free sentences are not yet *frequent* in the Band 7 sense.\n\n## Top concrete rewrites\n\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---:|---|---|---|---|\n| 1 | \"Therefore, provide them with a lot of money can be regarded as a waste of money.\" | \"Therefore, while public art has real value, the same funds do more measurable good in healthcare and education.\" | Fixes the wrong-antecedent reference, the missing gerund subject, the third \"a waste of money,\" and the non-synthesising conclusion in one move. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §7; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §C1 |\n| 2 | \"there are people who believes that governments should spend the tax elsewhere because it is a waste of money to support artists\" | \"Critics argue that public funds should be redirected to more pressing priorities, because the arts reach a far narrower audience than schools or hospitals do.\" | Replaces a reason that just restates the claim with a real one; fixes agreement and the finance collocation. | `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §4; `contexts/10-task2-topic-banks/topic-06-government-and-politics.md` §Common collocations |\n| 3 | \"artists can contribute to society by creating their unique artworks\" | \"Public funding sustains art forms that commercial markets cannot support alone — orchestras, regional theatres, heritage crafts.\" | Supplies the missing why-the-state mechanism; this is the six-essay development ceiling. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Core arguments FOR |\n| 4 | \"However, I believe there are numerous other ways that are able to tackle those issues.\" | \"However, counselling services and public sports programmes address the same mental-health needs far more directly.\" | Replaces a vague cross-paragraph reference and an unsupported claim with a named alternative. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §3 |\n| 5 | \"providing a huge financial support to artists by consuming tax\" | \"using taxpayers' money to subsidise the arts\" | Fixes the countability and collocation pattern visible in all six essays. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Common collocations |\n| 6 | \"is not a efficient way of spending taxes because their works are not the only one\" | \"is not an efficient use of public funds, because art is not the only way to relieve stress\" | Repairs the article, the number mismatch and the overloaded clause together. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §§1–2 |\n| 7 | \"Despite the fact that artists can also contribute to the society\" | \"Beneficial as public art may be, …\" | Removes the generic-noun *the* and upgrades an existing strength into a Band-7 structure. | `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4; `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §9 |\n| 8 | \"well-made paintings or characters can soothe people's mind, and some music can help people rewind\" | \"well-crafted paintings can soothe people's minds, and music can help them unwind\" | Fixes the plural and the word choice (*rewind* ≠ relax). | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §§3–4 |\n| 9 | \"a waste of money\" (three times) | \"a waste of money → an inefficient use of public funds → poor value for taxpayers\" | At Band 7 a key phrase should not repeat; rotating it is also your missing substitution. | `contexts/13-vietnamese-instructor-tips-collected.md` §7; `contexts/09-instructor-tips/12-chinese-instructor-tips-collected.md` §1 |\n\n## Before your next essay\n\n- **Conclusion drill (15 min).** Write three different conclusions for W6. Each must name one benefit of arts funding you concede, then one reason it still loses to another use of the same money. \"A waste of money\" is banned in all three. Use `contexts/05-band-6-to-7/task-response-upgrades.md` §9.\n- **Reference-and-substitution drill (10 min).** Go through W6 and write in the margin, next to every *it / they / them / those issues / the issues*, the exact noun you meant. Wherever that noun isn't the **nearest** matching one, replace the pronoun with the noun. Then rotate one key phrase three ways, as in rewrite 9.\n- **Three-pass proofread (last 5 minutes of the exam), built for your errors.** Pass 1 — every noun gets `a / an / the / zero` plus singular or plural; this is your only error class present in all six essays. Pass 2 — underline every finite verb and find its explicit subject, checking any verb that follows *who* or *that*. Pass 3 — every pronoun: is the nearest matching noun the one you actually mean?\n- **Stretch goal.** One concessive inversion per essay: `Beneficial as public art may be, …` / `Convenient as chatbots are, …`. It is the largest grammar upgrade available for the effort (`contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4).\n- **Retirement test.** Do not retire the article-and-countability priority until one complete essay has zero article errors and zero plural errors. When that happens, promote lexical-chain control in its place: no content word repeated twice inside one paragraph.\n\n## Overall band rationale\n\nTR 6 + CC 6 + LR 6 + GRA 6 averages 6.00, so the reported band is **6.0**. The two arguable upgrades both fail on a named descriptor: TR 7 requires a conclusion with no repetitiveness or want of justification, and CC 7 requires reference *and* substitution used flexibly. Fix the final sentence's pronoun, stop repeating \"a waste of money,\" and give each body a genuine mechanism, and 6.5 becomes the honest reading of the same essay.\n\n## CONVERGENCE: REFINING\n\n---\n\n**Summary of the panel state:** LR 6, GRA 6, and the top three priorities are agreed. TR and CC remain contested — codex holds 7/7 (overall 6.5), I hold 6/6 (overall 6.0), each on a named descriptor. Declaring CONVERGED now would freeze a disagreement rather than resolve it.\n",
+  "structural_feedback": "The four-part shape works and your opinion is visible from the first paragraph to the last. The real gap is that neither body paragraph finishes its own argument. Body 1 shows that art can soothe people but never explains why **taxpayers**, rather than audiences or private patrons, should pay for that. Body 2 opens with a topic sentence whose reason simply repeats its claim, then narrows the whole comparison to stress relief and rests the substitution claim on one sentence about chatbots. Because both bodies stop early, the conclusion has nothing new to synthesise, so it restates the technology comparison instead of weighing the two public benefits against each other. The single highest-value change is to give each body a real second half — mechanism, then a specific example, then an explicit link back to public funding — before touching any individual word.",
+  "focus_areas": [
+    {
+      "area": "Conclusions that justify rather than repeat",
+      "rationale": "Band 7 has no allowance for a repetitive or unjustified conclusion; Band 6 names it explicitly, and this is the descriptor holding your Task Response down. Seen in: W2, W3, W4, W5, W6",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Reference and substitution",
+      "rationale": "Band 7 requires these two specifically, used flexibly; your final \"them\" points at the wrong noun and nothing in the essay is ever renamed. Seen in: W1, W2, W3, W4, W5, W6",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Articles, countability and plural -s",
+      "rationale": "the only error class present in all six essays, and the classic Korean-L1 collapse. Seen in: W1–W6",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Explicit subjects and agreement in long sentences",
+      "rationale": "\"people who believes\" and the bare verb in \"provide them\" both come from losing the subject inside a long clause. Seen in: W1, W2, W3, W5, W6",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ]
+    },
+    {
+      "area": "Circular topic sentences",
+      "rationale": "when the reason restates the claim, the paragraph starts with nothing to prove; this is new in W6 and is your cheapest available gain. Seen in: W6",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ]
+    },
+    {
+      "area": "Collocation precision",
+      "rationale": "six essays now show the issue is not vocabulary size but natural word partnerships. Seen in: W1–W6",
+      "corpus_drill": [
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md",
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ]
+    }
+  ],
+  "whats_working": "Your linking is genuinely good now and I want to be specific about it, because earlier feedback undersold it: about eleven distinct devices, no numbered chain, roughly one per sentence — that is Band-7 range, not Band-6 mechanics. You also build real lexical chains: *artworks → creative works → paintings and music*, and *modern digital technologies → large language models → chatbots*. \"Even though supporting artists might bring some benefits\" and \"Despite the fact that artists can also contribute\" are proper concessions, not decoration. And your position — \"I believe that the money could be spent elsewhere\" — is stated once and held without drift, which was the W3 problem you fixed in W5 and have kept fixed."
+}

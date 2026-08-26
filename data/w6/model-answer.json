@@ -1,0 +1,187 @@
+{
+  "task": "w6",
+  "target_band": 7.0,
+  "prompt": "Governments give a lot of support to artists, even though some people think it is a waste of money that could have been used elsewhere. Discuss both views and give your opinion.",
+  "intro_note": "Band-7 rewrite of the original W6 essay preserving the writer's preference for investment in digital technology. It completes the public-funding case for culturally valuable projects, compares this fairly with digital mental-health and online public services, and treats technology as a complement to artists rather than their replacement. Hover any highlight for the craft note and what it fixes.",
+  "word_count": 296,
+  "paragraphs": [
+    {
+      "spans": [
+        { "text": "Whether governments should use " },
+        {
+          "text": "tax revenue",
+          "highlight": {
+            "label": "Natural finance collocation",
+            "kind": "lexical",
+            "explanation": "Replaces the original calque \"consuming tax\" with the accurate public-finance phrase \"tax revenue\"."
+          }
+        },
+        { "text": " to support artists is contested. " },
+        {
+          "text": "Advocates regard public funding as an investment in cultural life, whereas critics see extensive subsidies as a poor use of limited resources.",
+          "highlight": {
+            "label": "Both views framed neutrally",
+            "kind": "task_response",
+            "explanation": "Introduces both positions fairly before the writer states a preference."
+          }
+        },
+        { "text": " " },
+        {
+          "text": "Although the arts provide social value, I believe digital public services should receive greater priority because they can reach people more widely and efficiently.",
+          "highlight": {
+            "label": "Clear qualified opinion",
+            "kind": "task_response",
+            "explanation": "Preserves the writer's technology-focused position while conceding the genuine value of art."
+          }
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "The strongest case for subsidy is that some culturally valuable but commercially risky projects may be difficult to sustain without support.",
+          "highlight": {
+            "label": "Cautious pro-funding claim",
+            "kind": "coherence",
+            "explanation": "Gives Body 1 one clear topic and avoids claiming that all art depends on government funding."
+          }
+        },
+        { "text": " " },
+        {
+          "text": "Popular productions can survive through ticket sales",
+          "highlight": {
+            "label": "Funding mechanism",
+            "kind": "task_response",
+            "explanation": "Begins the market comparison needed to explain why some projects might require subsidy."
+          }
+        },
+        { "text": ", but " },
+        {
+          "text": "local theatre, traditional crafts, and free exhibitions",
+          "highlight": {
+            "label": "Precise cultural examples",
+            "kind": "lexical",
+            "explanation": "Builds a natural lexical chain instead of repeating the generic words \"artists\" and \"artworks\"."
+          }
+        },
+        { "text": " may not generate enough revenue to cover their costs. " },
+        {
+          "text": "A modest grant could help a community arts centre stage affordable performances or offer workshops to residents who might otherwise be excluded.",
+          "highlight": {
+            "label": "Countable noun + policy link",
+            "kind": "grammar",
+            "explanation": "Uses the countable noun \"grant\" instead of the original uncountable phrase \"a financial support\"; the hypothetical also links public funding to access."
+          }
+        },
+        { "text": " " },
+        {
+          "text": "By preserving these opportunities",
+          "highlight": {
+            "label": "Controlled By + -ing opener",
+            "kind": "grammar",
+            "explanation": "Demonstrates a compact complex opener while retaining the explicit main-clause subject \"public funding\"."
+          }
+        },
+        { "text": ", public funding can protect cultural diversity while giving people constructive ways to relax and connect with others." }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "Nevertheless, " },
+        {
+          "text": "public budgets are finite, so arts programmes must compete with digital services that address stress and loneliness more directly.",
+          "highlight": {
+            "label": "Opportunity-cost pivot",
+            "kind": "coherence",
+            "explanation": "Moves once, at the start of Body 2, from the favourable case to a competing-priority argument that names the original problem precisely."
+          }
+        },
+        { "text": " A local authority could, for example, invest in " },
+        {
+          "text": "moderated peer-support platforms, multilingual information portals, or accessible booking systems",
+          "highlight": {
+            "label": "Specific digital services",
+            "kind": "lexical",
+            "explanation": "Replaces vague references to \"issues\" and \"modern technologies\" with concrete public-service channels."
+          }
+        },
+        { "text": " " },
+        {
+          "text": "that connect residents with existing support",
+          "highlight": {
+            "label": "Controlled defining relative",
+            "kind": "grammar",
+            "explanation": "Adds grammatical range through a defining relative clause with an explicit verb and clear antecedent."
+          }
+        },
+        { "text": ". " },
+        {
+          "text": "Unlike a grant benefiting one project and its audience",
+          "highlight": {
+            "label": "Controlled comparison opener",
+            "kind": "grammar",
+            "explanation": "Uses a reduced relative clause to frame a direct reach comparison without losing the sentence subject."
+          }
+        },
+        { "text": ", " },
+        {
+          "text": "such infrastructure",
+          "highlight": {
+            "label": "Summary-noun reference",
+            "kind": "coherence",
+            "explanation": "Refers back to the digital services concisely and avoids an ambiguous pronoun."
+          }
+        },
+        { "text": " can be made available across an entire area through a shared platform. " },
+        {
+          "text": "This does not mean that technology can replace artists",
+          "highlight": {
+            "label": "Careful limitation",
+            "kind": "task_response",
+            "explanation": "Explicitly rejects the original unsupported replacement claim while retaining technology as the preferred investment."
+          }
+        },
+        { "text": "; " },
+        {
+          "text": "online exhibitions and creative platforms",
+          "highlight": {
+            "label": "Technology complements art",
+            "kind": "lexical",
+            "explanation": "Shows that digital tools can distribute artistic work rather than substitute for its creators."
+          }
+        },
+        { "text": " can instead distribute their work to wider audiences. " },
+        {
+          "text": "In my view, these broader practical benefits make digital public services the stronger funding priority.",
+          "highlight": {
+            "label": "Policy-level judgment",
+            "kind": "task_response",
+            "explanation": "Compares public reach directly and closes the paragraph with the writer's own assessment."
+          }
+        }
+      ]
+    },
+    {
+      "spans": [
+        { "text": "In conclusion, " },
+        {
+          "text": "targeted grants can preserve worthwhile cultural projects that markets overlook and make artistic experiences more accessible.",
+          "highlight": {
+            "label": "Synthesis of the other view",
+            "kind": "coherence",
+            "explanation": "Carries the strongest pro-funding mechanism into the conclusion instead of merely repeating the introduction."
+          }
+        },
+        { "text": " " },
+        {
+          "text": "Even so, because well-designed digital services may support more citizens directly while expanding access to art, governments should avoid extensive general subsidies for artists and prioritise digital public infrastructure.",
+          "highlight": {
+            "label": "Final weighed position",
+            "kind": "task_response",
+            "explanation": "Weighs cultural preservation against reach and restates the technology-focused verdict in fresh policy language."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "w6/02-claude",
+  "task": "w6",
+  "iteration": 2,
+  "tool": "claude",
+  "generated_at": "2026-08-26T00:46:14Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "Both views and your opinion are identifiable, and your position is clear throughout, which is a Band 7 feature you now own. What holds this at 6 is the Band 6 line about all parts being addressed \"although some parts may be more fully covered than others\": the pro-funding view gets three and a half sentences before you refute it, while your own view gets a body paragraph plus the conclusion. Your support also stops short of the actual question — \"artists can contribute to society by creating their unique artworks\" is an argument for art, not for public money. And \"I believe they can be replaced by modern technologies\" is a very large claim resting on one chatbot sentence. Band 6's \"conclusions may become … repetitive\" also applies."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6; gates in `contexts/01-band-descriptors/band-6-vs-7-comparison.md`",
+      "justification": "Your macro-plan is logical, so 7 is a tempting reading, but the Band 7 gate \"presents a clear central topic within each paragraph\" fails in Body 1, which starts on art's benefits and ends on \"there are numerous other ways\" — Body 2's topic. Referencing is the second block: \"those issues\", \"the issues\", \"the same problems\" and finally \"provide **them**\", where the nearest plural nouns are \"modern technologies\" and \"problems\", not artists. Eleven of your twelve sentences open with an explicit frame or connective, which is the mechanical cohesion Band 6 describes rather than Band 7's occasional over-use. On balance the Band 6 wording fits better, and I would not accept 7 here."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "You do reach for less common items — \"alleviate\", \"the advent of large language models\", \"straightforwardly\", \"arguable\" — which puts you above Band 5. The inaccuracies are too frequent for Band 7's \"awareness of style and collocation\": \"a huge financial support\", \"by consuming tax\", \"spend the tax\", \"help people rewind\" (you want *unwind*), \"feel emotionally attached\" with nothing to attach to, and \"produce and release their creative works\", where *release* belongs to albums and products. This is the same calque pattern as W5's \"minor subjects\" and W4's \"different and exotic values\"."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
+      "justification": "Band 7 requires that error-free sentences be *frequent*. By my count, 4 of your 12 sentences are error-free — sentences three, six, nine and eleven. The other eight carry \"a huge financial support\", \"spent elsewhere such as new digital technologies\", the dangling \"It is because …, or even feel emotionally attached\", \"people's mind\", \"people who believes\", \"the large amount\", \"a efficient way\", \"their works are not the only one\", \"the society\", and the bare verb \"provide them\". Range is adequate — concessives, a relative clause, a passive — but the complex sentences are markedly less accurate than the simple ones, which is the Band 6 profile exactly."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "TR 6 + CC 6 + LR 6 + GRA 6 averages 6.00, reported as 6.0 (`contexts/01-band-descriptors/scoring-rules.md`). This is 0.5 below W5, but it is not lost skill — it is a harder task type. W5 was agree/disagree, where holding one position is the whole job and you did it well; W6 is *discuss both views*, which asks you to argue a case you do not hold, and that is where both this essay and W3 come apart. The language gates have not moved at all since W5: the noun system and subject control are still the two things standing between you and a 6.5, and they are drillable rather than conceptual.",
+  "what_changed": "I reach the same four scores independently, anchoring to the official descriptors rather than to sample labels — `contexts/11-quality-audit/07-summary-of-source-reliability.md` warns that Tier-3 sample Task Response sub-scores run 0.5–1.0 generous. Four changes. **(1)** I resolve the open Coherence 6-vs-7 question against 7, on a harder test than counting connectives: Band 7 requires a clear central topic in each paragraph, and your Body 1 carries two. **(2)** I reject the claim that your W1–W4 development problem \"has returned.\" Your W5 gain survived — each body here has a mechanism *and* an example. What broke is different, and it has a precedent: on discussion prompts you abandon the assigned view mid-paragraph, exactly as in W3. Different problem, different drill. **(3)** I withdraw its rewrite #2, which replaced your technology argument with healthcare and education — that edits your idea, not your English. Your technology line is defensible; it needs a budget comparison, not a substitute. **(4)** I add one missed item (\"From the perspective of sociology\") and quantify the grammar gate: 4 of your 12 sentences are error-free.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "However, I believe there are numerous other ways that are able to tackle those issues.",
+      "improved": "Because this comfort reaches people who could never afford a ticket, it is exactly the kind of value a commercial market will not supply on its own.",
+      "reason": "Lets Body 1 finish its assigned view instead of defecting; move your pivot to the start of Body 2. Recurring W3 → W6 on discussion prompts.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md",
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "Therefore, provide them with a lot of money can be regarded as a waste of money.",
+      "improved": "Redirecting that budget towards digital innovation therefore promises a broader public return than subsidising the arts.",
+      "reason": "Bare verb where a gerund subject is needed (Korean topic-drop), vague \"them\", \"money\" twice in one sentence, and the W2–W5 restating conclusion, all in one line.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "there are people who believes that governments should spend the tax elsewhere",
+      "improved": "Critics argue that governments should allocate this revenue elsewhere",
+      "reason": "Subject–verb agreement plus generic \"the tax\"; the same agreement slip as W5's \"This essay totally agree\".",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-06-government-and-politics.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 4,
+      "original": "providing a huge financial support to artists by consuming tax",
+      "improved": "using tax revenue to subsidise the arts",
+      "reason": "*Support* is uncountable; \"consuming tax\" is a direct translation. Recurring W1–W6.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "spending the large amount of money by giving financial support to artists is not a efficient way of spending taxes because their works are not the only one",
+      "improved": "channelling large sums into the arts is not an efficient use of public money, because art is not the only way to relieve stress",
+      "reason": "Two article errors, one number error, and \"spending\" three times in one sentence.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "well-made paintings or characters can soothe people's mind, and some music can help people rewind",
+      "improved": "a well-crafted painting can settle an anxious mind, while music helps listeners unwind",
+      "reason": "Missing plural, and *rewind* is not *unwind* — the W1 \"new logics\" family of near-miss words.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "From the perspective of sociology, it is true that",
+      "improved": "Supporters of state funding are right that…",
+      "reason": "The essay contains no sociology; on a discussion prompt, attribute the view instead. Register calque, W1–W6.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "Despite the fact that artists can also contribute to the society",
+      "improved": "Although artists undoubtedly enrich society",
+      "reason": "Generic nouns take no article — the W3 \"the school / the parents\" and W5 \"the school\" pattern.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "",
+  "raw_markdown": "# Panel 02 — claude (independent)\n\n_Generated 2026-08-26T00:46:14Z. Examiner-panel discussion; corpus manifest: 153 files._\n\n---\n\nCorpus manifest read in full. One disclosure before the assessment.\n\n**Note on how I read the manifest.** I read every writing-side file in full (`contexts/01`–`contexts/11`, all W-essays and feedback). For the speaking corpus I read topics 01–03 in full but topics 04–12 via their merged `final.md` files only — those merges are specified to preserve all cited material from both source variants, so they are supersets — and I stripped the URL-only `## Sources` blocks throughout. That is a deviation from \"read every file\"; flagging it so you can judge it.\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---:|---|\n| Task Response | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6; gates in `contexts/01-band-descriptors/band-6-vs-7-comparison.md` |\n| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| **Overall** | **6.0** | (6+6+6+6)/4 = 6.00 per `contexts/01-band-descriptors/scoring-rules.md` |\n\n## What changed from prior feedback\n\nI reach the same four scores independently, anchoring to the official descriptors rather than to sample labels — `contexts/11-quality-audit/07-summary-of-source-reliability.md` warns that Tier-3 sample Task Response sub-scores run 0.5–1.0 generous. Four changes. **(1)** I resolve the open Coherence 6-vs-7 question against 7, on a harder test than counting connectives: Band 7 requires a clear central topic in each paragraph, and your Body 1 carries two. **(2)** I reject the claim that your W1–W4 development problem \"has returned.\" Your W5 gain survived — each body here has a mechanism *and* an example. What broke is different, and it has a precedent: on discussion prompts you abandon the assigned view mid-paragraph, exactly as in W3. Different problem, different drill. **(3)** I withdraw its rewrite #2, which replaced your technology argument with healthcare and education — that edits your idea, not your English. Your technology line is defensible; it needs a budget comparison, not a substitute. **(4)** I add one missed item (\"From the perspective of sociology\") and quantify the grammar gate: 4 of your 12 sentences are error-free.\n\n## Progress across essays\n\n| Pattern | History | Status | Evidence in W6 |\n|---|---|---|---|\n| Articles, countability, number | W1 \"a single hardware\"; W2 \"every research\"; W3 \"the school\", \"the parents\"; W4 \"seeking for a help\"; W5 \"when they are teenager\" | recurring | \"a huge financial support\", \"a efficient way\", \"the society\", \"people's mind\" |\n| Subject and agreement control in long sentences | W1 \"so that no physical objects such as people or dove needed\"; W2 comma splice; W3 \"Although their logic could not fully explain\"; W5 \"This essay totally agree\", \"…and eventually, cannot develop their talents\" | recurring | \"there are people who believes\"; \"Therefore, provide them with a lot of money can be regarded…\" |\n| Assigned view dropped mid-paragraph on *discuss both views* prompts | W3 Body 1 swung to the school view at \"However, this view is not shared by everyone\" | recurring | Body 1 swings at \"However, I believe there are numerous other ways…\" before the pro-funding case is closed |\n| Collocation and register calques | W1 \"new logics\"; W2 \"natural energy\"; W3 \"strengthened their common senses\"; W4 \"different and exotic values\"; W5 \"minor subjects\" | recurring | \"by consuming tax\", \"spend the tax\", \"help people rewind\", \"From the perspective of sociology\" |\n| Conclusion restates rather than synthesises | W2, W3, W4, W5 | recurring | \"modern technologies can solve the same problems more efficiently\" repeats Body 2's comparison |\n| Numbered sequencing (\"First and foremost / Secondly\") | W2, W4 | fixed | absent again, two essays running |\n| Clear position held to the conclusion | W3 off-centre (\"up to individuals\"); W4 clear; W5 clear | fixed | \"I believe that the money could be spent elsewhere\" holds from introduction to conclusion |\n| \"a number of\" + plural verb | — | new (strength) | \"a number of chatbots **are** able to address the issues\" — correct |\n\n## Structural feedback\n\nYour four-part shape is easy to follow and your opinion never wobbles, which is the W3 problem permanently behind you. The trouble is that this prompt asks you to *discuss both views*, and only one view gets a real paragraph. Body 1 is assigned the pro-funding case, but its last sentence — \"However, I believe there are numerous other ways that are able to tackle those issues\" — knocks the case down before it has been made, so the paragraph ends up arguing your side twice. Then Body 2 makes the same turn again at \"Despite the fact that artists can also contribute to the society,\" and the conclusion makes it a third time. Underneath that, the pro-funding case is about *art*, not about *funding*: showing that a painting can calm someone does not show why taxpayers, rather than ticket-buyers or private patrons, should pay for it. The single highest-impact fix is to let Body 1 finish its own argument — one extra sentence tying the benefit to something a market will not supply — and move your pivot to the opening of Body 2 (`contexts/05-band-6-to-7/paragraph-structure-band7.md`; `contexts/04-task2-essays/question-types-overview.md`).\n\n## Focus areas\n\n1. **Articles, countability and number (GRA/LR — top priority, unchanged since W5).** \"a huge financial support\" (support is uncountable), \"a efficient way\", \"the society\", \"people's mind\". Seen in: every essay, W1–W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A2, B; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1.\n2. **Subjects and agreement in long sentences (GRA — unchanged since W5).** \"people who believes\" and the bare verb in \"provide them with a lot of money can be regarded\" are the same Korean-transfer pattern as W5's collapse: the subject stops being tracked once the sentence runs long. Seen in: W1–W3, W5, W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§C1, K; `contexts/05-band-6-to-7/grammar-upgrades.md`.\n3. **Holding the assigned view for a full paragraph (TR/CC — newly named, twice seen).** On both of your *discuss both views* prompts, the paragraph assigned to the other side collapses into your own. Seen in: W3, W6. Drill: `contexts/04-task2-essays/question-types-overview.md`; `contexts/05-band-6-to-7/task-response-upgrades.md` §5.\n4. **Collocation and register precision (LR).** \"by consuming tax\" and \"spend the tax\" are direct translations; the exam phrasing is \"use tax revenue\" / \"subsidise the arts\". \"From the perspective of sociology\" promises a discipline the essay never uses. Seen in: W1–W6. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §§3, 8; `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Common collocations.\n5. **Naming what \"issues\" refers to (CC).** \"those issues\", \"the issues\", \"the same problems\" and the final \"them\" all point back to something you never named, and \"artists\" and \"money\" each appear seven times with no substitute. Seen in: W2, W4, W5, W6. Drill: `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §§3, 5.\n\n## What's working\n\nThree of your sentences are fully error-free and genuinely complex: \"From the perspective of sociology, it is true that artists can contribute to society by creating their unique artworks, which can potentially alleviate people's mental health issues\" (a controlled non-defining relative), \"Since the advent of large language models, a number of chatbots are able to address the issues more practically and straightforwardly,\" and the \"while\" contrast in your conclusion. That middle one deserves specific credit: \"a number of … are\" is a trap most Korean candidates fall into, and you got it right. \"the advent of large language models\" is a current, well-collocated phrase, and \"alleviate\" and \"annual spending\" are properly used. You also attempted real concessions — \"Even though supporting artists might bring some benefits\" and \"Despite the fact that artists can also contribute\" — rather than avoiding them.\n\n## Per-criterion justification\n\n**Task Response — 6.0.** Both views and your opinion are identifiable, and your position is clear throughout, which is a Band 7 feature you now own. What holds this at 6 is the Band 6 line about all parts being addressed \"although some parts may be more fully covered than others\": the pro-funding view gets three and a half sentences before you refute it, while your own view gets a body paragraph plus the conclusion. Your support also stops short of the actual question — \"artists can contribute to society by creating their unique artworks\" is an argument for art, not for public money. And \"I believe they can be replaced by modern technologies\" is a very large claim resting on one chatbot sentence. Band 6's \"conclusions may become … repetitive\" also applies.\n\n**Coherence and Cohesion — 6.0.** Your macro-plan is logical, so 7 is a tempting reading, but the Band 7 gate \"presents a clear central topic within each paragraph\" fails in Body 1, which starts on art's benefits and ends on \"there are numerous other ways\" — Body 2's topic. Referencing is the second block: \"those issues\", \"the issues\", \"the same problems\" and finally \"provide **them**\", where the nearest plural nouns are \"modern technologies\" and \"problems\", not artists. Eleven of your twelve sentences open with an explicit frame or connective, which is the mechanical cohesion Band 6 describes rather than Band 7's occasional over-use. On balance the Band 6 wording fits better, and I would not accept 7 here.\n\n**Lexical Resource — 6.0.** You do reach for less common items — \"alleviate\", \"the advent of large language models\", \"straightforwardly\", \"arguable\" — which puts you above Band 5. The inaccuracies are too frequent for Band 7's \"awareness of style and collocation\": \"a huge financial support\", \"by consuming tax\", \"spend the tax\", \"help people rewind\" (you want *unwind*), \"feel emotionally attached\" with nothing to attach to, and \"produce and release their creative works\", where *release* belongs to albums and products. This is the same calque pattern as W5's \"minor subjects\" and W4's \"different and exotic values\".\n\n**Grammatical Range & Accuracy — 6.0.** Band 7 requires that error-free sentences be *frequent*. By my count, 4 of your 12 sentences are error-free — sentences three, six, nine and eleven. The other eight carry \"a huge financial support\", \"spent elsewhere such as new digital technologies\", the dangling \"It is because …, or even feel emotionally attached\", \"people's mind\", \"people who believes\", \"the large amount\", \"a efficient way\", \"their works are not the only one\", \"the society\", and the bare verb \"provide them\". Range is adequate — concessives, a relative clause, a passive — but the complex sentences are markedly less accurate than the simple ones, which is the Band 6 profile exactly.\n\n## Top concrete rewrites (ranked by band uplift × persistence)\n\n| # | Original (verbatim) | Rewrite (Band 7 target) | Why (pattern · history) | Corpus citation |\n|---:|---|---|---|---|\n| 1 | \"However, I believe there are numerous other ways that are able to tackle those issues.\" | \"Because this comfort reaches people who could never afford a ticket, it is exactly the kind of value a commercial market will not supply on its own.\" | Lets Body 1 finish its assigned view instead of defecting; move your pivot to the start of Body 2. Recurring W3 → W6 on discussion prompts. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Core arguments FOR; `contexts/05-band-6-to-7/paragraph-structure-band7.md` |\n| 2 | \"Therefore, provide them with a lot of money can be regarded as a waste of money.\" | \"Redirecting that budget towards digital innovation therefore promises a broader public return than subsidising the arts.\" | Bare verb where a gerund subject is needed (Korean topic-drop), vague \"them\", \"money\" twice in one sentence, and the W2–W5 restating conclusion, all in one line. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §C1; `contexts/05-band-6-to-7/task-response-upgrades.md` §9 |\n| 3 | \"there are people who believes that governments should spend the tax elsewhere\" | \"Critics argue that governments should allocate this revenue elsewhere\" | Subject–verb agreement plus generic \"the tax\"; the same agreement slip as W5's \"This essay totally agree\". | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2; `contexts/10-task2-topic-banks/topic-06-government-and-politics.md` §Common collocations |\n| 4 | \"providing a huge financial support to artists by consuming tax\" | \"using tax revenue to subsidise the arts\" | *Support* is uncountable; \"consuming tax\" is a direct translation. Recurring W1–W6. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Common collocations |\n| 5 | \"spending the large amount of money by giving financial support to artists is not a efficient way of spending taxes because their works are not the only one\" | \"channelling large sums into the arts is not an efficient use of public money, because art is not the only way to relieve stress\" | Two article errors, one number error, and \"spending\" three times in one sentence. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A2, B; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1 |\n| 6 | \"well-made paintings or characters can soothe people's mind, and some music can help people rewind\" | \"a well-crafted painting can settle an anxious mind, while music helps listeners unwind\" | Missing plural, and *rewind* is not *unwind* — the W1 \"new logics\" family of near-miss words. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3 |\n| 7 | \"From the perspective of sociology, it is true that…\" | \"Supporters of state funding are right that…\" | The essay contains no sociology; on a discussion prompt, attribute the view instead. Register calque, W1–W6. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §8; `contexts/09-instructor-tips/06-task2-sentence-frames.md` |\n| 8 | \"Despite the fact that artists can also contribute to the society\" | \"Although artists undoubtedly enrich society\" | Generic nouns take no article — the W3 \"the school / the parents\" and W5 \"the school\" pattern. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A2 |\n\n## Before your next essay\n\n- **Drill 1 — the noun pass (12 min).** Take the four noun-phrase errors above plus W5's \"when they are teenager\", and write each one correctly, then write a fresh sentence of your own using it. Self-generated corrections stick; read ones do not. (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §N)\n- **Drill 2 — hold the view (15 min).** Rewrite W6's Body 1 so that no sentence in it argues against arts funding, and put your pivot as the first sentence of Body 2. Then do the same for W3's Body 1. Two essays, one habit.\n- **Your proofread routine (last 4 minutes, every essay).** Pass 1: every noun gets a/an/the/zero and singular or plural. Pass 2: every finite verb — point at its subject; your last sentence is where you drop it, in both W5 and W6. Pass 3: any content word used three or more times gets one substitute. (`contexts/05-band-6-to-7/top-30-fixes-band-6-to-7.md`)\n- **Stretch goals.** You used \"by + -ing\" three times in W6 but never as a sentence opener — open one sentence with it next time. Also rotate your key noun three ways: \"state support → public funding → these subsidies\". Both were W5 stretch goals; you have half-attempted one.\n- **Retirement test — carried over, because W6 failed it.** W5 predicted that an essay with zero article/number slips and zero dropped subjects would flip Grammar to 7 and the task to 6.5. W6 had five and two. Keep both priorities until one whole essay is clean; a workable target is 8 of 12 error-free sentences, up from 4.\n\n## Overall band rationale\n\nTR 6 + CC 6 + LR 6 + GRA 6 averages 6.00, reported as 6.0 (`contexts/01-band-descriptors/scoring-rules.md`). This is 0.5 below W5, but it is not lost skill — it is a harder task type. W5 was agree/disagree, where holding one position is the whole job and you did it well; W6 is *discuss both views*, which asks you to argue a case you do not hold, and that is where both this essay and W3 come apart. The language gates have not moved at all since W5: the noun system and subject control are still the two things standing between you and a 6.5, and they are drillable rather than conceptual.\n\n## CONVERGENCE: REFINING\n",
+  "structural_feedback": "Your four-part shape is easy to follow and your opinion never wobbles, which is the W3 problem permanently behind you. The trouble is that this prompt asks you to *discuss both views*, and only one view gets a real paragraph. Body 1 is assigned the pro-funding case, but its last sentence — \"However, I believe there are numerous other ways that are able to tackle those issues\" — knocks the case down before it has been made, so the paragraph ends up arguing your side twice. Then Body 2 makes the same turn again at \"Despite the fact that artists can also contribute to the society,\" and the conclusion makes it a third time. Underneath that, the pro-funding case is about *art*, not about *funding*: showing that a painting can calm someone does not show why taxpayers, rather than ticket-buyers or private patrons, should pay for it. The single highest-impact fix is to let Body 1 finish its own argument — one extra sentence tying the benefit to something a market will not supply — and move your pivot to the opening of Body 2 (`contexts/05-band-6-to-7/paragraph-structure-band7.md`; `contexts/04-task2-essays/question-types-overview.md`).",
+  "focus_areas": [
+    {
+      "area": "Articles, countability and number (GRA/LR — top priority, unchanged since W5)",
+      "rationale": "\"a huge financial support\" (support is uncountable), \"a efficient way\", \"the society\", \"people's mind\". Seen in: every essay, W1–W6",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ]
+    },
+    {
+      "area": "Subjects and agreement in long sentences (GRA — unchanged since W5)",
+      "rationale": "\"people who believes\" and the bare verb in \"provide them with a lot of money can be regarded\" are the same Korean-transfer pattern as W5's collapse: the subject stops being tracked once the sentence runs long. Seen in: W1–W3, W5, W6",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ]
+    },
+    {
+      "area": "Holding the assigned view for a full paragraph (TR/CC — newly named, twice seen)",
+      "rationale": "On both of your *discuss both views* prompts, the paragraph assigned to the other side collapses into your own. Seen in: W3, W6",
+      "corpus_drill": [
+        "contexts/04-task2-essays/question-types-overview.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ]
+    },
+    {
+      "area": "Collocation and register precision (LR)",
+      "rationale": "\"by consuming tax\" and \"spend the tax\" are direct translations; the exam phrasing is \"use tax revenue\" / \"subsidise the arts\". \"From the perspective of sociology\" promises a discipline the essay never uses. Seen in: W1–W6",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-16-arts-and-culture.md"
+      ]
+    },
+    {
+      "area": "Naming what \"issues\" refers to (CC)",
+      "rationale": "\"those issues\", \"the issues\", \"the same problems\" and the final \"them\" all point back to something you never named, and \"artists\" and \"money\" each appear seven times with no substitute. Seen in: W2, W4, W5, W6",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ]
+    }
+  ],
+  "whats_working": "Three of your sentences are fully error-free and genuinely complex: \"From the perspective of sociology, it is true that artists can contribute to society by creating their unique artworks, which can potentially alleviate people's mental health issues\" (a controlled non-defining relative), \"Since the advent of large language models, a number of chatbots are able to address the issues more practically and straightforwardly,\" and the \"while\" contrast in your conclusion. That middle one deserves specific credit: \"a number of … are\" is a trap most Korean candidates fall into, and you got it right. \"the advent of large language models\" is a current, well-collocated phrase, and \"alleviate\" and \"annual spending\" are properly used. You also attempted real concessions — \"Even though supporting artists might bring some benefits\" and \"Despite the fact that artists can also contribute\" — rather than avoiding them."
+}

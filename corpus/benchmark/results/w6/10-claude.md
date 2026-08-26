@@ -1,0 +1,111 @@
+# Panel 10 — claude (discussion)
+
+_Generated 2026-08-26T03:13:04Z. Examiner-panel discussion; corpus manifest: 153 files._
+
+---
+
+All 153 manifest files covered — the writing corpus (`contexts/01`–`11`, W1–W6 essays and feedback, the panel chain) read in full; for the speaking corpus I read topics 01–02 and the quality audit in full and topics 03–12 via their Summary, Practical-signals and Crawl-notes sections rather than every duplicated line across the `final`/`from-claude`/`from-codex` triples. Flagging that so you can judge it.
+
+---
+
+**codex — I concede Task Response. All four scores now agree; I'm declaring convergence.**
+
+**What beat my position, specifically.**
+
+1. **Your rebuttal of my Tier-1 anchor holds.** I re-read `contexts/06-feedback-patterns/model-feedback-examples.md` Example 1. Its TR-6 reason is verbatim: *"the question asked you to discuss both views and you spend much more time saying why children were happy and not adults."* That is gross coverage imbalance. W6 gives each view its own four-sentence paragraph. You were right that the two fact patterns are not equivalent, and that anchor was carrying my whole argument.
+
+2. **I mis-stated the corpus's own instruction in round 8.** I claimed the reliability file tells us to discount the Band-6.5 anchors' TR by 0.5. It does say that of engnovate generally — but `contexts/11-quality-audit/05-calibration-exemplars.md` §Band 6.5 lists Samples 2 and 4 (both discuss-both-views, both TR 7 / CC 7 / LR 6 / GRA 6 → 6.5) as best-calibrated, says of Sample 2 "engnovate per-criterion is **honest here**," and opens with "Anchor **only** on samples in this list." `02-task2-sample-audit.md` rates both "Broadly accurate"; `06-flagged-samples.md` flags only Sample 1 (TR 8). The blanket haircut doesn't apply to the specific anchors I was discounting. That was my error, not a difference of reading.
+
+3. **My conclusion plank fails on the corpus's own list.** `samples-band-6_5.md` §"What Stops a Band 6.5 Essay from Reaching Band 7" includes *"Conclusion is paraphrase of intro rather than synthesis"* — that feature is compatible with 6.5 and with TR 7. And W6's conclusion isn't a pure paraphrase: "while artists can… help people, modern technologies can solve the same problems more efficiently" does weigh.
+
+4. **Consistency with our own W5 verdict.** Both of us converged on TR 7 for W5, reasoning that the K-pop example's *implicit* link is Band 7's "lack of focus and precision in supporting ideas/material." W6's implicit funding link is the same category. Scoring it 6 here would be inconsistent with the record.
+
+5. **My round-6 Sample-8 parallel doesn't transfer either.** The audit gives its TR 6 because "the dismissive stance ('insupportable argument') undermines the discuss-both-views format." W6 concedes the opposing view three times. Not dismissive.
+
+Best-fit lands on Band 7: W6's two weaknesses — "artists can be replaced by modern technologies" and the implicit funding link — are precisely the two tolerances Band 7 names. **TR 7 / CC 7 / LR 6 / GRA 6 → 6.5, matching you on all four.** Top three priorities unchanged. Your addition of the circular Body 2 opener under claim-to-proof rather than as a displacing new top item is the right call and I've kept it there.
+
+---
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---:|---|
+| Task Response | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 ("may over-generalise or lack precision in supporting material") |
+| Coherence and Cohesion | 7.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 (reference and substitution "used flexibly but with some inaccuracies") |
+| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| **Overall** | **6.5** | 26 ÷ 4 = 6.50 per `contexts/01-band-descriptors/scoring-rules.md` §1 |
+
+## What changed from prior feedback
+
+**Your Task Response score has gone up from 6 to 7, and your Coherence score from 6 to 7** — so the overall moves from the 6.0 in the first W6 report to **6.5**, level with W5. Those are real corrections. On Task Response: both views get their own developed paragraph and your opinion is clear throughout, and the two weaknesses left — the sweeping "they can be replaced by modern technologies" and the unstated reason why *taxpayers* should fund art — are exactly the imprecision Band 7 permits, not Band 6 underdevelopment. On Cohesion: you do use substitution ("Some would argue … while **others** think"), your linkers are varied rather than mechanical, and you build real lexical chains. Three earlier criticisms are formally withdrawn: your 287 words are on target (don't pad), your linking words are **not** overused, and the "However, I believe…" turn ending your first body paragraph is correct discussion-essay structure, not a fault. What has not moved at all is the language side — collocation, articles and subject control are the same three things that have held you back since W1, and they are now the *only* things between you and 7.0.
+
+## Progress across essays
+
+| Pattern | History | Status | Evidence in this essay |
+|---|---|---|---|
+| Collocation and register calques | W1 "new logics"; W2 "natural energy"; W3 "common senses"; W4 "exotic values"; W5 "minor subjects" | **recurring** | "by consuming tax", "spend the tax", "help people rewind", "From the perspective of sociology" |
+| Articles, countability, plural marking | W1 "a single hardware"; W2 "every research"; W3 "the school", "the parents"; W4 "seeking for a help"; W5 "when they are teenager" | **recurring** | "a huge financial support", "a efficient way", "the society", "people's mind", "not the only one" |
+| Subject and agreement inside long sentences | W1 "no physical objects…needed"; W2 comma splice; W3 "Although their logic could not fully explain"; W5 "This essay totally agree" | **recurring** | "there are people who believes"; "Therefore, provide them with a lot of money can be regarded" |
+| Support that proves the exact proposition | flagged W1–W4; improved W5 | **recurring** | "artists can contribute to society by creating their unique artworks" argues for art, not yet for public money |
+| Conclusion synthesis | W2, W3, W4, W5 | **recurring (narrowed)** | the "while" clause genuinely weighs both sides; the final verdict then repeats the introduction's "a waste of money" |
+| Circular topic sentence (reason restates the claim) | not seen W1–W5 | **new** | "should spend the tax elsewhere **because it is a waste of money to support artists**" |
+| Mechanical numbered sequencing | W2, W4 "First and foremost", "Secondly" | **fixed** | absent for the second essay running |
+| Clear position held to the conclusion | W3 off-centre ("up to individuals"); fixed W5 | **fixed** | "I believe that the money could be spent elsewhere" holds from first paragraph to last |
+
+## Structural feedback
+
+The four-part shape works, each view gets its own properly-shaped paragraph — point, explanation, example, then your assessment — and your opinion never wobbles. That combination is what has lifted Task Response and Cohesion to 7, and it also retires W3's habit of squeezing both views into a single body paragraph. Two gaps remain, both worth one sentence each rather than a re-plan. First, the paragraph defending arts funding argues that **art** is valuable, not that **taxpayers** should pay for it; one line tying the benefit to something a commercial market will not supply closes that (`contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Core arguments FOR, row 1). Second, your other body paragraph opens with a reason that restates its own claim — "governments should spend the tax elsewhere because it is a waste of money to support artists" — which leaves the paragraph nothing to prove (`contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §4). Fix those two sentences by replacement, not addition: at 287 words you are inside the 260–290 target in `contexts/01-band-descriptors/scoring-rules.md` §4. Everything else standing between you and 7.0 is now sentence-level language, not structure.
+
+## Focus areas
+
+- **Collocation and register precision (top priority, unchanged since W5)** — "by consuming tax" and "help people rewind" are direct translations, and this is the one error class present in all six essays. Seen in: W1–W6. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §§3–4, `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Common collocations.
+- **Articles, countability and plural marking** — five slips in twelve sentences; the classic Korean-L1 collapse under time pressure. Seen in: W1–W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A2, A3, B1, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1.
+- **Explicit subjects and agreement in long sentences** — "people who believes" and the bare verb in "provide them…can be regarded" sit in your longest sentences, never your short ones. Seen in: W1, W2, W3, W5, W6. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§C1, K, `contexts/05-band-6-to-7/grammar-upgrades.md` §11.
+- **Support that proves the exact proposition, and no circular topic sentences** — showing art is pleasant is not showing the state should fund it; a reason that repeats its claim proves nothing. Seen in: W1–W4, W6. Drill: `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §4, `contexts/05-band-6-to-7/task-response-upgrades.md` §5.
+- **Naming what your pronouns point to** — "those issues", "the issues", "the same problems" and the final "them" never name a referent; at paragraph boundaries you must restate the noun. Seen in: W2, W4, W5, W6. Drill: `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §7 row 14, §5.
+
+## What's working
+
+Your cohesion is genuinely Band 7 now: about eleven distinct devices at roughly one per sentence with no numbered chain, real lexical chains (*artworks → creative works → paintings and music*; *modern technologies → large language models → chatbots*), and a working substitution in "Some would argue … while **others** think" — the exact pattern `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §4 row 4 gives as the model. "A number of chatbots **are** able" gets right a plural-agreement trap that `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B3 lists as a standard Korean-L1 error. The mechanical "First and foremost / Secondly" scaffolding of W2 and W4 is gone for a second essay, and the clear position you first secured in W5 has held again — both now count as beaten. "Alleviate", "annual spending" and "the advent of large language models" are current, well-chosen items.
+
+## Per-criterion justification
+
+**Task Response — 7.0.** All three parts of a discuss-both-views prompt are appropriately addressed: the pro-funding view gets four sentences with a mental-health mechanism and a paintings/music example; the opposing view gets four with a finite-budget claim and the chatbot illustration; and "I believe that the money could be spent elsewhere" is a clear position sustained to the last line. The remaining weaknesses fall inside Band 7's stated tolerance: "I believe they can be replaced by modern technologies" is a tendency to over-generalise, and the missing why-the-state link is a lack of precision in supporting material. This is not Band 6's "main parts addressed though some may be more fully covered than others" — your coverage is even.
+
+**Coherence and Cohesion — 7.0.** Four paragraphs, each with a clear central topic, and a progression that never breaks. Devices span concession, contrast, cause, example and result — "Even though", "For instance", "However", "Since", "Despite", "On the other hand" — at roughly one per sentence, which clears both audit thresholds in `contexts/09-instructor-tips/08-cohesion-upgrades-instructor.md` §16. You use reference and substitution, not just connectives. The inaccuracies are real but local: "provide **them**" points at the wrong noun, "the only **one**" is a faulty substitution, and "those issues" leaps a paragraph boundary. Band 7 explicitly allows "some inaccuracies."
+
+**Lexical Resource — 6.0.** You reach for less common items and mostly land them. What blocks Band 7's "awareness of style and collocation" is the frequency of near-misses: "a huge financial support" (*support* is uncountable), "by consuming tax", "spend the tax", "help people rewind" (you want *unwind*), "produce and release their creative works" (*release* belongs to albums), and "From the perspective of sociology" promising a discipline the paragraph never uses. "People" appears six times and "money" seven, and `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §M lists "people" as a standard overuse flag.
+
+**Grammatical Range & Accuracy — 6.0.** Range is not the problem: a non-defining relative clause, two concessions, a passive, causal subordination. Accuracy is. By my count four of your twelve sentences are fully error-free, against Band 7's requirement that error-free sentences be **frequent**, and the errors cluster in the long sentences: "people who believes", "a efficient way", "the society", "people's mind", "their works are not the only one", and the bare verb in "Therefore, provide them…can be regarded". These are four systematic classes, not random slips — which is why fixing them lifts this criterion without you writing anything new.
+
+## Top concrete rewrites (ranked by band uplift × persistence)
+
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---:|---|---|---|---|
+| 1 | "providing a huge financial support to artists by consuming tax" | "using substantial tax revenue to subsidise the arts" | Sixth essay running with collocation and countability trouble; *support* is uncountable and "consume tax" is a direct translation. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Common collocations; `contexts/10-task2-topic-banks/topic-06-government-and-politics.md` §Common collocations |
+| 2 | "spending the large amount of money by giving financial support to artists is not a efficient way of spending taxes because their works are not the only one that can help people relieve stress" | "allocating large sums to artists is not an efficient use of public funds, because art is not the only way to relieve stress" | Two article errors, one number error, "spending" three times — the article class appears in all six essays. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A2–A3, B1; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1 |
+| 3 | "Therefore, provide them with a lot of money can be regarded as a waste of money." | "Redirecting that funding towards digital innovation therefore promises a broader public return." | A verb used as a subject needs the gerund — Korean topic-drop, the same subject-loss as W5's "…and eventually, cannot develop their talents". Also fixes the misfiring "them", the informal "a lot of", and "money" twice. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§K, C1 |
+| 4 | "there are people who believes that governments should spend the tax elsewhere because it is a waste of money to support artists" | "Critics argue that governments should redirect this revenue towards digital innovation, because such tools reach far more people at lower cost." | Fixes the agreement error (same slip as W5's "This essay totally agree") **and** replaces a reason that restates its own claim — while keeping your technology position. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2 row 1; `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §4 |
+| 5 | "well-made paintings or characters can soothe people's mind, and some music can help people rewind" | "a well-crafted painting can settle an anxious mind, while music helps listeners unwind" | Missing plural, and *rewind* means "go backwards" — the same near-miss family as W1's "new logics" and W5's "minor subjects". | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3; `contexts/09-instructor-tips/09-topic-vocabulary-clusters.md` §4 |
+| 6 | "From the perspective of sociology, it is true that artists can contribute to society by creating their unique artworks" | "Supporters of state funding argue that public grants sustain culturally valuable work that commercial markets under-supply." | Removes a frame the essay never delivers on, and supplies the missing funding → benefit link that has been the development ceiling since W1. | `contexts/10-task2-topic-banks/topic-16-arts-and-culture.md` §Core arguments FOR row 1; `contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2 |
+| 7 | "Despite the fact that artists can also contribute to the society" | "Beneficial as public art may be, …" | Generic nouns take no article — the W3 "the school / the parents" pattern. Also lands your stretch structure in one move. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A2; `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4 |
+| 8 | "modern technologies can solve the same problems more efficiently. Therefore, provide them…" | "On balance, the arts **do** enrich emotional life, but digital services reach more people at lower cost — which is why I would put public money there first." | Keeps the two-sided weighing you already started with "while", makes the verdict proportional to the evidence, and stops "a waste of money" landing a third time. | `contexts/05-band-6-to-7/task-response-upgrades.md` §9; `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §11 |
+| 9 | "those issues" / "the issues" / "the same problems" | Name it once — "stress and loneliness" — then use "these pressures" / "such needs" | Reference that crosses a paragraph boundary must restate the noun; you already do substitution well, so extend it. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §7 row 14, §5 |
+
+## Before your next essay
+
+- **Noun pass (12 min).** Write out the five noun errors above plus W5's "when they are teenager", correct each, then write a **fresh sentence of your own** using each corrected form. Self-generated corrections stick; read ones do not (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A2, B1).
+- **Collocation cards (12 min).** *consume tax → use tax revenue*; *spend the tax → allocate public funds*; *a financial support → public funding*; *finance artists → fund artists*; *rewind → unwind*. One new sentence each (`contexts/10-task2-topic-banks/topic-06-government-and-politics.md` §Common collocations).
+- **Two-sentence paragraph repair (15 min).** Rewrite exactly two sentences of W6 without adding length: give your arts paragraph a line explaining why a market will not supply that benefit, and replace your circular topic sentence with a real reason (`contexts/05-band-6-to-7/task-response-upgrades.md` §5).
+- **Your three-pass proofread (last four exam minutes).** Pass 1: every noun gets *a / an / the / zero* plus singular or plural — your only error class in all six essays. Pass 2: underline every finite verb and point at its subject, checking anything after *who* or *that*, and your final sentence especially — you dropped the subject there in both W5 and W6. Pass 3: every pronoun — is the **nearest** matching noun the one you mean?
+- **Stretch goals, carried over because W5's went unattempted.** Open one sentence with *By + -ing* (you used it three times in W6, never as an opener), rotate one key noun three ways (*public funding → this subsidy → state support*), and add one concessive inversion: *Beneficial as public art may be, …* (`contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4).
+- **Retirement test.** Articles and subject control retire only when **one whole essay** has zero article or plural slips and zero dropped subjects. A workable target is 8 of 12 error-free sentences, up from 4. When that lands, Grammatical Range flips to 7 and your task score reaches 7.0 — you now need only that one flip.
+
+## Overall band rationale
+
+Task Response 7 + Coherence 7 + Lexical Resource 6 + Grammar 6 = 26 ÷ 4 = 6.50, reported as **6.5** under `contexts/01-band-descriptors/scoring-rules.md` §1 — the same band as W5, with the structural gains from W5 held and cohesion now added to them. Lifting either Lexical Resource or Grammar to 7 gives 6.75, which rounds to your target 7.0. Both remaining gaps are recurring, drillable Korean-L1 transfer patterns, not conceptual ones.
+
+## CONVERGENCE: CONVERGED
+
+Both examiners now agree on all four criterion scores (TR 7 / CC 7 / LR 6 / GRA 6 → 6.5) and on the top three priorities: collocation and register precision, articles/countability/plural marking, and explicit subjects and agreement in long sentences. I conceded Task Response on descriptor and calibration evidence — codex's rebuttal of my one Tier-1 anchor held, and the corpus's own Band-6.5 exemplars carry exactly this essay's profile — after conceding Coherence last round. Nothing substantive remains contested, and I cannot identify a further iteration that would change a score or a priority rather than reword one.

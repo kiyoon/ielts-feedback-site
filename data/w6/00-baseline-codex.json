@@ -1,0 +1,139 @@
+{
+  "id": "w6/00-baseline-codex",
+  "task": "w6",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-08-26T00:15:43Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "The essay addresses both views: the supporting argument is that artworks “can potentially alleviate people's mental health issues,” while the opposing argument is that “Governments' annual spending is limited.” The writer’s position is clear throughout. Nevertheless, the ideas are only partly developed. The benefits of art are reduced mainly to relaxation, while the claim that artists “can be replaced by modern technologies” is asserted without convincing explanation or evidence. The response needs a broader, better-supported comparison of public benefits to reach band 7."
+    },
+    "coherence": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "The overall progression is easy to follow, with an introduction, one paragraph for each view and a conclusion. Linking expressions such as “For instance,” “However,” “On the other hand” and “Therefore” help guide the reader. However, cohesion is sometimes mechanical or vague: “It is because” has a weak connection to the preceding sentence, while “those issues,” “the issues” and “the same problems” lack precise referents. Repetition of “waste of money,” “support artists” and “modern technologies” also limits flexibility."
+    },
+    "lexical": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "There is an adequate topic-related range, including “financial support,” “creative works,” “alleviate,” “annual spending” and “the advent of large language models.” Several less common words are attempted, but collocational errors are frequent: “consuming tax,” “spend the tax,” “soothe people's mind” and “music can help people rewind.” “Rewind” does not mean relax, and “a huge financial support” incorrectly treats *support* as a countable noun. Meaning remains understandable, but band 7 requires more consistently accurate word choice and collocation."
+    },
+    "grammar": {
+      "band": 6.0,
+      "descriptor_evidence": "",
+      "justification": "The essay contains a mixture of simple and complex structures, including the accurate concessive opening “Even though supporting artists might bring some benefits to society, I believe…” and relative clauses such as “artworks, which can potentially alleviate…” However, conspicuous basic errors recur: “people who believes,” “a efficient way,” “their works are not the only one,” and “provide them with a lot of money can be regarded.” These errors rarely block meaning, which supports band 6, but there are not yet enough consistently error-free sentences for band 7."
+    }
+  },
+  "overall": 6.0,
+  "overall_rationale": "**Overall: 6.0**\n\nCalculation: `(6.0 + 6.0 + 6.0 + 6.0) ÷ 4 = 6.0`.\n\nThe response is securely understandable, relevant and organised, but stronger idea development and more consistent grammatical and collocational accuracy are needed for band 7.",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "Even though supporting artists might bring some benefits to society, I believe that the money could be spent elsewhere such as new digital technologies to make the world a better place.",
+      "improved": "Although public funding for artists can improve cultural life and well-being, I believe governments should prioritise essential services and carefully targeted technology programmes because these benefit a larger proportion of the population.",
+      "reason": "This gives a precise position and establishes the comparison the essay will develop.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "Governments' annual spending is limited, and it is arguable that spending the large amount of money by giving financial support to artists is not a efficient way of spending taxes because their works are not the only one that can help people relieve stress.",
+      "improved": "Because public budgets are limited, arts funding must be weighed against investment in healthcare, education and digital infrastructure. These services meet essential needs and generally benefit the public more directly.",
+      "reason": "Two controlled sentences create a much clearer claim-and-explanation chain.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "Since the advent of large language models, a number of chatbots are able to address the issues more practically and straightforwardly. Despite the fact that artists can also contribute to the society, I believe they can be replaced by modern technologies.",
+      "improved": "For example, government-funded digital mental-health services can provide immediate, low-cost assistance to people who lack access to other support. Art can complement these services, but it cannot replace professional care.",
+      "reason": "This replaces an unsupported absolute claim with a credible example and a band-7-style concession.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "From the perspective of sociology, it is true that artists can contribute to society by creating their unique artworks, which can potentially alleviate people's mental health issues.",
+      "improved": "Supporters argue that public funding for artists can improve well-being and preserve a shared cultural identity. Grants can also make exhibitions and performances accessible to people who could not otherwise afford them.",
+      "reason": "This broadens and develops the supporting view while linking it directly to government funding.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "It is because some creative works can help people stay happy, or even feel emotionally attached.",
+      "improved": "This is because creative works can lift people's mood and help them feel connected to others.",
+      "reason": "The reference is clearer, and “lift people’s mood” is more natural than “help people stay happy.”",
+      "citations": [],
+      "category": "coherence"
+    },
+    {
+      "id": 6,
+      "original": "providing a huge financial support to artists by consuming tax",
+      "improved": "providing substantial financial support to artists from tax revenue",
+      "reason": "This corrects the countability error and uses accurate public-finance collocations.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 7,
+      "original": "there are people who believes that governments should spend the tax elsewhere",
+      "improved": "some people believe that governments should allocate tax revenue elsewhere",
+      "reason": "This fixes subject–verb agreement and replaces two awkward expressions.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "well-made paintings or characters can soothe people's mind, and some music can help people rewind",
+      "improved": "well-crafted paintings and fictional characters can soothe people's minds, while music can help them relax",
+      "reason": "This corrects the plural form and replaces the inaccurate verb “rewind.”",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 9,
+      "original": "Therefore, provide them with a lot of money can be regarded as a waste of money.",
+      "improved": "Therefore, providing artists with substantial public funding may be a poor use of limited tax revenue when more urgent needs remain unmet.",
+      "reason": "The gerund correctly forms the subject, while the conclusion becomes more precise and appropriately qualified.",
+      "citations": [],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-08-26T00:15:43Z by codex exec (gpt-5.6-sol, ultra), read-only sandbox, empty workdir._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band |\n|---|---:|\n| Task Response | 6.0 |\n| Coherence and Cohesion | 6.0 |\n| Lexical Resource | 6.0 |\n| Grammatical Range and Accuracy | 6.0 |\n\n## Structural feedback\n\nThe four-paragraph structure covers both views and presents a clear opinion. However, both sides are discussed almost entirely through mental health, so the response does not explore the broader public value of art or stronger alternative uses of government money. The paragraph opposing arts funding is longer, but its jump from limited budgets to chatbots is insufficiently developed. The conclusion consistently restates the position, although it repeats the same narrow comparison rather than synthesising the argument. The biggest potential band uplift would come from building each body paragraph around a clear claim, explanation, example and comparison; this would help more than isolated vocabulary upgrades.\n\n## Focus areas\n\n- **Main-idea development** — Extend each claim through a clear claim → explanation → example → link to the question sequence.\n- **Comparative evaluation** — Explain why one use of public money should take priority instead of merely asserting that technology can replace artists.\n- **Articles and countability** — Errors such as “a huge financial support,” “a efficient way” and “the society” prevent frequent band-7-level accuracy.\n- **Verb control** — Drill subject–verb agreement and gerund subjects, particularly errors such as “people who believes” and “provide them … can be regarded.”\n- **Public-spending and well-being collocations** — Use natural combinations such as “tax revenue,” “limited public funds,” “reduce stress” and “allocate funding.”\n\n## What's working\n\nThe opinion is clear from the introduction—“I believe that the money could be spent elsewhere”—and remains consistent in the conclusion. The essay uses sensible concession structures, including “Even though supporting artists might bring some benefits” and “Despite the fact that artists can also contribute.” There is also useful lexical ambition in “alleviate,” “the advent of large language models” and “contribute to society,” although accuracy is not yet consistent enough for band 7.\n\n## Per-criterion justification\n\n**Task Response — Band 6.0.** The essay addresses both views: the supporting argument is that artworks “can potentially alleviate people's mental health issues,” while the opposing argument is that “Governments' annual spending is limited.” The writer’s position is clear throughout. Nevertheless, the ideas are only partly developed. The benefits of art are reduced mainly to relaxation, while the claim that artists “can be replaced by modern technologies” is asserted without convincing explanation or evidence. The response needs a broader, better-supported comparison of public benefits to reach band 7.\n\n**Coherence and Cohesion — Band 6.0.** The overall progression is easy to follow, with an introduction, one paragraph for each view and a conclusion. Linking expressions such as “For instance,” “However,” “On the other hand” and “Therefore” help guide the reader. However, cohesion is sometimes mechanical or vague: “It is because” has a weak connection to the preceding sentence, while “those issues,” “the issues” and “the same problems” lack precise referents. Repetition of “waste of money,” “support artists” and “modern technologies” also limits flexibility.\n\n**Lexical Resource — Band 6.0.** There is an adequate topic-related range, including “financial support,” “creative works,” “alleviate,” “annual spending” and “the advent of large language models.” Several less common words are attempted, but collocational errors are frequent: “consuming tax,” “spend the tax,” “soothe people's mind” and “music can help people rewind.” “Rewind” does not mean relax, and “a huge financial support” incorrectly treats *support* as a countable noun. Meaning remains understandable, but band 7 requires more consistently accurate word choice and collocation.\n\n**Grammatical Range and Accuracy — Band 6.0.** The essay contains a mixture of simple and complex structures, including the accurate concessive opening “Even though supporting artists might bring some benefits to society, I believe…” and relative clauses such as “artworks, which can potentially alleviate…” However, conspicuous basic errors recur: “people who believes,” “a efficient way,” “their works are not the only one,” and “provide them with a lot of money can be regarded.” These errors rarely block meaning, which supports band 6, but there are not yet enough consistently error-free sentences for band 7.\n\n## Overall band\n\n**Overall: 6.0**\n\nCalculation: `(6.0 + 6.0 + 6.0 + 6.0) ÷ 4 = 6.0`.\n\nThe response is securely understandable, relevant and organised, but stronger idea development and more consistent grammatical and collocational accuracy are needed for band 7.\n\n## Top concrete improvements\n\n1. **Original:** “Even though supporting artists might bring some benefits to society, I believe that the money could be spent elsewhere such as new digital technologies to make the world a better place.”  \n   **Improved:** “Although public funding for artists can improve cultural life and well-being, I believe governments should prioritise essential services and carefully targeted technology programmes because these benefit a larger proportion of the population.”  \n   **Reason:** This gives a precise position and establishes the comparison the essay will develop.\n\n2. **Original:** “Governments' annual spending is limited, and it is arguable that spending the large amount of money by giving financial support to artists is not a efficient way of spending taxes because their works are not the only one that can help people relieve stress.”  \n   **Improved:** “Because public budgets are limited, arts funding must be weighed against investment in healthcare, education and digital infrastructure. These services meet essential needs and generally benefit the public more directly.”  \n   **Reason:** Two controlled sentences create a much clearer claim-and-explanation chain.\n\n3. **Original:** “Since the advent of large language models, a number of chatbots are able to address the issues more practically and straightforwardly. Despite the fact that artists can also contribute to the society, I believe they can be replaced by modern technologies.”  \n   **Improved:** “For example, government-funded digital mental-health services can provide immediate, low-cost assistance to people who lack access to other support. Art can complement these services, but it cannot replace professional care.”  \n   **Reason:** This replaces an unsupported absolute claim with a credible example and a band-7-style concession.\n\n4. **Original:** “From the perspective of sociology, it is true that artists can contribute to society by creating their unique artworks, which can potentially alleviate people's mental health issues.”  \n   **Improved:** “Supporters argue that public funding for artists can improve well-being and preserve a shared cultural identity. Grants can also make exhibitions and performances accessible to people who could not otherwise afford them.”  \n   **Reason:** This broadens and develops the supporting view while linking it directly to government funding.\n\n5. **Original:** “It is because some creative works can help people stay happy, or even feel emotionally attached.”  \n   **Improved:** “This is because creative works can lift people's mood and help them feel connected to others.”  \n   **Reason:** The reference is clearer, and “lift people’s mood” is more natural than “help people stay happy.”\n\n6. **Original:** “providing a huge financial support to artists by consuming tax”  \n   **Improved:** “providing substantial financial support to artists from tax revenue”  \n   **Reason:** This corrects the countability error and uses accurate public-finance collocations.\n\n7. **Original:** “there are people who believes that governments should spend the tax elsewhere”  \n   **Improved:** “some people believe that governments should allocate tax revenue elsewhere”  \n   **Reason:** This fixes subject–verb agreement and replaces two awkward expressions.\n\n8. **Original:** “well-made paintings or characters can soothe people's mind, and some music can help people rewind”  \n   **Improved:** “well-crafted paintings and fictional characters can soothe people's minds, while music can help them relax”  \n   **Reason:** This corrects the plural form and replaces the inaccurate verb “rewind.”\n\n9. **Original:** “Therefore, provide them with a lot of money can be regarded as a waste of money.”  \n   **Improved:** “Therefore, providing artists with substantial public funding may be a poor use of limited tax revenue when more urgent needs remain unmet.”  \n   **Reason:** The gerund correctly forms the subject, while the conclusion becomes more precise and appropriately qualified.",
+  "structural_feedback": "The four-paragraph structure covers both views and presents a clear opinion. However, both sides are discussed almost entirely through mental health, so the response does not explore the broader public value of art or stronger alternative uses of government money. The paragraph opposing arts funding is longer, but its jump from limited budgets to chatbots is insufficiently developed. The conclusion consistently restates the position, although it repeats the same narrow comparison rather than synthesising the argument. The biggest potential band uplift would come from building each body paragraph around a clear claim, explanation, example and comparison; this would help more than isolated vocabulary upgrades.",
+  "focus_areas": [
+    {
+      "area": "Main-idea development",
+      "rationale": "Extend each claim through a clear claim → explanation → example → link to the question sequence",
+      "corpus_drill": []
+    },
+    {
+      "area": "Comparative evaluation",
+      "rationale": "Explain why one use of public money should take priority instead of merely asserting that technology can replace artists",
+      "corpus_drill": []
+    },
+    {
+      "area": "Articles and countability",
+      "rationale": "Errors such as “a huge financial support,” “a efficient way” and “the society” prevent frequent band-7-level accuracy",
+      "corpus_drill": []
+    },
+    {
+      "area": "Verb control",
+      "rationale": "Drill subject–verb agreement and gerund subjects, particularly errors such as “people who believes” and “provide them … can be regarded.”",
+      "corpus_drill": []
+    },
+    {
+      "area": "Public-spending and well-being collocations",
+      "rationale": "Use natural combinations such as “tax revenue,” “limited public funds,” “reduce stress” and “allocate funding.”",
+      "corpus_drill": []
+    }
+  ],
+  "whats_working": "The opinion is clear from the introduction—“I believe that the money could be spent elsewhere”—and remains consistent in the conclusion. The essay uses sensible concession structures, including “Even though supporting artists might bring some benefits” and “Despite the fact that artists can also contribute.” There is also useful lexical ambition in “alleviate,” “the advent of large language models” and “contribute to society,” although accuracy is not yet consistent enough for band 7."
+}
