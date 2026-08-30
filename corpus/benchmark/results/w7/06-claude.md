@@ -1,0 +1,116 @@
+# Panel 06 — claude (discussion)
+
+_Generated 2026-08-30T12:46:43Z. Examiner-panel discussion; corpus manifest: 156 files._
+
+---
+
+All citations verified. Here is my Panel 06 message.
+
+---
+
+# Panel 06 — claude (discussion)
+
+**To codex:** three concessions, one hold, and two pieces of new evidence that I think close the remaining gap.
+
+**Conceded — you were right.**
+1. **`02-vocabulary-error-correction-bank.md` §9 is the correct cite for "every children."** I checked §§A–B of the Korean file: §B1 is *missing* plural -s, §B2 is plural-on-uncountables. Neither covers over-pluralisation after *every*. §9 row 14 is exactly "every people → everyone / every person, [count] *every* + singular countable." Your cite, adopted.
+2. **My word-count argument was weak and I withdraw it.** `paragraph-structure-band7.md` §1 targets 80–110 words per body; the TR bank §4 row 10 says the same. Body 2 is 88 words — *inside* the target. Body 1 is 119. So "unbalanced" was never the real defect; you were right that equal lengths aren't required. The real Body 2 problem is redundancy — it ends on Body 1's teacher-overload point (`04-task-response-error-correction-bank.md` §3 row 8, "each body paragraph must have a **distinct** main idea"). Dropping the word counts, keeping the redundancy.
+3. **Dropping the licensing claim and the invented "thirty pupils."** *Pastoral care* is real corpus vocabulary (`topic-01-education.md` §C1 cluster), but the sweeping claim about what a licence certifies was mine, not the corpus's.
+
+**Held.** "National certification exam" isn't invented — the essay says "pass **the exam** to become an official teacher." And my "juveniles" cite verifies: `samples-band-5_5.md` §Sample 5 examiner note reads *"'juvenile' mis-collocated."*
+
+**New evidence — two things that change how we should argue the top priority.**
+
+**(a) You were right that "it is easy to get outnumbered" is not Korean topic-drop — but the corpus has a section for it that neither of us cited.** §F2 of `10-common-korean-chinese-speaker-errors.md`: *"It is + adj + for sb + to V" misuse* — the rule is that the `for sb` slot is obligatory. W7 leaves it empty. And so does **W2's conclusion**: "it is not possible to solve every problem." And **W6's** hides the agent a different way: "provide them with a lot of money can be regarded as a waste of money." Three conclusions, three mechanisms, one failure — **the verdict sentence keeps losing its agent.** That merges our #1 and #2 into a single teachable rule rather than two separate drills.
+
+**(b) W3 scored 6.0 — TR 6 / CC 6 / LR 6 / GRA 6, identical to W7.** The same-prompt retry produced the same band profile. More pointedly: W3's feedback handed this writer a finished synthesis conclusion *for this exact prompt* — "On balance, parents and schools play complementary roles: the home instils values, while the classroom gives children the chance to practise them" — and W7 doesn't use it. That's the strongest possible evidence for keeping the conclusion at #1, and neither of us had it.
+
+**Convergence:** REFINING, on a closeable condition. Scores and top-3 are stable and I'm not moving them. But (a) re-opens a point you flatly rejected, and (b) is a new history claim. Verify §F2 and the W3 = 6.0 profile; if they hold and you have nothing further, I converge next round.
+
+---
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---:|---|
+| Task Response | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — "the conclusions drawn may be unclear" |
+| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — cohesion "faulty or mechanical" |
+| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — "some errors in spelling and/or word formation" |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 — complex forms "not marked by the same level of accuracy" |
+| **Overall** | **6.0** | (6+6+6+6) ÷ 4 = 6.00 per `contexts/01-band-descriptors/scoring-rules.md` §1/§3 |
+
+## What changed from prior feedback
+
+**Agreed with the other examiner:** all four scores, and the top three priorities — conclusion verdict, clause control, collocation. I corrected three things of my own this round. I had cited the wrong corpus section for "every children" (it is `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §9, not the Korean plural section). I withdrew my claim that your bodies are badly unbalanced — at 88 words your second body is inside the 80–110 target in `contexts/05-band-6-to-7/paragraph-structure-band7.md` §1, so length was never the problem; repetition is. And I dropped a claim about teaching licences that the corpus does not support. **Added:** the exact rule your final sentence breaks (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F2), and the fact that W3 — your first attempt at this same prompt — scored 6.0 with the same four criterion scores.
+
+## Progress across essays
+
+| Pattern | History | Status | Evidence in this essay |
+|---|---|---|---|
+| Conclusion synthesis and verdict | weak W2–W6; W7 is the first outright omission | **recurring** | "it is easy to get outnumbered by children" — no verdict, no synthesis |
+| Verdict sentence loses its agent | W2 "it is not possible to solve every problem"; W6 "provide them with a lot of money can be regarded" | **recurring** | "**it is easy** to get outnumbered by children" — who gets outnumbered is never stated |
+| Finite verbs and logical clause subjects | W1–W3, W5, W6 | **recurring** | "Some would argued"; "experts who has"; "as a homeroom teacher, it is challenging" |
+| Collocation, register, verb complements | W1–W6 | **recurring** | "responsible to teach"; "educate students how to"; "juveniles"; "nice adults" |
+| Articles, countability, number | W1–W6 ("a single hardware", "every research", "when they are teenager", "a efficient way") | **recurring** | "every children"; "a bachlor degree"; "a good member" for plural children |
+| Comma splice with conjunctive adverb | W2, W3 "therefore some people take a different view" | **recurring** | "anyone else, **thus,** they should know" |
+| Prompt-focused position in the introduction | W3 answered "it is up to individuals to learn the social skills" | **fixed** | "I believe that parents are more responsible to their children" |
+| One body paragraph per view | W3 crammed both views into one paragraph | **fixed** | "On the one hand" = schools; "On the other hand" = parents |
+
+## Structural feedback
+
+Your introduction does the hardest thing right, and it is the exact thing W3 got wrong: it paraphrases both views and lands on the prompt's own terms. The essay then never comes back to that position. Your conclusion concedes the teacher case and trails into a subordinate observation — a reader finishing there could not say which side you took, which is the textbook Band 6 marker "the conclusions drawn may be unclear." This is the drift pattern mapped in `contexts/05-band-6-to-7/task-response-upgrades.md` §4: agree in the introduction, balance through the bodies, no position at the end. The fix is one extra sentence, not a rewrite — at 33 words your conclusion is short of the 40–60 target in `contexts/05-band-6-to-7/paragraph-structure-band7.md` §1, and a two-sentence synthesis-plus-verdict lands naturally at about 50. Second, and this is the sharper structural point: your second body opens on parental knowledge but **ends on teacher overwhelm**, repeating the first body instead of showing what a parent actually does; each body needs a distinct main idea (`contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §3 row 8), and your personal commentary belongs in the closing link sentence (`contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2). **The single highest-impact fix is the two-sentence conclusion — worth more than every lexical upgrade in the table below.** W3's feedback gave you a model conclusion for this identical prompt; go back and read it.
+
+## Focus areas
+
+- **Explicit verdict and synthesis in the conclusion** — a discuss-both-views essay that never states your answer caps Task Response at 6 however good the introduction is. Seen in: W2–W7, worst here. Drill: `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §5, `contexts/05-band-6-to-7/task-response-upgrades.md` §9.
+- **Give every verdict a human subject** — your conclusions lose their agent three different ways across W2, W6 and W7. The rule you need is `It is + adj + **for someone** + to V`. Seen in: W2, W6, W7. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F2, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §10.
+- **Finite-verb and logical-subject control** — modal form, relative-clause agreement and dangling modifiers are why Grammar is a *low* 6. Seen in: W1–W3, W5–W7. Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §§2, 6, 10; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§C, H.
+- **Collocation, register and verb complements** — "responsible to teach", "juveniles", "nice adults" are near-misses that block Lexical Resource 7 despite real range. Seen in: W1–W7. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §§3–4, `contexts/05-band-6-to-7/vocabulary-upgrades.md`.
+- **Articles, countability and number** — "every children" is the Korean-L1 pattern your own corpus names: *"when you write English from Korean thinking, articles and singular/plural collapse."* Seen in: W1–W7. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §9, `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §9.
+- **Claim → mechanism → example** — your examples are concrete but aim slightly off-target, so ideas read as asserted. Seen in: W1–W4, W6–W7. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §5, `contexts/10-task2-topic-banks/topic-01-education.md`.
+
+## What's working
+
+The W3 failure is genuinely dead: "I believe that parents are more responsible to their children" answers the actual choice instead of dodging into a third position, and giving schools and parents their own paragraphs fixes W3's mixed structure — both are real, permanent gains on the same prompt. The Firstly/Secondly habit from W2 and W4 stays retired. You are still taking real lexical risks — "It is undeniable that", "traits and personalities", "overwhelmed", "inclined" — and the Korean certification example is specific rather than generic. Keep the risk-taking; `contexts/04-task2-essays/samples-band-6_0.md` describes exactly that profile as the one that converts to Band 7 once accuracy catches up.
+
+## Per-criterion justification
+
+**Task Response — 6.0.** Both views and your opinion are present, so the Band 6 floor is met. It fails Band 7's "clear and developed position" because the conclusion never returns to it: "it is easy to get outnumbered by children" is an observation about teachers, not a verdict about parents. The licensing example ("they need to graduate the school of education and get a bachlor degree") proves subject qualification, not social-skills competence, and "Some might have mental health issues or even a rare disease" drifts — a rare disease is not a social-skills variable. Note that Band 7 *does* tolerate "a lack of focus and precision in supporting ideas", which is why W5 and W6 held Task Response 7 with that same weakness; the conclusion is what drops you here. Calibration: the Band 6 anchor in `contexts/11-quality-audit/05-calibration-exemplars.md` scores Task Response **7** — and its conclusion restates its verdict.
+
+**Coherence and Cohesion — 6.0.** The four-paragraph shape is sound and "On the one hand … On the other hand" is correctly paired. Cohesion fails at the seam: "parents know their children more than anyone else, thus, they should know how to effectively guide their children" is a comma splice, the same fault as W3. Reference is imprecise — "that issue" has no clear antecedent, and the two "they"s in "there are so many children they have to take care of" point at different groups (`contexts/05-band-6-to-7/cohesion-upgrades.md` §9). Your first body also stacks "This is because", "For instance", "Therefore" and "However" — the mechanical-linker pattern in §2 of that file. Band 6's "faulty or mechanical", not Band 7's flexible reference.
+
+**Lexical Resource — 6.0.** "homeroom teachers", "overwhelmed", "traits and personalities" show adequate topic range. Two misspellings sit in one sentence — "cirtification" and "bachlor" — the explicit Band 6 marker. The register misfires share one root cause: over-paraphrasing. "Juveniles" appears in the children-synonym row of `contexts/09-instructor-tips/02-paraphrase-banks-task2.md`, but a Band 5.5 script is marked down for exactly this substitution (`contexts/04-task2-essays/samples-band-5_5.md` §Sample 5: *"'juvenile' mis-collocated"*), and `contexts/05-band-6-to-7/vocabulary-upgrades.md` warns: *"If a synonym sounds odd, keep the original word."* Say **children**. Collocations are near-misses: "responsible to teach" (→ responsible *for* teaching), "educate students how to" (→ *teach*), "graduate the school of education" (→ graduate *from*), "I am inclined to this view" (missing verb), and "efficiently" where you mean **effectively** — the confusion named in `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §J.
+
+**Grammatical Range & Accuracy — 6.0 (low).** Range is real and is the only thing holding this at 6: concessive ("Although", "even though", "despite the fact that"), several relative clauses, causal subordination, extraposed "it is often true that", comparative, modals. Band 5's "limited and rather repetitive" does not describe that. But only **three of your thirteen sentences are error-free** — "On the one hand, children can learn how to socialize in school effectively thanks to homeroom teachers", "Moreover, everyone has different traits and personalities", and "Some might have mental health issues or even a rare disease" — and two of those are short and simple. Band 7 needs error-free sentences to be *frequent*. Be aware how close this is to 5: the examiner report in `contexts/06-feedback-patterns/model-feedback-examples.md` Example 1 awards **Band 5** for this exact profile.
+
+## Top concrete rewrites (ranked by band uplift × persistence)
+
+| # | Your phrase (verbatim) | Band-7 rewrite | Why it matters | Corpus citation |
+|---:|---|---|---|---|
+| 1 | "In conclusion, despite the fact that teachers in schools are experts to guide children and educate how to socialize with others and become nice adults, it is easy to get outnumbered by children." | "In conclusion, although trained teachers can model social behaviour in the classroom, large classes limit the attention each child receives. **Parents should therefore bear the primary responsibility**, since they alone can adapt that guidance to the child in front of them." | Kills the W2–W7 conclusion pattern *and* gives the verdict a human subject. You were given a model conclusion for this identical prompt in your W3 feedback. | `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §5; `contexts/09-instructor-tips/06-task2-sentence-frames.md` §8 |
+| 2 | "it is easy to get outnumbered by children" | "it is easy **for a single teacher** to be outnumbered" | The `for + someone` slot is obligatory in this frame. Same fault as W2's "it is not possible to solve every problem" and W6's "provide them…can be regarded". | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F2 |
+| 3 | "Some would argued that parents are responsible to teach their children how to socialize" | "**Some argue** that parents are **responsible for teaching** their children how to **interact with others**" | Modal + base form (recurring W1–W7) plus "responsible **for**"; "educate/teach X how to" repeats verbatim from W3. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §H; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4 row 17 |
+| 4 | "teachers are experts who has cirtification to teach juveniles" | "teachers are **trained professionals who hold a formal teaching qualification**" | Relative-clause agreement recurring since W6 ("people who believes"), plus two spellings and the over-paraphrase. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §2; `contexts/04-task2-essays/samples-band-5_5.md` §Sample 5 |
+| 5 | "I am inclined to this view because, as a homeroom teacher, it is challenging to deal with these factors" | "**Having considered both perspectives, I am inclined to support** the parental view: a homeroom teacher responsible for a large class cannot realistically accommodate such differences." | Fixes three things at once — the dangling modifier (as written it says *you* are the teacher), "inclined to", and the missing subject. The opener is a verbatim corpus drop-in. | `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §7; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §10 row 5 |
+| 6 | "teachers cannot efficiently teach every children how to socialize" | "teachers cannot **effectively** teach **every child** how to socialise" | Two recurring patterns, five characters: *every* takes a singular noun, and *efficient* → *effective*. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §9 row 14; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §J |
+| 7 | "parents know their children more than anyone else, thus, they should know how to effectively guide their children" | "**Because** parents know their children **better than anyone else**, they are **best placed to tailor their guidance to each child's needs**." | Comma splice recurring since W3; also repairs the incomplete comparative and the repetition. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §11 rows 1, 14; §14 row 7 |
+| 8 | "they need to graduate the school of education and get a bachlor degree, and pass the exam" | "they must **graduate from a college of education**, **earn a bachelor's degree**, and pass a national certification exam" | Preposition + article + spelling — three Band-6 markers in one clause. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §§1, 4 |
+| 9 | "they can teach and guide children how to be a good member of society better than their parents" | "schools **teach social behaviour** because pupils practise cooperation, compromise and respect for shared rules with their peers" | Re-aims the paragraph at the proposition you actually made — the recurring support gap. Also fixes "a good member" for plural children. | `contexts/10-task2-topic-banks/topic-01-education.md` §Core arguments FOR row 6 |
+| 10 | "become nice adults" | "become **responsible members of their community**" | "Nice" is spoken register in an academic conclusion; the topic bank supplies *instil a sense of civic responsibility*. | `contexts/10-task2-topic-banks/topic-01-education.md` §Topic-specific C1 vocabulary cluster |
+
+## Before your next essay
+
+- **Re-read your own W3 feedback, then write the conclusion first (10 min).** W3 was this same prompt, and it scored 6.0 with the same four criterion scores as W7 — you fixed the introduction and broke the conclusion, so the band did not move. Two sentences: one conceding the other side, one stating your verdict. Then rewrite the W2, W4 and W6 conclusions to that shape (`contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §5).
+- **The agent drill (10 min).** Take your three conclusions — W2's "it is not possible to solve every problem", W6's "provide them with a lot of money can be regarded", W7's "it is easy to get outnumbered" — and rewrite each so a named person or group is the grammatical subject. Then write five sentences on the pattern `It is + adjective + **for someone** + to + verb` (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F2).
+- **Five collocation cards (12 min).** *responsible for teaching · hold a teaching qualification · give every child individual attention · instil civic responsibility · interact with peers.* Write one fresh sentence with each — production, not reading. And add one rule card: **when a synonym sounds odd, keep the plain word** — write *children*, not *juveniles* (`contexts/05-band-6-to-7/vocabulary-upgrades.md`).
+- **Exam proofread — four minutes, three passes, one error class each.** Pass 1: every verb has a subject, and every "it is…" has its *for someone*. Pass 2: articles and plurals — circle each noun, ask "one or many? which one?" Pass 3: collocations and pronoun antecedents.
+- **Stretch goals — attempt, don't just avoid.** W7 contains none of the five showcase structures in `contexts/09-instructor-tips/07-band7-grammar-showcases.md` §16, and the stretch goals set after W5 went unused in both W6 and W7. Drop in one concessive inversion — *"Qualified as teachers are, they cannot replace daily parental guidance"* — which §4 of that file calls the single biggest grammar return per character of effort, and which fits this prompt exactly.
+- **Retirement test.** The conclusion priority retires when your next timed essay ends with two sentences that synthesise both sides *and* name your verdict, with a human subject in the verdict sentence, in wording matching your introduction. Only then does clause control move to the top slot.
+
+## Overall band rationale
+
+Four criteria at Band 6 total 24; 24 ÷ 4 = 6.00, reported as **6.0** — a half-band below W5 and W6, with the conclusion as the single largest cause. Your route back to 7.0 is arithmetic: 7 + 7 + 7 + 6 = 6.75, which rounds up to 7.0 under `contexts/01-band-descriptors/scoring-rules.md` §3. You held Task Response 7 and Coherence 7 twice running; fix the conclusion to get them back, then lift one language criterion.
+
+## CONVERGENCE: REFINING
+
+The panel agrees on all four criterion scores (6/6/6/6 → 6.0) and on the top three priorities, and I am not moving either. I am declaring REFINING for one specific, closeable reason: this pass introduces two substantive findings the other examiner has not seen — the corpus rule that the final sentence actually breaks (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F2, which re-opens a characterisation codex rejected last round, now with W2 and W6 evidence), and the fact that W3 scored an identical 6.0 on this same prompt. Both should be checked rather than waved through; if they hold and codex adds nothing further, I converge next round.

@@ -1,0 +1,192 @@
+{
+  "task": "w7",
+  "target_band": 7.0,
+  "prompt": "Some people think that parents should teach their children how to be good members of society. Others, however, believe that school is the best place to learn this. Discuss both views and give your own opinion.",
+  "intro_note": "Band 7 rewrite of W7 (6.0). Keeps your position, your four-paragraph structure and your Korea example — the example is re-aimed at the claim it actually proves. Highlights mark what moves each criterion.",
+  "word_count": 307,
+  "paragraphs": [
+    {
+      "spans": [
+        {
+          "text": "Opinion is divided over whether the responsibility for "
+        },
+        {
+          "text": "teaching children to behave well in society",
+          "highlight": {
+            "label": "Infinitive complement",
+            "kind": "lexical",
+            "explanation": "*teach* takes a to-infinitive. This replaces the recurring \"educate students how to socialize\", which appeared three times in W7 and again in W3."
+          }
+        },
+        {
+          "text": " rests primarily with their families or with their schools. "
+        },
+        {
+          "text": "Although classroom life clearly offers valuable practice, ",
+          "highlight": {
+            "label": "Fronted concession",
+            "kind": "coherence",
+            "explanation": "Concedes the other side before stating the position, so the introduction is not one-sided."
+          }
+        },
+        {
+          "text": "I would argue that parents remain better placed to shape social behaviour",
+          "highlight": {
+            "label": "Position stated in the introduction",
+            "kind": "task_response",
+            "explanation": "A clear position, framed as effectiveness (\"better placed\") rather than duty — which is what Body 2 actually argues."
+          }
+        },
+        {
+          "text": ", because they can adapt their guidance to the individual child."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "There is a strong case for the school.",
+          "highlight": {
+            "label": "Short topic sentence",
+            "kind": "coherence",
+            "explanation": "A five-word claim opens the paragraph, instead of a 30-40 word formulaic frame."
+          }
+        },
+        {
+          "text": " Teachers are trained professionals, and a classroom exposes children to the situations in which social skills are actually used: "
+        },
+        {
+          "text": "sharing equipment, taking turns in discussion, and apologising after a dispute",
+          "highlight": {
+            "label": "Concrete social behaviours",
+            "kind": "task_response",
+            "explanation": "W3's feedback asked for exactly these — apologising, sharing, compromise — instead of the abstract \"social norms\"."
+          }
+        },
+        {
+          "text": ". In Korea, for example, prospective teachers must "
+        },
+        {
+          "text": "complete a degree at a college of education and pass a certification examination",
+          "highlight": {
+            "label": "Prepositions and spelling repaired",
+            "kind": "grammar",
+            "explanation": "Fixes \"graduate ∅ the school of education\", \"a bachlor degree\" and \"cirtification\" in one clause."
+          }
+        },
+        {
+          "text": ", so they enter the profession with "
+        },
+        {
+          "text": "formal training that most parents have not received",
+          "highlight": {
+            "label": "The example proves its own claim",
+            "kind": "task_response",
+            "explanation": "Your Korea example is kept, but re-aimed: a degree and an exam demonstrate training, not skill at teaching social behaviour. The original leap — that this makes teachers better than parents — is gone."
+          }
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Where a family has little time or confidence,",
+          "highlight": {
+            "label": "Fronted Where-clause",
+            "kind": "grammar",
+            "explanation": "A Band 7 complex structure that stays error-free."
+          }
+        },
+        {
+          "text": " this daily supervised practice may be the main place a child learns to cooperate."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "Even so, ",
+          "highlight": {
+            "label": "Concessive pivot",
+            "kind": "coherence",
+            "explanation": "Turns to your own side without a mechanical \"On the other hand\"."
+          }
+        },
+        {
+          "text": "professional training cannot substitute for individual knowledge. "
+        },
+        {
+          "text": "A homeroom teacher is responsible for a whole class and may know each child for only a single school year, whereas parents observe the same child from infancy",
+          "highlight": {
+            "label": "The mechanism, not an assertion",
+            "kind": "task_response",
+            "explanation": "Your Body 2 claimed parents \"know their children more than anyone else\" but never said why it matters. This contrast supplies the reason."
+          }
+        },
+        {
+          "text": " and can read the temperament behind a particular behaviour. "
+        },
+        {
+          "text": "A child who withdraws from group work may be shy, anxious or simply tired;",
+          "highlight": {
+            "label": "Concrete case replaces the medical drift",
+            "kind": "task_response",
+            "explanation": "Replaces \"mental health issues or even a rare disease\", which moved from social behaviour to medicine."
+          }
+        },
+        {
+          "text": " a parent who knows which it is can respond appropriately",
+          "highlight": {
+            "label": "Every referent resolves",
+            "kind": "coherence",
+            "explanation": "\"which it is\" points to exactly one thing. Compare your \"they have to take care of\", where *they* had no antecedent."
+          }
+        },
+        {
+          "text": ", while a teacher managing a large class must apply one rule to everyone. "
+        },
+        {
+          "text": "Because honesty and consideration are absorbed most readily from people a child trusts and sees daily, the home retains the stronger influence.",
+          "highlight": {
+            "label": "Ends on the parent, not the teacher",
+            "kind": "task_response",
+            "explanation": "This is the corrected fault: your Body 2 ended on teacher overwhelm, repeating Body 1. Each body needs a distinct main idea."
+          }
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "In conclusion, "
+        },
+        {
+          "text": "schools give children the daily practice that turns social rules into habits, and trained teachers manage that practice skilfully.",
+          "highlight": {
+            "label": "Concedes the other side",
+            "kind": "task_response",
+            "explanation": "Real synthesis: the opposing view is granted its strength before the verdict."
+          }
+        },
+        {
+          "text": " Nevertheless, because parents know the individual child and can adjust their guidance accordingly, "
+        },
+        {
+          "text": "I believe the primary responsibility still lies with the family",
+          "highlight": {
+            "label": "THE VERDICT — the single highest-value fix",
+            "kind": "task_response",
+            "explanation": "Your conclusion named no side at all, which is what cost Task Response the band. W5 scored TR 7 with a conclusion that states its position outright."
+          }
+        },
+        {
+          "text": ", with schools reinforcing rather than replacing what is taught at home.",
+          "highlight": {
+            "label": "Qualified, not absolute",
+            "kind": "coherence",
+            "explanation": "Gives schools a continuing role, so the verdict stays proportional to the evidence."
+          }
+        }
+      ]
+    }
+  ]
+}
