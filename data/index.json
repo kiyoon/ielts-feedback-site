@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T16:47:38.156Z",
+  "generated_at": "2026-09-02T01:32:55.292Z",
   "tasks": {
     "w1": {
       "label": "W1 (real)",
@@ -747,6 +747,81 @@
           "overall": 6,
           "convergence": "CONVERGED",
           "generated_at": "2026-08-30T16:16:19Z"
+        }
+      ]
+    },
+    "w8": {
+      "label": "W8 (real)",
+      "title": "First-time car buyers in developing countries",
+      "essay": {
+        "prompt": "More and more people in developing countries are purchasing cars for the first time. What problems does this cause? What do you think is a possible solution?",
+        "text": "An increasing number of people from developing countries are making their first car purchases. The major problems this causes are more consumption of fossil fuels and more car accidents, nevertheless, these issues can be tackled by encouraging people to use public transport.\n\nThe primary issue that people in developing nations are going to face is the growing number of car accidents. This is because if people buy more cars, there will be more traffic, and thus, car accidents will increase naturally. Moreover, it is projected that fossil fuel consumption will increase as people drive more cars on the road. The problem is that fossil fuels are limited resources, and cannot be generated artificially unlike other reusable energy. In other words, fossil fuels take millions of years to form themselves naturally, and they can run out if people use them a lot.\n\nA solution to these problems is to encourage people to use more public transport. This means that if people take public transport such as buses or subways more, there will be less cars on roads. One simple action that governments can do is conduct a campaign to make people use public transports more than usual. In this way, there will be less traffics on road since a single vehicle can handle several people at once, instead of people driving their own vehicles each.\n\nIn conclusion, people purchasing cars in developing countries can result in more car accidents and increasing fossil fuel usage, however, it can be alleviated through conducting a public awareness campaign.",
+        "word_count": 254
+      },
+      "iterations": [
+        {
+          "id": "w8/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-09-01T12:24:56Z"
+        },
+        {
+          "id": "w8/01-codex",
+          "iteration": 1,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-01T12:53:11Z"
+        },
+        {
+          "id": "w8/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-01T12:53:11Z"
+        },
+        {
+          "id": "w8/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-01T13:20:47Z"
+        },
+        {
+          "id": "w8/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-01T14:40:32Z"
+        },
+        {
+          "id": "w8/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-01T14:08:58Z"
+        },
+        {
+          "id": "w8/06-claude",
+          "iteration": 6,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-01T14:25:44Z"
+        },
+        {
+          "id": "w8/07-codex",
+          "iteration": 7,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-01T15:02:18Z"
         }
       ]
     },

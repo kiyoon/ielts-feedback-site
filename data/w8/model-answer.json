@@ -1,0 +1,188 @@
+{
+  "task": "w8",
+  "target_band": 7.0,
+  "prompt": "More and more people in developing countries are purchasing cars for the first time. What problems does this cause? What do you think is a possible solution?",
+  "intro_note": "Band 7 rewrite of W8 (6.0). Keeps your two problems, your public-transport solution and your four-paragraph structure — the panel's nine rewrites applied. Highlights mark what moves each criterion.",
+  "word_count": 308,
+  "paragraphs": [
+    {
+      "spans": [
+        {
+          "text": "It is increasingly common for people in developing countries to buy a car of their own for the first time. This trend brings two serious problems — "
+        },
+        {
+          "text": "a rise in road accidents and ever-greater consumption of fossil fuels",
+          "highlight": {
+            "label": "Roadmap matches the body",
+            "kind": "coherence",
+            "explanation": "Your introduction listed fuel first but Body 1 treated accidents first. The preview now names the problems in the order the essay delivers them."
+          }
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Nevertheless, both problems can be eased",
+          "highlight": {
+            "label": "Comma splice fixed",
+            "kind": "grammar",
+            "explanation": "Your thesis joined two sentences with \", nevertheless,\" — the recurring W3/W7/W8 splice. The adverb is kept; it just follows a full stop. Same word, legal punctuation."
+          }
+        },
+        {
+          "text": " if governments make public transport a genuinely attractive alternative to driving."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "The most immediate danger is a sharp increase in traffic accidents.",
+          "highlight": {
+            "label": "Short claim sentence",
+            "kind": "coherence",
+            "explanation": "Replaces the 16-word runway (\"The primary issue that people in developing nations are going to face is…\") with a direct claim, so the paragraph's topic is visible instantly."
+          }
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Most first-time buyers are, by definition, inexperienced drivers, and in many developing countries licensing systems and traffic enforcement are still too weak to prepare them properly.",
+          "highlight": {
+            "label": "Mechanism from the prompt's own words",
+            "kind": "task_response",
+            "explanation": "Your version said accidents rise \"naturally\" — an assertion. The proof uses exactly what the prompt supplies: first-time buyers are new drivers, and developing countries' licensing and enforcement cannot yet cope. This is the Band 7 \"extended and supported\" gate."
+          }
+        },
+        {
+          "text": " When millions of new motorists join roads that were never designed for such volumes, collisions inevitably become more frequent. Moreover, fossil fuel consumption "
+        },
+        {
+          "text": "is projected to climb steeply",
+          "highlight": {
+            "label": "Your best frame, promoted",
+            "kind": "grammar",
+            "explanation": "\"It is projected that…\" was the most academic error-free sentence in your eight essays. The raised form (\"is projected to climb\") is the same structure, tightened."
+          }
+        },
+        {
+          "text": " as car ownership spreads. "
+        },
+        {
+          "text": "Unlike renewable sources such as solar or wind power",
+          "highlight": {
+            "label": "renewable, not \"reusable\"",
+            "kind": "lexical",
+            "explanation": "Your W2 feedback corrected \"natural energy\" to renewable energy; W8 wrote \"reusable energy\" — the same collocation family. Renewable is the exam term, and \"other\" is gone because fossil fuels are not a renewable."
+          }
+        },
+        {
+          "text": ", petrol cannot be produced artificially: fossil fuels take millions of years to form, "
+        },
+        {
+          "text": "so reserves consumed at today's pace can never be replaced",
+          "highlight": {
+            "label": "Register lift + consequence",
+            "kind": "lexical",
+            "explanation": "Replaces \"they can run out if people use them a lot\" — the spoken-register \"a lot\" from your W5 ban-list — and completes your best chain with its consequence."
+          }
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "The most realistic solution is to persuade these new buyers to drive less and use public transport more. The arithmetic is simple: a single bus can "
+        },
+        {
+          "text": "carry dozens of passengers",
+          "highlight": {
+            "label": "carry, not \"handle\"",
+            "kind": "lexical",
+            "explanation": "Vehicles carry passengers (\"handle several people\" is a literal translation), and dozens is the honest scale of a bus — \"several\" undersold your own argument."
+          }
+        },
+        {
+          "text": " who would otherwise travel in separate cars, so every full bus means "
+        },
+        {
+          "text": "fewer vehicles, less congestion and lower fuel demand",
+          "highlight": {
+            "label": "fewer + countable, less + uncountable",
+            "kind": "grammar",
+            "explanation": "Your longest-running error family (\"less cars\", \"less traffics\", \"public transports\") used correctly in one clause — and the sentence now explicitly serves both problems, the link your essay left implicit."
+          }
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "An awareness campaign alone, however, rarely changes behaviour.",
+          "highlight": {
+            "label": "however, done legally",
+            "kind": "coherence",
+            "explanation": "Mid-sentence \"however\" set off by commas inside ONE clause is fine — the fault in your conclusion was using it to weld two sentences together. Here it also concedes the campaign's limit before improving on it."
+          }
+        },
+        {
+          "text": " Governments also need to make buses and subways cheaper, safer and more reliable than driving — "
+        },
+        {
+          "text": "by subsidising fares and expanding routes in fast-growing cities",
+          "highlight": {
+            "label": "The behavioural mechanism",
+            "kind": "task_response",
+            "explanation": "The panel's #1 rewrite: a campaign alone gives no reason to switch. Cheaper fares and better routes are the incentive that makes your solution actually map onto the problems (§8.4's rule)."
+          }
+        },
+        {
+          "text": " — so that leaving the car at home becomes the easier choice rather than a sacrifice."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "In conclusion, "
+        },
+        {
+          "text": "the arrival of millions of first-time car owners is likely to cost",
+          "highlight": {
+            "label": "The trend is the subject",
+            "kind": "grammar",
+            "explanation": "Your conclusion made \"people\" the subject (\"people purchasing cars … can result in accidents\") — faulty predication. It is the trend, not the people, that causes the problems."
+          }
+        },
+        {
+          "text": " lives on the road and to speed up the depletion of fossil fuels. "
+        },
+        {
+          "text": "However, both problems",
+          "highlight": {
+            "label": "Splice #2 + \"it\" fixed together",
+            "kind": "coherence",
+            "explanation": "Full stop before However kills the second splice, and \"both problems\" gives the reference a visible plural noun — your \"it can be alleviated\" pointed a singular pronoun at two problems."
+          }
+        },
+        {
+          "text": " can be contained if governments invest seriously in public transport and then "
+        },
+        {
+          "text": "campaign to make using it a normal part of daily life",
+          "highlight": {
+            "label": "Your campaign, kept",
+            "kind": "task_response",
+            "explanation": "The campaign survives — subordinated to the investment that makes it credible, so the conclusion no longer shrinks your solution to the means alone."
+          }
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

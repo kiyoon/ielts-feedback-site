@@ -1,0 +1,94 @@
+# Panel 07 — codex (discussion)
+
+_Generated 2026-09-01T15:02:18Z. Examiner-panel discussion; corpus manifest: 159 files._
+
+---
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---:|---|
+| Task Response / Achievement | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| **Overall** | **6.0** | 24 ÷ 4 = 6.0, per `contexts/01-band-descriptors/scoring-rules.md` §§1, 3 |
+
+## What changed from prior feedback
+
+The examiners now agree on every score and the priority order: development first, collocation second, and noun/countability control third. This version corrects two remaining overstatements: W7 did not fix support that proves the exact claim, while W8 is not devoid of mechanisms—the fossil-fuel chain and passenger-capacity explanation are useful, but the accident and campaign-to-behaviour chains remain thin. A realistic hypothetical illustration is sufficient; Band 7 does not require a named country or statistic. The all-6 calibration remains anchored in the official descriptors, with potentially inflated Tier-3 labels treated cautiously (`contexts/11-quality-audit/07-summary-of-source-reliability.md`).
+
+## Progress across essays
+
+| Pattern | History | Status | Evidence in this essay |
+|---|---|---|---|
+| Support that proves the precise claim | flagged W1–W4, W6–W7 | **recurring** | “car accidents will increase naturally”; the campaign has no behaviour-changing mechanism |
+| Collocation and topic precision | flagged W1–W7 | **recurring** | “other reusable energy”; “handle several people” |
+| Articles, countability and noun number | flagged W1–W7 | **recurring** | “less cars,” “public transports,” “less traffics on road” |
+| Conjunctive-adverb comma splices | flagged W2, W3, W7 | **recurring** | “car accidents, nevertheless, these issues”; “usage, however, it” |
+| Pronoun and lexical-chain reference | flagged W1, W2, W4, W6–W7 | **recurring** | two problems become singular “it can be alleviated” |
+| Finite verbs and logical subjects | problematic W1–W3, W5–W7 | **improved** | “it is projected that fossil fuel consumption will increase…” |
+| Prompt-led position and paragraph allocation | off-centre W3; delivery drift W4; controlled W5–W7 | **fixed** | one problems paragraph followed by “A solution to these problems…” |
+| Conclusion coverage | weak or repetitive W2–W6; verdict missing W7 | **improved** | now names both problems and the proposed campaign |
+
+## Structural feedback
+
+You answer both questions and maintain an appropriate four-paragraph problem–solution structure. The introduction lists fossil fuels before accidents, but Body 1 reverses that order; matching the roadmap would make progression cleaner. The fossil-fuel discussion has a real chain—finite supply, slow formation, eventual depletion—but the accident point merely concludes that collisions rise “naturally” without using the prompt’s first-time-driver context. Body 2 also contains a useful passenger-capacity mechanism, yet three sentences repeat the fewer-cars idea and never explain why a campaign alone would change behaviour. Its effects on both accidents and fuel demand are implicit rather than clearly stated. The single highest-impact fix is rebuilding the solution around better public transport → a practical reason to switch → fewer accidents and lower fuel demand, not the smaller lexical repairs below.
+
+## Focus areas
+
+- **Prompt-specific causal and policy development** — This directly blocks Task Response 7 because key claims are asserted rather than extended through a mechanism and illustration. Seen in: W1–W4, W6–W8. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md`, `contexts/05-band-6-to-7/paragraph-structure-band7.md`.
+- **Environment and transport collocation** — W2’s correction from “natural energy” to *renewable energy* has not transferred, while literal combinations remain frequent. Seen in: W1–W8. Drill: `contexts/10-task2-topic-banks/topic-02-environment.md`, `contexts/10-task2-topic-banks/topic-07-urbanisation.md`.
+- **Korean L1 article, number and countability control** — Korean-to-English drafting still loses articles and countability distinctions such as *fewer cars* versus *less traffic*. Seen in: W1–W8. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md`, `contexts/05-band-6-to-7/band-6-common-errors.md`.
+- **Comma splices after conjunctive adverbs** — The earlier drill has not transferred, and W8 places the error in both its thesis and conclusion. Seen in: W2, W3, W7, W8. Drill: `contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md`, `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md`.
+- **Precise cross-sentence reference** — Plural problems require *both problems/they*, not an unsupported singular *it*. Seen in: W1, W2, W4, W6–W8. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md`, `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md`.
+
+## What's working
+
+The prompt-led organisation first secured in W5 remains fixed: your introduction previews the response, and each body paragraph has one clear purpose. The conclusion has improved after W7’s missing verdict because it now covers both problems and the solution. “An increasing number of people…” is a clean paraphrase, while “it is projected that fossil fuel consumption will increase…” demonstrates improved impersonal-passive and clause control. Keep the fossil-fuel mechanism; it is the most developed reasoning in this essay.
+
+## Per-criterion justification
+
+### Task Response / Achievement — 6.0
+
+Both questions are answered with two relevant problems and one plausible solution. However, “car accidents will increase naturally” replaces a prompt-specific explanation with an assertion. The campaign is also proposed without explaining why first-time buyers would respond, while its fuel-saving effect remains implicit. These are relevant but insufficiently extended ideas—the Band 6 fit in `contexts/01-band-descriptors/task2-band-descriptors.md` and `contexts/05-band-6-to-7/task-response-upgrades.md` §§5–6, 8.4.
+
+### Coherence and Cohesion — 6.0
+
+The overall progression from problems to solution is clear, and paragraphing is appropriate. Within paragraphs, “This is because,” “Moreover,” “In other words,” “This means that” and “In this way” create mechanical sequencing, while Body 2 repeats the same fewer-cars point. The two comma splices and unclear final “it” fit Band 6’s faulty or mechanical cohesion and imperfect reference (`contexts/05-band-6-to-7/cohesion-upgrades.md` §3).
+
+### Lexical Resource — 6.0
+
+Useful vocabulary includes “fossil fuel consumption,” “projected,” “limited resources” and “public awareness campaign.” Precision repeatedly fails in “more consumption,” “reusable energy,” “form themselves naturally,” “public transports,” “less traffics” and “handle several people.” Meaning remains clear, but Band 7’s collocational and stylistic control is not yet evident consistently (`contexts/10-task2-topic-banks/topic-02-environment.md`; `contexts/10-task2-topic-banks/topic-07-urbanisation.md`).
+
+### Grammatical Range & Accuracy — 6.0
+
+You attempt first conditionals, an impersonal passive, relative clauses and causal subordination, and errors rarely obstruct meaning. Several sentences are controlled, but errors recur in “less cars,” “public transports,” “less traffics,” “on road,” both comma splices and singular “it.” Error-free sentences are therefore not frequent enough for Band 7, while communication remains sufficiently secure for Band 6 (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Bands 6–7).
+
+## Top concrete rewrites (5–10, ranked by band uplift × persistence)
+
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---:|---|---|---|---|
+| 1 | “One simple action that governments can do is conduct a campaign to make people use public transports more than usual.” | “Governments could subsidise fares and expand reliable bus and rail services, then publicise these improvements to first-time buyers. Cheaper, more dependable transport would give them a practical reason not to drive.” | Recurring W1–W4/W6–W8 development weakness: adds implementation and a behavioural mechanism. | `contexts/05-band-6-to-7/task-response-upgrades.md` §8.4; `contexts/10-task2-topic-banks/topic-07-urbanisation.md` |
+| 2 | “car accidents will increase naturally” | “A rapid rise in first-time car ownership puts many inexperienced drivers on already busy roads. If training and road capacity do not keep pace, collision risk rises.” | Replaces circular reasoning with a prompt-specific causal chain. | `contexts/05-band-6-to-7/task-response-upgrades.md` §§5–6 |
+| 3 | “other reusable energy”; “form themselves naturally” | “Unlike renewable energy sources, fossil fuels are finite and take millions of years to form, so rising demand accelerates their depletion.” | W2→W8 repeated failure to retrieve the correct environment collocation. | `contexts/10-task2-topic-banks/topic-02-environment.md` |
+| 4 | “public transports”; “less cars on roads”; “less traffics on road” | “If more commuters used buses and metro services, there would be fewer cars and less traffic on the roads.” | Recurring W1–W8 Korean L1 noun/countability pattern; also adds an accurate second conditional. | `contexts/05-band-6-to-7/band-6-common-errors.md` §A6; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2 |
+| 5 | “The major problems this causes are more consumption of fossil fuels and more car accidents, nevertheless, these issues can be tackled…” | “The two main consequences are a rise in road accidents and greater fossil-fuel consumption. Nevertheless, both can be reduced by making public transport a practical alternative.” | Repairs the W2/W3/W7/W8 splice, reference and roadmap order. | `contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md` §2 |
+| 6 | “a single vehicle can handle several people at once, instead of people driving their own vehicles each” | “One bus can carry dozens of passengers who might otherwise use separate cars, reducing both collision risk and fossil-fuel demand.” | Corrects recurring literal collocation and explicitly maps the solution to both problems. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §4; `contexts/05-band-6-to-7/task-response-upgrades.md` §8.4 |
+| 7 | “people purchasing cars in developing countries can result in more car accidents and increasing fossil fuel usage, however, it can be alleviated…” | “In conclusion, rapid growth in first-time car ownership is likely to increase road accidents and fossil-fuel consumption. Governments should therefore improve public transport and publicise its benefits so that fewer people need to drive.” | Repairs the recurring splice and unclear reference while preserving improved conclusion coverage. | `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §3; `contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md` §2 |
+
+## Before your next essay
+
+- **15 minutes—causal-chain drill:** Rewrite both bodies as claim → mechanism → realistic illustration → result, underlining the words tied specifically to *first-time buyers* or *developing countries* (`contexts/05-band-6-to-7/task-response-upgrades.md` §§5–6).
+- **10 minutes—collocation retrieval:** Correct W2/W8’s *natural/reusable energy*, *handle people* and *action governments can do* from memory; then produce six sentences using *renewable energy, carry passengers, take a step,* and *run a campaign* (`contexts/10-task2-topic-banks/topic-02-environment.md`).
+- **10 minutes—Korean L1 noun drill:** Sort *traffic, transport, fuel, energy* and *cars, buses, passengers* by countability, then write eight sentences contrasting *less/fewer* (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2).
+- **Final four exam minutes:** Pass 1 checks every *however/nevertheless/therefore* boundary; Pass 2 checks articles, plurals and *less/fewer*; Pass 3 checks whether every *it/this/both* has a visible antecedent (`contexts/08-vocabulary-grammar/05-spelling-and-mechanics.md` §2).
+- **Stretch and retirement test:** Attempt one accurate second conditional and one *Only by + -ing … can …* inversion. Retire development from first place only when both bodies contain a prompt-specific mechanism and realistic illustration, and every solution is explicitly linked to the problem it addresses (`contexts/05-band-6-to-7/grammar-upgrades.md` §§3, 9).
+
+## Overall band rationale
+
+Four Band 6 scores average to 6.0. Your clearest route to 7.0 is TR 7 + CC 7 + LR 7 + GRA 6 = 6.75, which rounds up to Band 7.0 under `contexts/01-band-descriptors/scoring-rules.md` §3.
+
+## CONVERGENCE: CONVERGED
+
+Both examiners now agree on all four criterion scores and the top-three priorities: prompt-specific development, collocation/register precision, and articles/countability/number. The latest changes correct presentation and evidence labels rather than changing the diagnosis; no substantive score, ranking or rewrite disagreement remains.
