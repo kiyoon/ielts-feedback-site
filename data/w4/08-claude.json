@@ -7,27 +7,27 @@
   "prior_id": null,
   "scores": {
     "task_response": {
-      "band": 6,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 (\"conclusions… may be… repetitive\"; \"some [ideas] may be insufficiently developed\")",
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"conclusions… may be… repetitive\"; \"some [ideas] may be insufficiently developed\")",
       "justification": "Stance is consistent and both travellers and the host country appear, satisfying part of Band 7. But ideas are underdeveloped: \"they might want to alleviate the issue of traffic jams\" stops before any explanation or example, and \"the advent of the aeroplane\" proves *access*, not the promised *value*. The conclusion restates the intro almost verbatim — the Band-6 marker \"conclusions… may be… repetitive\" (`task2-band-descriptors.md` §Band 6). Development, not relevance, holds this at 6."
     },
     "coherence": {
-      "band": 6,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 (\"faulty or mechanical due to misuse, overuse\"); contexts/05-band-6-to-7/cohesion-upgrades.md §2",
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"faulty or mechanical due to misuse, overuse\"); `contexts/05-band-6-to-7/cohesion-upgrades.md` §2",
       "justification": "Clear four-paragraph progression, but \"First and foremost\", \"Secondly\", \"Nevertheless\", \"Furthermore\" carry all the linking — the exact mechanical pattern in `contexts/05-band-6-to-7/cohesion-upgrades.md` §2. \"the government can effectively use **this tactic**\" has an unclear referent — tourism is not a tactic — a reference-clarity slip flagged at Band 6 (§9, \"demonstrative without anchor\")."
     },
     "lexical": {
-      "band": 6,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 (\"risk-taker… higher degrees of inaccuracy\")",
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"risk-taker… higher degrees of inaccuracy\")",
       "justification": "You take risks with less-common items (\"merits and demerits\", \"overtourism\", \"alleviate\") but inaccuracy follows — the Band-6 risk-taker profile. Collocation slips: \"target nation\", \"different and exotic values\", \"maximise the revenue\"; \"I **opine** that\" is register-odd; \"revenue\" repeats unvaried. Meaning is clear, precision short of 7."
     },
     "grammar": {
-      "band": 6,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6 (\"mix of simple and complex… flexibility is limited\")",
+      "band": 6.0,
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"mix of simple and complex… flexibility is limited\")",
       "justification": "You attempt complex sentences (\"although/because/while/since/when\") and accuracy is fair, but **range is the binding limit**: subordination is your only complex tool — no participle clauses, conditionals, or showcase structures. Local slips persist: \"seeking for **a** help\", \"due to **the** overtourism\", \"the countries\". Error-free sentences exist, but limited range caps you at 6 (`contexts/05-band-6-to-7/grammar-upgrades.md`)."
     }
   },
-  "overall": 6,
+  "overall": 6.0,
   "overall_rationale": "All four criteria best-fit Band 6 (relevant and organised, but underdeveloped, mechanically cohesive, imprecise in collocation, narrow in complex-structure range); the average is 6.00, which rounds to **6.0** per `contexts/01-band-descriptors/scoring-rules.md` §1 — no half-band uplift since no criterion reaches 7.",
   "what_changed": "Very little, and that is the honest signal. I independently re-read the four decisive files (official descriptors, scoring rules, the band-7 model, the travel topic bank) plus the grammar/cohesion/sentence-frame banks and confirmed every citation iters 05–07 used is real and correctly located — no hallucinated references. The 6/6/6/6 profile is correct and unchanged. My only marginal addition: iters 05/07 rebut Body 1's congestion point with a \"Venice/Barcelona\" example sourced to the topic bank — that example is genuinely in `topic-14` (AGAINST #1, plus the developed paragraph at line 133), so it stands. I also tighten one structural framing: the candidate's true ceiling is **Body 2 promising two benefits and delivering neither**, not the word count.",
   "rewrites": [
@@ -39,6 +39,17 @@
       "citations": [
         "real-essays/W4-T2-international-travel.model-band7.md",
         "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "In conclusion, although there are issues to tackle… I believe that it is more beneficial",
+      "improved": "On balance, while problems such as petty crime and congestion are real, they can largely be managed, whereas the cultural and economic gains are lasting",
+      "reason": "Replaces a repetitive conclusion with a genuine *weighing* judgement (TR)",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md",
+        "real-essays/…model-band7.md"
       ],
       "category": "task_response"
     },
@@ -93,6 +104,17 @@
         "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
       ],
       "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "I opine that the benefits outweigh the drawbacks",
+      "improved": "\"I firmly believe that the benefits outweigh the drawbacks\" / \"the host country\"",
+      "reason": "Natural Band-7 thesis register; standard tourism collocation (LR). Covers \"I opine that the benefits outweigh the drawbacks\" and \"the target nation\".",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md",
+        "contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md"
+      ],
+      "category": "lexical"
     }
   ],
   "convergence": "CONVERGED",

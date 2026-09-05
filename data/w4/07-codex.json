@@ -52,6 +52,16 @@
       "category": "task_response"
     },
     {
+      "id": 3,
+      "original": "In conclusion, although there are issues to tackle…",
+      "improved": "On balance, while international travel can create safety and congestion problems, its cultural and economic benefits are stronger when it is well managed.",
+      "reason": "Gives a real outweigh judgement instead of repeating the introduction.",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    },
+    {
       "id": 4,
       "original": "the government can effectively use this tactic to maximise the revenue",
       "improved": "host governments can channel rising visitor numbers into tourism receipts, local jobs and better public services",
@@ -95,7 +105,7 @@
     {
       "id": 8,
       "original": "the target nation",
-      "improved": "the host country / the destination",
+      "improved": "“the host country” / “the destination”",
       "reason": "Uses standard tourism collocation.",
       "citations": [
         "contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md"

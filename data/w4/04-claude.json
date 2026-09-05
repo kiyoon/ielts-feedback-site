@@ -7,27 +7,27 @@
   "prior_id": null,
   "scores": {
     "task_response": {
-      "band": 6,
+      "band": 6.0,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"conclusions… repetitive\"; \"some… insufficiently developed\") + `contexts/01-band-descriptors/scoring-rules.md` §4 (under 250 words caps TR by content)",
       "justification": "The stance is consistent and both sides are addressed, satisfying part of Band 7. But the script is **under length (246 words)**, which `scoring-rules.md` §4 flags as a structural reason ideas cannot be extended — and indeed \"they might want to alleviate the issue of traffic jams\" stops before any example, while Body 2's \"advent of the aeroplane\" proves access, not the promised benefit. The conclusion restates the intro almost verbatim — the Band-6 marker \"conclusions… may be repetitive.\" Development, not relevance, holds this at 6."
     },
     "coherence": {
-      "band": 6,
+      "band": 6.0,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"cohesion… mechanical\"; reference \"may lack clarity\")",
       "justification": "Clear four-paragraph progression, but \"First and foremost,\" \"Secondly,\" \"Nevertheless,\" \"Furthermore\" carry all the linking — the mechanical pattern in `contexts/05-band-6-to-7/cohesion-upgrades.md` §2. \"use **this tactic**\" has an unclear referent (tourism is not a tactic). No flexible reference/substitution yet → 6."
     },
     "lexical": {
-      "band": 6,
+      "band": 6.0,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"risk-taker… higher degrees of inaccuracy\")",
       "justification": "You take risks with less-common items (\"merits and demerits,\" \"overtourism,\" \"alleviate\") but inaccuracy follows — the Band-6 risk-taker profile. Collocation slips: \"target nation,\" \"different and exotic values,\" \"seeking for a help\"; \"I **opine** that\" is register-odd; \"revenue\" repeats three times unvaried. Meaning is clear, precision short of 7."
     },
     "grammar": {
-      "band": 6,
+      "band": 6.0,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"mix of simple and complex… flexibility is limited\")",
       "justification": "A mix of simple and complex sentences (\"although/because/while/since/when\"), and accuracy is actually fair — but range is the binding limit: subordination is the *only* complex tool, with no participle clauses, conditionals, or showcase structures (`contexts/05-band-6-to-7/grammar-upgrades.md` §1). Local slips persist: \"seeking for **a** help,\" \"due to **the** overtourism.\" Error-free sentences exist but range caps you at 6."
     }
   },
-  "overall": 6,
+  "overall": 6.0,
   "overall_rationale": "All four criteria best-fit Band 6 (relevant and organised, but underdeveloped, under length, mechanically cohesive, imprecise in collocation, narrow in complex-structure range); the average is 6.00, which rounds to **6.0** per `contexts/01-band-descriptors/scoring-rules.md` §1.",
   "what_changed": "The 6/6/6/6 calibration is correct and I keep it — iters 01–03 nailed that. But iter 03 declared CONVERGED while overlooking a concrete, descriptor-grounded fact none of the three iterations (or the single-shot W4 feedback) noticed: **the essay is 246 words — under the 250-word Task 2 minimum** (`contexts/01-band-descriptors/scoring-rules.md` §4). This is not cosmetic: §4 states that under-length scripts make Band 6+ TR \"mathematically harder to satisfy\" because ideas cannot be extended in the space, which reframes the highest-impact fix. I also tightened iter 03's grammar diagnosis with a *positive* fresh lever (concessive `Adj + as + S + V` inversion) the chain kept naming as \"absent\" without ever supplying the easiest drop-in. Everything else overlaps the prior ~75%.",
   "rewrites": [
@@ -39,6 +39,17 @@
       "citations": [
         "real-essays/W4-T2-international-travel.model-band7.md",
         "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "although there are issues to tackle… I believe that it is more beneficial",
+      "improved": "while problems such as petty crime and congestion are real, they can largely be managed, whereas the cultural and economic gains are lasting",
+      "reason": "Turns a repetitive conclusion into a genuine *weighing* (TR)",
+      "citations": [
+        "real-essays/W4-T2-international-travel.model-band7.md",
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
       ],
       "category": "task_response"
     },
@@ -82,6 +93,16 @@
         "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
       ],
       "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "the target nation",
+      "improved": "\"the host country\" / \"the destination\"",
+      "reason": "Standard tourism collocation (LR): replace \"the target nation\" with \"the host country\" and \"the country visited\" with \"the destination\".",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md"
+      ],
+      "category": "lexical"
     },
     {
       "id": 8,

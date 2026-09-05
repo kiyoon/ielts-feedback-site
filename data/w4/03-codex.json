@@ -8,22 +8,22 @@
   "scores": {
     "task_response": {
       "band": 6.0,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
       "justification": "The prompt asks whether advantages outweigh disadvantages, and you do give a direct answer. However, several ideas are underdeveloped: “they might want to alleviate the issue of traffic jams” stops before explanation or example. The advantage paragraph does not fully prove “new experience” or “raise revenue”; “the advent of the aeroplane” explains access, not value. This fits Band 6: relevant ideas, but some are insufficiently developed (`contexts/01-band-descriptors/task2-band-descriptors.md`)."
     },
     "coherence": {
       "band": 6.0,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
       "justification": "The four paragraphs are easy to follow. The weakness is mechanical cohesion: “First and foremost,” “Secondly,” “Nevertheless,” and “Furthermore” do most of the linking. “This tactic” is also unclear because the reader has to infer whether it means tourism, easier travel, or government policy. Band 7 needs more flexible reference and substitution (`contexts/05-band-6-to-7/cohesion-upgrades.md`)."
     },
     "lexical": {
       "band": 6.0,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
       "justification": "You use some useful topic words: “overtourism,” “domestic travel,” and “generate revenue.” But collocation is not consistently natural: “target nation,” “on a trip,” “different and exotic values,” and “maximise the revenue” weaken precision. “I opine that” is understandable but register-odd for a Band-7 Task 2 thesis. This matches Band 6 risk-taking with inaccuracy (`contexts/05-band-6-to-7/vocabulary-upgrades.md`)."
     },
     "grammar": {
       "band": 6.0,
-      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6",
       "justification": "You attempt complex sentences with “although,” “because,” “while,” “when,” and “since.” Some are successful, but the range is not flexible enough, and local errors recur: “seeking for a help,” “due to the overtourism,” and “the countries.” The essay has some relative/reduced structures, but they are clumsy rather than a clear Band-7 strength. Band 7 needs frequent error-free sentences and a wider controlled range (`contexts/05-band-6-to-7/grammar-upgrades.md`)."
     }
   },
@@ -38,6 +38,16 @@
       "reason": "Turns a vague advantage into a developed traveller benefit.",
       "citations": [
         "contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "although there are issues to tackle… it is more beneficial",
+      "improved": "On balance, while tourism can create safety and congestion problems, its cultural and economic benefits are stronger when it is well managed.",
+      "reason": "Gives a real outweigh judgement.",
+      "citations": [
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
       ],
       "category": "task_response"
     },

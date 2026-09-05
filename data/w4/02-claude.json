@@ -7,27 +7,27 @@
   "prior_id": null,
   "scores": {
     "task_response": {
-      "band": 6.0,
+      "band": 6,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"some main ideas… insufficiently developed\"; \"conclusions… repetitive\")",
       "justification": "Both sides are addressed and the stance is consistent, satisfying part of Band 7. But ideas are named, not extended: \"they might want to alleviate the issue of traffic jams\" gives no example, and Body 2's \"advent of the aeroplane\" proves access rather than the promised benefits. The conclusion restates the intro almost verbatim — the Band 6 marker \"conclusions… may be… repetitive\" (`task2-band-descriptors.md` §Band 6). Development, not relevance, holds this at 6."
     },
     "coherence": {
-      "band": 6.0,
+      "band": 6,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"cohesion… mechanical\"; \"reference… may lack clarity\")",
       "justification": "Clear four-paragraph progression, but cohesion is mechanical — \"First and foremost,\" \"Secondly,\" \"Furthermore\" carry the linking, exactly the pattern flagged in `contexts/05-band-6-to-7/cohesion-upgrades.md` §2. \"The government can effectively use **this tactic**\" has an unclear referent (tourism is not a tactic). No reference/substitution flexibility yet → 6, not 7."
     },
     "lexical": {
-      "band": 6.0,
+      "band": 6,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"lack of precision in word choice\"; risk-taker errors)",
       "justification": "You take risks with less-common items (\"merits and demerits,\" \"overtourism,\" \"alleviate\"), but inaccuracy follows — the Band 6 \"risk-taker\" profile (`task2-band-descriptors.md` §Band 6). Collocation errors: \"target nation,\" \"different and exotic values,\" \"seeking for a help\"; \"I **opine** that\" is register-odd; \"revenue\" appears three times unvaried. Meaning is clear but precision is short of 7."
     },
     "grammar": {
-      "band": 6.0,
+      "band": 6,
       "descriptor_evidence": "`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 (\"mix of simple and complex… flexibility is limited\")",
       "justification": "A mix of simple and complex sentences with \"although/because/while/since/when,\" but flexibility is limited — no relative clauses, participle clauses, or conditionals, the range markers Band 7 needs (`contexts/05-band-6-to-7/grammar-upgrades.md` §1). Article/preposition slips recur: \"seeking for **a** help,\" \"due to **the** overtourism.\" Several error-free sentences exist, but range is the binding constraint at 6."
     }
   },
-  "overall": 6.0,
+  "overall": 6,
   "overall_rationale": "All four criteria best-fit Band 6 (relevant and organised, but underdeveloped, mechanical cohesion, imprecise collocation, limited complex-structure range); the average is 6.00, which rounds to **6.0** per `contexts/01-band-descriptors/scoring-rules.md`.",
   "what_changed": "Iteration 01's four-band 6.0 calibration is correct and I retain it. My substantive additions: (1) I anchor the structural advice to the **existing Band 7 model** at `real-essays/W4-T2-international-travel.model-band7.md`, which neither prior cited — it demotes the disadvantages to a short concession and runs **two** developed advantage paragraphs, so the highest-impact fix is a restructure, not just \"develop Body 2.\" (2) I add a concrete GRA lever (participle/relative clauses) that iter 01 left vague, citing `contexts/09-instructor-tips/07-band7-grammar-showcases.md`. (3) I flag two items both priors missed: the register-odd \"**I opine that**\" and the logic slip \"**For instance, they might want to alleviate**.\" Otherwise the rewrite set overlaps heavily with iter 01 — the chain is close to stable.",
   "rewrites": [
@@ -53,6 +53,17 @@
       "category": "task_response"
     },
     {
+      "id": 3,
+      "original": "although there are issues to tackle… I believe that it is more beneficial",
+      "improved": "while problems such as petty crime and congestion are real, they can largely be managed, whereas the cultural and economic gains are lasting",
+      "reason": "Turns a repetitive conclusion into a genuine weighing",
+      "citations": [
+        "real-essays/W4-T2-international-travel.model-band7.md",
+        "contexts/09-instructor-tips/06-task2-sentence-frames.md"
+      ],
+      "category": "task_response"
+    },
+    {
       "id": 4,
       "original": "because of the advent of the aeroplane, they can save significant amounts of time as well as money",
       "improved": "Drawn by cheaper flights and simpler visa procedures, far more people now travel abroad than ever before",
@@ -61,6 +72,16 @@
         "contexts/09-instructor-tips/07-band7-grammar-showcases.md"
       ],
       "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "the target nation",
+      "improved": "\"the host country\" / \"the destination\"",
+      "reason": "Standard tourism collocation: replace \"the target nation\" with \"the host country\" and \"the country visited\" with \"the destination\".",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-14-travel-and-tourism.md"
+      ],
+      "category": "lexical"
     },
     {
       "id": 6,

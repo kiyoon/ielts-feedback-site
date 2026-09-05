@@ -39,4 +39,4 @@ To sum up, although natural science has the potential to solve global challenges
 
 ## Word Count
 
-~280 words.
+253 words (54 / 98 / 80 / 21 by paragraph) — inside the assignment's 200–300 band, just over the 250-word Task 2 floor. _Corrected 2026-09-05 (W9 audit); previously recorded as "~280 words"._

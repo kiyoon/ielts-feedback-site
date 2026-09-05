@@ -24,4 +24,4 @@ Computers consist of a full of small switches which can turn on and off. By doin
 
 ## Word Count
 
-~290 words (essay appears truncated — no clear conclusion paragraph).
+232 words (44 / 118 / 70 by paragraph) — essay appears truncated, with no conclusion paragraph. Well short of the assignment's 500-word requirement and under the 250-word Task 2 floor. _Corrected 2026-09-05 (W9 audit); previously recorded as "~290 words"._
