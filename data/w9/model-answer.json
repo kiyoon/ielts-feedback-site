@@ -1,0 +1,182 @@
+{
+  "task": "w9",
+  "target_band": 7.0,
+  "prompt": "Many people are now opting to provide technology companies with their personal data in exchange for access to software. Do the advantages of this outweigh the disadvantages?",
+  "intro_note": "Band 7 rewrite of W9 (6.0). Keeps your position, your four-paragraph shape, your Korea example and your AI example — the panel's nine rewrites applied. 308 words against your 311: the gain is not more words, it is the same budget spent on the right argument. Highlights mark what moves each criterion.",
+  "word_count": 308,
+  "paragraphs": [
+    {
+      "spans": [
+        {
+          "text": "In recent years, a growing number of",
+          "highlight": {
+            "label": "Cliché opener replaced",
+            "kind": "lexical",
+            "explanation": "Your essay opened on \"Nowadays\" — named a band-6 opener in contexts/09-instructor-tips/06-task2-sentence-frames.md §11 — and used \"a lot of\" three times. This replaces both in one phrase."
+          }
+        },
+        {
+          "text": " people have chosen to give technology companies their personal information in return for access to software. Although "
+        },
+        {
+          "text": "this exchange",
+          "highlight": {
+            "label": "Names the trade-off",
+            "kind": "task_response",
+            "explanation": "The prompt's subject is the exchange itself (data in, software out). Naming it in the thesis fixes the scope before you start, so neither body can drift off-prompt."
+          }
+        },
+        {
+          "text": " exposes users to the risk of data theft, I believe its benefits outweigh its drawbacks, "
+        },
+        {
+          "text": "because the services it unlocks save people considerable time and money",
+          "highlight": {
+            "label": "Reason tied to the exchange",
+            "kind": "task_response",
+            "explanation": "Your reason was \"using modern technologies allow people to live more efficiently\" — a claim about technology, plus a gerund-subject agreement error. This ties the benefit to what the data buys, and the agreement problem disappears with the restructure."
+          }
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "Admittedly, the danger is real. "
+        },
+        {
+          "text": "Criminals attempt to breach corporate databases",
+          "highlight": {
+            "label": "Transitive verb, clean nouns",
+            "kind": "lexical",
+            "explanation": "Fixes three faults from \"breach into a companies' database\": breach takes a direct object (no \"into\"), and \"a companies'\" mixed a singular article with a plural possessive."
+          }
+        },
+        {
+          "text": " in order to steal personal information, because such data can be sold at a substantial profit. In Korea, for example, hackers frequently target technology firms rather than banks or government agencies, "
+        },
+        {
+          "text": "since these firms hold vast amounts of user data and their security is often easier to breach",
+          "highlight": {
+            "label": "Pronoun anchored",
+            "kind": "coherence",
+            "explanation": "Your version read \"because they store numerous data and are relatively easy to breach the security\". The main clause's subject was \"a lot of hackers\", so \"they\" briefly made the hackers the storers. Repeating the noun removes the re-parse — and the thing being breached is now the subject of \"easier to breach\"."
+          }
+        },
+        {
+          "text": ". However, declining a single service does not make anyone safe: "
+        },
+        {
+          "text": "much personal information is already held in digital form",
+          "highlight": {
+            "label": "Quantifier + uncountable",
+            "kind": "grammar",
+            "explanation": "\"every personal infmation\" had two faults: information is uncountable, so it takes \"much\", not \"every\" — the same quantifier fault as W2's \"every research\" and W7's \"every children\"."
+          }
+        },
+        {
+          "text": " by employers, hospitals and banks. "
+        },
+        {
+          "text": "Handing data to one more company adds one more point of exposure — a real cost, but a marginal one.",
+          "highlight": {
+            "label": "The missing weighing clause",
+            "kind": "task_response",
+            "explanation": "Your rebuttal proved the risk was unavoidable, but never said it was smaller than the benefit. This qualifies the absolute (\"every personal infmation is already stored\") and adds the comparison the argument needed."
+          }
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "The principal advantage of this exchange is what the data actually buys.",
+          "highlight": {
+            "label": "The single biggest fix",
+            "kind": "task_response",
+            "explanation": "Your topic sentence was \"Modern technology plays a vital role in people's every day life\" — true, but it would be equally true under a different prompt. That is the scope test in contexts/05-band-6-to-7/task-response-upgrades.md §3. This claims an advantage OF THE EXCHANGE, which is what the question asks."
+          }
+        },
+        {
+          "text": " Since the advent of artificial intelligence, ordinary users have been able to obtain basic health or legal guidance from AI chatbot services "
+        },
+        {
+          "text": "that would cost a substantial sum if they consulted a doctor or a lawyer",
+          "highlight": {
+            "label": "Second conditional repaired",
+            "kind": "grammar",
+            "explanation": "You reached for this structure — \"which would cost a lot of money if they reach to a doctor\" — but mixed \"would\" with a present-tense if-clause. It needs the past form: if they consulted. Also fixes \"reach to\" → consult."
+          }
+        },
+        {
+          "text": ". Some AI agents will even build a customised program on request. "
+        },
+        {
+          "text": "Convenient as these tools are",
+          "highlight": {
+            "label": "Concessive inversion",
+            "kind": "grammar",
+            "explanation": "A band-7 showcase structure from contexts/09-instructor-tips/07-band7-grammar-showcases.md §4 (Adj + as + S + V). This is one of the two structures to steal for W10."
+          }
+        },
+        {
+          "text": ", they are not gifts: "
+        },
+        {
+          "text": "the access is offered in exchange for the personal data users provide",
+          "highlight": {
+            "label": "Closes the data → access loop",
+            "kind": "task_response",
+            "explanation": "This is the clause your essay never had. It states the prompt's own mechanism without inventing one — note it does not claim the software is free, only that access is given in exchange for data."
+          }
+        },
+        {
+          "text": ". For most people the trade is worth making: "
+        },
+        {
+          "text": "the savings are immediate and certain, whereas the risk of theft remains only a possibility",
+          "highlight": {
+            "label": "Explicit weighing",
+            "kind": "task_response",
+            "explanation": "An \"outweigh\" prompt is graded on whether you actually weigh. Certain benefit against possible harm is the comparison that justifies your verdict."
+          }
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "In conclusion, "
+        },
+        {
+          "text": "although sharing personal data with technology companies does create a genuine risk of theft",
+          "highlight": {
+            "label": "Concession, nouns repeated",
+            "kind": "coherence",
+            "explanation": "Concedes the other side before the verdict. Every noun is spelled out, so no pronoun has to reach back — your version's \"they\" forced the reader to skip past \"modern technology\" to find \"technology companies\"."
+          }
+        },
+        {
+          "text": ", that risk is both modest and largely unavoidable in a digital society. "
+        },
+        {
+          "text": "The convenience and savings that cutting-edge software delivers outweigh it",
+          "highlight": {
+            "label": "Verdict on the prompt's terms",
+            "kind": "task_response",
+            "explanation": "Your conclusion decided that \"not utilizing modern technology is a more significant downside\" — a comparison between using and not using technology, not between the advantages and disadvantages of the exchange. This weighs what your introduction promised. Your best collocation, cutting-edge software, is kept."
+          }
+        },
+        {
+          "text": ", which is why so many users are willing to make the trade."
+        }
+      ]
+    }
+  ]
+}

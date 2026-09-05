@@ -95,7 +95,7 @@ remaining gap.
 | Pronoun / reference precision | W1, W2, W4–W7 | **recurring** | conclusion's "**it** can be alleviated" — singular pronoun for two problems |
 | Conclusion does its full job | restates W2/W4/W5; no verdict W7 | **improved** | now answers both questions — but repeats the intro's wording and narrows the solution to just "a public awareness campaign" |
 | Finite verbs / clause subjects | W1–W3, W5–W7 ("Some would argued", "experts who has") | **improved** | no modal or agreement breakdowns; "it is projected that…" is error-free |
-| Spelling | W7 "cirtification", "bachlor"; W5 "mdelodies" | **fixed (first time)** | zero spelling errors — the Band 7 LR spelling clause is now met |
+| Spelling | W5 "mdelodies"; W7 "cirtification", "bachlor" — but W1–W4 and W6 were clean too | **clean (as in most essays)** | zero spelling errors — the Band 7 LR spelling clause is met. _Correction (2026-09-05, W9 panel): the original "fixed (first time)" was wrong — spelling is intermittent, not newly fixed._ |
 | Prompt-led position and paragraph allocation | off-centre W3; drift W4; fixed since W5 | **fixed** | correct problem/solution format, one job per paragraph, position never drifts |
 | Mechanical Firstly/Secondly chains | W2, W4; gone since W5 | **fixed** | none — but see CC: stock sentence-openers now do the same job covertly |
 
@@ -170,7 +170,7 @@ The panel's agreed ranking, by band uplift × persistence:
   projection frame, the most academic sentence in your eight essays.
 - **The opening paraphrase is competent**: "making their first car purchases"
   reworks the prompt without copying it.
-- **Zero spelling errors, for the first time in the chain** (W5 had
+- **Zero spelling errors** — as in W1–W4 and W6 (W5 had
   "mdelodies", W7 had "cirtification" and "bachlor").
 - **Real topic vocabulary is emerging**: "public awareness campaign", "fossil
   fuel consumption", "alleviated", "limited resources".
