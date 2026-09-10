@@ -1,0 +1,157 @@
+{
+  "task": "w10",
+  "target_band": 7,
+  "prompt": "Nowadays, more tasks at home and work are being performed by robots.\n\nWhy do you think this is happening?\n\nIs it a positive or negative development?",
+  "intro_note": "Keeps your positive position and two reasons; uses workplace and household robot examples to apply the panel’s agreed fixes. This is a Band 7 target rewrite, not a separate examiner score.",
+  "word_count": 285,
+  "paragraphs": [
+    {
+      "spans": [
+        {
+          "text": "Robots are taking over a growing number of tasks in homes and workplaces. This is largely because they can perform "
+        },
+        {
+          "text": "routine work",
+          "highlight": {
+            "kind": "grammar",
+            "explanation": "Work is uncountable in this meaning. Use repetitive work or repetitive tasks, not repetitive works."
+          }
+        },
+        {
+          "text": " efficiently and consistently. I consider this a positive development because "
+        },
+        {
+          "text": "delegating repetitive tasks",
+          "highlight": {
+            "kind": "lexical",
+            "explanation": "A precise action replaces the vague small things. Delegating means assigning a task to another person or system."
+          }
+        },
+        {
+          "text": " gives people more time and energy for responsibilities that require personal attention."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "One reason for the increasing use of robots is their ability to repeat the same operation without becoming tired. In a factory, for example, "
+        },
+        {
+          "text": "a robotic arm could fit components together throughout a night shift",
+          "highlight": {
+            "kind": "task_response",
+            "explanation": "A clearly hypothetical workplace robot example supports your original efficiency argument without invented timings."
+          }
+        },
+        {
+          "text": ", while employees supervise the process and check the finished products. Consistent output makes production easier to plan and "
+        },
+        {
+          "text": "gives employers a practical reason to automate suitable tasks",
+          "highlight": {
+            "kind": "task_response",
+            "explanation": "This explicitly links the machine’s capability to the decision to adopt it, answering why."
+          }
+        },
+        {
+          "text": ". A similar principle applies at home, where a robotic vacuum can clean a floor with limited input from its owner. "
+        },
+        {
+          "text": "Although these machines still need maintenance and supervision",
+          "highlight": {
+            "kind": "grammar",
+            "explanation": "A controlled concession qualifies the claim. This structure is useful when it fits, but is not required for Band 7."
+          }
+        },
+        {
+          "text": ", they can reduce the effort involved in routine work."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "I welcome this change because human time and concentration are limited. When workers spend less energy on repetitive physical tasks, they can "
+        },
+        {
+          "text": "devote more attention to",
+          "highlight": {
+            "kind": "lexical",
+            "explanation": "Learn the complete combination: devote attention to + noun or -ing. It expresses your intended benefit precisely."
+          }
+        },
+        {
+          "text": " planning projects, solving unexpected problems and improving quality. "
+        },
+        {
+          "text": "Automation therefore changes how their effort is used",
+          "highlight": {
+            "kind": "coherence",
+            "explanation": "The sentence explains how the example supports your evaluation and connects it to the previous sentence."
+          }
+        },
+        {
+          "text": ", rather than simply making the same job faster. The benefit can also be seen in a household: "
+        },
+        {
+          "text": "a parent could let a robotic vacuum clean the floor while helping a child with homework",
+          "highlight": {
+            "kind": "task_response",
+            "explanation": "A household illustration develops the home setting missing from your original example set."
+          }
+        },
+        {
+          "text": ". The cleaning still gets done, but "
+        },
+        {
+          "text": "the parent can concentrate",
+          "highlight": {
+            "kind": "coherence",
+            "explanation": "Naming the human actor avoids the ambiguous they after a clause about robots."
+          }
+        },
+        {
+          "text": " on a responsibility that needs direct involvement. "
+        },
+        {
+          "text": "Such delegation",
+          "highlight": {
+            "kind": "coherence",
+            "explanation": "This phrase refers to the arrangement just illustrated, connecting the example to its consequence."
+          }
+        },
+        {
+          "text": " can make daily life more manageable."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "In conclusion, robots are increasingly adopted "
+        },
+        {
+          "text": "because they can carry out routine tasks efficiently",
+          "highlight": {
+            "kind": "task_response",
+            "explanation": "The conclusion briefly summarizes the answer to why robots are adopted."
+          }
+        },
+        {
+          "text": ". I regard this as beneficial because "
+        },
+        {
+          "text": "the time and energy saved allow people",
+          "highlight": {
+            "kind": "grammar",
+            "explanation": "Saved is a reduced passive modifier. The compound subject time and energy takes allow."
+          }
+        },
+        {
+          "text": " to give greater attention to other responsibilities at work and at home."
+        }
+      ]
+    }
+  ]
+}

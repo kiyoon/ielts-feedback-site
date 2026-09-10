@@ -1,0 +1,156 @@
+{
+  "id": "w10/09-codex",
+  "task": "w10",
+  "iteration": 9,
+  "tool": "codex",
+  "generated_at": "2026-09-10T01:32:36.663140+00:00",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "You answer both questions: efficiency explains adoption, and “individuals can work on more important tasks” gives a positive evaluation. “They do not need to take a rest unlike humans” adds a relevant operational reason. However, “robots such as computers, smartphones or other devices” treats general digital equipment as robots without establishing that connection, and both examples then concentrate on software development. Household use receives no developed support, while “people only need to care for the content of their program” overstates how much responsibility automation removes. This best fits relevant ideas with supporting material that may be “less relevant or inadequate,” rather than a missing position or an entirely unanswered question (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6)."
+    },
+    "coherence": {
+      "band": 7,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 7",
+      "justification": "The sequence is clear: introduction, adoption mechanism, human benefit and final judgment. “Furthermore,” “Therefore” and “However” express identifiable relationships, while “they do not need to take a rest” refers back to robots and “This is because” connects a claim to its explanation. The conditional beginning “If robots can handle small things for people” contains a local ambiguity: *people* is the nearest plural noun, but the preceding subject *robots* also pulls the reader’s interpretation. Repeating “AI agents” within one sentence and revisiting the attention claim deserve editing, yet these remain limited lapses within generally logical progression. Band 7 allows some inaccuracies and overuse; neither a synonym quota nor substitution of a particular head noun is required, and Band 6’s possible paragraph weaknesses are not mandatory features of every CC6 response (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7)."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6",
+      "justification": "“AI agents,” “calculation speed,” “willpower and stamina” and “managing all aspects” show useful range. Precision is the limiting feature: “are willing to find bugs without hesitation” describes motivation where your argument concerns availability and capability. **“Find bugs” itself is correct**; “care for the content” and “do coding everything” are the combinations needing repair. “Small errands” is poorly matched to programming, while “small things,” “small elements” and “bigger projects” leave the division of work vague. These accumulated imprecisions support Band 6 despite clean spelling; ordinary expressions such as “take a rest” or “a lot of” are not automatic errors (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6)."
+    },
+    "grammar": {
+      "band": 7,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 7",
+      "justification": "Your range includes defining and reduced relatives, causal and temporal subordination, an embedded question, a conditional, gerund subjects and a modal passive. “Utilizing robots should be welcomed because, when they handle small errands for people, individuals can work on more important tasks” successfully controls nested clauses. Clear repairs remain in “doing all tasks by people,” “repetitive works” and “used to do coding everything,” but accurate sentences occur frequently across simpler and complex forms. This supports Band 7 without requiring a numerical error-free threshold, a second conditional or a concession in every response. The semicolon before *and* is unnecessarily heavy here, not universally forbidden, and “The reason is because” is better streamlined than treated as a major grammatical failure (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7; `contexts/05-band-6-to-7/grammar-upgrades.md` §§12–13)."
+    }
+  },
+  "overall": 6.5,
+  "overall_rationale": "**6 + 7 + 6 + 7 = 26; 26 ÷ 4 = 6.5.** Holding CC and GRA at 7 while raising either TR or LR to 7 gives **6.75 → 7.0** under `contexts/01-band-descriptors/scoring-rules.md` §§1, 3; this estimates Task 2, not your combined Writing score.",
+  "what_changed": "All four scores and the leading priorities now agree across both assessments. Coherence remains at 7 because the essay shows clear progression and functional reference, with local rather than pervasive lapses; this does not imply that every Band 6 response must have weak paragraphing. One historical correction matters: **W9 had zero comma splices**, so W10 maintains that improvement; W8 contained two. “Find bugs” is valid English—the imprecision lies in “willing…without hesitation”—and “The reason is because” is treated as wording to streamline, not an absolute grammatical prohibition. Countability practice now points directly to the relevant noun sections, and unsupported timings, compulsory concessions and repetition quotas remain removed.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "The reason is because robots such as computers, smartphones or other devices are better at performing repetitive works with their fast calculation speed.",
+      "improved": "This is because robots such as industrial robotic arms can perform repetitive tasks quickly and consistently.",
+      "reason": "Repairs recurring prompt-scope and noun-number problems, while streamlining the W1/W5 reason frame.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "For example, AI agents developed by OpenAI are able to create simple software such as web pages or video games like Tetris; and AI agents are willing to find bugs without hesitation even at midnight.",
+      "improved": "For example, a factory could use a robotic arm to repeat an assembly task during a night shift. Its ability to maintain steady output gives the employer a reason to adopt it.",
+      "reason": "Recurring support problem: connects robot capability to adoption without invented cycle times or claims of flawless operation.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "For instance, people used to do coding everything by themselves, including the shape of buttons. However, nowadays, people only need to care for the content of their program since AI can work on small elements.",
+      "improved": "For instance, a robotic vacuum could clean the floor while a parent helps a child with homework. Delegating this chore leaves more time for an activity requiring personal attention.",
+      "reason": "Replaces both programming sentences with household evidence supporting your existing benefit, without an invented cleaning duration.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "are willing to find bugs without hesitation even at midnight",
+      "improved": "“can search for bugs overnight”; “write all the code”; “focus on what their program should do”",
+      "reason": "Recurring collocation/complement family covering “are willing to find bugs without hesitation even at midnight”, “do coding everything” and “care for the content of their program”. The first repair targets willingness and hesitation, not the valid phrase *find bugs*. Keep these as drills after changing the examples.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 5,
+      "original": "performing repetitive works",
+      "improved": "“performing repetitive work” / “carrying out repetitive tasks”",
+      "reason": "Recurring since W1/W2: *work* is uncountable in this meaning; *tasks* is countable.",
+      "citations": [
+        "contexts/05-band-6-to-7/band-6-common-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "If robots can handle small things for people, they can solely focus on managing all aspects of the project they work on.",
+      "improved": "If robots take over routine tasks, workers can devote more attention to planning projects and making decisions.",
+      "reason": "Recurring reference difficulty: names the human actor and replaces vague, absolute wording with a specific benefit.",
+      "citations": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/05-band-6-to-7/vocabulary-upgrades.md"
+      ],
+      "category": "coherence"
+    },
+    {
+      "id": 7,
+      "original": "using robots is relatively more efficient than doing all tasks by people",
+      "improved": "using robots for routine tasks can be more efficient than having people perform those tasks themselves",
+      "reason": "Repairs the active/passive mismatch and qualifies the claim; *relatively more* is not inherently wrong.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 8,
+      "original": "In conclusion, I believe this is a positive trend because robots can help people work on bigger projects more efficiently.",
+      "improved": "In conclusion, robots are increasingly used because they perform routine work efficiently. I consider this beneficial because it leaves people more time for tasks requiring personal attention.",
+      "reason": "Small synthesis repair: connects both answers without introducing displacement, retraining or a new argument.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "CONVERGED",
+  "convergence_note": "Both assessments now agree on **TR 6 / CC 7 / LR 6 / GRA 7 → 6.5** and the same leading priorities: prompt-specific support, collocation/complement precision, then countability, with reference as a secondary refinement. The remaining corrections concern historical accuracy and wording, not scores or teaching priorities; no substantive disagreement remains.",
+  "raw_markdown": "# Panel 09 — codex (discussion)\n\n_Generated 2026-09-10T01:32:36.663140+00:00. GPT-6 Astra, low reasoning effort; final confirmation in the same session after complete staged corpus reading._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---:|---|\n| Task Response / Achievement | **6.0** | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Coherence and Cohesion | **7.0** | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 |\n| Lexical Resource | **6.0** | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |\n| Grammatical Range & Accuracy | **7.0** | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7 |\n| **Overall** | **6.5** | (6 + 7 + 6 + 7) ÷ 4 = 6.5; `contexts/01-band-descriptors/scoring-rules.md` §§1, 3 |\n\n**Word count: 260.** The essay meets the 250-word minimum.\n\n## What changed from prior feedback\n\nAll four scores and the leading priorities now agree across both assessments. Coherence remains at 7 because the essay shows clear progression and functional reference, with local rather than pervasive lapses; this does not imply that every Band 6 response must have weak paragraphing. One historical correction matters: **W9 had zero comma splices**, so W10 maintains that improvement; W8 contained two. “Find bugs” is valid English—the imprecision lies in “willing…without hesitation”—and “The reason is because” is treated as wording to streamline, not an absolute grammatical prohibition. Countability practice now points directly to the relevant noun sections, and unsupported timings, compulsory concessions and repetition quotas remain removed.\n\n## Progress across essays\n\n| Pattern | History | Status | Evidence in this essay |\n|---|---|---|---|\n| Examples do not establish the exact claim | W4’s promised travel benefits; W6’s public-funding justification; W7’s certification example; W8’s campaign mechanism; W9’s data exchange | **recurring** | “robots such as computers, smartphones or other devices”; both examples concern software |\n| Collocation and verb-complement precision | W1 “new logics”; W6 “by consuming tax”; W9 “reach to a doctor” | **recurring** | “are willing to find bugs without hesitation”; “do coding everything”; “care for the content” |\n| Countability and noun number | W1 “a single hardware”; W2 “every research”; W8 “public transports”; W9 “a software” | **recurring** | “repetitive works”, although “simple software” is correct |\n| Reference across a change of actor | W2’s “natural science…they”; W6’s final “them”; W8’s final “it”; W9’s hackers/companies reference | **recurring** | “If robots can handle small things for people, they can solely focus…” |\n| Double reason frame | W1 “The reason it matters is because”; W5 “The primary reason why…is because”; W9 used “The reason is that” | **recurring** | “The reason is because” |\n| Gerund-subject agreement | W9 “using modern technologies allow” | **fixed** | “using robots is relatively more efficient” |\n| Comma splices with conjunctive adverbs | W2, W3, W7, W8; corrected in W9 | **fixed** | “Therefore, people…” and “However, nowadays, people…” introduce separate sentences |\n| Conclusion and surface accuracy | W7 lacked an explicit final verdict; W9 changed the comparison and contained corrupted words | **improved** | “I believe this is a positive trend”; no obvious spelling corruptions |\n\n“Fixed” describes the correction demonstrated here, not guaranteed permanent mastery. These historical examples come from the corresponding W1–W9 essays and their feedback files.\n\n## Structural feedback\n\nYour four-paragraph plan correctly assigns the first body to why adoption happens and the second to why you consider it beneficial. Operational efficiency and freed human attention are connected but distinct answers; you do not need an unrelated cost argument to separate them. Both bodies contain explanation and examples, and their 83/109-word proportions need no padding. The main weakness is that the examples establish software assistance more clearly than robots performing tasks, while household use remains undeveloped. **The single highest-impact fix is replacing the software example set with a workplace robot example and a household robot example, each explaining its consequence.** Compress the repeated attention argument to make room rather than automatically increasing the word count. Your conclusion already states a clear verdict; briefly connecting both answers would improve synthesis, but a negative paragraph and a minimum conclusion length are unnecessary (`contexts/05-band-6-to-7/task-response-upgrades.md` §§3, 5, 8.5, 9).\n\n## Focus areas\n\n- **Examples that prove the exact prompt claim** — Name the relevant machine, explain its task and show why that supports adoption or your positive evaluation. Seen in: W4, W6–W10. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §§3, 5–6; `contexts/05-band-6-to-7/paragraph-structure-band7.md` §3.\n- **Precise action verbs and complements** — Practise *write code*, *focus on* and *can operate overnight*; express capability rather than willingness, and streamline the returning reason frame. Seen in: W1–W10; reason-frame recurrence specifically W1/W5/W10. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3; `contexts/05-band-6-to-7/paragraph-structure-band7.md` §6.\n- **Countability of activity nouns** — Learn *repetitive work* beside *repetitive tasks*: this matches the noun-number difficulties documented in Korean-L1 teaching material and recurring in your writing. Seen in: W1, W2, W8–W10. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2; `contexts/05-band-6-to-7/band-6-common-errors.md` §A6.\n- **Reference when responsibility changes** — Name *workers* or *household members* when a clause about robots is followed by a human action; use substitution where it improves clarity. Seen in: W2, W6, W8–W10. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md` §3; `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §3.\n\n## What's working\n\n“Using robots is” corrects W9’s gerund-subject disagreement, and the comma-splice improvement now holds across W9 and W10. Your complex grammar is more controlled: keep “AI agents developed by OpenAI” and “have to choose which tasks they should focus on,” rather than forcing an inversion into every essay. The final statement “I believe this is a positive trend” maintains your position, and W9’s conspicuous spelling corruptions are absent. Your human-side vocabulary varies through “humans,” “people” and “individuals,” while the essay remains easy to follow.\n\n## Per-criterion justification\n\n**Task Response — 6.0.** You answer both questions: efficiency explains adoption, and “individuals can work on more important tasks” gives a positive evaluation. “They do not need to take a rest unlike humans” adds a relevant operational reason. However, “robots such as computers, smartphones or other devices” treats general digital equipment as robots without establishing that connection, and both examples then concentrate on software development. Household use receives no developed support, while “people only need to care for the content of their program” overstates how much responsibility automation removes. This best fits relevant ideas with supporting material that may be “less relevant or inadequate,” rather than a missing position or an entirely unanswered question (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6).\n\n**Coherence and Cohesion — 7.0.** The sequence is clear: introduction, adoption mechanism, human benefit and final judgment. “Furthermore,” “Therefore” and “However” express identifiable relationships, while “they do not need to take a rest” refers back to robots and “This is because” connects a claim to its explanation. The conditional beginning “If robots can handle small things for people” contains a local ambiguity: *people* is the nearest plural noun, but the preceding subject *robots* also pulls the reader’s interpretation. Repeating “AI agents” within one sentence and revisiting the attention claim deserve editing, yet these remain limited lapses within generally logical progression. Band 7 allows some inaccuracies and overuse; neither a synonym quota nor substitution of a particular head noun is required, and Band 6’s possible paragraph weaknesses are not mandatory features of every CC6 response (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7).\n\n**Lexical Resource — 6.0.** “AI agents,” “calculation speed,” “willpower and stamina” and “managing all aspects” show useful range. Precision is the limiting feature: “are willing to find bugs without hesitation” describes motivation where your argument concerns availability and capability. **“Find bugs” itself is correct**; “care for the content” and “do coding everything” are the combinations needing repair. “Small errands” is poorly matched to programming, while “small things,” “small elements” and “bigger projects” leave the division of work vague. These accumulated imprecisions support Band 6 despite clean spelling; ordinary expressions such as “take a rest” or “a lot of” are not automatic errors (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6).\n\n**Grammatical Range & Accuracy — 7.0.** Your range includes defining and reduced relatives, causal and temporal subordination, an embedded question, a conditional, gerund subjects and a modal passive. “Utilizing robots should be welcomed because, when they handle small errands for people, individuals can work on more important tasks” successfully controls nested clauses. Clear repairs remain in “doing all tasks by people,” “repetitive works” and “used to do coding everything,” but accurate sentences occur frequently across simpler and complex forms. This supports Band 7 without requiring a numerical error-free threshold, a second conditional or a concession in every response. The semicolon before *and* is unnecessarily heavy here, not universally forbidden, and “The reason is because” is better streamlined than treated as a major grammatical failure (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 7; `contexts/05-band-6-to-7/grammar-upgrades.md` §§12–13).\n\n## Top concrete rewrites (5–10, ranked by band uplift × persistence)\n\nThe citations support the teaching principles; the hypothetical examples below introduce no claimed measurements.\n\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | “The reason is because robots such as computers, smartphones or other devices are better at performing repetitive works with their fast calculation speed.” | “This is because robots such as industrial robotic arms can perform repetitive tasks quickly and consistently.” | Repairs recurring prompt-scope and noun-number problems, while streamlining the W1/W5 reason frame. | `contexts/05-band-6-to-7/task-response-upgrades.md` §3; `contexts/05-band-6-to-7/paragraph-structure-band7.md` §6 |\n| 2 | “For example, AI agents developed by OpenAI are able to create simple software such as web pages or video games like Tetris; and AI agents are willing to find bugs without hesitation even at midnight.” | “For example, a factory could use a robotic arm to repeat an assembly task during a night shift. Its ability to maintain steady output gives the employer a reason to adopt it.” | Recurring support problem: connects robot capability to adoption without invented cycle times or claims of flawless operation. | `contexts/05-band-6-to-7/task-response-upgrades.md` §§5–6 |\n| 3 | “For instance, people used to do coding everything by themselves, including the shape of buttons. However, nowadays, people only need to care for the content of their program since AI can work on small elements.” | “For instance, a robotic vacuum could clean the floor while a parent helps a child with homework. Delegating this chore leaves more time for an activity requiring personal attention.” | Replaces both programming sentences with household evidence supporting your existing benefit, without an invented cleaning duration. | `contexts/05-band-6-to-7/paragraph-structure-band7.md` §§3, 4.5 |\n| 4 | “are willing to find bugs without hesitation even at midnight”; “do coding everything”; “care for the content of their program” | “can search for bugs overnight”; “write all the code”; “focus on what their program should do” | Recurring collocation/complement family. The first repair targets willingness and hesitation, not the valid phrase *find bugs*. Keep these as drills after changing the examples. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3 |\n| 5 | “performing repetitive works” | “performing repetitive work” / “carrying out repetitive tasks” | Recurring since W1/W2: *work* is uncountable in this meaning; *tasks* is countable. | `contexts/05-band-6-to-7/band-6-common-errors.md` §A6 |\n| 6 | “If robots can handle small things for people, they can solely focus on managing all aspects of the project they work on.” | “If robots take over routine tasks, workers can devote more attention to planning projects and making decisions.” | Recurring reference difficulty: names the human actor and replaces vague, absolute wording with a specific benefit. | `contexts/05-band-6-to-7/cohesion-upgrades.md` §3; `contexts/05-band-6-to-7/vocabulary-upgrades.md` §3 |\n| 7 | “using robots is relatively more efficient than doing all tasks by people” | “using robots for routine tasks can be more efficient than having people perform those tasks themselves” | Repairs the active/passive mismatch and qualifies the claim; *relatively more* is not inherently wrong. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §7 |\n| 8 | “In conclusion, I believe this is a positive trend because robots can help people work on bigger projects more efficiently.” | “In conclusion, robots are increasingly used because they perform routine work efficiently. I consider this beneficial because it leaves people more time for tasks requiring personal attention.” | Small synthesis repair: connects both answers without introducing displacement, retraining or a new argument. | `contexts/05-band-6-to-7/paragraph-structure-band7.md` §5 |\n\n## Before your next essay\n\n- **12 minutes — claim-to-example drill.** Using `contexts/05-band-6-to-7/task-response-upgrades.md` §§3, 5–6, write one workplace-robot paragraph and one household-robot paragraph. Underline the sentence explaining why each example proves its claim; then apply the same test to W9’s data-exchange paragraph.\n- **10 minutes — collocation retrieval.** Cover rewrite #4 and reproduce its three repairs, then write six new sentences using *perform tasks, write code, find bugs, make decisions, focus on* and *devote attention to*. Follow the phrase-based practice model in `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §3.\n- **8 minutes — noun frames.** Contrast *work/tasks, software/programs, research/studies* and *information/facts*. Write each pair with appropriate determiners or quantifiers, using `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B2 and `contexts/05-band-6-to-7/band-6-common-errors.md` §A6.\n- **Final four minutes — three passes.** Check example relevance, then noun countability, then pronoun reference across changes of actor. Do not assume the nearest noun is always the intended referent; read the meaning of both clauses (`contexts/05-band-6-to-7/cohesion-upgrades.md` §3). Maintain ordinary proofreading rather than permanently abandoning spelling or verb checks.\n- **Stretch and retirement test.** Attempt one result participle where it fits—*…, allowing workers to concentrate on quality* (`contexts/05-band-6-to-7/grammar-upgrades.md` §4). Move prompt-specific support below language precision after two consecutive timed essays develop their exact questions with relevant support and consistent conclusions; this is a practice milestone, not a scoring rule.\n\n## Overall band rationale\n\n**6 + 7 + 6 + 7 = 26; 26 ÷ 4 = 6.5.** Holding CC and GRA at 7 while raising either TR or LR to 7 gives **6.75 → 7.0** under `contexts/01-band-descriptors/scoring-rules.md` §§1, 3; this estimates Task 2, not your combined Writing score.\n\n## CONVERGENCE: CONVERGED\n\nBoth assessments now agree on **TR 6 / CC 7 / LR 6 / GRA 7 → 6.5** and the same leading priorities: prompt-specific support, collocation/complement precision, then countability, with reference as a secondary refinement. The remaining corrections concern historical accuracy and wording, not scores or teaching priorities; no substantive disagreement remains.",
+  "structural_feedback": "Your four-paragraph plan correctly assigns the first body to why adoption happens and the second to why you consider it beneficial. Operational efficiency and freed human attention are connected but distinct answers; you do not need an unrelated cost argument to separate them. Both bodies contain explanation and examples, and their 83/109-word proportions need no padding. The main weakness is that the examples establish software assistance more clearly than robots performing tasks, while household use remains undeveloped. **The single highest-impact fix is replacing the software example set with a workplace robot example and a household robot example, each explaining its consequence.** Compress the repeated attention argument to make room rather than automatically increasing the word count. Your conclusion already states a clear verdict; briefly connecting both answers would improve synthesis, but a negative paragraph and a minimum conclusion length are unnecessary (`contexts/05-band-6-to-7/task-response-upgrades.md` §§3, 5, 8.5, 9).",
+  "focus_areas": [
+    {
+      "area": "Examples that prove the exact prompt claim",
+      "rationale": "Name the relevant machine, explain its task and show why that supports adoption or your positive evaluation. Seen in: W4, W6–W10.",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ]
+    },
+    {
+      "area": "Precise action verbs and complements",
+      "rationale": "Practise *write code*, *focus on* and *can operate overnight*; express capability rather than willingness, and streamline the returning reason frame. Seen in: W1–W10; reason-frame recurrence specifically W1/W5/W10.",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md",
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md"
+      ]
+    },
+    {
+      "area": "Countability of activity nouns",
+      "rationale": "Learn *repetitive work* beside *repetitive tasks*: this matches the noun-number difficulties documented in Korean-L1 teaching material and recurring in your writing. Seen in: W1, W2, W8–W10.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/05-band-6-to-7/band-6-common-errors.md"
+      ]
+    },
+    {
+      "area": "Reference when responsibility changes",
+      "rationale": "Name *workers* or *household members* when a clause about robots is followed by a human action; use substitution where it improves clarity. Seen in: W2, W6, W8–W10.",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md"
+      ]
+    }
+  ],
+  "whats_working": "“Using robots is” corrects W9’s gerund-subject disagreement, and the comma-splice improvement now holds across W9 and W10. Your complex grammar is more controlled: keep “AI agents developed by OpenAI” and “have to choose which tasks they should focus on,” rather than forcing an inversion into every essay. The final statement “I believe this is a positive trend” maintains your position, and W9’s conspicuous spelling corruptions are absent. Your human-side vocabulary varies through “humans,” “people” and “individuals,” while the essay remains easy to follow."
+}

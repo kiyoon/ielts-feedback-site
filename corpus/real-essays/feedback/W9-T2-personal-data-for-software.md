@@ -275,6 +275,24 @@ Ranked by band uplift × persistence across W1–W9.
 | 8 | "there is always a risk to ge stolen even though individuals choose not to use the sevice, since every personal infmation is already stored in digital form" | "there is always a **risk of data being stolen even if individuals decline these services, since much personal information** is already held in digital form — **though sharing it with one more company does add one more point of exposure**" | Repairs a malformed passive (*risk of* + -ing), two corruptions, and *every* + uncountable — the same quantifier fault as W2's "every research" and W7's "every children". The final clause qualifies an absolute the panel flagged as overstated. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §9; `contexts/05-band-6-to-7/grammar-upgrades.md` |
 | 9 | "Nowadays, a lot of people are willing…"; "a lot of hackers are trying…"; "would cost a lot of money" | "**In recent years, a growing number of** people…"; "**numerous** hackers…"; "would cost **a substantial sum**" | `Nowadays` is a named band-6 opener and `a lot of` an informal quantifier — both on the Korean instructors' avoid-list. Rotating the quantifier also breaks a repetition an examiner will notice three times. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §11; `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §4; `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §4 |
 
+## Vocabulary and register — quick-fix table
+
+The nine rewrites above are the band-movers. These are the smaller lexical swaps the
+panel raised that did not earn a numbered row — cheap, drop-in, and worth memorising as
+units. Every one of them is a phrase you actually wrote.
+
+| Your phrase | Band-7 replacement | Why | Corpus citation |
+|---|---|---|---|
+| `they can make a huge amount of profit by selling it` | "hackers can make **substantial profits** by selling **the stolen data**" | The collocation *make a profit* is already correct — the faults are the informal quantifier and `it`, whose nearest noun is *data* but whose subject is *hackers*. Name the noun. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §4; `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §10 |
+| `some AI agents can make a custom program for users` | "some AI agents can **build a customised program** for users" | You *build* or *develop* software; *make* is the all-purpose verb a band-6 script reaches for. *Custom* → *customised* is the adjective form. | `contexts/10-task2-topic-banks/topic-03-technology.md` §Common collocations; `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §1 |
+| `live a life more efficiently` | "live **more comfortably**" / "work **more productively**" | *Live a life* is redundant, and *efficiently* describes processes, not lives — this is the third essay where *efficient/effective* is used loosely. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §1 |
+| `allowing them to make whatever they want` | "allowing them to **create almost anything they need**" | The participle clause is correct and worth keeping — only the vague *make … whatever* is spoken register. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §7 |
+| `A classic example would be` | "**A striking example is**" / "**One clear illustration is**" | *A classic example* is a filler opener; the sentence works harder with a concrete adjective. | `contexts/09-instructor-tips/06-task2-sentence-frames.md` §5 |
+
+**Retrieval, not recognition.** Cover the right-hand column and reproduce each replacement
+from the left. A phrase you can only recognise will not appear under exam pressure
+(`contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §4).
+
 ## Before your next essay
 
 - **12 minutes — the scope test.** Write this prompt's trade-off as one sentence: *data in,
