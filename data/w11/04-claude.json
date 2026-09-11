@@ -1,0 +1,139 @@
+{
+  "id": "w11/04-claude",
+  "task": "w11",
+  "iteration": 4,
+  "tool": "claude",
+  "generated_at": "2026-09-10T10:14:27Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "Band 7 requires \"a clear overview, the data are appropriately categorised, and main trends or differences are identified\". Band 6: \"A relevant overview is attempted\" and \"some inaccurate information … in areas of detail\".",
+      "justification": "The overview is relevant and mostly accurate, but no differences between categories are identified: the crossover, ranking change and final gap are absent. The body inaccurately describes murder as maintaining a similar level of 500 cases despite higher values in 2004, 2005 and 2010. The overview's stability claim is defensible on net change."
+    },
+    "coherence": {
+      "band": 6,
+      "descriptor_evidence": "Note #4 of the descriptor file: \"At Band 7+, the writer should group features … rather than describing each line in isolation.\"",
+      "justification": "Clear paragraphing, varied sequencing markers and correct use of \"it\" support cohesion. Organisation remains chronological three times over rather than comparative, with parallel descriptions instead of explicit comparisons. This is the criterion closest to 7."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "Range is adequate and meaning is always clear.",
+      "justification": "Solid trend nouns and a band-7 opener are offset by three collocation misfires: \"showed a plummet\", \"On the contrary\" and \"the mere increase\"."
+    },
+    "grammar": {
+      "band": 6,
+      "descriptor_evidence": "The errors are described as systematic and \"frequent\" at band 6 rather than \"occasional\" at band 7.",
+      "justification": "Relative clauses, passives and noun-phrase conversions demonstrate sufficient range, but recurring clause-control errors and article and plural-marking slips prevent band 7. Fixing the named rules could restore the band 7 achieved in W10."
+    }
+  },
+  "overall": 6,
+  "overall_rationale": "Four sixes average to 6.0 exactly. Your route to 7.0 is **TA 7 + CC 7 + GRA 7 + LR 6 = 6.75, which rounds up to 7.0** (`contexts/01-band-descriptors/scoring-rules.md` §3). That route asks you to repeat three things you have already achieved — TA 7 in W5 and W6, CC 7 in W5, W6 and W10, GRA 7 in W10 — and asks nothing new of Lexical Resource, the one criterion that has never moved off 6.0 in eleven essays. That is why focus area #1 is comparison (TA and CC together) and focus area #2 is clause control (GRA), rather than vocabulary.\n\nThe single highest-value habit to build before W12: whenever a Task 1 chart has more than one line, one sentence in the overview must contain **both** lines and a comparative.",
+  "what_changed": "The second examiner on this panel (codex) and I now agree on all four scores. Six of my first-round claims did not survive checking, and I withdraw them:\n\n1. **\"You never use pronouns to bind sentences.\"** False. You write \"Then, **it** rose\" and \"**it** started at about 2,300 cases.\" Codex is right; withdrawn.\n2. **\"'The figure for' three times is mechanical.\"** `contexts/09-instructor-tips/01-paraphrase-banks-task1.md` §2 lists *the figure for* as the band-7 **upgrade** over *the number of*. Repeating a data label is not a synonym failure. Withdrawn — it now counts in your favour.\n3. **\"Merely 500 cases\" as a grammar error.** Codex is right that *merely* can modify a number (`contexts/08-vocabulary-grammar/06-paraphrase-quick-lookup.md`, section J). The real issue is evaluative minimising in a factual report.\n4. **\"Murder is appended rather than grouped.\"** Putting assault and murder in one body paragraph is a legitimate technique. Withdrawn.\n5. **\"Your figures imply a peak near 3,750.\"** Over-reach. 2003 reads nearer 3,300 and the 2004 rise is about 300, so \"just below 3,500\" plus \"approximately 250\" is loose, not a cascading error.\n6. **I labelled the dropped-subject pattern \"new.\"** Your own W5 feedback records it as **Recurring (W2, W3, W5)** (`real-essays/feedback/W5-T2-arts-subjects-primary.md`). That makes it a higher priority, not a lower one.\n\n**Still contested.** Codex ranks trend-collocation precision (a Lexical Resource item) as priority #1. I rank it #5. Across ten essays your LR has never once left 6.0, while GRA reached 7 one essay ago and CC has reached 7 three times. The arithmetic route to 7.0 does not require LR 7 — so the top slots should go to things you have already proved you can do.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "the number of armed robbery showed a plummet",
+      "improved": "the number of armed **robberies fell sharply**",
+      "reason": "Plural after *the number of* (§B1); *plummet* is a verb, not a noun (trend bank §3/§7)",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 2,
+      "original": "On the contrary, a slight increase can be seen in the number of assault cases",
+      "improved": "**By contrast**, assault cases **rose slightly**, **overtaking armed robbery in 2007**",
+      "reason": "Correct contrast marker (§12); adds the crossover (§9: *overtook / surpassed / outstripped*)",
+      "citations": [],
+      "category": "coherence"
+    },
+    {
+      "id": 3,
+      "original": "while the number of murder remained stable",
+      "improved": "while murder**s** remained the **least common** offence throughout, despite a peak of roughly 860 in 2005",
+      "reason": "Plural; states the ranking; keeps the overview accurate",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "the figure maintained the similar level at around 1,500 cases until 2012",
+      "improved": "the figure **levelled off at around 1,450 cases** until 2012",
+      "reason": "*level off at X* — always pair with the value (trend bank §4); removes the dropped subject and the article error",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "there was a gradual climb of approximately 800 cases between 2008 and 2012, eventually reached a peak",
+      "improved": "there was a gradual climb of approximately 700 cases between 2008 and 2012, **eventually reaching a peak**",
+      "reason": "§F1: one finite verb per clause — convert the second to a participle",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "the figure for murder stayed relatively stable from 2003 to 2012, maintained the similar level with merely 500 cases",
+      "improved": "the figure for murder **ended the period close to where it began**, at about 500 cases, **although it had briefly risen to roughly 860 in 2005**",
+      "reason": "§K topic-drop repaired; the 2005 peak is no longer contradicted",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "(add to the overview — nothing to replace)",
+      "improved": "**By 2012, assault cases were almost twice as high as armed robberies, having been well below them in 2003.**",
+      "reason": "The missing comparison. `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §8: \"Compare: 'X was twice as high as Y'\"",
+      "citations": [
+        "contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "After the mere increase of roughly 500 cases in 2009",
+      "improved": "After a **modest rebound** of roughly 400 cases in 2009",
+      "reason": "*modest* is the trend bank's collocate for a small rise (§11); *mere* carries evaluation; the figure is nearer 400",
+      "citations": [],
+      "category": "lexical"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "",
+  "raw_markdown": "# Panel 04 — claude (discussion)\n\n_Generated 2026-09-10T10:14:27Z. Examiner-panel discussion; corpus manifest: 168 files._\n\n---\n\n# W11 — Serious crimes in London, 2003–2012 (Academic Task 1)\n\n## Per-criterion scores\n\n| Criterion | Band | Why, in one line |\n|---|---|---|\n| Task Achievement | **6.0** | Overview attempted and broadly right, but no comparison *between* crime types, the 2007 crossover is missing, and the murder line is described inaccurately |\n| Coherence & Cohesion | **6.0** | Clear paragraphing and good time-sequencing, but paragraphs 3 and 4 are two parallel descriptions, not one grouped comparison |\n| Lexical Resource | **6.0** | Solid trend nouns and a band-7 opener; three collocation misfires (\"showed a plummet\", \"On the contrary\", \"the mere increase\") |\n| Grammatical Range & Accuracy | **6.0** | Two clause-control errors repeat systematically; article and plural marking still slip |\n| **Overall** | **6.0** | 6 + 6 + 6 + 6 = 6.0 (`contexts/01-band-descriptors/scoring-rules.md` §1) |\n\n## What changed from prior feedback\n\nThe second examiner on this panel (codex) and I now agree on all four scores. Six of my first-round claims did not survive checking, and I withdraw them:\n\n1. **\"You never use pronouns to bind sentences.\"** False. You write \"Then, **it** rose\" and \"**it** started at about 2,300 cases.\" Codex is right; withdrawn.\n2. **\"'The figure for' three times is mechanical.\"** `contexts/09-instructor-tips/01-paraphrase-banks-task1.md` §2 lists *the figure for* as the band-7 **upgrade** over *the number of*. Repeating a data label is not a synonym failure. Withdrawn — it now counts in your favour.\n3. **\"Merely 500 cases\" as a grammar error.** Codex is right that *merely* can modify a number (`contexts/08-vocabulary-grammar/06-paraphrase-quick-lookup.md`, section J). The real issue is evaluative minimising in a factual report.\n4. **\"Murder is appended rather than grouped.\"** Putting assault and murder in one body paragraph is a legitimate technique. Withdrawn.\n5. **\"Your figures imply a peak near 3,750.\"** Over-reach. 2003 reads nearer 3,300 and the 2004 rise is about 300, so \"just below 3,500\" plus \"approximately 250\" is loose, not a cascading error.\n6. **I labelled the dropped-subject pattern \"new.\"** Your own W5 feedback records it as **Recurring (W2, W3, W5)** (`real-essays/feedback/W5-T2-arts-subjects-primary.md`). That makes it a higher priority, not a lower one.\n\n**Still contested.** Codex ranks trend-collocation precision (a Lexical Resource item) as priority #1. I rank it #5. Across ten essays your LR has never once left 6.0, while GRA reached 7 one essay ago and CC has reached 7 three times. The arithmetic route to 7.0 does not require LR 7 — so the top slots should go to things you have already proved you can do.\n\n## Progress across essays\n\n| Essay | TR/TA | CC | LR | GRA | Overall |\n|---|---|---|---|---|---|\n| W1 | 5 | 5 | 6 | 5 | 5.5 |\n| W2–W4 | 6 | 6 | 6 | 6 | 6.0 |\n| W5, W6 | **7** | **7** | 6 | 6 | 6.5 |\n| W7–W9 | 6 | 6 | 6 | 6 | 6.0 |\n| W10 | 6 | **7** | 6 | **7** | 6.5 |\n| **W11** | **6** | **6** | **6** | **6** | **6.0** |\n\n| Pattern | Status | Evidence in W11 |\n|---|---|---|\n| Comma splice | **Fixed — stays retired** (`real-essays/feedback/W9-T2-personal-data-for-software.md`: \"zero in thirteen sentences\") | Zero in ten sentences |\n| Dropped subject / clause collapse | **Recurring** — W2, W3, W5, now W11 | \"eventually reached a peak\", \"maintained the similar level\" |\n| Missing plural after \"the number of\" | **Recurring** — W1 onward | \"the number of armed robbery\", \"the number of murder\" |\n| Article with *same/similar* | **Recurring** | \"the similar level\" ×2 |\n| Explicit comparison between categories | **New for Task 1 — the biggest single gap** | Zero comparisons across the three crime types |\n| Paragraphing / overview placement | **Improved** | Clean four-paragraph shape, overview second |\n\n## Structural feedback\n\nYour macro-structure is already at band 7: introduction → overview → armed robbery → assault + murder. You correctly do **not** write a conclusion, which is right for Task 1 (`contexts/02-task1-academic/chart-types-overview.md` §10: \"Task 1 has an *overview*, not a conclusion\").\n\nThe problem is one level down. Paragraph 3 describes armed robbery from 2003 to 2012. Paragraph 4 describes assault from 2003 to 2012, then murder from 2003 to 2012. Three lines, three separate walk-throughs, no line ever mentioned inside another line's paragraph. `contexts/02-task1-academic/samples-band-6_0.md` names this exact profile: \"**Implicit rather than explicit comparisons** — listing data rather than comparing it.\"\n\n## Focus areas\n\n1. **Explicit comparison between the three crime types — especially the 2007 crossover.** This is the documented number-one 6→7 lever for Task 1: \"The single biggest jump from 6 to 7 is the overview + grouping move. Band 6 candidates list; Band 7 candidates *select and group*\" (`contexts/02-task1-academic/samples-band-7_0.md`). Armed robbery starts as the **highest** line and ends as the **middle** line; assault overtakes it in 2007 and finishes at roughly **1.9 times** its level. You report both lines accurately and never once put them in the same sentence.\n2. **The two named clause-control patterns.** \"there was a gradual climb …, eventually reached a peak\" is the double-predicate-after-*there be* error in `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F1 — \"a finite clause can have only one finite verb; add a relative pronoun or convert the second verb to a participle.\" \"stayed relatively stable …, maintained the similar level\" is a *different* pattern: Korean topic-drop, §K (\"Is important.\" → \"**It** is important.\"). Two rules, two fixes. These are the recurring family from W2/W3/W5, and grammar is the criterion you scored 7 on in W10.\n3. **\"The number of\" + plural, and *the* vs *a* with *similar*.** \"the number of armed robbery\" → \"armed robber**ies**\" (§B1). Note you already get the *verb* right — \"the number of X **remained**\" is correctly singular (§B3). \"the similar level\" → \"**a** similar level\"; §A3 lists *only/main/same/top/first/last* as always taking *the* — *similar* is not on that list.\n4. **\"On the contrary\" → \"By contrast.\"** *On the contrary* contradicts a previous statement; you are contrasting two data sets. `contexts/09-instructor-tips/03-trend-language-bank.md` §12 gives *by contrast / conversely / on the other hand*.\n5. **Trend-collocation precision.** Real, but ranked below the others because you do not need LR 7 to reach 7.0.\n\n## What's working\n\n- **The opener is band 7.** \"The provided line graph displays…\" matches the frame in `contexts/09-instructor-tips/01-paraphrase-banks-task1.md` §1, and *displays* is a genuine paraphrase of *shows*.\n- **\"The figure for\"** is the correct upgrade, not repetition. Keep it.\n- **\"Rose by approximately 250 cases\"** — *by* for magnitude is right (§10 of the trend bank). Many band-6 writers confuse *by* and *to*; you don't.\n- **Hedging on every number.** *just below, approximately, just over, roughly, around, about* — this is exactly the approximation discipline Task 1 wants, and you sustain it across all ten sentences.\n- **\"There was a gradual climb of approximately 800 cases\"** — verb-to-noun conversion with a modifier is a band-7 move.\n- **Zero comma splices.** Four essays of drilling held.\n\n## Per-criterion justification\n\n**Task Achievement — 6.0.** Band 7 requires \"a clear overview, the data are appropriately categorised, and main trends or differences are identified\" (`contexts/01-band-descriptors/task1-academic-band-descriptors.md`). Your overview is relevant and mostly accurate, which is the band-6 wording (\"A relevant overview is attempted\"). Two things hold it at 6. First, no *differences* between categories are identified — the crossover, the ranking change and the final gap are all absent. Second, band 6 permits \"some inaccurate information … in areas of detail,\" and you have one: \"the figure for murder … maintained the similar level with merely 500 cases\" is wrong for 2004 (about 730), 2005 (about 860 — a peak roughly 1.75 times the 2003 figure) and 2010 (about 630). Your *overview* claim that murder \"remained stable\" is defensible on net change (about 490 to about 500); the *body* sentence is not.\n\n**Coherence & Cohesion — 6.0, and the closest to 7.** Sequencing markers (*Overall, In detail, Then, After that, Afterwards, Meanwhile, Turning to*) are varied and correctly placed, and you bind with *it*. What stops 7 is that the organisation is chronological three times over rather than comparative once. Note #4 of the descriptor file: \"At Band 7+, the writer should group features … rather than describing each line in isolation.\"\n\n**Lexical Resource — 6.0.** Range is adequate and meaning is always clear. Three inappropriacies: *showed a plummet* (§7 of the trend bank lists the Down nouns — *a fall, a decline, a decrease, a drop, a slump, a downturn, a contraction, a reduction*; **plummet is a verb only**, §3); *On the contrary*; and *the mere increase*, where §11 gives *a modest rise*.\n\n**Grammatical Range & Accuracy — 6.0.** You produce relative clauses, passives and noun-phrase conversions, so range is fine. The block is that the errors are **systematic** — the same two rules broken twice each — which is band-6 wording (\"frequent\"), not band-7 wording (\"occasional\"). Fix the two named rules and this criterion very plausibly flips, exactly as it did in W10.\n\n## Top concrete rewrites\n\n| # | Your sentence | Rewrite | Why |\n|---|---|---|---|\n| 1 | \"the number of armed robbery showed a plummet\" | \"the number of armed **robberies fell sharply**\" | Plural after *the number of* (§B1); *plummet* is a verb, not a noun (trend bank §3/§7) |\n| 2 | \"On the contrary, a slight increase can be seen in the number of assault cases\" | \"**By contrast**, assault cases **rose slightly**, **overtaking armed robbery in 2007**\" | Correct contrast marker (§12); adds the crossover (§9: *overtook / surpassed / outstripped*) |\n| 3 | \"while the number of murder remained stable\" | \"while murder**s** remained the **least common** offence throughout, despite a peak of roughly 860 in 2005\" | Plural; states the ranking; keeps the overview accurate |\n| 4 | \"the figure maintained the similar level at around 1,500 cases until 2012\" | \"the figure **levelled off at around 1,450 cases** until 2012\" | *level off at X* — always pair with the value (trend bank §4); removes the dropped subject and the article error |\n| 5 | \"there was a gradual climb of approximately 800 cases between 2008 and 2012, eventually reached a peak\" | \"there was a gradual climb of approximately 700 cases between 2008 and 2012, **eventually reaching a peak**\" | §F1: one finite verb per clause — convert the second to a participle |\n| 6 | \"the figure for murder stayed relatively stable from 2003 to 2012, maintained the similar level with merely 500 cases\" | \"the figure for murder **ended the period close to where it began**, at about 500 cases, **although it had briefly risen to roughly 860 in 2005**\" | §K topic-drop repaired; the 2005 peak is no longer contradicted |\n| 7 | *(add to the overview — nothing to replace)* | \"**By 2012, assault cases were almost twice as high as armed robberies, having been well below them in 2003.**\" | The missing comparison. `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §8: \"Compare: 'X was twice as high as Y'\" |\n| 8 | \"After the mere increase of roughly 500 cases in 2009\" | \"After a **modest rebound** of roughly 400 cases in 2009\" | *modest* is the trend bank's collocate for a small rise (§11); *mere* carries evaluation; the figure is nearer 400 |\n\n## Before your next essay\n\nRun these three checks in order — they take about four minutes.\n\n1. **Comparison check.** Point at every sentence that names two different data series. If you have fewer than two such sentences, you have written a band-6 list. Add one to the overview and one to the body. Use your own instructor's hedging rule from `contexts/09-instructor-tips/00-user-shared-feedback.md` §2 — always pair the comparative with an adverb: \"assault cases were **considerably** higher than armed robberies.\"\n2. **One-verb check.** For every clause after a comma, ask: does it have its own subject? If not, either add one or make the verb an *-ing* participle. This is items #6 and #2 of the ten-point audit in `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §N.\n3. **\"The number of\" check.** Every time you write it, the next noun takes **-s** and the verb stays **singular**.\n\n## Overall band rationale\n\nFour sixes average to 6.0 exactly. Your route to 7.0 is **TA 7 + CC 7 + GRA 7 + LR 6 = 6.75, which rounds up to 7.0** (`contexts/01-band-descriptors/scoring-rules.md` §3). That route asks you to repeat three things you have already achieved — TA 7 in W5 and W6, CC 7 in W5, W6 and W10, GRA 7 in W10 — and asks nothing new of Lexical Resource, the one criterion that has never moved off 6.0 in eleven essays. That is why focus area #1 is comparison (TA and CC together) and focus area #2 is clause control (GRA), rather than vocabulary.\n\nThe single highest-value habit to build before W12: whenever a Task 1 chart has more than one line, one sentence in the overview must contain **both** lines and a comparative.\n\n## CONVERGENCE: REFINING",
+  "structural_feedback": "Your macro-structure is already at band 7: introduction → overview → armed robbery → assault + murder. You correctly do **not** write a conclusion, which is right for Task 1 (`contexts/02-task1-academic/chart-types-overview.md` §10: \"Task 1 has an *overview*, not a conclusion\").\n\nThe problem is one level down. Paragraph 3 describes armed robbery from 2003 to 2012. Paragraph 4 describes assault from 2003 to 2012, then murder from 2003 to 2012. Three lines, three separate walk-throughs, no line ever mentioned inside another line's paragraph. `contexts/02-task1-academic/samples-band-6_0.md` names this exact profile: \"**Implicit rather than explicit comparisons** — listing data rather than comparing it.\"",
+  "focus_areas": [
+    {
+      "area": "Explicit comparison between the three crime types — especially the 2007 crossover.",
+      "rationale": "This is the documented number-one 6→7 lever for Task 1: \"The single biggest jump from 6 to 7 is the overview + grouping move. Band 6 candidates list; Band 7 candidates *select and group*\" (`contexts/02-task1-academic/samples-band-7_0.md`). Armed robbery starts as the **highest** line and ends as the **middle** line; assault overtakes it in 2007 and finishes at roughly **1.9 times** its level. You report both lines accurately and never once put them in the same sentence.",
+      "corpus_drill": [
+        "contexts/02-task1-academic/samples-band-7_0.md"
+      ]
+    },
+    {
+      "area": "The two named clause-control patterns.",
+      "rationale": "\"there was a gradual climb …, eventually reached a peak\" is the double-predicate-after-*there be* error in `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §F1 — \"a finite clause can have only one finite verb; add a relative pronoun or convert the second verb to a participle.\" \"stayed relatively stable …, maintained the similar level\" is a *different* pattern: Korean topic-drop, §K (\"Is important.\" → \"**It** is important.\"). Two rules, two fixes. These are the recurring family from W2/W3/W5, and grammar is the criterion you scored 7 on in W10.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ]
+    },
+    {
+      "area": "\"The number of\" + plural, and *the* vs *a* with *similar*.",
+      "rationale": "\"the number of armed robbery\" → \"armed robber**ies**\" (§B1). Note you already get the *verb* right — \"the number of X **remained**\" is correctly singular (§B3). \"the similar level\" → \"**a** similar level\"; §A3 lists *only/main/same/top/first/last* as always taking *the* — *similar* is not on that list.",
+      "corpus_drill": []
+    },
+    {
+      "area": "\"On the contrary\" → \"By contrast.\"",
+      "rationale": "*On the contrary* contradicts a previous statement; you are contrasting two data sets. `contexts/09-instructor-tips/03-trend-language-bank.md` §12 gives *by contrast / conversely / on the other hand*.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/03-trend-language-bank.md"
+      ]
+    },
+    {
+      "area": "Trend-collocation precision.",
+      "rationale": "Real, but ranked below the others because you do not need LR 7 to reach 7.0.",
+      "corpus_drill": []
+    }
+  ],
+  "whats_working": "- **The opener is band 7.** \"The provided line graph displays…\" matches the frame in `contexts/09-instructor-tips/01-paraphrase-banks-task1.md` §1, and *displays* is a genuine paraphrase of *shows*.\n- **\"The figure for\"** is the correct upgrade, not repetition. Keep it.\n- **\"Rose by approximately 250 cases\"** — *by* for magnitude is right (§10 of the trend bank). Many band-6 writers confuse *by* and *to*; you don't.\n- **Hedging on every number.** *just below, approximately, just over, roughly, around, about* — this is exactly the approximation discipline Task 1 wants, and you sustain it across all ten sentences.\n- **\"There was a gradual climb of approximately 800 cases\"** — verb-to-noun conversion with a modifier is a band-7 move.\n- **Zero comma splices.** Four essays of drilling held."
+}

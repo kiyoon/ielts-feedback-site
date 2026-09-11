@@ -1,0 +1,136 @@
+{
+  "id": "w11/00-baseline-codex",
+  "task": "w11",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-09-10T09:32:25Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "You cover all three categories and provide a recognisable overview.",
+      "justification": "“A slight increase can be seen in the number of assault cases” captures its overall direction, and the armed robbery paragraph includes relevant figures and turning points. However, the response omits the important comparison that assault overtook armed robbery around 2007. Describing murder as having “stayed relatively stable” with “merely 500 cases” also underrepresents its early peak. Most numerical estimates are reasonable approximations; the main limitation is the selection and development of key comparisons."
+    },
+    "coherence": {
+      "band": 6,
+      "descriptor_evidence": "The essay remains easy to follow, but band 7 requires more flexible and consistently appropriate cohesion.",
+      "justification": "The restored paragraphing creates a clear progression, and the detail paragraphs have sensible topics. However, the repeated sequencing through “Then,” “After that” and “Afterwards” makes the linking somewhat mechanical. “On the contrary” is also inappropriate here: it normally contradicts a preceding statement, whereas you are comparing different trends."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "You use an adequate range of graph vocabulary, including “decrease dramatically,” “a gradual climb” and “reached a peak.” Meaning is generally clear.",
+      "justification": "However, “showed a plummet” is an awkward collocation, while “the mere increase” introduces an unnecessary judgement about the size of the rise. “Maintained the similar level” is also unnatural. To reach band 7, prioritise accurate combinations of familiar words over more elaborate wording."
+    },
+    "grammar": {
+      "band": 6,
+      "descriptor_evidence": "There is a mixture of sentence structures, including a contrast clause with “while,” and several sentences are grammatically sound. These errors rarely prevent understanding, supporting band 6, but they limit the frequent error-free sentences needed for band 7.",
+      "justification": "However, errors recur in countable nouns—“the number of armed robbery” and “the number of murder”—and clause construction. In “crimes occurred in London changed,” the relative clause is not correctly formed. The endings “, eventually reached a peak” and “, maintained the similar level” both lack the necessary grammatical connection."
+    }
+  },
+  "overall": 6,
+  "overall_rationale": "Estimated overall band: 6.0. Average: (6 + 6 + 6 + 6) ÷ 4 = 6.0.",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "Overall, the number of armed robbery showed a plummet during the given time. On the contrary, a slight increase can be seen in the number of assault cases while the number of murder remained stable.",
+      "improved": "Overall, armed robberies fell sharply, while assault cases increased and became the most common crime from 2007 onwards. Murder remained the least common crime, with little overall change despite some fluctuations.",
+      "reason": "This identifies the change in ranking and summarises murder more accurately.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "Meanwhile, the figure for murder stayed relatively stable from 2003 to 2012, maintained the similar level with merely 500 cases.",
+      "improved": "Meanwhile, murder cases began and ended at around 500, but peaked at just under 1,000 in 2005.",
+      "reason": "This supplies an important supporting detail and replaces the incorrectly joined clauses with an accurate compound sentence.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "Turning to the figure for Assault, it started at about 2,300 cases.",
+      "improved": "In 2003, there were about 2,300 assault cases, compared with just under 3,500 armed robberies.",
+      "reason": "This directly compares the categories using figures you already selected.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "Afterwards, there was a gradual climb of approximately 800 cases between 2008 and 2012, eventually reached a peak during the given period.",
+      "improved": "Assault cases then rose from about 2,000 in 2008 to approximately 2,700 in 2012, reaching their highest level of the period.",
+      "reason": "“Reaching” correctly connects the final phrase, while the endpoint figures make the increase clearer.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "The provided line graph displays how the number of major crimes occurred in London changed from 2003 to 2012.",
+      "improved": "The line graph shows changes in the numbers of three types of serious crime in London between 2003 and 2012.",
+      "reason": "This removes the faulty “crimes occurred … changed” construction and identifies the graph’s categories more precisely.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "the number of armed robbery",
+      "improved": "“the number of armed robberies” / “the number of murder cases”",
+      "reason": "“The number of” requires a plural countable noun when referring to individual incidents. This applies to both “the number of armed robbery” and “the number of murder”.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "After the mere increase of roughly 500 cases in 2009, the figure maintained the similar level at around 1,500 cases until 2012.",
+      "improved": "After rising to around 1,500 cases in 2009, the number of armed robberies remained at approximately this level until 2012.",
+      "reason": "This removes the awkward judgement “mere,” corrects the stability expression and uses a controlled participle structure.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 8,
+      "original": "On the contrary",
+      "improved": "By contrast",
+      "reason": "“By contrast” compares different patterns, while “on the contrary” rejects or reverses a previous claim.",
+      "citations": [],
+      "category": "coherence"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-09-10T09:32:25Z by codex exec (gpt-6-astra, ultra), read-only sandbox, empty workdir._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band |\n|---|---:|\n| Task Achievement | 6.0 |\n| Coherence and Cohesion | 6.0 |\n| Lexical Resource | 6.0 |\n| Grammatical Range and Accuracy | 6.0 |\n\n## Structural feedback\n\nThe four-paragraph structure works well: introduction, overview, and two detail paragraphs. Giving armed robbery its own paragraph and grouping the other two categories together is sensible. The overview identifies general directions, but it should also highlight that assault overtook armed robbery and that murder remained the least common crime. The murder description needs more development because similar starting and ending figures conceal a noticeable early peak. A separate conclusion is unnecessary for Task 1. **Strengthening the overview and comparative coverage would deliver more improvement than replacing isolated vocabulary.**\n\n## Focus areas\n\n- **Main-feature comparisons** — Identify changes in ranking and support them with comparisons between categories; reporting each line separately limits Task Achievement.\n- **Joining clauses accurately** — Repeated endings such as “, eventually reached” need a conjunction or a participle; controlling these structures will increase your proportion of error-free sentences.\n- **Overall change versus fluctuations** — Similar endpoints do not necessarily mean a figure stayed stable throughout the period.\n- **Countable nouns and articles** — Practise “the number of armed robberies,” “murder cases,” and “a similar level” to eliminate recurring errors.\n- **Natural trend collocations** — Prefer reliable combinations such as “fell sharply” and “remained at around” over awkward expressions such as “showed a plummet.”\n- **Contrast and chronological linking** — Use connectors that express the actual relationship, and let dates carry some of the sequencing.\n\n## What's working\n\nYou select useful turning points for armed robbery, including its initial rise, substantial decline and later recovery. Expressions such as “just below 3,500 cases” and “rose by approximately 250 cases” distinguish a numerical level from an amount of change effectively. Your use of “while” to compare trends is also a useful structure to retain and make more accurate.\n\n## Per-criterion justification\n\n**Task Achievement — 6.0**\n\nYou cover all three categories and provide a recognisable overview. “A slight increase can be seen in the number of assault cases” captures its overall direction, and the armed robbery paragraph includes relevant figures and turning points. However, the response omits the important comparison that assault overtook armed robbery around 2007. Describing murder as having “stayed relatively stable” with “merely 500 cases” also underrepresents its early peak. Most numerical estimates are reasonable approximations; the main limitation is the selection and development of key comparisons.\n\n**Coherence and Cohesion — 6.0**\n\nThe restored paragraphing creates a clear progression, and the detail paragraphs have sensible topics. However, the repeated sequencing through “Then,” “After that” and “Afterwards” makes the linking somewhat mechanical. “On the contrary” is also inappropriate here: it normally contradicts a preceding statement, whereas you are comparing different trends. The essay remains easy to follow, but band 7 requires more flexible and consistently appropriate cohesion.\n\n**Lexical Resource — 6.0**\n\nYou use an adequate range of graph vocabulary, including “decrease dramatically,” “a gradual climb” and “reached a peak.” Meaning is generally clear. However, “showed a plummet” is an awkward collocation, while “the mere increase” introduces an unnecessary judgement about the size of the rise. “Maintained the similar level” is also unnatural. To reach band 7, prioritise accurate combinations of familiar words over more elaborate wording.\n\n**Grammatical Range and Accuracy — 6.0**\n\nThere is a mixture of sentence structures, including a contrast clause with “while,” and several sentences are grammatically sound. However, errors recur in countable nouns—“the number of armed robbery” and “the number of murder”—and clause construction. In “crimes occurred in London changed,” the relative clause is not correctly formed. The endings “, eventually reached a peak” and “, maintained the similar level” both lack the necessary grammatical connection. These errors rarely prevent understanding, supporting band 6, but they limit the frequent error-free sentences needed for band 7.\n\n## Overall band\n\n**Estimated overall band: 6.0**  \nAverage: (6 + 6 + 6 + 6) ÷ 4 = **6.0**.\n\n## Top concrete improvements\n\n1. **Make the overview comparative and distinguish overall change from stability.**\n\n   **Original:** “Overall, the number of armed robbery showed a plummet during the given time. On the contrary, a slight increase can be seen in the number of assault cases while the number of murder remained stable.”\n\n   **→ Improved:** “Overall, armed robberies fell sharply, while assault cases increased and became the most common crime from 2007 onwards. Murder remained the least common crime, with little overall change despite some fluctuations.”\n\n   **Reason:** This identifies the change in ranking and summarises murder more accurately.\n\n2. **Develop the murder description with its missing peak.**\n\n   **Original:** “Meanwhile, the figure for murder stayed relatively stable from 2003 to 2012, maintained the similar level with merely 500 cases.”\n\n   **→ Improved:** “Meanwhile, murder cases began and ended at around 500, but peaked at just under 1,000 in 2005.”\n\n   **Reason:** This supplies an important supporting detail and replaces the incorrectly joined clauses with an accurate compound sentence.\n\n3. **Add a numerical comparison between categories.**\n\n   **Original:** “Turning to the figure for Assault, it started at about 2,300 cases.”\n\n   **→ Improved:** “In 2003, there were about 2,300 assault cases, compared with just under 3,500 armed robberies.”\n\n   **Reason:** This directly compares the categories using figures you already selected.\n\n4. **Correct the unattached verb in the assault paragraph.**\n\n   **Original:** “Afterwards, there was a gradual climb of approximately 800 cases between 2008 and 2012, eventually reached a peak during the given period.”\n\n   **→ Improved:** “Assault cases then rose from about 2,000 in 2008 to approximately 2,700 in 2012, reaching their highest level of the period.”\n\n   **Reason:** “Reaching” correctly connects the final phrase, while the endpoint figures make the increase clearer.\n\n5. **Simplify the introduction’s clause structure.**\n\n   **Original:** “The provided line graph displays how the number of major crimes occurred in London changed from 2003 to 2012.”\n\n   **→ Improved:** “The line graph shows changes in the numbers of three types of serious crime in London between 2003 and 2012.”\n\n   **Reason:** This removes the faulty “crimes occurred … changed” construction and identifies the graph’s categories more precisely.\n\n6. **Correct the recurring noun forms after “the number of.”**\n\n   **Original:** “the number of armed robbery” / “the number of murder”\n\n   **→ Improved:** “the number of armed robberies” / “the number of murder cases”\n\n   **Reason:** “The number of” requires a plural countable noun when referring to individual incidents.\n\n7. **Use an accurate recovery-and-stability structure.**\n\n   **Original:** “After the mere increase of roughly 500 cases in 2009, the figure maintained the similar level at around 1,500 cases until 2012.”\n\n   **→ Improved:** “After rising to around 1,500 cases in 2009, the number of armed robberies remained at approximately this level until 2012.”\n\n   **Reason:** This removes the awkward judgement “mere,” corrects the stability expression and uses a controlled participle structure.\n\n8. **Use the correct connector for contrasting trends.**\n\n   **Original:** “On the contrary”\n\n   **→ Improved:** “By contrast”\n\n   **Reason:** “By contrast” compares different patterns, while “on the contrary” rejects or reverses a previous claim.",
+  "structural_feedback": "The four-paragraph structure works well: introduction, overview, and two detail paragraphs. Giving armed robbery its own paragraph and grouping the other two categories together is sensible. The overview identifies general directions, but it should also highlight that assault overtook armed robbery and that murder remained the least common crime. The murder description needs more development because similar starting and ending figures conceal a noticeable early peak. A separate conclusion is unnecessary for Task 1. **Strengthening the overview and comparative coverage would deliver more improvement than replacing isolated vocabulary.**",
+  "focus_areas": [
+    {
+      "area": "Main-feature comparisons",
+      "rationale": "Identify changes in ranking and support them with comparisons between categories; reporting each line separately limits Task Achievement.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Joining clauses accurately",
+      "rationale": "Repeated endings such as “, eventually reached” need a conjunction or a participle; controlling these structures will increase your proportion of error-free sentences.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Overall change versus fluctuations",
+      "rationale": "Similar endpoints do not necessarily mean a figure stayed stable throughout the period.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Countable nouns and articles",
+      "rationale": "Practise “the number of armed robberies,” “murder cases,” and “a similar level” to eliminate recurring errors.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Natural trend collocations",
+      "rationale": "Prefer reliable combinations such as “fell sharply” and “remained at around” over awkward expressions such as “showed a plummet.”",
+      "corpus_drill": []
+    },
+    {
+      "area": "Contrast and chronological linking",
+      "rationale": "Use connectors that express the actual relationship, and let dates carry some of the sequencing.",
+      "corpus_drill": []
+    }
+  ],
+  "whats_working": "You select useful turning points for armed robbery, including its initial rise, substantial decline and later recovery. Expressions such as “just below 3,500 cases” and “rose by approximately 250 cases” distinguish a numerical level from an amount of change effectively. Your use of “while” to compare trends is also a useful structure to retain and make more accurate."
+}

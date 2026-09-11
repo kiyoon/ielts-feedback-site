@@ -1,0 +1,135 @@
+{
+  "task": "w11",
+  "target_band": 7,
+  "intro_note": "Written after the examiner panel converged. This practice model keeps your four-part information sequence while strengthening comparisons and sentence control. Figures are approximate.",
+  "word_count": 159,
+  "paragraphs": [
+    {
+      "spans": [
+        {
+          "text": "The line graph compares "
+        },
+        {
+          "text": "the numbers of armed robberies, assaults and murders",
+          "highlight": {
+            "kind": "grammar",
+            "label": "Count incidents",
+            "explanation": "Plural event nouns identify the three separate series clearly."
+          }
+        },
+        {
+          "text": " recorded in London between 2003 and 2012."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "Overall, armed robbery fell substantially, "
+        },
+        {
+          "text": "whereas assault increased and became the most common of the three crimes",
+          "highlight": {
+            "kind": "task_response",
+            "label": "Compare directions and rankings",
+            "explanation": "The overview reports both the contrasting trend and the changed ranking."
+          }
+        },
+        {
+          "text": ". Murder remained the least common category throughout, "
+        },
+        {
+          "text": "despite some fluctuations",
+          "highlight": {
+            "kind": "task_response",
+            "label": "Qualify the overview",
+            "explanation": "The lowest ranking remained constant, but the murder figures were not flat."
+          }
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "Armed robbery started at approximately 3,400 cases in 2003 and "
+        },
+        {
+          "text": "peaked at around 3,700 the following year",
+          "highlight": {
+            "kind": "lexical",
+            "label": "Peak and approximation",
+            "explanation": "Use peaked at for the highest numerical level and around for an estimated graph reading."
+          }
+        },
+        {
+          "text": ". The figure then dropped sharply to just over 1,000 in 2008. "
+        },
+        {
+          "text": "After recovering to about 1,500 in 2009, it remained close to this level until 2012.",
+          "highlight": {
+            "kind": "coherence",
+            "label": "Connect related movements",
+            "explanation": "Combine recovery and subsequent stability; it and this level have clear antecedents."
+          }
+        },
+        {
+          "text": " This was "
+        },
+        {
+          "text": "less than half the initial figure",
+          "highlight": {
+            "kind": "task_response",
+            "label": "Compare the endpoints",
+            "explanation": "This concise comparison shows the scale of the overall decline."
+          }
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "spans": [
+        {
+          "text": "Assault cases numbered roughly 2,300 in 2003 and fluctuated before reaching about 2,000 in 2008. They "
+        },
+        {
+          "text": "had overtaken armed robbery by 2007",
+          "highlight": {
+            "kind": "task_response",
+            "label": "Report the crossover",
+            "explanation": "By 2007 gives the changed annual ranking without inventing an exact crossing date."
+          }
+        },
+        {
+          "text": ". The figure subsequently "
+        },
+        {
+          "text": "rose overall, reaching approximately 2,800 in 2012 despite a small dip in 2011",
+          "highlight": {
+            "kind": "grammar",
+            "label": "Attach the participle clearly",
+            "explanation": "The figure is the subject of rose and reaching; overall and despite preserve the intervening dip."
+          }
+        },
+        {
+          "text": ". Meanwhile, murder cases "
+        },
+        {
+          "text": "fluctuated between roughly 500 and 900, peaking in 2005",
+          "highlight": {
+            "kind": "lexical",
+            "label": "Range and turning point",
+            "explanation": "Fluctuated between reports the range; peaking identifies the highest year rather than claiming stability throughout."
+          }
+        },
+        {
+          "text": " before ending the period at about 500, similar to their starting level."
+        }
+      ]
+    }
+  ]
+}

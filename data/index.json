@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T01:38:51.806Z",
+  "generated_at": "2026-09-10T11:24:17.114Z",
   "tasks": {
     "w1": {
       "label": "W1 (real)",
@@ -983,8 +983,102 @@
         }
       ]
     },
+    "w11": {
+      "label": "W11 (real)",
+      "title": "Serious crimes in London",
+      "writing_task": 1,
+      "essay": {
+        "prompt": "The line graph below shows the number of serious crimes that occurred in London between 2003 and 2012.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "text": "The provided line graph displays how the number of major crimes occurred in London changed from 2003 to 2012.\n\nOverall, the number of armed robbery showed a plummet during the given time. On the contrary, a slight increase can be seen in the number of assault cases while the number of murder remained stable.\n\nIn detail, the figure for armed robbery began at just below 3,500 cases in 2003. Then, it rose by approximately 250 cases in the following year, and started to decrease dramatically to just over 1,000 cases between 2004 and 2008. After the mere increase of roughly 500 cases in 2009, the figure maintained the similar level at around 1,500 cases until 2012.\n\nTurning to the figure for Assault, it started at about 2,300 cases. After that, a decline of around 300 cases can be seen from 2003 to 2008. Afterwards, there was a gradual climb of approximately 800 cases between 2008 and 2012, eventually reached a peak during the given period. Meanwhile, the figure for murder stayed relatively stable from 2003 to 2012, maintained the similar level with merely 500 cases.",
+        "word_count": 185,
+        "prompt_image": "corpus/real-essays/raw-materials/W11-T1-london-crime.png"
+      },
+      "iterations": [
+        {
+          "id": "w11/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-09-10T09:32:25Z"
+        },
+        {
+          "id": "w11/01-codex",
+          "iteration": 1,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T09:49:41Z"
+        },
+        {
+          "id": "w11/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T09:44:54.334998+00:00"
+        },
+        {
+          "id": "w11/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T10:00:57Z"
+        },
+        {
+          "id": "w11/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T10:14:27Z"
+        },
+        {
+          "id": "w11/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T10:26:58Z"
+        },
+        {
+          "id": "w11/06-claude",
+          "iteration": 6,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T10:40:28Z"
+        },
+        {
+          "id": "w11/07-codex",
+          "iteration": 7,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-10T10:53:18Z"
+        },
+        {
+          "id": "w11/08-claude",
+          "iteration": 8,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-10T11:07:19Z"
+        },
+        {
+          "id": "w11/09-codex",
+          "iteration": 9,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-10T11:20:17Z"
+        }
+      ]
+    },
     "task1": {
       "label": "T1 demo",
+      "writing_task": 1,
       "essay": {
         "prompt": "The line graph below shows electricity consumption per person in three countries (the USA, Germany, and India) from 1990 to 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\n(Y-axis: kilowatt-hours per person per year. X-axis: years 1990–2020 in 5-year intervals.)",
         "text": "The line graph illustrates electricity usage per person in three countries — the USA, Germany and India — from 1990 to 2020.\n\nOverall, electricity consumption in all three countries had a growth during this time period. However, the figure of USA stayed the highest, while India had the lowest level all over the period.\n\nIn 1990, the USA consumed approximately 11,000 kWh per person, which is much higher than Germany (around 6,000 kWh) and India (only 300 kWh). After this, USA's consumption increase steadily and reached a peak about 13,500 kWh in 2000. However, then it started to decline and in 2020 it became around 12,000 kWh. Germany had a similar pattern: it grew from 6,000 to 7,500 kWh in 2010, and after that it slightly decrease.\n\nIn contrast, India is different. Its consumption grew slow until 2000, but then increased rapidly. By 2020, the figure of India had reach to 1,200 kWh per person, which is four times higher than 1990.",

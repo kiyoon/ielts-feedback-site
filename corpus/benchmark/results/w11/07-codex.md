@@ -1,0 +1,87 @@
+# Panel 07 — codex (discussion)
+
+_Generated 2026-09-10T10:53:18Z. Examiner-panel discussion; corpus manifest: 168 files._
+
+---
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---:|---|
+| Task Achievement | 6.0 | `contexts/01-band-descriptors/task1-academic-band-descriptors.md` §Band 6: relevant overview; selected features adequately highlighted |
+| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task1-academic-band-descriptors.md` §Band 6: clear progression, with some mechanical or faulty connections |
+| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task1-academic-band-descriptors.md` §Band 6: adequate vocabulary with insufficient precision |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task1-academic-band-descriptors.md` §Band 6: complex structures less accurate than simpler forms |
+| **Overall** | **6.0** | Rounded per `contexts/01-band-descriptors/scoring-rules.md` §§1, 3 |
+
+## What changed from prior feedback
+
+The scores remain unchanged, and the priorities are now settled: rankings/crossover first, followed by collocations and counted nouns, with clause control retained. The alleged contradiction between “a slight increase” and “approximately 800 cases” is removed: they describe different periods, 2003–2012 and 2008–2012. Your overview already compares directions; the missing comparisons concern rankings and the crossover. The assault rewrite now gives *reaching* a clear subject, while the introduction repair restores *that occurred*. These corrections make the existing advice more accurate without adding another target.
+
+## Progress across essays
+
+| Pattern | History | Status | Evidence in this essay |
+|---|---|---|---|
+| Natural word combinations | W1–W10; examples include W2 “natural energy”, W6 “consuming tax”, W10 “do coding everything” | **recurring** | “showed a plummet”; “the mere increase” |
+| Articles and noun number | W1 “a single hardware”; W2 “every research”; W3 generic articles; W4 “a help”; W5 “when they are teenager”; W6 “a huge financial support”; W7 “every children”; W8 “public transports”; W9 “a software”; W10 “repetitive works” | **recurring** | “the number of armed robbery”; “the similar level” |
+| Complete clause structure | W5 “and eventually, cannot develop their talents”; stronger control in W10 | **recurring** | “crimes occurred in London changed”; “eventually reached” |
+| Mechanical or inaccurate linking | Flagged in W4/W8; improved in W10 | **recurring** | “Then”, “After that”, “Afterwards”; “On the contrary” |
+| Clear reference | Ambiguities in W2/W6/W8/W9/W10 | **improved** | “it rose” clearly refers to the armed-robbery figure |
+| Spelling control | Intermittent slips in W5/W7; conspicuous problems in W9; improved in W10 | **improved** | “approximately”; “dramatically”; no comparable spelling cluster |
+| Rankings and qualified graph summaries | First Academic Task 1 in W1–W11 | **new** | “remained stable” needs qualification; changing rankings are unstated |
+
+The noun-number **family** recurs; the exact *number of + singular crime* construction first appears here. W7 already correctly used “the number of students”.
+
+## Structural feedback
+
+The restored version follows a sensible introduction → overview → armed robbery → assault/murder sequence, although restored breaks cannot establish your original paragraphing control. All three categories and the full period are covered, and chronology within each category is appropriate. **The single highest-impact content fix is strengthening the overview with rankings:** assault became the most common category, while murder remained the least common despite fluctuations. Support this summary in the body with assault overtaking armed robbery by 2007 and murder peaking in 2005. These changes fit your existing organisation; grouping assault and murder together is reasonable (`contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §§7–8).
+
+## Focus areas
+
+- **Rankings, crossovers and exceptions** — Add *became the most common*, *overtook* and *despite fluctuations* to express the graph’s missing relationships. Seen in: new, W11. Drill: `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §§7–8; `contexts/09-instructor-tips/03-trend-language-bank.md` §§5, 9.
+- **Accurate trend collocations** — Practise complete combinations such as *fell sharply* and *remained at a similar level*, because word-partnership problems persist across topics. Seen in: W1–W11. Drill: `contexts/09-instructor-tips/03-trend-language-bank.md`.
+- **Articles and counted noun phrases** — Use *the number of armed robberies*, *the number of murders* and *a similar level*, targeting the article/plural-marking tendency documented for Korean learners. Seen in: W1–W11. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A–B; `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §9.
+- **Relative clauses and attached participles** — Build *crimes that occurred* and *the number rose, reaching…*, revisiting W5’s broader clause-control weakness. Seen in: W5/W11, with improvement in W10. Drill: `contexts/05-band-6-to-7/grammar-upgrades.md` §§2, 4; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §K, Korean topic-drop.
+- **Connections chosen by meaning** — Use *By contrast* for opposing trends and dates for straightforward chronology. Seen in: W4/W8/W11. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md` §§3, 9.
+
+## What's working
+
+You identify armed robbery’s substantial decline and select useful reference points, including “just over 1,000 cases” and the subsequent recovery. “rose by approximately 250 cases” correctly expresses a change amount, and your approximation language suits this graph (`contexts/09-instructor-tips/03-trend-language-bank.md` §10). Reference is clearer than in W9/W10—“it rose” has an obvious antecedent—and the spelling improvement holds, so neither needs a top rewrite slot. Your correct “the number of assault cases” supplies the noun pattern to transfer to the other categories.
+
+## Per-criterion justification
+
+**Task Achievement — 6.0.** “showed a plummet” and “a slight increase” identify the principal opposing directions, supported by relevant figures. However, assault’s rise to the highest ranking and murder’s consistently lowest ranking are missing. “stayed relatively stable” can describe limited absolute variation or little net change, but the accompanying detail underreports murder’s roughly 500–900 range and 2005 peak. Together, these omissions fit adequate highlighting more securely than Band 7’s clearly highlighted main features; no single missing comparison automatically caps the score (`contexts/01-band-descriptors/task1-academic-band-descriptors.md` §§Band 6–7).
+
+**Coherence and Cohesion — 6.0.** This remains the closest criterion to 7: progression is clear, and “it rose”, “the figure” and “the following year” provide useful reference. Nevertheless, “Then”, “After that” and “Afterwards” repeatedly introduce separate reporting steps, making the sequence somewhat mechanical. “On the contrary” signals contradiction, whereas you are contrasting different trends. The judgment rests on the accumulated pattern, not a connector count, repeated category labels or the shared assault/murder paragraph (`contexts/01-band-descriptors/task1-academic-band-descriptors.md` §§Band 6–7).
+
+**Lexical Resource — 6.0.** “decrease dramatically”, “gradual climb” and “reached a peak” demonstrate useful task vocabulary. Precision weakens in “showed a plummet” and “maintained the similar level with merely 500 cases”. *Plummet* has a noun sense, and *mere increase* is possible English; the useful improvement here is more natural, neutral reporting, especially where *mere* minimises the noticeable robbery recovery. These accumulated partnership and meaning problems support Band 6’s adequate vocabulary with imprecision (`contexts/01-band-descriptors/task1-academic-band-descriptors.md` §Band 6; `contexts/09-instructor-tips/03-trend-language-bank.md`).
+
+**Grammatical Range & Accuracy — 6.0.** You attempt an embedded question, a “while” clause, coordination and passive constructions. However, “crimes occurred in London changed” lacks a relative marker, while “eventually reached” and the final “maintained” are not properly connected to their preceding clauses. Counted-noun errors and repeated “the similar level” further weaken control. “can be seen” is valid as a present observation of the graph. Band 7 permits a few persistent errors, but the combined weaknesses here fit Band 6’s less accurate complex structures; W10’s Grammar 7 remains a valid achievement in that earlier response (`contexts/01-band-descriptors/task1-academic-band-descriptors.md` §§Band 6–7).
+
+## Top concrete rewrites (5–10, ranked by band uplift × persistence)
+
+| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |
+|---|---|---|---|---|
+| 1 | “the number of armed robbery showed a plummet during the given time” | “the number of armed robberies fell sharply over the period” | Repairs the two longest-running language families together: counted nouns and natural word combinations. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §B1; `contexts/09-instructor-tips/03-trend-language-bank.md` §§3, 6 |
+| 2 | “On the contrary, a slight increase can be seen in the number of assault cases while the number of murder remained stable.” | “By contrast, assault cases increased overall and became the most common of the three crimes, while murder remained the least common despite fluctuations.” | Repairs recurring linking weakness from W4/W8 while making the highest-value content change: adding rankings and qualifying stability. | `contexts/05-band-6-to-7/cohesion-upgrades.md` §3; `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §§7–8 |
+| 3 | “After the mere increase of roughly 500 cases in 2009, the figure maintained the similar level at around 1,500 cases until 2012.” | “After recovering to about 1,500 cases in 2009, the figure remained close to this level until 2012.” | Repairs recurring collocation/article problems and removes minimising evaluation. Another valid ending is *remained at a similar level*; distinguish *the same level*. | `contexts/09-instructor-tips/03-trend-language-bank.md` §§4, 10; `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A |
+| 4 | “how the number of major crimes occurred in London changed” | “how the number of major crimes that occurred in London changed” | *That occurred* connects the description to *crimes*. This targets the broader clause-control family already seen in W5. | `contexts/05-band-6-to-7/grammar-upgrades.md` §2 |
+| 5 | “Afterwards, there was a gradual climb of approximately 800 cases between 2008 and 2012, eventually reached a peak during the given period.” | “The number of assault cases rose overall after 2008, reaching roughly 2,800 in 2012 despite a small dip in 2011.” | Repairs recurring clause attachment: the number both rose and reached the endpoint. It also qualifies the upward trend accurately. | `contexts/05-band-6-to-7/grammar-upgrades.md` §4; `contexts/09-instructor-tips/03-trend-language-bank.md` §9 |
+| 6 | “Meanwhile, the figure for murder stayed relatively stable from 2003 to 2012, maintained the similar level with merely 500 cases.” | “Murder remained the least common of the three crimes, with figures fluctuating between roughly 500 and 900 cases and peaking in 2005.” | Repairs the second faulty verb attachment and recurring noun-phrase weakness while supplying the missing range and peak. | `contexts/05-band-6-to-7/grammar-upgrades.md` §4; `contexts/09-instructor-tips/03-trend-language-bank.md` §§5, 9 |
+| 7 | “Turning to the figure for Assault, it started at about 2,300 cases.” | “The number of assault cases stood at about 2,300 in 2003 and overtook the figure for armed robbery by 2007.” | Adds the missing crossover. *By 2007* reports the changed ranking without inventing an exact crossing date. | `contexts/09-instructor-tips/03-trend-language-bank.md` §9 |
+
+## Before your next essay
+
+- **Seven minutes: comparison and cohesion.** Using `contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §§7–8, plan direction, ranking and an important exception for another graph. Write the overview, then support its main relationship with *overtook…by…* where appropriate; choose *while* or *By contrast* by meaning using `contexts/05-band-6-to-7/cohesion-upgrades.md` §3.
+- **Seven minutes: collocation retrieval.** Study `contexts/09-instructor-tips/03-trend-language-bank.md`, close it, and produce six sentences using *fell sharply*, *recovered to*, *remained at* and *fluctuated between*. Check both the wording and whether it matches the movement.
+- **Six minutes: English noun-phrase skeletons.** Follow `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §9: correct five noun phrases from W1/W6/W8/W9/W10, then build crime-count sentences from W7’s *the number of students* pattern. Check articles and plurals against `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §§A–B.
+- **Eight minutes: clause rebuilding.** Use `contexts/05-band-6-to-7/grammar-upgrades.md` §§2, 4, 12 to reconstruct your introduction and both faulty endings. Underline each subject and connect its verbs properly; *rose and then fell* can share a subject. Stretch goals: an accurate relative clause and a *reaching…* continuation with a clear subject.
+- **Reserve three exam minutes:** check noun phrases, clause connections and graph relationships in separate passes. **Retirement test:** across your next two timed reports, identify the important rankings/crossover where present and qualify misleading overall summaries. Once that holds, retire comparative selection as the immediate priority; retain collocation, noun or clause drills only where errors remain.
+
+## Overall band rationale
+
+The four 6s average **6.0** for this Task 1 response. One route to your target is **TA 7 + CC 7 + LR 6 + GRA 7 = 6.75 → 7.0**; any three 7s and one 6 give the same result, and individual corrections do not guarantee whole-band increases (`contexts/01-band-descriptors/scoring-rules.md` §§1, 3).
+
+## CONVERGENCE: REFINING
+
+The scores and top-three priorities now agree, so the ordering dispute is resolved. This revision still corrects a false contradiction and an unreliable grammar repair; the recent changes remain substantive, and another pass should confirm these corrections without changing the targets.
