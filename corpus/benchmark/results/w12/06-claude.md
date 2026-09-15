@@ -1,0 +1,96 @@
+# Panel 06 — claude (discussion)
+
+_Generated 2026-09-15T05:58:17Z. Examiner-panel discussion; corpus manifest: 171 files._
+
+---
+
+**To codex (discussion note).** Conceded on all four points. (1) The yoga re-aim rewrite is withdrawn; it asserted a mechanism ("both serve people who already exercise") the writer never gives. Your nutrition-education Body 2 takes row 1. (2) Your conclusion replaces mine, and row 5 now ends "facilities alone are not enough". (3) Register citation corrected: `11-korean-instructor-tips-collected.md` §4 lists ten expressions and none is "a lot of" or a contraction, so that anchor was wrong; the W9 feedback repeats it. The rows exist in `02-vocabulary-error-correction-bank.md` §4 (rows 3 and 15), `10-common-korean-chinese-speaker-errors.md` §M and `band-6-common-errors.md` §B4. Grep confirms your history: "a lot of" in W5, W6, W9, W10, W12; "it's" is the only contraction in twelve essays. (4) Korean transfer: the corpus documents article omission (§A1; §9 of the Korean tips). "access to the place" and "effect to" match §E1's spurious-preposition pattern, but their L1 origin is my inference, as the feedback now states. Register stays a fifth, sub-top-3 focus. Scores and top three are shared: converged.
+
+---
+
+## Per-criterion scores
+
+| Criterion | Band | Descriptor evidence (file path) |
+|---|---:|---|
+| Task Response | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6 |
+| **Overall** | **6.0** | (6 + 6 + 6 + 6) ÷ 4 = 6.0, `contexts/01-band-descriptors/scoring-rules.md` §1 |
+
+Word count 280, over the 250 floor (`contexts/01-band-descriptors/scoring-rules.md` §4).
+
+## What changed from prior feedback
+
+Both examiners now hold TR 6 / CC 6 / LR 6 / GRA 6. I had opened with CC 7 for the paragraphing; I withdrew it because Band 6's "the use of reference and substitution may lack flexibility … and result in some repetition" fits an essay that repeats its "increasing the number of" phrase five times, calls the facilities "the place", and copies "not everyone enjoys sports" as both your thesis and the second view's reason. Two rewrites were withdrawn as unsupported, a re-aimed table-tennis/yoga example and a conclusion claiming a population-wide effect; the agreed set keeps your own "not enough" verdict. Against W10, GRA returns from 7 to 6 because of a determiner-and-complement cluster, not new clause breakdowns.
+
+## Progress across essays
+
+| Pattern | History | Status | Evidence |
+|---|---|---|---|
+| Support proves the exact claim | W1–W4, W6–W10; improved W5 | recurring | the second view names no "other measures"; the table-tennis/yoga example shows tastes shift, not that facilities fail |
+| Articles / countability / number | every essay ("a software" W9, "repetitive works" W10) | recurring | "small effect", "negligible effect", "marginal effect", "find yoga class", "their home" |
+| Collocation and verb complements | every essay ("reach to a doctor" W9, "showed a plummet" W11) | recurring | "access to the place" twice, "effect to", "start their sports activity", "quit their sports activity" |
+| Informal register | "a lot of" in W5, W6, W9, W10; no contraction before W12 | recurring; contraction new | "a lot of" twice; "it's" |
+| Reference and repetition | W1, W2, W4, W6–W10 | recurring | "the place"; "since it has little effect" with a distant "it"; five near-identical "increasing the number of" phrases |
+| Modifier placement and logical subject | W5 "important especially for elementary school students"; W7 "as a homeroom teacher, it is challenging" | recurring | "some people especially who do not enjoy sports"; "by increasing the number of facilities" attached to "people can access" |
+| Position held through to a verdict | off-centre W3; no verdict W7; held W8–W10 | held, still restates | "I believe it has marginal effect" names your side but repeats the introduction |
+| Comma splice with conjunctive adverb | W2, W3, W7, W8; absent W9–W11 | fixed, held | "access to the place; thus it has" uses the semicolon correctly |
+| Gerund-subject agreement | errors W6, W9; fixed W10 | fixed, held | "increasing the number of sports facilities is not enough"; "playing sports is just one way" |
+
+## Structural feedback
+
+The four-paragraph plan is right for a discuss-both-views prompt (`contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2): one view per body, your reaction inside each, a verdict at the end. The gap is Body 2. The second view has two halves, "little effect" and "other measures are required", and your paragraph argues only the first; no measure is ever named, so the side you agree with is the thinner one (`contexts/08-vocabulary-grammar/04-task-response-error-correction-bank.md` §1). Its example does not rescue it: closing table tennis venues and easy-to-find yoga classes show that preferences change, not that building facilities fails. Body 1 is stronger, with a mechanism (distance) and a Korean example, though "by increasing the number of facilities" hangs off "people can access". The single highest-value repair is one concrete measure in Body 2 with a mechanism and an example; diet and school nutrition lessons is the least contestable choice. Then let the conclusion synthesise (facilities help, but must be combined with that measure) instead of restating.
+
+## Focus areas
+
+- **Prove the second view with a measure, a mechanism and an example (TR)** — "other measures are required" is half of the view you agree with, and the essay never says what they are. Seen in: W1–W4, W6–W10, W12. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §5–6, `contexts/10-task2-topic-banks/topic-04-health.md` §Core arguments FOR rows 4–5.
+- **Complements and collocations as units (LR)** — *access* takes a direct object, *effect* takes *on*, and people *take up a sport*, not "start their sports activity". Seen in: W1–W12. Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4, `contexts/10-task2-topic-banks/topic-15-sport-and-leisure.md` §Common collocations.
+- **A determiner on every singular countable noun (GRA/LR)** — *a small effect, a negligible effect, a yoga class*. Seen in: W1–W12. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1, `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1.
+- **Reference and lexical chains (CC)** — name "the place" as *the facilities*, and rotate *sports facilities → local facilities → these venues*. Seen in: W1, W2, W4, W6–W10, W12. Drill: `contexts/08-vocabulary-grammar/03-cohesion-error-correction-bank.md` §3, §5; `contexts/05-band-6-to-7/cohesion-upgrades.md` §3 Pillar 3.
+- **Written register (LR)** — no "a lot of", no contractions. Seen in: W5, W6, W9, W10, W12. Drill: `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §4 rows 3 and 15, `contexts/05-band-6-to-7/band-6-common-errors.md` §B4.
+
+## What's working
+
+- The comma splice stays dead for a fourth essay; "access to the place; thus it has" is the semicolon form you were drilled on after W7 and W8. Gerund subjects agree ("playing sports is just one way"), holding W10's fix, and spelling is clean.
+- Your position is stated and held: "not enough to improve public health", then "I disagree with this view", "I am inclined to agree with this view", "I believe it has marginal effect". That is the intro-to-conclusion line W7 lost.
+- The concede-then-reject move inside Body 1 ("It is somewhat true that … However, I disagree with this view because") is the discussion-essay shape in `contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2, and "negligible effect", "marginal" and "various ways" are real topic vocabulary. Precision, not range, is the gap.
+
+## Per-criterion justification
+
+**Task Response 6.** Both views and an opinion are present, so the Band 6 gate is met. Band 7 needs main ideas "extended and supported"; your second view is half-covered (no "other measures"), and its example is "less relevant" support in the descriptor's words, since it proves neither that facilities fail nor that another measure works. Body 1 is developed and the position is clear, so this is a secure 6.
+
+**Coherence and Cohesion 6.** Paragraphing is logical and progression clear. Reference and repetition hold it at 6: "the place" twice for facilities never named as such, "since it has little effect" with its antecedent a clause away, and "not everyone enjoys sports" copied as the other side's reason. Body 1's last sentence runs over forty words through "because … despite the fact that … ; thus", Band 6's "cohesion within sentences may be faulty".
+
+**Lexical Resource 6.** Range is adequate ("negligible", "marginal", "inclined to agree", "somewhat true"), but there is "a lack of precision in word choice": "sports activity" twice, "access to the place", "effect to improve", "effect to people", "other exercise", plus "a lot of" twice and "it's". Band 7's "awareness of style and collocation" is not yet evident.
+
+**Grammatical Range & Accuracy 6.** Complex forms are attempted and several succeed: "which means playing sports is just one way", "whereas it is fairly easy". But "when there is an increase in the number of sports facilities, public health would improve as well" pairs a real condition with a hypothetical modal; "by increasing the number of facilities" dangles; four determiners are missing; "especially" is misplaced. Only four or five of eleven sentences are error-free, short of "error-free sentences are frequent". Errors "rarely impede communication", so 6, not 5.
+
+## Top concrete rewrites
+
+| # | Original phrase | Improved (band-7 target) | Reason | Corpus citation |
+|---:|---|---|---|---|
+| 1 | "There are various ways to improve individuals' health … For instance, in Korea, a lot of table tennis facilities are closing, whereas it is fairly easy to find yoga class." | "However, facilities alone may do little for people who are not interested in sport. Health also depends on diet, so public policy should promote healthy eating. For example, school nutrition lessons could teach children to replace sugary drinks with water, helping them reduce their sugar intake. This could improve everyday diets even among children who rarely exercise." | Supplies the missing "other measure" with mechanism and example: the TR-7 lever. | `contexts/10-task2-topic-banks/topic-04-health.md` §Core arguments FOR row 4; `contexts/05-band-6-to-7/task-response-upgrades.md` §5 |
+| 2 | "In conclusion, although increasing sports facilities might help improve public health, I believe it has marginal effect to people who enjoy other exercise." | "In conclusion, although additional facilities can encourage regular exercise, I believe they should be combined with measures such as nutrition education to improve public health more widely." | Synthesises both bodies; removes "marginal effect to". | `contexts/05-band-6-to-7/task-response-upgrades.md` §9; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4 row 19 |
+| 3 | "Some argue that when there is an increase in the number of sports facilities, public health would improve as well" | "Supporters see more local facilities as the best approach because shorter journeys can encourage people to take up a sport and exercise regularly. This can help reduce health risks linked to inactivity." | Removes the *when … would* mismatch; *take up a sport* replaces "start their sports activity". | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §5; `contexts/10-task2-topic-banks/topic-15-sport-and-leisure.md` §Common collocations |
+| 4 | "This is because people can access to the place easily by increasing the number of facilities." | "By building more facilities, local councils can make it easier for residents to access them." | *Access* takes a direct object; the *by*-phrase now belongs to the builders. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §E1; `contexts/05-band-6-to-7/band-6-common-errors.md` §A12 |
+| 5 | "some people especially who do not enjoy sports still need to be encouraged to play sports despite the fact that they can easily access to the place; thus it has small effect to improve public health" | "Even when facilities are nearby, people who dislike sport may still need encouragement to exercise, so facilities alone are not enough to improve public health." | Fixes adverb placement, the second "access to", and "small effect to improve". | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §12; `contexts/05-band-6-to-7/band-6-common-errors.md` §A5 |
+| 6 | "a lot of people in Korea quit their sports activity because it's too far away from their home" | "many people in Korea give up exercising because the nearest facility is too far from their homes" | Register ("a lot of", "it's"), the "sports activity" calque, plural *homes*. | `contexts/08-vocabulary-grammar/02-vocabulary-error-correction-bank.md` §4 rows 3, 15; `contexts/05-band-6-to-7/band-6-common-errors.md` §B4 |
+| 7 | "has negligible effect"; "it has small effect"; "find yoga class" | "has a negligible effect"; "has a small effect"; "find a yoga class" | Singular countable nouns need a determiner; your longest-running pattern. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §1 |
+
+## Before your next essay
+
+- **12 minutes — the "other measures" drill.** Write three measures for this prompt (diet education, workplace activity breaks, public campaigns), each as claim → mechanism → example, using `contexts/10-task2-topic-banks/topic-04-health.md` §Core arguments FOR rows 4–5. Then underline every word in your Body 2 that names a measure.
+- **10 minutes — complement cards, closed book.** *access the facilities; an effect on; take up a sport; give up exercising*. Write each twice, then correct from memory: "access to the place", "effect to improve", "effect to people", "start their sports activity" (`contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4).
+- **8 minutes — the determiner pass.** Copy every noun phrase in W12 containing *effect* or *class* and add *a* where the noun is singular and countable; do the same with W9's "a software" and W11's "the number of murder" (`contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1).
+- **Exam routine, last four minutes, in this order.** (1) Measure pass: does the side you agree with name a concrete measure? (2) Noun pass: every singular countable noun has a determiner, every *access* has an object, every *effect* has *on*. (3) Register pass: hunt for "a lot of" and any apostrophe. The splice check is retired; a glance is enough.
+- **Stretch goals for W13.** One concessive inversion, "Convenient as local facilities are, …" (`contexts/09-instructor-tips/07-band7-grammar-showcases.md` §4), and one second conditional built correctly: "If councils subsidised gym memberships, …".
+- **Retirement test.** Support-proof retires when one timed essay gives each view a measure or mechanism plus an example that proves that exact claim. Determiners then move to the top.
+
+## Overall band rationale
+
+6 + 6 + 6 + 6 = 24; 24 ÷ 4 = 6.0 (`contexts/01-band-descriptors/scoring-rules.md` §1). Calibration anchor: `contexts/04-task2-essays/samples-band-6_0.md` §Sample 11, the British Council "Cars / Overcrowded Traffic" script, a true Band 6 anchor in `contexts/11-quality-audit/05-calibration-exemplars.md` §Band 6.0. Route to 7.0: three criteria at 7 give 27 ÷ 4 = 6.75, which rounds up (`contexts/01-band-descriptors/scoring-rules.md` §3). TR needs rewrites 1–2; CC needs the reference and repetition repairs (you held CC 7 in W5, W6 and W10); LR needs rewrites 6–7; GRA reached 7 in W10, a live fourth route once the determiner pass is routine.
+
+## CONVERGENCE: CONVERGED
+
+Both examiners hold TR 6 / CC 6 / LR 6 / GRA 6 → 6.0 and the same top three: prove the second view with a measure, mechanism and example; complements and collocations as units; a determiner on every singular countable noun. The contested rewrites were withdrawn for the agreed set, the register citation was corrected, and the Korean-transfer claim is limited to what the corpus documents.

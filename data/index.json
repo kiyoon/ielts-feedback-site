@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T11:24:17.114Z",
+  "generated_at": "2026-09-15T06:13:57.542Z",
   "tasks": {
     "w1": {
       "label": "W1 (real)",
@@ -1073,6 +1073,81 @@
           "overall": 6,
           "convergence": "CONVERGED",
           "generated_at": "2026-09-10T11:20:17Z"
+        }
+      ]
+    },
+    "w12": {
+      "label": "W12 (real)",
+      "title": "Public health and sports facilities",
+      "essay": {
+        "prompt": "Some people say that the best way to improve public health is by increasing the number of\nsports facilities. Others, however, say that this would have little effect on public health and that other measures are required.\n\nDiscuss both these views and give your own opinion.",
+        "text": "Some argue that when there is an increase in the number of sports facilities, public health would improve as well, while others say that other measures should be considered since it has little effect. I believe increasing the number of sports facilities is not enough to improve public health since not everyone enjoys sports.\n\nIt is somewhat true that more sports facilities can lead more people to start their sports activity. This is because people can access to the place easily by increasing the number of facilities. For example, a lot of people in Korea quit their sports activity because it's too far away from their home, so simply increasing the number of facilities can help them continue their activities. However, I disagree with this view because some people especially who do not enjoy sports still need to be encouraged to play sports despite the fact that they can easily access to the place; thus it has small effect to improve public health.\n\nOthers argue that increasing the number of sports facilities has negligible effect because not everyone enjoys sports. There are various ways to improve individuals' health, which means playing sports is just one way of improving people's health and not a solution for everyone. For instance, in Korea, a lot of table tennis facilities are closing, whereas it is fairly easy to find yoga class. I am inclined to agree with this view because everyone is different and needs to find their own ways to improve their health, so that public health could improve eventually.\n\nIn conclusion, although increasing sports facilities might help improve public health, I believe it has marginal effect to people who enjoy other exercise.",
+        "word_count": 280
+      },
+      "iterations": [
+        {
+          "id": "w12/00-baseline-codex",
+          "iteration": 0,
+          "tool": "baseline",
+          "overall": 6,
+          "convergence": "UNKNOWN",
+          "generated_at": "2026-09-15T04:29:29Z"
+        },
+        {
+          "id": "w12/01-codex",
+          "iteration": 1,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-15T04:45:59Z"
+        },
+        {
+          "id": "w12/02-claude",
+          "iteration": 2,
+          "tool": "claude",
+          "overall": 6.5,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-15T04:45:59Z"
+        },
+        {
+          "id": "w12/03-codex",
+          "iteration": 3,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-15T05:04:45Z"
+        },
+        {
+          "id": "w12/04-claude",
+          "iteration": 4,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-15T05:25:46Z"
+        },
+        {
+          "id": "w12/05-codex",
+          "iteration": 5,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "REFINING",
+          "generated_at": "2026-09-15T05:38:16Z"
+        },
+        {
+          "id": "w12/06-claude",
+          "iteration": 6,
+          "tool": "claude",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-15T05:58:17Z"
+        },
+        {
+          "id": "w12/07-codex",
+          "iteration": 7,
+          "tool": "codex",
+          "overall": 6,
+          "convergence": "CONVERGED",
+          "generated_at": "2026-09-15T06:10:02Z"
         }
       ]
     },

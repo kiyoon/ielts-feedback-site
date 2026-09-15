@@ -1,0 +1,159 @@
+{
+  "id": "w12/03-codex",
+  "task": "w12",
+  "iteration": 3,
+  "tool": "codex",
+  "generated_at": "2026-09-15T05:04:45Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6: relevant ideas with insufficient development/support",
+      "justification": "You discuss both viewpoints and express a relevant preference. Body 1’s access argument is plausible, but “not everyone enjoys sports” cannot by itself establish negligible benefit across the population. “There are various ways to improve individuals' health” asserts alternatives without developing one, while the yoga example mainly shows different exercise preferences. This is inadequate development of an attempted viewpoint, fitting Band 6 rather than treating the response as wholly missing a view (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7)."
+    },
+    "coherence": {
+      "band": 6,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6: overall progression, but repetitive development and unclear reference",
+      "justification": "The four-paragraph plan provides clear overall progression, and “This is because”, “However” and “whereas” express recognisable relationships. Nevertheless, Body 2 repeats “not everyone enjoys sports” and returns to “everyone is different” without moving the discussion forward sufficiently. Reference also weakens in “it's too far away”, where the preceding noun names an activity rather than its venue. Together these support Band 6; the issue is not a shortage of linkers or compulsory synonyms (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7)."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6: adequate resource with recurring imprecision",
+      "justification": "“Negligible”, “marginal” and “I am inclined to agree with this view” show useful range. Repeated imprecision remains in “start their sports activity”, “access to the place” and “effect to people”. General expressions such as “various ways” also leave your intended measures unspecified. Accurate combinations are the next step; sample labels and repetition counts are not reliable scoring shortcuts (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6; `contexts/11-quality-audit/06-flagged-samples.md`)."
+    },
+    "grammar": {
+      "band": 6,
+      "descriptor_evidence": "contexts/01-band-descriptors/task2-band-descriptors.md §Band 6: complex forms with uneven accuracy",
+      "justification": "You attempt causal, relative and concessive clauses, with successful passive forms. Control is uneven in “some people especially who”, the twice-used “access to the place”, and “find yoga class”. Several sentences work grammatically, but the repeated construction problems support Band 6 overall, without a numerical error-free threshold (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7). The earlier corrections were too broad: *effect* permits uncountable use, and *so that* can express a result. [Cambridge: effect](https://dictionary.cambridge.org/dictionary/english/effect), [Cambridge: so that](https://dictionary.cambridge.org/grammar/british-grammar/so-that-or-in-order-that)."
+    }
+  },
+  "overall": 6,
+  "overall_rationale": "**(6 + 6 + 6 + 6) ÷ 4 = 6.0.** A realistic Task 2 target is **TR 7 / CC 7 / LR 6 / GRA 7: 27 ÷ 4 = 6.75 → 7.0**, restoring W10’s CC/GRA strengths while developing exact support (`contexts/01-band-descriptors/scoring-rules.md` §§1, 3).",
+  "what_changed": "The three main targets remain stable: exact support, accurate word combinations and complete noun phrases. The unresolved score is Coherence and Cohesion: I retain 6 because repetition affects paragraph progression, alongside local reference problems. I have removed unsupported population claims from the rewrites and withdrawn rigid grammar-error counts. Your distance example receives clearer credit, while the conclusion is judged by its meaning rather than its length.",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "Others argue that increasing the number of sports facilities has negligible effect because not everyone enjoys sports.",
+      "improved": "However, facilities alone may do little for people who are not interested in sport. Public-health policy should therefore also promote healthy eating. For example, school nutrition lessons could teach children to replace sugary drinks with water, helping them reduce their sugar intake. Such lessons could improve everyday diets even among children who rarely exercise.",
+      "reason": "Develops the alternative through a measure, mechanism and example; retains the recurring W6–W10 support priority.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-04-health.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "It is somewhat true that more sports facilities can lead more people to start their sports activity.",
+      "improved": "Supporters see local sports facilities as the best approach because easier access can encourage residents to take up a sport and exercise regularly. Over time, this can improve their fitness.",
+      "reason": "Explains supporters’ reasoning and repairs the recurring collocation pattern.",
+      "citations": [
+        "contexts/05-band-6-to-7/paragraph-structure-band7.md",
+        "contexts/10-task2-topic-banks/topic-15-sport-and-leisure.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 3,
+      "original": "This is because people can access to the place easily by increasing the number of facilities.",
+      "improved": "By building more facilities, local councils can make it easier for residents to access them.",
+      "reason": "Repairs the complement and names who builds; continues W4/W9’s verb-complement work.",
+      "citations": [
+        "contexts/10-task2-topic-banks/topic-04-health.md",
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md"
+      ],
+      "category": "lexical"
+    },
+    {
+      "id": 4,
+      "original": "it has marginal effect to people who enjoy other exercise",
+      "improved": "these facilities may have only a limited effect on people who are not interested in sport",
+      "reason": "Uses *effect on* and restricts the claim to the group actually discussed.",
+      "citations": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 5,
+      "original": "find yoga class",
+      "improved": "“find a yoga class”; “has a small effect”",
+      "reason": "Drills the persistent W1–W11 noun-phrase pattern in “find yoga class” and “has small effect”. Keep the yoga correction as language practice when replacing its example.",
+      "citations": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "some people especially who do not enjoy sports still need to be encouraged to play sports",
+      "improved": "Even when facilities are nearby, people who dislike sport may still need encouragement to exercise.",
+      "reason": "Controls the concession and relative clause; continues W5/W7/W11 clause work.",
+      "citations": [
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ],
+      "category": "grammar"
+    },
+    {
+      "id": 7,
+      "original": "quit their sports activity because it's too far away from their home",
+      "improved": "A swimmer who has stopped practising because the nearest pool is too far away might return if a new one opened nearby.",
+      "reason": "Makes your existing access example concrete and repairs recurring reference difficulties.",
+      "citations": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    },
+    {
+      "id": 8,
+      "original": "In conclusion, although increasing sports facilities might help improve public health, I believe it has marginal effect to people who enjoy other exercise.",
+      "improved": "In conclusion, although additional facilities can encourage regular exercise, I believe they should be combined with measures such as nutrition education to improve public health more widely.",
+      "reason": "Synthesises the revised bodies while retaining your reservation.",
+      "citations": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md"
+      ],
+      "category": "task_response"
+    }
+  ],
+  "convergence": "REFINING",
+  "convergence_note": "Coherence and Cohesion remains disputed at 6 versus 7. This revision also corrects substantive overclaims and grammar diagnoses, so the chain has not yet stabilised despite agreement on the three main teaching priorities.",
+  "raw_markdown": "# Panel 03 — codex (discussion)\n\n_Generated 2026-09-15T05:04:45Z. Examiner-panel discussion; corpus manifest: 171 files._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band | Descriptor evidence (file path) |\n|---|---:|---|\n| Task Response / Achievement | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6: relevant ideas with insufficient development/support |\n| Coherence and Cohesion | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6: overall progression, but repetitive development and unclear reference |\n| Lexical Resource | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6: adequate resource with recurring imprecision |\n| Grammatical Range & Accuracy | 6.0 | `contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6: complex forms with uneven accuracy |\n| **Overall** | **6.0** | `contexts/01-band-descriptors/scoring-rules.md` §§1, 3 |\n\n## What changed from prior feedback\n\nThe three main targets remain stable: exact support, accurate word combinations and complete noun phrases. The unresolved score is Coherence and Cohesion: I retain 6 because repetition affects paragraph progression, alongside local reference problems. I have removed unsupported population claims from the rewrites and withdrawn rigid grammar-error counts. Your distance example receives clearer credit, while the conclusion is judged by its meaning rather than its length.\n\n## Progress across essays\n\n| Pattern | History | Status | Evidence in this essay |\n|---|---|---|---|\n| Examples prove the exact claim | W1–W4, W6–W10; improved W5 | **recurring** | “table tennis facilities are closing” does not establish an alternative public-health measure |\n| Collocations and verb complements | W1–W11; W4 “seeking for a help”, W9 “reach to a doctor” | **recurring** | “access to the place”; “effect to people” |\n| Articles/countability/noun number | W1–W11; W5 “when they are teenager”, W10 “repetitive works”, W11 “the number of murder” | **recurring** | “find yoga class”; “has small effect” |\n| Reference precision | W2, W6, W8–W10; improved W11 | **recurring** | “it's too far away from their home” leaves the venue unnamed |\n| Control of extended clauses | W5, W7, W11 | **recurring** | “some people especially who do not enjoy sports” |\n| Gerund-subject agreement | W6/W9 errors; corrected W10 | **fixed** | “increasing the number of sports facilities is not enough” |\n| Conjunctive-adverb comma splices | W2/W3/W7/W8; absent W9–W11 | **fixed** | “; thus” correctly joins independent clauses |\n| Explicit conclusion verdict | W7 omitted it; W9 changed the comparison; W10 improved | **improved** | “I believe it has marginal effect” states a verdict, but narrows its scope |\n\n“Fixed” describes the evidence here. W11’s language patterns transfer across tasks; its graph-reporting requirements do not.\n\n## Structural feedback\n\nYour four paragraphs and balanced bodies suit this discussion task. Body 1 has a point, explanation and relevant distance example; complete its reasoning with **nearer facilities → regular exercise → better health**, explaining why supporters favour this approach. Its closing objection then repeats Body 2’s opening, so concentrate that objection at the transition. **The single highest-impact fix is rebuilding Body 2 around a named alternative, its mechanism and an example.** Yoga may also involve sports facilities, so its availability does not clearly establish the alternative policy you need. Conclude by combining the access benefit with the alternative you developed; no prescribed conclusion length is necessary (`contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2; `contexts/05-band-6-to-7/task-response-upgrades.md` §9).\n\n## Focus areas\n\n- **Claim → mechanism → relevant example** — Use *This could improve public health by…* to test what your example actually proves. Seen in: W1–W4, W6–W10, W12. Drill: `contexts/05-band-6-to-7/task-response-upgrades.md` §§3, 5; `contexts/10-task2-topic-banks/topic-04-health.md`.\n- **Complete verb and noun combinations** — Retrieve *access facilities*, *have access to facilities*, *take up a sport* and *have an effect on* as units. Seen in: W1–W12; the exact verbal-*access* error is new. Drill: `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4; `contexts/10-task2-topic-banks/topic-15-sport-and-leisure.md`.\n- **Determiners in singular countable noun phrases** — “Find yoga class” matches the article-omission pattern associated with Korean L1 transfer; construct *a yoga class* before extending the sentence. Seen in: W1–W12, through different article/number errors. Drill: `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1; `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §9.\n- **Explicit referents and controlled clauses** — Name *the nearest pool* or *residents*, then attach *who* or *even when* to a clear main clause. Seen in: W2, W5–W11, W12. Drill: `contexts/05-band-6-to-7/cohesion-upgrades.md` §3; `contexts/05-band-6-to-7/grammar-upgrades.md` §2.\n\n## What's working\n\nYour distance example, “it's too far away from their home”, supports the access argument despite needing a clearer referent. W10’s gerund-agreement correction holds in “increasing the number of sports facilities is not enough”. The comma-splice correction also holds: “; thus” is correctly punctuated. Keep your explicit reservation about facilities alone, clean spelling, and useful passive range in “need to be encouraged”.\n\n## Per-criterion justification\n\n### Task Response / Achievement — 6.0\n\nYou discuss both viewpoints and express a relevant preference. Body 1’s access argument is plausible, but “not everyone enjoys sports” cannot by itself establish negligible benefit across the population. “There are various ways to improve individuals' health” asserts alternatives without developing one, while the yoga example mainly shows different exercise preferences. This is inadequate development of an attempted viewpoint, fitting Band 6 rather than treating the response as wholly missing a view (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7).\n\n### Coherence and Cohesion — 6.0\n\nThe four-paragraph plan provides clear overall progression, and “This is because”, “However” and “whereas” express recognisable relationships. Nevertheless, Body 2 repeats “not everyone enjoys sports” and returns to “everyone is different” without moving the discussion forward sufficiently. Reference also weakens in “it's too far away”, where the preceding noun names an activity rather than its venue. Together these support Band 6; the issue is not a shortage of linkers or compulsory synonyms (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7).\n\n### Lexical Resource — 6.0\n\n“Negligible”, “marginal” and “I am inclined to agree with this view” show useful range. Repeated imprecision remains in “start their sports activity”, “access to the place” and “effect to people”. General expressions such as “various ways” also leave your intended measures unspecified. Accurate combinations are the next step; sample labels and repetition counts are not reliable scoring shortcuts (`contexts/01-band-descriptors/task2-band-descriptors.md` §Band 6; `contexts/11-quality-audit/06-flagged-samples.md`).\n\n### Grammatical Range & Accuracy — 6.0\n\nYou attempt causal, relative and concessive clauses, with successful passive forms. Control is uneven in “some people especially who”, the twice-used “access to the place”, and “find yoga class”. Several sentences work grammatically, but the repeated construction problems support Band 6 overall, without a numerical error-free threshold (`contexts/01-band-descriptors/task2-band-descriptors.md` §§Band 6–7). The earlier corrections were too broad: *effect* permits uncountable use, and *so that* can express a result. [Cambridge: effect](https://dictionary.cambridge.org/dictionary/english/effect), [Cambridge: so that](https://dictionary.cambridge.org/grammar/british-grammar/so-that-or-in-order-that).\n\n## Top concrete rewrites (5–10, ranked by band uplift × persistence)\n\nRow 1 replaces the whole second body. The proposed scenarios illustrate your argument; they are not claims about measured Korean trends.\n\n| # | Original phrase from essay | Improved (band-7 target) | Reason | Corpus citation |\n|---|---|---|---|---|\n| 1 | “Others argue that increasing the number of sports facilities has negligible effect because not everyone enjoys sports.” | “However, facilities alone may do little for people who are not interested in sport. Public-health policy should therefore also promote healthy eating. For example, school nutrition lessons could teach children to replace sugary drinks with water, helping them reduce their sugar intake. Such lessons could improve everyday diets even among children who rarely exercise.” | Develops the alternative through a measure, mechanism and example; retains the recurring W6–W10 support priority. | `contexts/05-band-6-to-7/task-response-upgrades.md` §5; `contexts/10-task2-topic-banks/topic-04-health.md` |\n| 2 | “It is somewhat true that more sports facilities can lead more people to start their sports activity.” | “Supporters see local sports facilities as the best approach because easier access can encourage residents to take up a sport and exercise regularly. Over time, this can improve their fitness.” | Explains supporters’ reasoning and repairs the recurring collocation pattern. | `contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2; `contexts/10-task2-topic-banks/topic-15-sport-and-leisure.md` |\n| 3 | “This is because people can access to the place easily by increasing the number of facilities.” | “By building more facilities, local councils can make it easier for residents to access them.” | Repairs the complement and names who builds; continues W4/W9’s verb-complement work. | `contexts/10-task2-topic-banks/topic-04-health.md` §Common collocations; `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §10 |\n| 4 | “it has marginal effect to people who enjoy other exercise” | “these facilities may have only a limited effect on people who are not interested in sport” | Uses *effect on* and restricts the claim to the group actually discussed. | `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4; `contexts/05-band-6-to-7/task-response-upgrades.md` §3 |\n| 5 | “find yoga class”; “has small effect” | “find a yoga class”; “has a small effect” | Drills the persistent W1–W11 noun-phrase pattern. Keep the yoga correction as language practice when replacing its example. | `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1 |\n| 6 | “some people especially who do not enjoy sports still need to be encouraged to play sports” | “Even when facilities are nearby, people who dislike sport may still need encouragement to exercise.” | Controls the concession and relative clause; continues W5/W7/W11 clause work. | `contexts/05-band-6-to-7/grammar-upgrades.md` §§2, 13 |\n| 7 | “quit their sports activity because it's too far away from their home” | “A swimmer who has stopped practising because the nearest pool is too far away might return if a new one opened nearby.” | Makes your existing access example concrete and repairs recurring reference difficulties. | `contexts/05-band-6-to-7/cohesion-upgrades.md` §3; `contexts/05-band-6-to-7/task-response-upgrades.md` §6 |\n| 8 | “In conclusion, although increasing sports facilities might help improve public health, I believe it has marginal effect to people who enjoy other exercise.” | “In conclusion, although additional facilities can encourage regular exercise, I believe they should be combined with measures such as nutrition education to improve public health more widely.” | Synthesises the revised bodies while retaining your reservation. | `contexts/05-band-6-to-7/task-response-upgrades.md` §9 |\n\n## Before your next essay\n\n- **12 minutes—prove the claim.** Rebuild W7’s qualification example, W10’s software example and W12’s yoga example as claim → mechanism → scenario → consequence. Use `contexts/05-band-6-to-7/task-response-upgrades.md` §5. Retire this first priority after two successive timed essays support each main claim specifically.\n- **8 minutes—retrieve combinations.** Write six original sentences from memory with *access facilities*, *have access to*, *take up a sport* and *effect on*. Check complements using `contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md` §4 and the health/sport topic banks.\n- **6 minutes—build noun phrases.** Contrast *a class/classes* and *a small effect/little effect*, then expand each into a sentence. Apply the English-skeleton drill in `contexts/09-instructor-tips/11-korean-instructor-tips-collected.md` §9 and the article drill in `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §A1.\n- **6 minutes—one useful stretch.** Write three sentences using *Even when…, people who…*; underline the main subject and identify every pronoun’s referent. Attempt one naturally next time (`contexts/05-band-6-to-7/grammar-upgrades.md` §2; `contexts/05-band-6-to-7/cohesion-upgrades.md` §3).\n- **Final four minutes—three passes.** Check determiners, then verb complements, then pronoun referents. Prepare this routine using `contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md` §N and `contexts/05-band-6-to-7/cohesion-upgrades.md` §3.\n\n## Overall band rationale\n\n**(6 + 6 + 6 + 6) ÷ 4 = 6.0.** A realistic Task 2 target is **TR 7 / CC 7 / LR 6 / GRA 7: 27 ÷ 4 = 6.75 → 7.0**, restoring W10’s CC/GRA strengths while developing exact support (`contexts/01-band-descriptors/scoring-rules.md` §§1, 3).\n\n## CONVERGENCE: REFINING\n\nCoherence and Cohesion remains disputed at 6 versus 7. This revision also corrects substantive overclaims and grammar diagnoses, so the chain has not yet stabilised despite agreement on the three main teaching priorities.",
+  "structural_feedback": "Your four paragraphs and balanced bodies suit this discussion task. Body 1 has a point, explanation and relevant distance example; complete its reasoning with **nearer facilities → regular exercise → better health**, explaining why supporters favour this approach. Its closing objection then repeats Body 2’s opening, so concentrate that objection at the transition. **The single highest-impact fix is rebuilding Body 2 around a named alternative, its mechanism and an example.** Yoga may also involve sports facilities, so its availability does not clearly establish the alternative policy you need. Conclude by combining the access benefit with the alternative you developed; no prescribed conclusion length is necessary (`contexts/05-band-6-to-7/paragraph-structure-band7.md` §4.2; `contexts/05-band-6-to-7/task-response-upgrades.md` §9).",
+  "focus_areas": [
+    {
+      "area": "Claim → mechanism → relevant example",
+      "rationale": "Use *This could improve public health by…* to test what your example actually proves. Seen in: W1–W4, W6–W10, W12.",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/task-response-upgrades.md",
+        "contexts/10-task2-topic-banks/topic-04-health.md"
+      ]
+    },
+    {
+      "area": "Complete verb and noun combinations",
+      "rationale": "Retrieve *access facilities*, *have access to facilities*, *take up a sport* and *have an effect on* as units. Seen in: W1–W12; the exact verbal-*access* error is new.",
+      "corpus_drill": [
+        "contexts/08-vocabulary-grammar/01-grammar-error-correction-bank.md",
+        "contexts/10-task2-topic-banks/topic-15-sport-and-leisure.md"
+      ]
+    },
+    {
+      "area": "Determiners in singular countable noun phrases",
+      "rationale": "“Find yoga class” matches the article-omission pattern associated with Korean L1 transfer; construct *a yoga class* before extending the sentence. Seen in: W1–W12, through different article/number errors.",
+      "corpus_drill": [
+        "contexts/09-instructor-tips/10-common-korean-chinese-speaker-errors.md",
+        "contexts/09-instructor-tips/11-korean-instructor-tips-collected.md"
+      ]
+    },
+    {
+      "area": "Explicit referents and controlled clauses",
+      "rationale": "Name *the nearest pool* or *residents*, then attach *who* or *even when* to a clear main clause. Seen in: W2, W5–W11, W12.",
+      "corpus_drill": [
+        "contexts/05-band-6-to-7/cohesion-upgrades.md",
+        "contexts/05-band-6-to-7/grammar-upgrades.md"
+      ]
+    }
+  ],
+  "whats_working": "Your distance example, “it's too far away from their home”, supports the access argument despite needing a clearer referent. W10’s gerund-agreement correction holds in “increasing the number of sports facilities is not enough”. The comma-splice correction also holds: “; thus” is correctly punctuated. Keep your explicit reservation about facilities alone, clean spelling, and useful passive range in “need to be encouraged”."
+}

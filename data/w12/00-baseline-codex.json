@@ -1,0 +1,123 @@
+{
+  "id": "w12/00-baseline-codex",
+  "task": "w12",
+  "iteration": 0,
+  "tool": "baseline",
+  "generated_at": "2026-09-15T04:29:29Z",
+  "prior_id": null,
+  "scores": {
+    "task_response": {
+      "band": 6,
+      "descriptor_evidence": "Band 7 requires more developed, relevant support for the main ideas.",
+      "justification": "Both views and your opinion are identifiable. The accessibility argument has relevant support: facilities being “too far away from their home” could discourage participation. However, “not everyone enjoys sports” is repeated rather than developed into a fuller explanation of what other measures are needed. The contrast between “table tennis facilities” and “yoga class” illustrates different exercise preferences, but does not clearly support an alternative public-health policy."
+    },
+    "coherence": {
+      "band": 6,
+      "descriptor_evidence": "The introduction, two body paragraphs and conclusion provide a clear overall sequence. For band 7, give each paragraph a clearer purpose and make references easier to follow.",
+      "justification": "You also use relationships such as “This is because,” “However” and “whereas” to connect ideas. However, the first body paragraph moves from supporting facilities to “I disagree with this view,” and the next paragraph repeats that disagreement, weakening progression. References such as “the place” and “thus it” are also imprecise."
+    },
+    "lexical": {
+      "band": 6,
+      "descriptor_evidence": "Your vocabulary is sufficient to discuss the topic, with some useful less common expressions: “negligible effect,” “marginal effect” and “inclined to agree.”",
+      "justification": "However, combinations such as “start their sports activity” and “marginal effect to people” lack naturalness or accuracy. Repeated references to “sports facilities,” “sports activity” and “improve public health” also show limited flexibility, although repeating essential topic terms is acceptable. The next step is more accurate everyday collocations, rather than more difficult vocabulary."
+    },
+    "grammar": {
+      "band": 6,
+      "descriptor_evidence": "You use subordinate clauses with “since,” “because,” “although” and “whereas,” demonstrating a mixture of simple and complex structures. Meaning remains generally clear, but band 7 requires more consistent control and frequent error-free sentences, including complex ones.",
+      "justification": "However, errors recur in “can access to the place,” “has negligible effect,” “find yoga class” and “some people especially who do not enjoy sports.” The opening also awkwardly combines “when there is an increase” with “public health would improve.”"
+    }
+  },
+  "overall": 6,
+  "overall_rationale": "Estimated band: 6.0. Average: (6 + 6 + 6 + 6) ÷ 4 = 6.0. The main barriers to band 7 are underdeveloped alternatives and recurring errors in otherwise useful sentence structures.",
+  "what_changed": "",
+  "rewrites": [
+    {
+      "id": 1,
+      "original": "For instance, in Korea, a lot of table tennis facilities are closing, whereas it is fairly easy to find yoga class.",
+      "improved": "Other measures, such as improving school meals, can benefit people regardless of their interest in sport. For example, providing balanced lunches would help children eat more healthily, including those who rarely exercise.",
+      "reason": "This directly addresses alternative measures and explains how one could improve health.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 2,
+      "original": "However, I disagree with this view because some people especially who do not enjoy sports still need to be encouraged to play sports despite the fact that they can easily access to the place; thus it has small effect to improve public health.",
+      "improved": "Supporters therefore regard additional facilities as the best approach because nearby centres remove a practical barrier to exercise. Residents who spend less time travelling may find it easier to maintain an exercise routine.",
+      "reason": "This gives the first view adequate development, while leaving the second paragraph to explain your reservations.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 3,
+      "original": "In conclusion, although increasing sports facilities might help improve public health, I believe it has marginal effect to people who enjoy other exercise.",
+      "improved": "In conclusion, more sports facilities can encourage exercise, but I believe they should be combined with measures that help people eat more healthily.",
+      "reason": "With improvement #1 in place, this accurately summarises the argument and maintains your original position that facilities alone are insufficient.",
+      "citations": [],
+      "category": "task_response"
+    },
+    {
+      "id": 4,
+      "original": "This is because people can access to the place easily by increasing the number of facilities.",
+      "improved": "This is because building more local facilities would make it easier for residents to access a sports centre near their homes.",
+      "reason": "“Access” takes a direct object, and the rewrite makes clear that construction improves access.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 5,
+      "original": "Some argue that when there is an increase in the number of sports facilities, public health would improve as well, while others say that other measures should be considered since it has little effect.",
+      "improved": "Some argue that increasing the number of sports facilities is the best way to improve public health, while others believe this would have little effect and that other measures are needed.",
+      "reason": "This accurately introduces both positions while removing the awkward “when there is … would” combination.",
+      "citations": [],
+      "category": "grammar"
+    },
+    {
+      "id": 6,
+      "original": "more sports facilities can lead more people to start their sports activity",
+      "improved": "more sports facilities can encourage people to take up regular exercise",
+      "reason": "“Take up regular exercise” is a natural, reusable expression that connects participation with health.",
+      "citations": [],
+      "category": "lexical"
+    },
+    {
+      "id": 7,
+      "original": "increasing the number of sports facilities has negligible effect",
+      "improved": "increasing the number of sports facilities has a negligible effect on public health",
+      "reason": "The singular countable noun needs “a,” and “effect on” accurately identifies what is affected.",
+      "citations": [],
+      "category": "grammar"
+    }
+  ],
+  "convergence": "UNKNOWN",
+  "convergence_note": "",
+  "raw_markdown": "# Baseline (codex, no repo)\n\n_Generated 2026-09-15T04:29:29Z by codex exec (gpt-6-astra, ultra), read-only sandbox, empty workdir._\n\n---\n\n## Per-criterion scores\n\n| Criterion | Band |\n|---|---:|\n| Task Response | 6.0 |\n| Coherence and Cohesion | 6.0 |\n| Lexical Resource | 6.0 |\n| Grammatical Range and Accuracy | 6.0 |\n\n## Structural feedback\n\nYour four-paragraph structure is appropriate, and the introduction clearly states that increasing facilities alone is insufficient. The first body paragraph explains the accessibility argument, but its extended rebuttal reduces the space available to develop why supporters consider facilities the **best** approach. The second body paragraph repeats that some people dislike sports, without developing a clear alternative public-health measure; the yoga example still concerns access to exercise facilities. Keep the first body paragraph focused on the benefits of facilities, then use the second to explain their limitations and develop an alternative. The conclusion should return to improving public health overall, rather than narrowing the discussion to people who prefer other exercise. **Developing a relevant alternative measure would deliver more band uplift than any individual vocabulary replacement.**\n\n## Focus areas\n\n- **Alternative measure → mechanism → benefit** — Explain what another measure would involve, how it would change behaviour, and how that would improve health.\n- **Distinct roles for body paragraphs** — Repeating “not everyone enjoys sports” limits development; each paragraph needs to advance a different part of the discussion.\n- **Articles before singular countable nouns** — Omissions such as “has negligible effect” and “find yoga class” reduce grammatical accuracy.\n- **Verb patterns and preposition choices** — Practise “access a facility,” “have an effect on,” and “encourage people to exercise.”\n- **Control of complex clauses** — Keep useful contrasts and explanations, but avoid combining several claims in sentences whose relative clauses and references become unclear.\n\n## What's working\n\n“I believe increasing the number of sports facilities is not enough” establishes a clear position immediately. Your explanation that facilities may be “too far away from their home” identifies a relevant practical barrier that could support a well-developed argument. Expressions such as “negligible effect” and structures using “although” and “whereas” are useful building blocks for band 7 when used accurately.\n\n## Per-criterion justification\n\n### Task Response — 6.0\n\nBoth views and your opinion are identifiable. The accessibility argument has relevant support: facilities being “too far away from their home” could discourage participation. However, “not everyone enjoys sports” is repeated rather than developed into a fuller explanation of what other measures are needed. The contrast between “table tennis facilities” and “yoga class” illustrates different exercise preferences, but does not clearly support an alternative public-health policy. Band 7 requires more developed, relevant support for the main ideas.\n\n### Coherence and Cohesion — 6.0\n\nThe introduction, two body paragraphs and conclusion provide a clear overall sequence. You also use relationships such as “This is because,” “However” and “whereas” to connect ideas. However, the first body paragraph moves from supporting facilities to “I disagree with this view,” and the next paragraph repeats that disagreement, weakening progression. References such as “the place” and “thus it” are also imprecise. For band 7, give each paragraph a clearer purpose and make references easier to follow.\n\n### Lexical Resource — 6.0\n\nYour vocabulary is sufficient to discuss the topic, with some useful less common expressions: “negligible effect,” “marginal effect” and “inclined to agree.” However, combinations such as “start their sports activity” and “marginal effect to people” lack naturalness or accuracy. Repeated references to “sports facilities,” “sports activity” and “improve public health” also show limited flexibility, although repeating essential topic terms is acceptable. The next step is more accurate everyday collocations, rather than more difficult vocabulary.\n\n### Grammatical Range and Accuracy — 6.0\n\nYou use subordinate clauses with “since,” “because,” “although” and “whereas,” demonstrating a mixture of simple and complex structures. However, errors recur in “can access to the place,” “has negligible effect,” “find yoga class” and “some people especially who do not enjoy sports.” The opening also awkwardly combines “when there is an increase” with “public health would improve.” Meaning remains generally clear, but band 7 requires more consistent control and frequent error-free sentences, including complex ones.\n\n## Overall band\n\n**Estimated band: 6.0**\n\nAverage: **(6 + 6 + 6 + 6) ÷ 4 = 6.0**\n\nThe main barriers to band 7 are underdeveloped alternatives and recurring errors in otherwise useful sentence structures.\n\n## Top concrete improvements\n\n### 1. Replace the yoga example with a developed alternative measure\n\n**Original:**  \n“For instance, in Korea, a lot of table tennis facilities are closing, whereas it is fairly easy to find yoga class.”\n\n**Improved:**  \n“Other measures, such as improving school meals, can benefit people regardless of their interest in sport. For example, providing balanced lunches would help children eat more healthily, including those who rarely exercise.”\n\n**Reason:** This directly addresses alternative measures and explains how one could improve health.\n\n### 2. Give the first view a fully developed argument\n\n**Original:**  \n“However, I disagree with this view because some people especially who do not enjoy sports still need to be encouraged to play sports despite the fact that they can easily access to the place; thus it has small effect to improve public health.”\n\n**Improved:**  \n“Supporters therefore regard additional facilities as the best approach because nearby centres remove a practical barrier to exercise. Residents who spend less time travelling may find it easier to maintain an exercise routine.”\n\n**Reason:** This gives the first view adequate development, while leaving the second paragraph to explain your reservations.\n\n### 3. Make the conclusion answer the whole question\n\n**Original:**  \n“In conclusion, although increasing sports facilities might help improve public health, I believe it has marginal effect to people who enjoy other exercise.”\n\n**Improved:**  \n“In conclusion, more sports facilities can encourage exercise, but I believe they should be combined with measures that help people eat more healthily.”\n\n**Reason:** With improvement #1 in place, this accurately summarises the argument and maintains your original position that facilities alone are insufficient.\n\n### 4. Correct the verb pattern and clarify the cause\n\n**Original:**  \n“This is because people can access to the place easily by increasing the number of facilities.”\n\n**Improved:**  \n“This is because building more local facilities would make it easier for residents to access a sports centre near their homes.”\n\n**Reason:** “Access” takes a direct object, and the rewrite makes clear that construction improves access.\n\n### 5. Make the opening comparison grammatically consistent\n\n**Original:**  \n“Some argue that when there is an increase in the number of sports facilities, public health would improve as well, while others say that other measures should be considered since it has little effect.”\n\n**Improved:**  \n“Some argue that increasing the number of sports facilities is the best way to improve public health, while others believe this would have little effect and that other measures are needed.”\n\n**Reason:** This accurately introduces both positions while removing the awkward “when there is … would” combination.\n\n### 6. Use a natural collocation for beginning exercise\n\n**Original:**  \n“more sports facilities can lead more people to start their sports activity”\n\n**Improved:**  \n“more sports facilities can encourage people to take up regular exercise”\n\n**Reason:** “Take up regular exercise” is a natural, reusable expression that connects participation with health.\n\n### 7. Correct the article and effect pattern\n\n**Original:**  \n“increasing the number of sports facilities has negligible effect”\n\n**Improved:**  \n“increasing the number of sports facilities has a negligible effect on public health”\n\n**Reason:** The singular countable noun needs “a,” and “effect on” accurately identifies what is affected.",
+  "structural_feedback": "Your four-paragraph structure is appropriate, and the introduction clearly states that increasing facilities alone is insufficient. The first body paragraph explains the accessibility argument, but its extended rebuttal reduces the space available to develop why supporters consider facilities the **best** approach. The second body paragraph repeats that some people dislike sports, without developing a clear alternative public-health measure; the yoga example still concerns access to exercise facilities. Keep the first body paragraph focused on the benefits of facilities, then use the second to explain their limitations and develop an alternative. The conclusion should return to improving public health overall, rather than narrowing the discussion to people who prefer other exercise. **Developing a relevant alternative measure would deliver more band uplift than any individual vocabulary replacement.**",
+  "focus_areas": [
+    {
+      "area": "Alternative measure → mechanism → benefit",
+      "rationale": "Explain what another measure would involve, how it would change behaviour, and how that would improve health.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Distinct roles for body paragraphs",
+      "rationale": "Repeating “not everyone enjoys sports” limits development; each paragraph needs to advance a different part of the discussion.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Articles before singular countable nouns",
+      "rationale": "Omissions such as “has negligible effect” and “find yoga class” reduce grammatical accuracy.",
+      "corpus_drill": []
+    },
+    {
+      "area": "Verb patterns and preposition choices",
+      "rationale": "Practise “access a facility,” “have an effect on,” and “encourage people to exercise.”",
+      "corpus_drill": []
+    },
+    {
+      "area": "Control of complex clauses",
+      "rationale": "Keep useful contrasts and explanations, but avoid combining several claims in sentences whose relative clauses and references become unclear.",
+      "corpus_drill": []
+    }
+  ],
+  "whats_working": "“I believe increasing the number of sports facilities is not enough” establishes a clear position immediately. Your explanation that facilities may be “too far away from their home” identifies a relevant practical barrier that could support a well-developed argument. Expressions such as “negligible effect” and structures using “although” and “whereas” are useful building blocks for band 7 when used accurately."
+}
